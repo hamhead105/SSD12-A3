@@ -1,0 +1,60 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PIDController
+{
+    private float kP;
+    private float kI;
+    private float kD;
+
+    private float errorAccumulation;
+    private float errorDerivative;
+
+    private float lastError = 0;
+    private float lastTime;
+
+    public void Init()
+    {
+        lastTime = Time.time;
+    }
+
+    public PIDController(float kP, float kI, float kD)
+    {
+        this.kP = kP;
+        this.kI = kI;
+        this.kD = kD;      
+    }
+
+    public float GetOutput(float error)
+    {
+        float deltaTime = Time.time - lastTime;
+        lastTime = Time.time;
+        float output;
+        if (deltaTime > 0)
+        {
+            errorAccumulation += error * deltaTime;
+            errorDerivative = (error - lastError) * deltaTime;
+        }
+        else
+        {
+            errorAccumulation = 0;
+            errorDerivative = 0;
+        }
+        output = (error * kP) + (errorAccumulation * kI) + (errorDerivative * kD);
+        return output;
+    }
+
+    public float GetkP()
+    {
+        return kP;
+    }
+    public float GetkI()
+    {
+        return kI;
+    }
+    public float GetkD()
+    {
+        return kD;
+    }
+}

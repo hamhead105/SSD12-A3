@@ -1,0 +1,660 @@
+fileFormatVersion: 2
+guid: e7463bdf4ce1168458f8e8ed4e1fe9b7
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -623603649343465320
+    second: player_idle
+  - first:
+      74: 4052061570572371388
+    second: player_walk
+  - first:
+      74: -1440945480001960654
+    second: player_sidewalk
+  - first:
+      74: -3879749717007542139
+    second: player_sprint
+  - first:
+      74: 2743244773067709266
+    second: railgun_ads
+  - first:
+      74: 2247943719345679226
+    second: railgun_reload
+  - first:
+      74: -1609281748187839663
+    second: railgun_idle
+  - first:
+      74: -6503786521424700288
+    second: railgun_sprint
+  - first:
+      74: -7473776752661051287
+    second: railgun_idleShow
+  - first:
+      74: 1794734874746915881
+    second: railgun_crouchStance
+  - first:
+      74: -4737940332636387333
+    second: railgun_ads_head
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: railgun_ads
+      takeName: Scene
+      internalID: 0
+      firstFrame: 191
+      lastFrame: 211
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: railgun_reload
+      takeName: Scene
+      internalID: 0
+      firstFrame: 219
+      lastFrame: 264
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: railgun_idle
+      takeName: Scene
+      internalID: 0
+      firstFrame: 173
+      lastFrame: 183
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: railgun_sprint
+      takeName: Scene
+      internalID: 0
+      firstFrame: 72
+      lastFrame: 88
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: railgun_idleShow
+      takeName: Scene
+      internalID: 0
+      firstFrame: 326
+      lastFrame: 345
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: railgun_crouchStance
+      takeName: Scene
+      internalID: 0
+      firstFrame: 353
+      lastFrame: 374
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: railgun_ads_head
+      takeName: Scene
+      internalID: 0
+      firstFrame: 191
+      lastFrame: 211
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Belt
+        weight: 0
+      - path: BodyWear
+        weight: 0
+      - path: BodyWear/PlateCarrier
+        weight: 0
+      - path: Camera.001
+        weight: 0
+      - path: Cube
+        weight: 0
+      - path: Cube.001
+        weight: 0
+      - path: Cube.002
+        weight: 0
+      - path: Cube.003
+        weight: 0
+      - path: Cube.005
+        weight: 0
+      - path: FastHelmet
+        weight: 0
+      - path: Headwear
+        weight: 0
+      - path: Light
+        weight: 0
+      - path: m_ca01
+        weight: 0
+      - path: m_ca01_skeleton
+        weight: 0
+      - path: m_ca01_skeleton/foot_L_target
+        weight: 0
+      - path: m_ca01_skeleton/foot_L_target/foot_L_target_end
+        weight: 0
+      - path: m_ca01_skeleton/foot_R_target
+        weight: 0
+      - path: m_ca01_skeleton/foot_R_target/foot_R_target_end
+        weight: 0
+      - path: m_ca01_skeleton/leg_L_pole
+        weight: 0
+      - path: m_ca01_skeleton/leg_L_pole/leg_L_pole_end
+        weight: 0
+      - path: m_ca01_skeleton/leg_R_pole
+        weight: 0
+      - path: m_ca01_skeleton/leg_R_pole/leg_R_pole_end
+        weight: 0
+      - path: m_ca01_skeleton/root
+        weight: 1
+      - path: m_ca01_skeleton/root/pelvis
+        weight: 1
+      - path: m_ca01_skeleton/root/pelvis/spine01
+        weight: 1
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02
+        weight: 1
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03
+        weight: 1
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/breast_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/breast_L/breast_L_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/breast_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/breast_R/breast_R_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/index00_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/index00_L/index01_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/index00_L/index01_L/index02_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/index00_L/index01_L/index02_L/index03_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/index00_L/index01_L/index02_L/index03_L/index03_L_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/middle00_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/middle00_L/middle01_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/middle00_L/middle01_L/middle02_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/middle00_L/middle01_L/middle02_L/middle03_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/middle00_L/middle01_L/middle02_L/middle03_L/middle03_L_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/pinky00_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/pinky00_L/pinky01_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/pinky00_L/pinky01_L/pinky02_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/pinky00_L/pinky01_L/pinky02_L/pinky03_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/pinky00_L/pinky01_L/pinky02_L/pinky03_L/pinky03_L_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/ring00_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/ring00_L/ring01_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/ring00_L/ring01_L/ring02_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/ring00_L/ring01_L/ring02_L/ring03_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/ring00_L/ring01_L/ring02_L/ring03_L/ring03_L_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/thumb01_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/thumb01_L/thumb02_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/thumb01_L/thumb02_L/thumb03_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/hand_L/thumb01_L/thumb02_L/thumb03_L/thumb03_L_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/lowerarm_twist_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/lowerarm_L/lowerarm_twist_L/lowerarm_twist_L_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/upperarm_twist_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_L/upperarm_L/upperarm_twist_L/upperarm_twist_L_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/index00_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/index00_R/index01_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/index00_R/index01_R/index02_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/index00_R/index01_R/index02_R/index03_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/index00_R/index01_R/index02_R/index03_R/index03_R_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/middle00_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/middle00_R/middle01_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/middle00_R/middle01_R/middle02_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/middle00_R/middle01_R/middle02_R/middle03_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/middle00_R/middle01_R/middle02_R/middle03_R/middle03_R_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/pinky00_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/pinky00_R/pinky01_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/pinky00_R/pinky01_R/pinky02_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/pinky00_R/pinky01_R/pinky02_R/pinky03_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/pinky00_R/pinky01_R/pinky02_R/pinky03_R/pinky03_R_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/ring00_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/ring00_R/ring01_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/ring00_R/ring01_R/ring02_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/ring00_R/ring01_R/ring02_R/ring03_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/ring00_R/ring01_R/ring02_R/ring03_R/ring03_R_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/thumb01_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/thumb01_R/thumb02_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/thumb01_R/thumb02_R/thumb03_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/hand_R/thumb01_R/thumb02_R/thumb03_R/thumb03_R_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/lowerarm_twist_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/lowerarm_R/lowerarm_twist_R/lowerarm_twist_R_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/upperarm_twist_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/clavicle_R/upperarm_R/upperarm_twist_R/upperarm_twist_R_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/elbow_L_pole
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/elbow_L_pole/elbow_L_pole_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/elbow_R_pole
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/elbow_R_pole/elbow_R_pole_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/glowstick
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/hand_L_target
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/hand_L_target/hand_L_target_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/hand_R_target
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/hand_R_target/hand_R_target_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/neck
+        weight: 1
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/neck/head
+        weight: 1
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/neck/head/Camera
+        weight: 1
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/neck/head/head_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/Radio
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Bolt
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Bolt/Bolt
+          1
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Bolt/Bolt_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Magazine
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Magazine/Magazine
+          1
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Magazine/Magazine_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Stock
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Stock/BoltPoint
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Stock/Chamber
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Stock/Cube.013
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Stock/Handguard
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Stock/Handguard/left_rail
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Stock/Handguard/Rail
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Stock/Handguard/Rail/Grip
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Stock/Handguard/right_rail.001
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Stock/InnerMuzzle
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Stock/MagRelease
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Stock/Muzzle
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Stock/Scope
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Stock/Scope/ScopeHead
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Stock/top
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Stock/top/TopRail
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/spine01/spine02/spine03/WeaponParent/Weapon_Railgun(Clone)/RIfle_Armature/Body/Stock/Trigger
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/thigh_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/thigh_L/calf_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/thigh_L/calf_L/calf_twist_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/thigh_L/calf_L/calf_twist_L/calf_twist_L_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/thigh_L/calf_L/foot_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/thigh_L/calf_L/foot_L/toes_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/thigh_L/calf_L/foot_L/toes_L/toes_L_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/thigh_L/thigh_twist_L
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/thigh_L/thigh_twist_L/thigh_twist_L_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/thigh_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/thigh_R/calf_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/thigh_R/calf_R/calf_twist_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/thigh_R/calf_R/calf_twist_R/calf_twist_R_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/thigh_R/calf_R/foot_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/thigh_R/calf_R/foot_R/toes_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/thigh_R/calf_R/foot_R/toes_R/toes_R_end
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/thigh_R/Holster
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/thigh_R/thigh_twist_R
+        weight: 0
+      - path: m_ca01_skeleton/root/pelvis/thigh_R/thigh_twist_R/thigh_twist_R_end
+        weight: 0
+      - path: MagazinePouch.001
+        weight: 0
+      - path: Pants
+        weight: 0
+      - path: PistolMagPouch
+        weight: 0
+      - path: shirt
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
