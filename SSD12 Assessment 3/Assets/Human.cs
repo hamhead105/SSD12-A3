@@ -228,7 +228,6 @@ public class Human : MonoBehaviour
     {
         leftFootTarg.transform.position = new Vector3(leftFootTarg.transform.position.x, leftFootTargBase.transform.position.y - pControlledLeftFootPos, leftFootTarg.transform.position.z);
         rightFootTarg.transform.position = new Vector3(rightFootTarg.transform.position.x, rightFootTargBase.transform.position.y - pControlledRightFootPos, rightFootTarg.transform.position.z);
-
      
         spine2.transform.Rotate(this.transform.right * (-AimY / 2) * spine2Multiplier, Space.World);
         spine3.transform.Rotate(this.transform.right * (-AimY / 2), Space.World);
@@ -276,20 +275,23 @@ public class Human : MonoBehaviour
 
     public void UpdateFeetIK()
     {
-        RaycastHit rightFootHit;
-        Vector3 rightFootTransformCastPosition = new Vector3(rightFootTarg.transform.position.x, this.transform.position.y + feetIKCastHeight, rightFootTarg.transform.position.z);
-        Debug.DrawRay(rightFootTransformCastPosition, Vector3.down * 1.5f, Color.red, 0.01f);
-        if (Physics.SphereCast(rightFootTransformCastPosition, feetCastRadius, Vector3.down, out rightFootHit, 1.5f , hitboxLayer))
+        if (charController.isGrounded)
         {
-            rightFootCastDistance = rightFootHit.distance - feetIKOffset + feetCastRadius;
-        }
+            RaycastHit rightFootHit;
+            Vector3 rightFootTransformCastPosition = new Vector3(rightFootTarg.transform.position.x, this.transform.position.y + feetIKCastHeight, rightFootTarg.transform.position.z);
+            Debug.DrawRay(rightFootTransformCastPosition, Vector3.down * 1.5f, Color.red, 0.01f);
+            if (Physics.SphereCast(rightFootTransformCastPosition, feetCastRadius, Vector3.down, out rightFootHit, 1.5f, hitboxLayer))
+            {
+                rightFootCastDistance = rightFootHit.distance - feetIKOffset + feetCastRadius;
+            }
 
-        RaycastHit leftFootHit;
-        Vector3 leftFootTransformCastPosition = new Vector3(leftFootTarg.transform.position.x, this.transform.position.y + feetIKCastHeight, leftFootTarg.transform.position.z);
-        Debug.DrawRay(leftFootTransformCastPosition, Vector3.down * 1.5f, Color.red, 0.01f);
-        if (Physics.SphereCast(leftFootTransformCastPosition, feetCastRadius, Vector3.down, out leftFootHit, 1.5f, hitboxLayer))
-        {
-            leftFootCastDistance = leftFootHit.distance - feetIKOffset + feetCastRadius;
+            RaycastHit leftFootHit;
+            Vector3 leftFootTransformCastPosition = new Vector3(leftFootTarg.transform.position.x, this.transform.position.y + feetIKCastHeight, leftFootTarg.transform.position.z);
+            Debug.DrawRay(leftFootTransformCastPosition, Vector3.down * 1.5f, Color.red, 0.01f);
+            if (Physics.SphereCast(leftFootTransformCastPosition, feetCastRadius, Vector3.down, out leftFootHit, 1.5f, hitboxLayer))
+            {
+                leftFootCastDistance = leftFootHit.distance - feetIKOffset + feetCastRadius;
+            }
         }
     }
 
