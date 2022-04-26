@@ -12,29 +12,29 @@ AvatarMask:
   - m_Path: 
     m_Weight: 1
   - m_Path: Belt
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: BodyWear
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: BodyWear/PlateCarrier
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: Camera.001
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: Cube
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: Cube.001
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: Cube.002
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: Cube.003
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: Cube.005
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: FastHelmet
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: Headwear
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: Light
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: m_ca01
     m_Weight: 1
   - m_Path: m_ca01_skeleton

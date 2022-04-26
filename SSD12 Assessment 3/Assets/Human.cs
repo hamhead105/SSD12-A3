@@ -155,7 +155,7 @@ public class Human : MonoBehaviour
 
     public virtual void Update()
     {
-
+       // UpdatePivotValues();
     }
 
     public void UpdatePlayerRotations(float x, float y)
@@ -236,6 +236,7 @@ public class Human : MonoBehaviour
 
         if (Item is PlayerFirearm) UpdateAimDownSightsState((Item as PlayerFirearm).AimedDownSights);
         UpdatePivot();
+        UpdateAnimatorValues();
         //UpdateLeaning(leanState);
     }
 
@@ -247,13 +248,9 @@ public class Human : MonoBehaviour
 
     public void UpdatePivot()
     {
-        if (Mathf.Abs(pivot) >= pivotLimit || (forwardInput != 0 || rightInput != 0))
-        {
-            float pivotTranslate = (0 - pivot) * 0.1f;
-            this.transform.Rotate(0, -pivotTranslate, 0);
-            pivot += pivotTranslate;
-            UpdateAnimatorValues();
-        }
+        float pivotTranslate = (0 - pivot) * 0.1f;
+        this.transform.Rotate(0, -pivotTranslate, 0);
+        pivot += pivotTranslate;
         spine1.transform.localEulerAngles += new Vector3(spine1.transform.localEulerAngles.x, pivot, spine1.transform.localEulerAngles.z);
     }
 

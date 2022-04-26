@@ -48,7 +48,7 @@ public class PlayerCamera : MonoBehaviour
 
     private void UpdateAdditionalTransforms()
     {
-        this.transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0) + cameraShake;    
+        this.transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0) + cameraShake;
     }
 
     private void FixedUpdate()
@@ -56,9 +56,10 @@ public class PlayerCamera : MonoBehaviour
         UpdateFOV();
         UpdateCameraShake();
         UpdateCameraSway();
+        UpdateAdditionalTransforms();
     }
 
-    private void LateUpdate()
+    private void Update()
     {
         UpdateAdditionalTransforms();
     }

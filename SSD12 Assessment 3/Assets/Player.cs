@@ -83,6 +83,7 @@ public class Player : Human
     // Update is called once per frame
     public override void Update()
     {
+        base.Update();
         if (!Active) return;
         UpdateUI();
         if (Health > 0)
