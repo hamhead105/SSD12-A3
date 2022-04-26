@@ -15,12 +15,12 @@ D:/Unity Pojects/SSD12 A3/SSD12 Assessment 3
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54176
+61100
 Successfully changed project path to: D:/Unity Pojects/SSD12 A3/SSD12 Assessment 3
 D:/Unity Pojects/SSD12 A3/SSD12 Assessment 3
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 65.79 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.87 ms.
+Refreshing native plugins compatible for Editor in 64.25 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.95 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
 [Subsystems] Discovering subsystems at path D:/Unity Pojects/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/Unity Pojects/SSD12 A3/SSD12 Assessment 3/Assets
@@ -36,696 +36,130 @@ Initialize mono
 Mono path[0] = 'D:/Unity Pojects/2020.2.1f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity Pojects/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity Pojects/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56968
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56292
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity Pojects/2020.2.1f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: D:/Unity Pojects/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/Unity Pojects/2020.2.1f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.001533 seconds.
+Registered in 0.001488 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 66.52 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
+Refreshing native plugins compatible for Editor in 65.75 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.274 seconds
+- Completed reload, in  1.235 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001644 seconds.
+Registered in 0.001728 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 68.02 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 66.48 ms, found 1 plugins.
 Preloading 1 native plugins for Editor in 0.07 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.365 seconds
+- Completed reload, in  1.369 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.72 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
 Preloading 1 native plugins for Editor in 0.05 ms.
 Unloading 2867 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 145.0 MB.
-System memory in use after: 143.8 MB.
+System memory in use before: 145.4 MB.
+System memory in use after: 144.1 MB.
 
 Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 3288.
-Total: 2.720400 ms (FindLiveObjects: 0.302800 ms CreateObjectMapping: 0.271700 ms MarkObjects: 1.498500 ms  DeleteObjects: 0.646700 ms)
+Total: 3.436400 ms (FindLiveObjects: 0.700000 ms CreateObjectMapping: 0.266800 ms MarkObjects: 1.784400 ms  DeleteObjects: 0.684300 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/PolygonNature/Scenes/Terrains/Terrain_Main_Demo.asset
-  artifactKey: Guid(64b9bb98e309d5d428d5feca423a622c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonNature/Scenes/Terrains/Terrain_Main_Demo.asset using Guid(64b9bb98e309d5d428d5feca423a622c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a17de96cc39823b77bdcdf988c555c02') in 1.305784 seconds
-  Import took 1.319095 seconds .
+  path: Assets/Audio/M4 Sound.prefab
+  artifactKey: Guid(04d3987f79532174ea75110f337f0337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/M4 Sound.prefab using Guid(04d3987f79532174ea75110f337f0337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2daa6b01bbc66041398773ccf47f257') in 0.060813 seconds
+  Import took 0.065159 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.146136 seconds.
-  path: Assets/PolygonNature/Scenes/Terrains/Terrain_Main_Demo.asset
-  artifactKey: Guid(64b9bb98e309d5d428d5feca423a622c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonNature/Scenes/Terrains/Terrain_Main_Demo.asset using Guid(64b9bb98e309d5d428d5feca423a622c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a17de96cc39823b77bdcdf988c555c02') in 0.156347 seconds
-  Import took 0.161939 seconds .
+  Time since last request: 1.071559 seconds.
+  path: Assets/Audio/M4 Sound.prefab
+  artifactKey: Guid(04d3987f79532174ea75110f337f0337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/M4 Sound.prefab using Guid(04d3987f79532174ea75110f337f0337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2daa6b01bbc66041398773ccf47f257') in 0.003063 seconds
+  Import took 0.006751 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001775 seconds.
+Registered in 0.001719 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.844 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 2748 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.4 MB.
-System memory in use after: 139.6 MB.
-
-Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 3305.
-Total: 3.048300 ms (FindLiveObjects: 0.396900 ms CreateObjectMapping: 0.197900 ms MarkObjects: 1.906500 ms  DeleteObjects: 0.545900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001708 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
 Preloading 1 native plugins for Editor in 0.06 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.834 seconds
+- Completed reload, in  0.802 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.93 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.99 ms, found 1 plugins.
 Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 2737 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 139.8 MB.
-System memory in use after: 138.9 MB.
+Unloading 2742 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 139.2 MB.
+System memory in use after: 137.9 MB.
 
-Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 3308.
-Total: 2.982500 ms (FindLiveObjects: 0.325700 ms CreateObjectMapping: 0.201000 ms MarkObjects: 1.941300 ms  DeleteObjects: 0.513100 ms)
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3291.
+Total: 2.703900 ms (FindLiveObjects: 0.278200 ms CreateObjectMapping: 0.147200 ms MarkObjects: 1.602400 ms  DeleteObjects: 0.675200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 190.753030 seconds.
-  path: Assets/PolygonNature/FX/FX_Models/Materials/ButterflyPipeMat.mat
-  artifactKey: Guid(c8c844a8e8691cc44a6ea7535cbc2f5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonNature/FX/FX_Models/Materials/ButterflyPipeMat.mat using Guid(c8c844a8e8691cc44a6ea7535cbc2f5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97b3769ec326c3d0fdbf762e5ad9bd5a') in 0.217036 seconds
-  Import took 0.242030 seconds .
+  Time since last request: 12.496490 seconds.
+  path: Assets/Audio/M4 Sound.prefab
+  artifactKey: Guid(04d3987f79532174ea75110f337f0337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/M4 Sound.prefab using Guid(04d3987f79532174ea75110f337f0337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ad77f9542689b02a4b01f49034a4785') in 0.037563 seconds
+  Import took 0.059604 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_black_tile.mat
-  artifactKey: Guid(4bd6b42d6a00442ceada91849f3f2101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_black_tile.mat using Guid(4bd6b42d6a00442ceada91849f3f2101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77b444107cfae29a0658a358678c0a27') in 0.011927 seconds
-  Import took 0.043819 seconds .
+  Time since last request: 5.941637 seconds.
+  path: Assets/Audio/M4 Sound.prefab
+  artifactKey: Guid(04d3987f79532174ea75110f337f0337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/M4 Sound.prefab using Guid(04d3987f79532174ea75110f337f0337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a6ec64f34c773e86ad98ccb3840b5f8') in 0.004281 seconds
+  Import took 0.008300 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Thin.ttf
-  artifactKey: Guid(19a9abb883540be48b75b951a927ae03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Thin.ttf using Guid(19a9abb883540be48b75b951a927ae03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb1c1f00614df37048738e87292b7212') in 0.182032 seconds
-  Import took 0.192921 seconds .
+  Time since last request: 3.493319 seconds.
+  path: Assets/Audio/M4 Sound.prefab
+  artifactKey: Guid(04d3987f79532174ea75110f337f0337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/M4 Sound.prefab using Guid(04d3987f79532174ea75110f337f0337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbcf037b198ae82daef3415966ae02a8') in 0.005126 seconds
+  Import took 0.024642 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_flower_yellow.mat
-  artifactKey: Guid(3800000ee00634b308d7bba6fa322605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_flower_yellow.mat using Guid(3800000ee00634b308d7bba6fa322605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2856d18520bd9250fa10ca6b871e4b8') in 0.008194 seconds
-  Import took 0.063634 seconds .
+  Time since last request: 0.623928 seconds.
+  path: Assets/Audio/M4 Sound.prefab
+  artifactKey: Guid(04d3987f79532174ea75110f337f0337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/M4 Sound.prefab using Guid(04d3987f79532174ea75110f337f0337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c84e8c5633e98b8de7408faac9bc1da7') in 0.003116 seconds
+  Import took 0.010293 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_glass.mat
-  artifactKey: Guid(f65cf632c69ce4c729fedd5849a82599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_glass.mat using Guid(f65cf632c69ce4c729fedd5849a82599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdec8a08da37e8383303f33e7fdf0093') in 0.078209 seconds
-  Import took 0.122994 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_plant.mat
-  artifactKey: Guid(93ea3c4263ccb4a7e93465e1085b6da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_plant.mat using Guid(93ea3c4263ccb4a7e93465e1085b6da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cae3c4db35f4343c825b3af7623b249') in 0.008931 seconds
-  Import took 0.053084 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000123 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ResonanceAudioDemo/Materials/cubeRoomEnvMat.mat
-  artifactKey: Guid(20f37271a56304cfea1170a3f2d611bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ResonanceAudioDemo/Materials/cubeRoomEnvMat.mat using Guid(20f37271a56304cfea1170a3f2d611bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5bf093f5c9f38d03ba060c623097883') in 0.010903 seconds
-  Import took 0.044293 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-MediumItalic.ttf
-  artifactKey: Guid(d93c1bc57fdf1ac4dad1bf04fac05464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-MediumItalic.ttf using Guid(d93c1bc57fdf1ac4dad1bf04fac05464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd64fec9f2558f54db4e9ae502edb05c') in 0.078644 seconds
-  Import took 0.082494 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_soap_holder.mat
-  artifactKey: Guid(0dd0b260255d04d45b5f62c490255fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_soap_holder.mat using Guid(0dd0b260255d04d45b5f62c490255fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb8f8c9d47d7acb6c835301e7088fcda') in 0.007739 seconds
-  Import took 0.053500 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_towel_g.mat
-  artifactKey: Guid(b5f0fff0dd45144b79be3340508d85ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_towel_g.mat using Guid(b5f0fff0dd45144b79be3340508d85ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ed897ed9fedeceaefb74da3e76ae82f') in 0.008144 seconds
-  Import took 0.019985 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/PolygonNature/FX/FX_Models/Materials/lambert1.mat
-  artifactKey: Guid(05c2b5e185992534db01b782bf3a3cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonNature/FX/FX_Models/Materials/lambert1.mat using Guid(05c2b5e185992534db01b782bf3a3cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd69906eb4872943ace49d69f2f0b5a6') in 0.011936 seconds
-  Import took 0.015657 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_metal_2.mat
-  artifactKey: Guid(f54e93c187e0e47c7bc2bfa5857d0a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_metal_2.mat using Guid(f54e93c187e0e47c7bc2bfa5857d0a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '570597471a1442a17e6e0f4dc461af8a') in 0.008173 seconds
-  Import took 0.012107 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/ResonanceAudio/Demos/Materials/ResonanceAudioDemo/CubeMaterial.mat
-  artifactKey: Guid(d6df057165bf941a28cc779e40355207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Materials/ResonanceAudioDemo/CubeMaterial.mat using Guid(d6df057165bf941a28cc779e40355207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31f33c163565e84892cb22043a35f0d') in 0.007988 seconds
-  Import took 0.071093 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_toilet_paper.mat
-  artifactKey: Guid(676812e29b331413a96e0bad958aa9af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_toilet_paper.mat using Guid(676812e29b331413a96e0bad958aa9af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2448e80a7dfd7fa4ef308dc7667321a') in 0.007766 seconds
-  Import took 0.074926 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/ResonanceAudio/Demos/Materials/ResonanceAudioDemo/CubeMaterial.mat
-  artifactKey: Guid(d6df057165bf941a28cc779e40355207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Materials/ResonanceAudioDemo/CubeMaterial.mat using Guid(d6df057165bf941a28cc779e40355207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31f33c163565e84892cb22043a35f0d') in 0.005275 seconds
-  Import took 0.008889 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Black.ttf
-  artifactKey: Guid(1062c701058745940ae5dca6219c64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Black.ttf using Guid(1062c701058745940ae5dca6219c64c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e96de19d14fc32ba76102cc70f1cee5') in 0.088202 seconds
-  Import took 0.102047 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_plant_soil.mat
-  artifactKey: Guid(d23b1f5ea62bd4358a11cc0d54489da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_plant_soil.mat using Guid(d23b1f5ea62bd4358a11cc0d54489da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52e211ec1dd12c4b9fe6e9a16090c8a1') in 0.007879 seconds
-  Import took 0.044715 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Regular.ttf
-  artifactKey: Guid(30dc370b164eefc43b95744fc796dad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Regular.ttf using Guid(30dc370b164eefc43b95744fc796dad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c5a708ab968331bb02000997ada1055') in 0.052394 seconds
-  Import took 0.083914 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_houseplant_pot_decor.mat
-  artifactKey: Guid(281e8247842534e00a0453c5863435b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_houseplant_pot_decor.mat using Guid(281e8247842534e00a0453c5863435b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a56b6de4f752eac35d320029e6a39f3') in 0.008054 seconds
-  Import took 0.038563 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000128 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_white_tile.mat
-  artifactKey: Guid(0cac4ec9f58c84586b1cddb2bd7c4083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_white_tile.mat using Guid(0cac4ec9f58c84586b1cddb2bd7c4083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0c9524cbcac4890820cad68b3bd9908') in 0.008387 seconds
-  Import took 0.032778 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cave_grass.mat
-  artifactKey: Guid(d3e2fd9aece6846b085748314a6b39a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cave_grass.mat using Guid(d3e2fd9aece6846b085748314a6b39a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0d1ae9504a8ba0c451e1addd0018ee3') in 0.008572 seconds
-  Import took 0.034622 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_carpet.mat
-  artifactKey: Guid(46e3c8d0e49854f398883a454efa059e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_carpet.mat using Guid(46e3c8d0e49854f398883a454efa059e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bae81f6090e086379b3818ca7547754') in 0.008717 seconds
-  Import took 0.029599 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_glass_b.mat
-  artifactKey: Guid(9433c08297d7b4846bfa9a23dc0b32ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_glass_b.mat using Guid(9433c08297d7b4846bfa9a23dc0b32ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3aad9a69131134d42d8851ca1a7dd73') in 0.007715 seconds
-  Import took 0.036315 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000118 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_glass_y.mat
-  artifactKey: Guid(fe6b365ff425f4e5cbcef15f5d9885f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_glass_y.mat using Guid(fe6b365ff425f4e5cbcef15f5d9885f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d3bc1d380c261a48c593551cf27f02d') in 0.007606 seconds
-  Import took 0.030405 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_roof.mat
-  artifactKey: Guid(f0a9bd86c44de4ffeab19f68d7df70a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_roof.mat using Guid(f0a9bd86c44de4ffeab19f68d7df70a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94a6bbde5910b473fc930300523b9765') in 0.007954 seconds
-  Import took 0.011609 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_glass.mat
-  artifactKey: Guid(72a40ed251ce34be5a43bf6016f05922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_glass.mat using Guid(72a40ed251ce34be5a43bf6016f05922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07c516dc2565a39e465f2ea6e1587e7a') in 0.007645 seconds
-  Import took 0.011526 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cave_rock.mat
-  artifactKey: Guid(973d8541dc522417595019a1226a16e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cave_rock.mat using Guid(973d8541dc522417595019a1226a16e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50e8dd06904aac91c2577294363c4392') in 0.008321 seconds
-  Import took 0.036889 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_ext_walls.mat
-  artifactKey: Guid(d99da44c979c64fcc8478511cc484408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_ext_walls.mat using Guid(d99da44c979c64fcc8478511cc484408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97bc7c7b647b96765729ef29dd1235af') in 0.008607 seconds
-  Import took 0.012086 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000118 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_sink_cabinet.mat
-  artifactKey: Guid(5cf27b1ea52c34fb1b23f25fac49ea61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_sink_cabinet.mat using Guid(5cf27b1ea52c34fb1b23f25fac49ea61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '897b1bbf014ed584f0b8f7474c393548') in 0.007537 seconds
-  Import took 0.020512 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_wood.mat
-  artifactKey: Guid(df7dd9b0ca1c04dfda2e77ff5b9fb2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_wood.mat using Guid(df7dd9b0ca1c04dfda2e77ff5b9fb2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d307e3c9cd4a13a1ae019876edbb6c3') in 0.008429 seconds
-  Import took 0.012562 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_metal_3.mat
-  artifactKey: Guid(da61a4a48d8e04eb8985c9abde303ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_metal_3.mat using Guid(da61a4a48d8e04eb8985c9abde303ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22dda1afb26d7dac19e560da2ca296d9') in 0.007853 seconds
-  Import took 0.011501 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat
-  artifactKey: Guid(31321ba15b8f8eb4c954353edc038b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat using Guid(31321ba15b8f8eb4c954353edc038b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba3edffa4c92ac0bfb49391e51f5d258') in 0.008939 seconds
-  Import took 0.040042 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_glass_oran.mat
-  artifactKey: Guid(3be2449ad6c53475e9b8fa3f59303d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_glass_oran.mat using Guid(3be2449ad6c53475e9b8fa3f59303d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2b505cb85d656501b779aafa1f03f69') in 0.008915 seconds
-  Import took 0.012681 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat
-  artifactKey: Guid(31321ba15b8f8eb4c954353edc038b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat using Guid(31321ba15b8f8eb4c954353edc038b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba3edffa4c92ac0bfb49391e51f5d258') in 0.005775 seconds
-  Import took 0.009489 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_glass_g.mat
-  artifactKey: Guid(51e7e984bc8654394a1d1bcd8d9fac4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_glass_g.mat using Guid(51e7e984bc8654394a1d1bcd8d9fac4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e102e4bf8a4a7b28e4002619e3f1dc23') in 0.008152 seconds
-  Import took 0.011709 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_incense.mat
-  artifactKey: Guid(01a89173ad35646e98b734c21f43195a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_incense.mat using Guid(01a89173ad35646e98b734c21f43195a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9deaf5c7ff462218e9805af38020f6b') in 0.008865 seconds
-  Import took 0.012472 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_toilet_water.mat
-  artifactKey: Guid(9aa7ff8d90f144b7fb1182a4a0b198aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_toilet_water.mat using Guid(9aa7ff8d90f144b7fb1182a4a0b198aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cef7cab8afe9199b917f745cb93c11e8') in 0.008009 seconds
-  Import took 0.011844 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000129 seconds.
-  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/Perfect DOS VGA 437.ttf
-  artifactKey: Guid(74a5091d8707f334b9a5c31ef71a64ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/Perfect DOS VGA 437.ttf using Guid(74a5091d8707f334b9a5c31ef71a64ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fd192aa64b26c4e2f1e0bdfb9736c09') in 0.031592 seconds
-  Import took 0.044683 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_porcelain.mat
-  artifactKey: Guid(240d7e9bbface49c186279829a565c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_porcelain.mat using Guid(240d7e9bbface49c186279829a565c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46fa40d9d5dd83a73297c5827ef46d0b') in 0.008539 seconds
-  Import took 0.019595 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_wall.mat
-  artifactKey: Guid(c8bc0bf1abdfb4f799447f244c280795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_wall.mat using Guid(c8bc0bf1abdfb4f799447f244c280795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b3891f8c3718736371a260925077c56') in 0.007658 seconds
-  Import took 0.015166 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_black_tile.mat
-  artifactKey: Guid(b097d6b1375c84d549431c287627ee1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_black_tile.mat using Guid(b097d6b1375c84d549431c287627ee1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '181fd5b1e5c73c7b5092dcbeeae21d1c') in 0.007780 seconds
-  Import took 0.019638 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000126 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_pillar.mat
-  artifactKey: Guid(fba631252a17a4b14a843901e97fa53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_pillar.mat using Guid(fba631252a17a4b14a843901e97fa53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20d6a349f17fe20f52186a7651bda95e') in 0.007864 seconds
-  Import took 0.022653 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_window_frame.mat
-  artifactKey: Guid(5271e924b2db5427587521b9db8808db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_window_frame.mat using Guid(5271e924b2db5427587521b9db8808db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d34ffe0e1c5700f79ed5b87f3878632') in 0.007838 seconds
-  Import took 0.012528 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000118 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BlackItalic.ttf
-  artifactKey: Guid(f95147a9bab9fe649b8070170fa7ebd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BlackItalic.ttf using Guid(f95147a9bab9fe649b8070170fa7ebd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '961139e7bdae08f66eebf9f23a56c4eb') in 0.030227 seconds
-  Import took 0.034007 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_towel_r.mat
-  artifactKey: Guid(47702aca830a2449eaade142be2fde06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_towel_r.mat using Guid(47702aca830a2449eaade142be2fde06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03e72f5b027323aa9d57cd46023c5de2') in 0.007710 seconds
-  Import took 0.011604 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/PolygonNature/FX/FX_Models/Materials/ButterflyPipeMat.mat
-  artifactKey: Guid(c8c844a8e8691cc44a6ea7535cbc2f5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonNature/FX/FX_Models/Materials/ButterflyPipeMat.mat using Guid(c8c844a8e8691cc44a6ea7535cbc2f5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97b3769ec326c3d0fdbf762e5ad9bd5a') in 0.006016 seconds
-  Import took 0.010307 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000133 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_towel_b.mat
-  artifactKey: Guid(6a4dddfb2e9774db3994b4e8502bfde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_towel_b.mat using Guid(6a4dddfb2e9774db3994b4e8502bfde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a81cf1b60693efb8de55937090b7dc3') in 0.007759 seconds
-  Import took 0.026512 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_glass_door.mat
-  artifactKey: Guid(9cc56dc2f406546678c5570d6233efcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_glass_door.mat using Guid(9cc56dc2f406546678c5570d6233efcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c811ce17a61bf5b2ec936105aead724d') in 0.008417 seconds
-  Import took 0.012297 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000124 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Bold.ttf
-  artifactKey: Guid(3750c318f40cab44a97d3a81beaefeb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Bold.ttf using Guid(3750c318f40cab44a97d3a81beaefeb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b01af5de7666a765b6165e48e955eee') in 0.038839 seconds
-  Import took 0.042790 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000127 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_flower_orange.mat
-  artifactKey: Guid(2f5dc1c1c1b914f148f992350b643c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_flower_orange.mat using Guid(2f5dc1c1c1b914f148f992350b643c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c4b40ed3df7c0e9277bbbd6960aae84') in 0.009328 seconds
-  Import took 0.024742 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_metal_1.mat
-  artifactKey: Guid(e2704b276abb44c18b2bad1e6b99047d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_metal_1.mat using Guid(e2704b276abb44c18b2bad1e6b99047d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80eccc24281f60b63f6e4d2f07c196dd') in 0.008590 seconds
-  Import took 0.019553 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000122 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_soap.mat
-  artifactKey: Guid(e4162fc18422142ca836904fa3bd6e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_soap.mat using Guid(e4162fc18422142ca836904fa3bd6e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c991c2eba4182f3a7007fca2969e4e4') in 0.008116 seconds
-  Import took 0.011685 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000123 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_towel_y.mat
-  artifactKey: Guid(c9099319a7d7b4e27b5280493c7a4187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_towel_y.mat using Guid(c9099319a7d7b4e27b5280493c7a4187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8ab79fc5467a3472646fc473806280e') in 0.008102 seconds
-  Import took 0.011892 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Italic.ttf
-  artifactKey: Guid(c839255fc8f6b4b4d90bf8c1af9f9bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Italic.ttf using Guid(c839255fc8f6b4b4d90bf8c1af9f9bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd392455baf23ddbce1642325a3857fe0') in 0.030391 seconds
-  Import took 0.054410 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-ThinItalic.ttf
-  artifactKey: Guid(b2ea3b3f1765e544b9eb5bd1a93a91ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-ThinItalic.ttf using Guid(b2ea3b3f1765e544b9eb5bd1a93a91ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed6f5aa207ca3575997049fb23529c1e') in 0.014855 seconds
-  Import took 0.031103 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_sanctuary_wall.mat
-  artifactKey: Guid(f3180380965ab4ca89552aab63634d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_sanctuary_wall.mat using Guid(f3180380965ab4ca89552aab63634d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2e7dbf6aae89e46dcbefdbe4e8f25e8') in 0.007860 seconds
-  Import took 0.011651 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000121 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_toilet_hole.mat
-  artifactKey: Guid(b252e97601df94e7d93c97ce1c42505e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_toilet_hole.mat using Guid(b252e97601df94e7d93c97ce1c42505e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07595fe593c18d16eb9bd5dc80cb2fea') in 0.008928 seconds
-  Import took 0.035801 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000124 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_white_tile.mat
-  artifactKey: Guid(8055770ae95564de09bb5c0071cd352f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_cath_white_tile.mat using Guid(8055770ae95564de09bb5c0071cd352f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7292f8bc33e1193d6ceb497c756633e4') in 0.008955 seconds
-  Import took 0.033468 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000127 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_shiny.mat
-  artifactKey: Guid(606d0189b1b064c678aad16c1ac579eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_shiny.mat using Guid(606d0189b1b064c678aad16c1ac579eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e254af09e723a7d3a9ccf1aee26d0512') in 0.008093 seconds
-  Import took 0.021571 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000128 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Medium.ttf
-  artifactKey: Guid(a51a3aebb43ac044989270407476b208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Medium.ttf using Guid(a51a3aebb43ac044989270407476b208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b47578faff44fe5051563a618c2e3ea') in 0.031002 seconds
-  Import took 0.057051 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Light.ttf
-  artifactKey: Guid(2a29e27936eb547458f646f71125b264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Light.ttf using Guid(2a29e27936eb547458f646f71125b264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7ae0192d44bca3e0ebff514dd463ec2') in 0.013499 seconds
-  Import took 0.035051 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000133 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BoldItalic.ttf
-  artifactKey: Guid(dfb97a9307a577a41bcacba34b9a7e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BoldItalic.ttf using Guid(dfb97a9307a577a41bcacba34b9a7e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f911a70093b1d1077b2380c58d19be1') in 0.013922 seconds
-  Import took 0.041648 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-LightItalic.ttf
-  artifactKey: Guid(5e63515167650a541b309ba3bfd4db3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-LightItalic.ttf using Guid(5e63515167650a541b309ba3bfd4db3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7e280615937ef1ecd859adfe510e162') in 0.035184 seconds
-  Import took 0.054590 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001846 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.851 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 2737 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 145.4 MB.
-System memory in use after: 144.6 MB.
-
-Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 3393.
-Total: 3.612500 ms (FindLiveObjects: 0.349800 ms CreateObjectMapping: 0.181300 ms MarkObjects: 2.538000 ms  DeleteObjects: 0.542500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 442.501795 seconds.
-  path: Assets/ResonanceAudio/Editor
-  artifactKey: Guid(7a35851f71c1f4d9e9d0497a6ec1589f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Editor using Guid(7a35851f71c1f4d9e9d0497a6ec1589f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '632cf069d7cc0c74e127bb5534968320') in 0.009325 seconds
-  Import took 0.045310 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.543095 seconds.
-  path: Assets/ResonanceAudio/Plugins
-  artifactKey: Guid(9049667ca1ea54b1fb1bdd54e1e7440c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Plugins using Guid(9049667ca1ea54b1fb1bdd54e1e7440c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07e3ce9a5cb03a03cddd50ea5c244ee1') in 0.027998 seconds
-  Import took 0.032213 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.411641 seconds.
-  path: Assets/ResonanceAudio/Shaders
-  artifactKey: Guid(7ee264c8e6a6d4f1bafbd60e7edc4d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Shaders using Guid(7ee264c8e6a6d4f1bafbd60e7edc4d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05047d3ed70740cde1de20a7093880a8') in 0.005565 seconds
-  Import took 0.032154 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001784 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.825 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 2737 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 145.5 MB.
-System memory in use after: 144.7 MB.
-
-Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 3396.
-Total: 2.923100 ms (FindLiveObjects: 0.364300 ms CreateObjectMapping: 0.165100 ms MarkObjects: 1.853000 ms  DeleteObjects: 0.539800 ms)
+  Time since last request: 7.039507 seconds.
+  path: Assets/Audio/M4 Reload Sound.prefab
+  artifactKey: Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/M4 Reload Sound.prefab using Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da3a59f0acfc0628a619bebd5446402d') in 0.026422 seconds
+  Import took 0.040779 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

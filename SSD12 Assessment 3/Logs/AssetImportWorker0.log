@@ -1,0 +1,154 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 32568 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Unity Pojects\2020.2.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Unity Pojects/SSD12 A3/SSD12 Assessment 3
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+61212
+Successfully changed project path to: D:/Unity Pojects/SSD12 A3/SSD12 Assessment 3
+D:/Unity Pojects/SSD12 A3/SSD12 Assessment 3
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 69.08 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.87 ms.
+Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
+[Subsystems] Discovering subsystems at path D:/Unity Pojects/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity Pojects/SSD12 A3/SSD12 Assessment 3/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 (ID=0x2206)
+    Vendor:   
+    VRAM:     10078 MB
+    Driver:   30.0.15.1165
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'D:/Unity Pojects/2020.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity Pojects/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity Pojects/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56540
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity Pojects/2020.2.1f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: D:/Unity Pojects/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: D:/Unity Pojects/2020.2.1f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.001869 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 75.80 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.310 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001727 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 70.06 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.449 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2867 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 145.4 MB.
+System memory in use after: 144.1 MB.
+
+Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 3288.
+Total: 2.680000 ms (FindLiveObjects: 0.312900 ms CreateObjectMapping: 0.180200 ms MarkObjects: 1.530800 ms  DeleteObjects: 0.655500 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Audio/M4 Reload Sound.prefab
+  artifactKey: Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/M4 Reload Sound.prefab using Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a29eecc6acee0f2a21282678a25ec204') in 0.033157 seconds
+  Import took 0.057973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.647434 seconds.
+  path: Assets/Audio/M4 Reload Sound.prefab
+  artifactKey: Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/M4 Reload Sound.prefab using Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6384e82ef41350dbcad2e19efe672219') in 0.004351 seconds
+  Import took 0.027358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.953013 seconds.
+  path: Assets/Audio/M4 Reload Sound.prefab
+  artifactKey: Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/M4 Reload Sound.prefab using Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '849210046ba0550f7b1120ad5c1da8ac') in 0.004392 seconds
+  Import took 0.027856 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.417357 seconds.
+  path: Assets/Audio/M4 Reload Sound.prefab
+  artifactKey: Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/M4 Reload Sound.prefab using Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9711fa2463828df098b263f9ef70eb3a') in 0.004553 seconds
+  Import took 0.016057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.434166 seconds.
+  path: Assets/Audio/M4 Reload Sound.prefab
+  artifactKey: Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/M4 Reload Sound.prefab using Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a30db09138535d2085addf03338c399') in 0.003616 seconds
+  Import took 0.044677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.954502 seconds.
+  path: Assets/Audio/M4 Reload Sound.prefab
+  artifactKey: Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/M4 Reload Sound.prefab using Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e30f513367ea4246f812e4561cfc242') in 0.003375 seconds
+  Import took 0.025389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.208519 seconds.
+  path: Assets/Audio/M4 Reload Sound.prefab
+  artifactKey: Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/M4 Reload Sound.prefab using Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8507240e7c1810b08331b617dac3a181') in 0.003546 seconds
+  Import took 0.007467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.747869 seconds.
+  path: Assets/Audio/M4 Reload Sound.prefab
+  artifactKey: Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/M4 Reload Sound.prefab using Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af8662af2bd7f4424026a9fbe4a36347') in 0.003803 seconds
+  Import took 0.045079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.203202 seconds.
+  path: Assets/Audio/M4 Reload Sound.prefab
+  artifactKey: Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/M4 Reload Sound.prefab using Guid(db5b18d4a79b78f42a8f6d28d2ee7436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad835d464d5bcb135e6d26636088945e') in 0.003229 seconds
+  Import took 0.030176 seconds .
+
