@@ -679,14 +679,14 @@ MonoBehaviour:
   itemName: Railgun
   itemIcon: {fileID: 0}
   useCooldown: 1
-  drawTime: 1
+  drawTime: 0.6
   baseTransform: {fileID: 3327213409682195278}
   forwardTransform: {fileID: 3992044364234762154}
   animatorController: {fileID: 9100000, guid: 6025b101153dc2d4190912fdf57e0dfd, type: 2}
   avatar: {fileID: 9000000, guid: e7463bdf4ce1168458f8e8ed4e1fe9b7, type: 3}
   itemSwingAmount: 0.1
   itemRecovery_kP: 0.08
-  useCameraShake: 1
+  useCameraShake: 0.4
   itemSwayMultiplier: 0.15
   user: {fileID: 0}
   recoilRecovery_kP: 0.3
@@ -695,17 +695,17 @@ MonoBehaviour:
   spreadAmountADS: 0
   numberOfProjectiles: 1
   hitmarkerPosition: {x: 0, y: -0.5, z: 50}
-  projectile: {fileID: 4377690933116751623, guid: bbaccb6f133c0804a97e225c4e3af0a4, type: 3}
+  projectile: {fileID: 4377690933116751623, guid: 5311c95dfcf131346a1dbc50ca5fd477, type: 3}
   useAudio: {fileID: 6778009828127052570, guid: 04d3987f79532174ea75110f337f0337, type: 3}
-  useEffect: {fileID: 5121095083644478753, guid: 337a4fcea1c236d4a9ed9b4645c19b9b, type: 3}
+  useEffect: {fileID: 6385952880474491596, guid: 46fef92c83577ea49985d5412c750360, type: 3}
   casing: {fileID: 5121095083644478753, guid: 337a4fcea1c236d4a9ed9b4645c19b9b, type: 3}
   barrelPoint: {fileID: 3992044364234762154}
   casingPoint: {fileID: 8930966932752619365}
   chambered: 0
   useAnimationTrigger: 0
-  gunRecoil: {x: 0.3, y: -0.7, z: -0.015}
-  aimRecoil: {x: 0.2, y: 0.3, z: 0}
-  positionCoefficients: {x: 0.002, y: -0.005, z: 0}
+  gunRecoil: {x: 0.2, y: -0.7, z: -0.024}
+  aimRecoil: {x: 0.1, y: 0.1, z: 0}
+  positionCoefficients: {x: 0.002, y: -0.001, z: 0}
   itemRecovery_kP_ads: 0.3
   cooldown: 0.09
   maxAmmo: 30
@@ -755,7 +755,7 @@ MonoBehaviour:
   weaponRaiseCoefficient: 500
   distanceMin: 0.8
   weaponDrawRaiseDownCoeff: 0.005
-  projectileSpeed: 12
+  projectileSpeed: 5
   projectileDamage: 23
   projectileGravity: 0.004
   deformationSize: 0.3

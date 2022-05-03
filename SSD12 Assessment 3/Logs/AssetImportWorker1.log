@@ -1043,3 +1043,1463 @@ Received Import Request.
 Start importing Assets/Bullet 1.prefab using Guid(5311c95dfcf131346a1dbc50ca5fd477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca9b91423a0ac189b600fc56277ffb32') in 0.131927 seconds
   Import took 0.136096 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 411.656672 seconds.
+  path: Assets/PlasmaBullet.prefab
+  artifactKey: Guid(5311c95dfcf131346a1dbc50ca5fd477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlasmaBullet.prefab using Guid(5311c95dfcf131346a1dbc50ca5fd477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62bbb9cadfd260b18b32dc62e41bc73f') in 0.012102 seconds
+  Import took 0.016872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.458900 seconds.
+  path: Assets/PlasmaBullet.prefab
+  artifactKey: Guid(5311c95dfcf131346a1dbc50ca5fd477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlasmaBullet.prefab using Guid(5311c95dfcf131346a1dbc50ca5fd477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92e831631b9c5ac3bf993f1dc9def91b') in 0.010239 seconds
+  Import took 0.014070 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.876868 seconds.
+  path: Assets/PlasmaBullet.prefab
+  artifactKey: Guid(5311c95dfcf131346a1dbc50ca5fd477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlasmaBullet.prefab using Guid(5311c95dfcf131346a1dbc50ca5fd477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0127b0cdc474e0c990c24457e794fa35') in 0.013656 seconds
+  Import took 0.017812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.576846 seconds.
+  path: Assets/Materials/PlasmaBullet.mat
+  artifactKey: Guid(98839d7a7f57e314191dfec8096986b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/PlasmaBullet.mat using Guid(98839d7a7f57e314191dfec8096986b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ab76023be534a859d6f99f8c98caf49') in 0.019259 seconds
+  Import took 0.024008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 362.879785 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00aed3e0faa7b4bdddcf51e8040fa2ef') in 0.034128 seconds
+  Import took 0.039948 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001795 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.832 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.1 MB.
+System memory in use after: 155.9 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3613.
+Total: 3.439200 ms (FindLiveObjects: 0.287100 ms CreateObjectMapping: 0.124200 ms MarkObjects: 2.179300 ms  DeleteObjects: 0.847800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.231837 seconds.
+  path: Assets/Materials/PlasmaBullet.mat
+  artifactKey: Guid(98839d7a7f57e314191dfec8096986b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/PlasmaBullet.mat using Guid(98839d7a7f57e314191dfec8096986b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2f0130afa4d237ed71a0de2ab9368bb') in 0.145687 seconds
+  Import took 0.149945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.885841 seconds.
+  path: Assets/Materials/PlasmaBullet.mat
+  artifactKey: Guid(98839d7a7f57e314191dfec8096986b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/PlasmaBullet.mat using Guid(98839d7a7f57e314191dfec8096986b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2f0130afa4d237ed71a0de2ab9368bb') in 0.006047 seconds
+  Import took 0.009844 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001735 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.870 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.2 MB.
+System memory in use after: 156.0 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3652.
+Total: 3.587300 ms (FindLiveObjects: 0.460600 ms CreateObjectMapping: 0.138700 ms MarkObjects: 2.203100 ms  DeleteObjects: 0.783900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.828520 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05e692be4b30d129cabfcee862ca72ce') in 0.157291 seconds
+  Import took 0.162803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.511712 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05e692be4b30d129cabfcee862ca72ce') in 0.015726 seconds
+  Import took 0.020515 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001890 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.833 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.4 MB.
+System memory in use after: 156.2 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3691.
+Total: 3.627300 ms (FindLiveObjects: 0.461300 ms CreateObjectMapping: 0.198900 ms MarkObjects: 2.134300 ms  DeleteObjects: 0.831700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.388847 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d9665a0874dcaf81acd1e9cf32111eb') in 0.144334 seconds
+  Import took 0.149423 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001872 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.836 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.5 MB.
+System memory in use after: 156.3 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3730.
+Total: 4.623000 ms (FindLiveObjects: 0.464600 ms CreateObjectMapping: 0.381700 ms MarkObjects: 2.935800 ms  DeleteObjects: 0.840300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.782065 seconds.
+  path: Assets/Materials/PlasmaBullet.mat
+  artifactKey: Guid(98839d7a7f57e314191dfec8096986b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/PlasmaBullet.mat using Guid(98839d7a7f57e314191dfec8096986b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a977e890a45bfe8f073468e97a9d3f03') in 0.134074 seconds
+  Import took 0.138380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.700230 seconds.
+  path: Assets/Materials/PlasmaBullet.mat
+  artifactKey: Guid(98839d7a7f57e314191dfec8096986b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/PlasmaBullet.mat using Guid(98839d7a7f57e314191dfec8096986b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a977e890a45bfe8f073468e97a9d3f03') in 0.007276 seconds
+  Import took 0.010985 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001700 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.833 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.6 MB.
+System memory in use after: 156.4 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3769.
+Total: 3.902800 ms (FindLiveObjects: 0.589400 ms CreateObjectMapping: 0.201600 ms MarkObjects: 2.307000 ms  DeleteObjects: 0.803500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 178.440569 seconds.
+  path: Assets/Materials/PlasmaBullet.mat
+  artifactKey: Guid(98839d7a7f57e314191dfec8096986b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/PlasmaBullet.mat using Guid(98839d7a7f57e314191dfec8096986b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91fec180b2f356cb5e162d937f784d20') in 0.131002 seconds
+  Import took 0.135462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.489131 seconds.
+  path: Assets/Large MuzzleFlash.prefab
+  artifactKey: Guid(a1344b84848f0764fb31259fb9f8c29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Large MuzzleFlash.prefab using Guid(a1344b84848f0764fb31259fb9f8c29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5177e04801fa30395ada2759436e91d') in 0.012862 seconds
+  Import took 0.017130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/MuzzleFlash.prefab
+  artifactKey: Guid(ac68d76bcbbc7714ea0ab1b911939ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MuzzleFlash.prefab using Guid(ac68d76bcbbc7714ea0ab1b911939ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d5be625985731e255c418dd7597027') in 0.006076 seconds
+  Import took 0.010087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/Large MuzzleFlash.prefab
+  artifactKey: Guid(a1344b84848f0764fb31259fb9f8c29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Large MuzzleFlash.prefab using Guid(a1344b84848f0764fb31259fb9f8c29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5177e04801fa30395ada2759436e91d') in 0.003295 seconds
+  Import took 0.007307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/MuzzleFlash.prefab
+  artifactKey: Guid(ac68d76bcbbc7714ea0ab1b911939ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MuzzleFlash.prefab using Guid(ac68d76bcbbc7714ea0ab1b911939ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d5be625985731e255c418dd7597027') in 0.003292 seconds
+  Import took 0.007519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.045317 seconds.
+  path: Assets/Large MuzzleFlash 1.prefab
+  artifactKey: Guid(3f5ab01a6036faa4dbffd152681faa1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Large MuzzleFlash 1.prefab using Guid(3f5ab01a6036faa4dbffd152681faa1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aad43dafb2e78f00aa91872f9c6247a') in 0.006169 seconds
+  Import took 0.010481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/MuzzleFlash 1.prefab
+  artifactKey: Guid(58947cf1a3c41c94ba7805aaed5a655d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MuzzleFlash 1.prefab using Guid(58947cf1a3c41c94ba7805aaed5a655d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e1ccb8ca698b87524061ede175e8a43') in 0.006117 seconds
+  Import took 0.010181 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.513245 seconds.
+  path: Assets/MuzzleFlash.prefab
+  artifactKey: Guid(ac68d76bcbbc7714ea0ab1b911939ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MuzzleFlash.prefab using Guid(ac68d76bcbbc7714ea0ab1b911939ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '581bdc0a35ef57e044492d5bc0fd13f4') in 0.003672 seconds
+  Import took 0.007693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.435845 seconds.
+  path: Assets/MuzzleFlash.prefab
+  artifactKey: Guid(ac68d76bcbbc7714ea0ab1b911939ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MuzzleFlash.prefab using Guid(ac68d76bcbbc7714ea0ab1b911939ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb407dd0fcf6053ce4c8357bf48e959d') in 0.003565 seconds
+  Import took 0.007682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.983379 seconds.
+  path: Assets/MuzzleFlash.prefab
+  artifactKey: Guid(ac68d76bcbbc7714ea0ab1b911939ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MuzzleFlash.prefab using Guid(ac68d76bcbbc7714ea0ab1b911939ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '075e3f9042833e4c382502edfdf4cddf') in 0.003864 seconds
+  Import took 0.014124 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.014872 seconds.
+  path: Assets/MuzzleFlash.prefab
+  artifactKey: Guid(ac68d76bcbbc7714ea0ab1b911939ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MuzzleFlash.prefab using Guid(ac68d76bcbbc7714ea0ab1b911939ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d99e1dea13786bc10018facd14d91c5') in 0.004028 seconds
+  Import took 0.008840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 151.347537 seconds.
+  path: Assets/Main Scene.unity
+  artifactKey: Guid(33724ef6a08bd94458f2697c2b47e87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Main Scene.unity using Guid(33724ef6a08bd94458f2697c2b47e87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb2fdf4456bb0f2063fd249c6261a4be') in 0.004805 seconds
+  Import took 0.008774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.991261 seconds.
+  path: Assets/MuzzleFlash 1.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MuzzleFlash 1.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e259662072713ee6a0deb34468f66007') in 0.003391 seconds
+  Import took 0.007432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.303535 seconds.
+  path: Assets/Plasma Muzzleflash.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plasma Muzzleflash.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f82954df37a1483ef347913d94bccbdb') in 0.006004 seconds
+  Import took 0.029379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.969958 seconds.
+  path: Assets/Effects
+  artifactKey: Guid(332164ce5117bb74d90b3ba57ee72514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects using Guid(332164ce5117bb74d90b3ba57ee72514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc05bfe70f4700ffbb467c5a9e376c1b') in 0.004009 seconds
+  Import took 0.025642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.481729 seconds.
+  path: Assets/Effects/Plasma Muzzleflash.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '526a190fb03d31e07e44e0eee5d4d380') in 0.006272 seconds
+  Import took 0.026007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.161855 seconds.
+  path: Assets/Effects/Plasma Muzzleflash.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10597ee80bf94266759af2e925879bb4') in 0.003465 seconds
+  Import took 0.007477 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.851398 seconds.
+  path: Assets/Effects/Plasma Muzzleflash.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '489f423fbefcf1c13386f0e52bf77dfa') in 0.003490 seconds
+  Import took 0.007762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.655019 seconds.
+  path: Assets/Effects/Plasma Muzzleflash.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acb9d39a0714422530d9293be264ee6c') in 0.003593 seconds
+  Import took 0.014211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.397784 seconds.
+  path: Assets/Effects/Plasma Muzzleflash.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8996b22be7d0a8e3595fbcda08137ebd') in 0.003354 seconds
+  Import took 0.007324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.810770 seconds.
+  path: Assets/Effects/Plasma Muzzleflash.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63ea70974ab8fbcb1024472584ac6e7e') in 0.003459 seconds
+  Import took 0.007966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.412770 seconds.
+  path: Assets/Effects/Plasma Muzzleflash.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a103ed79a0e6ccb3580b636934985ce6') in 0.003174 seconds
+  Import took 0.007064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.034861 seconds.
+  path: Assets/Effects/Plasma Muzzleflash.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98cdf49a2a0646c24b8686c913d1df47') in 0.003178 seconds
+  Import took 0.007201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.231439 seconds.
+  path: Assets/Effects/Plasma Muzzleflash.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8316a35f5a7753f43533fc311e11b3e9') in 0.003612 seconds
+  Import took 0.024673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.644269 seconds.
+  path: Assets/Effects/Plasma Muzzleflash.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3bad70f526c0870b48503310fb3e724') in 0.003328 seconds
+  Import took 0.007628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.967831 seconds.
+  path: Assets/Effects/Plasma Muzzleflash.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39653d91e00e0a0c207066992636b9ef') in 0.004053 seconds
+  Import took 0.009037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.121901 seconds.
+  path: Assets/Materials/MuzzleFlash.mat
+  artifactKey: Guid(573ed5b92b5d4cb41877ada1427c4fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/MuzzleFlash.mat using Guid(573ed5b92b5d4cb41877ada1427c4fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01534a1fff373b460dd6f6e6201acbf7') in 0.019585 seconds
+  Import took 0.036250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.527978 seconds.
+  path: Assets/Effects/Plasma Muzzleflash.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1398b7a5b0b494f5d5799101981dbcfe') in 0.003325 seconds
+  Import took 0.011631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.570163 seconds.
+  path: Assets/Materials/Plasma Muzzleflash.mat
+  artifactKey: Guid(b453149106712284b92be82d1b3ab183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Plasma Muzzleflash.mat using Guid(b453149106712284b92be82d1b3ab183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c8980857b4e232b2f57b71a2c66ace9') in 0.007094 seconds
+  Import took 0.025246 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001685 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.812 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.8 MB.
+System memory in use after: 156.6 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3809.
+Total: 3.306300 ms (FindLiveObjects: 0.334400 ms CreateObjectMapping: 0.130800 ms MarkObjects: 2.067400 ms  DeleteObjects: 0.772900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 151.289224 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c073e1e08e55f7223399cfba3844abc9') in 0.152911 seconds
+  Import took 0.158770 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001676 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.831 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.9 MB.
+System memory in use after: 156.7 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3848.
+Total: 3.163700 ms (FindLiveObjects: 0.312700 ms CreateObjectMapping: 0.125500 ms MarkObjects: 1.946800 ms  DeleteObjects: 0.777900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.467868 seconds.
+  path: Assets/Effects/Plasma Muzzleflash.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bddcb0e560bac24b724aa16a668d615') in 0.031891 seconds
+  Import took 0.036129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.180280 seconds.
+  path: Assets/Effects/Plasma Muzzleflash.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c4575321e0eabbe6fdcea65b0a554c7') in 0.003692 seconds
+  Import took 0.021734 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001670 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.811 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.9 MB.
+System memory in use after: 156.7 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3851.
+Total: 3.698000 ms (FindLiveObjects: 0.415700 ms CreateObjectMapping: 0.130600 ms MarkObjects: 2.323600 ms  DeleteObjects: 0.827400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 128.444921 seconds.
+  path: Assets/Effects/Plasma Muzzleflash.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67f48891085e8cd69abbf6639b0e4934') in 0.034209 seconds
+  Import took 0.044262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.259302 seconds.
+  path: Assets/Effects/Plasma Muzzleflash.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b48838f6745b3487e0d5cfffc921ae1d') in 0.003309 seconds
+  Import took 0.007302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.798469 seconds.
+  path: Assets/Effects/Plasma Muzzleflash.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02694618a696dba700fcd8ef189ae874') in 0.003219 seconds
+  Import took 0.029039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.239509 seconds.
+  path: Assets/Effects/Plasma Muzzleflash.prefab
+  artifactKey: Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash.prefab using Guid(46fef92c83577ea49985d5412c750360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5616fb6bb62dfe0b05b88d38231119c4') in 0.003364 seconds
+  Import took 0.031456 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001767 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.842 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.9 MB.
+System memory in use after: 156.7 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3854.
+Total: 3.414300 ms (FindLiveObjects: 0.322900 ms CreateObjectMapping: 0.152700 ms MarkObjects: 2.126300 ms  DeleteObjects: 0.811800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 208.480854 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c30718088d4a057e987ff272a7af017') in 0.155715 seconds
+  Import took 0.180692 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001634 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.815 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.1 MB.
+System memory in use after: 156.9 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3893.
+Total: 3.921400 ms (FindLiveObjects: 0.342600 ms CreateObjectMapping: 0.121300 ms MarkObjects: 2.592000 ms  DeleteObjects: 0.864600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.538796 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd33446d3d9574838a31cfbb437170e36') in 0.139222 seconds
+  Import took 0.157846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.489442 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86e01aecf28bce98b3f2a702a936ebc7') in 0.019522 seconds
+  Import took 0.024914 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001802 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.802 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.2 MB.
+System memory in use after: 157.0 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3932.
+Total: 4.235400 ms (FindLiveObjects: 0.343400 ms CreateObjectMapping: 0.124300 ms MarkObjects: 2.871200 ms  DeleteObjects: 0.895500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.471583 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f88305d359158368684b5ad791ab368') in 0.153098 seconds
+  Import took 0.179401 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.764496 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6194be384dbff6520ed3fb839e8019b') in 0.020133 seconds
+  Import took 0.045278 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001785 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.807 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.3 MB.
+System memory in use after: 157.1 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3971.
+Total: 3.899700 ms (FindLiveObjects: 0.359700 ms CreateObjectMapping: 0.156100 ms MarkObjects: 2.475800 ms  DeleteObjects: 0.907300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.183353 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8dce5d855b484ece7984617330addbf') in 0.150310 seconds
+  Import took 0.156535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.980346 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8dce5d855b484ece7984617330addbf') in 0.016513 seconds
+  Import took 0.021671 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002128 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.824 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.5 MB.
+System memory in use after: 157.3 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4010.
+Total: 4.644500 ms (FindLiveObjects: 0.371100 ms CreateObjectMapping: 0.117300 ms MarkObjects: 2.945500 ms  DeleteObjects: 1.210000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001892 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.867 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.5 MB.
+System memory in use after: 157.3 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4013.
+Total: 3.536400 ms (FindLiveObjects: 0.382700 ms CreateObjectMapping: 0.165900 ms MarkObjects: 2.143700 ms  DeleteObjects: 0.843100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 228.659519 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '491d0d22bd2cd8f1d5b43fde794182eb') in 0.157491 seconds
+  Import took 0.163062 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001862 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.809 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.6 MB.
+System memory in use after: 157.4 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4052.
+Total: 4.119900 ms (FindLiveObjects: 0.358400 ms CreateObjectMapping: 0.153400 ms MarkObjects: 2.781200 ms  DeleteObjects: 0.825700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.877196 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13ce46ad8ab38270b6c7110498b71b50') in 0.141342 seconds
+  Import took 0.169986 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001741 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.884 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.7 MB.
+System memory in use after: 157.5 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4091.
+Total: 3.667500 ms (FindLiveObjects: 0.427100 ms CreateObjectMapping: 0.187200 ms MarkObjects: 2.232000 ms  DeleteObjects: 0.820300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 239.002251 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36fc08d1b8a6ee488cee0d0bb96de58a') in 0.157320 seconds
+  Import took 0.164498 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001764 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.814 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.9 MB.
+System memory in use after: 157.6 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4130.
+Total: 4.074000 ms (FindLiveObjects: 0.327200 ms CreateObjectMapping: 0.130600 ms MarkObjects: 2.773300 ms  DeleteObjects: 0.842200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.111491 seconds.
+  path: Assets/Effects/Plasma Muzzleflash 1.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash 1.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ec81f98ab01f7f2de29e3a8a793c4c4') in 0.034389 seconds
+  Import took 0.039204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000527 seconds.
+  path: Assets/Effects/Plasma Muzzleflash 1.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Muzzleflash 1.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ec81f98ab01f7f2de29e3a8a793c4c4') in 0.003451 seconds
+  Import took 0.008027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.845238 seconds.
+  path: Assets/Effects/Bullet Impact.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Bullet Impact.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cbf98f29d11c05fb6a2a98078ec5afd') in 0.006091 seconds
+  Import took 0.027957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.210236 seconds.
+  path: Assets/PlasmaBullet.prefab
+  artifactKey: Guid(5311c95dfcf131346a1dbc50ca5fd477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlasmaBullet.prefab using Guid(5311c95dfcf131346a1dbc50ca5fd477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d16a7cb8c4349373a2f074fd79613f9') in 0.121701 seconds
+  Import took 0.126763 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001780 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.840 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 159.0 MB.
+System memory in use after: 157.8 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4169.
+Total: 3.460700 ms (FindLiveObjects: 0.373300 ms CreateObjectMapping: 0.142400 ms MarkObjects: 2.137400 ms  DeleteObjects: 0.806800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.731526 seconds.
+  path: Assets/Effects/Plasma Impact.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Impact.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb6cdc039d53646d7236716a7fcb0dd9') in 0.033052 seconds
+  Import took 0.037432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.866948 seconds.
+  path: Assets/Effects/Plasma Impact.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Impact.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfc2656530fc77b918c3d45d71bda3a5') in 0.003348 seconds
+  Import took 0.007667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.128724 seconds.
+  path: Assets/Effects/Plasma Impact.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Impact.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffd1670c4692b4bfcef9b12b15ad4b59') in 0.003259 seconds
+  Import took 0.007877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.481510 seconds.
+  path: Assets/Effects/Plasma Impact.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Impact.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e567cb124d0944a8a589a8cfb9f66653') in 0.003744 seconds
+  Import took 0.008479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.941536 seconds.
+  path: Assets/Effects/Plasma Impact.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Impact.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b47bb2eaea59d2498bc5e0340f7e035b') in 0.003218 seconds
+  Import took 0.007304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.519191 seconds.
+  path: Assets/Effects/Plasma Impact.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Impact.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9cf2975199263a0055b7ae13bb8955e') in 0.003420 seconds
+  Import took 0.007917 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001850 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.854 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 159.0 MB.
+System memory in use after: 157.8 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4172.
+Total: 3.820000 ms (FindLiveObjects: 0.527300 ms CreateObjectMapping: 0.158200 ms MarkObjects: 2.312400 ms  DeleteObjects: 0.820800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.709601 seconds.
+  path: Assets/Effects/Plasma Impact.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Impact.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '468c126e1e6f90cad11898c4447d5994') in 0.030719 seconds
+  Import took 0.034928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.112633 seconds.
+  path: Assets/Effects/Plasma Impact.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Impact.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae0fefa867e28a039235e76fd25453a') in 0.003599 seconds
+  Import took 0.019934 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002160 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.838 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 159.0 MB.
+System memory in use after: 157.8 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4175.
+Total: 4.572000 ms (FindLiveObjects: 0.736100 ms CreateObjectMapping: 0.186300 ms MarkObjects: 2.696800 ms  DeleteObjects: 0.952300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.222588 seconds.
+  path: Assets/Effects/Plasma Impact.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Impact.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ab09479a8b438c00a05f75f0a4e365c') in 0.032440 seconds
+  Import took 0.037228 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.204192 seconds.
+  path: Assets/Effects/Plasma Impact.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Impact.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ab09479a8b438c00a05f75f0a4e365c') in 0.003634 seconds
+  Import took 0.007498 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001793 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.837 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 159.0 MB.
+System memory in use after: 157.8 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4178.
+Total: 3.694400 ms (FindLiveObjects: 0.412100 ms CreateObjectMapping: 0.162100 ms MarkObjects: 2.286000 ms  DeleteObjects: 0.833100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 123.497356 seconds.
+  path: Assets/Effects/Plasma Impact.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Impact.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba19c22ea70e20fb945074d1dd780882') in 0.034285 seconds
+  Import took 0.042503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.139493 seconds.
+  path: Assets/Effects/Plasma Impact.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Impact.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad471bbae8ac8b06fc300a24bc15965c') in 0.003683 seconds
+  Import took 0.033238 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001819 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.804 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 159.0 MB.
+System memory in use after: 157.8 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4181.
+Total: 4.302600 ms (FindLiveObjects: 0.391500 ms CreateObjectMapping: 0.140700 ms MarkObjects: 2.953600 ms  DeleteObjects: 0.816000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.169982 seconds.
+  path: Assets/Effects/Plasma Impact.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Impact.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8f28a5980cc14e7ed32f3064ca990fe') in 0.032204 seconds
+  Import took 0.056092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.580607 seconds.
+  path: Assets/Effects/Plasma Impact.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Impact.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8f28a5980cc14e7ed32f3064ca990fe') in 0.003891 seconds
+  Import took 0.007642 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001763 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.846 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 159.0 MB.
+System memory in use after: 157.8 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4184.
+Total: 3.794900 ms (FindLiveObjects: 0.350400 ms CreateObjectMapping: 0.137200 ms MarkObjects: 2.472500 ms  DeleteObjects: 0.833600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 125.231367 seconds.
+  path: Assets/Effects/Plasma Impact.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Impact.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0c8bfc182d782bd42714e36c07fc609') in 0.032179 seconds
+  Import took 0.053796 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001863 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.865 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 159.0 MB.
+System memory in use after: 157.8 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4187.
+Total: 3.717400 ms (FindLiveObjects: 0.399200 ms CreateObjectMapping: 0.166000 ms MarkObjects: 2.274800 ms  DeleteObjects: 0.876800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.587286 seconds.
+  path: Assets/Effects/Plasma Impact.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Impact.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fd6573c99c39efae9a781ea8baee437') in 0.035301 seconds
+  Import took 0.040054 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001786 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.814 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 159.0 MB.
+System memory in use after: 157.8 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4190.
+Total: 5.229400 ms (FindLiveObjects: 0.502300 ms CreateObjectMapping: 0.182800 ms MarkObjects: 3.626700 ms  DeleteObjects: 0.916700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.433198 seconds.
+  path: Assets/Effects/Plasma Impact.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Impact.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f0302b53537562806ffc036a5a648e') in 0.038405 seconds
+  Import took 0.043682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.897576 seconds.
+  path: Assets/Effects/Plasma Impact.prefab
+  artifactKey: Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/Plasma Impact.prefab using Guid(9aca35fe170eca34fb95a72c3c3da8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff5c85ecef3b265eeadffe2c520b6497') in 0.003278 seconds
+  Import took 0.007256 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001699 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.892 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 159.0 MB.
+System memory in use after: 157.8 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4193.
+Total: 3.905400 ms (FindLiveObjects: 0.444900 ms CreateObjectMapping: 0.200900 ms MarkObjects: 2.427400 ms  DeleteObjects: 0.831300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 62.084242 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6448d0f51e4d841be1efe3bbe52e6db1') in 0.147550 seconds
+  Import took 0.154359 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001910 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.869 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 159.1 MB.
+System memory in use after: 157.9 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4232.
+Total: 4.451700 ms (FindLiveObjects: 0.416900 ms CreateObjectMapping: 0.190700 ms MarkObjects: 2.990600 ms  DeleteObjects: 0.852600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001716 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.839 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 159.1 MB.
+System memory in use after: 157.9 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4235.
+Total: 4.922600 ms (FindLiveObjects: 0.541000 ms CreateObjectMapping: 0.172400 ms MarkObjects: 3.282500 ms  DeleteObjects: 0.925300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 143.394251 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aea7a8b8a728ccacb13f5b52f60dcb1') in 0.151265 seconds
+  Import took 0.156835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.472993 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '371d0d97f51c90bd693fdb0acd9a39fe') in 0.017625 seconds
+  Import took 0.023035 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001948 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.847 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 159.3 MB.
+System memory in use after: 158.2 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4274.
+Total: 4.121000 ms (FindLiveObjects: 0.540400 ms CreateObjectMapping: 0.165300 ms MarkObjects: 2.547000 ms  DeleteObjects: 0.867100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.721661 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab9b43d0ceb79d6baeee94f2caf6da41') in 0.152783 seconds
+  Import took 0.158499 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.197901 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab9b43d0ceb79d6baeee94f2caf6da41') in 0.020647 seconds
+  Import took 0.025795 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001669 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.868 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Unloading 2741 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 159.5 MB.
+System memory in use after: 158.3 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4313.
+Total: 3.587600 ms (FindLiveObjects: 0.378900 ms CreateObjectMapping: 0.149400 ms MarkObjects: 2.254200 ms  DeleteObjects: 0.804600 ms)
+
