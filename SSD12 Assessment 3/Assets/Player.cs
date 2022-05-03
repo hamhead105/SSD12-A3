@@ -94,7 +94,7 @@ public class Player : Human
             if (InputEnabled) RegisterInputs();
             if (InputEnabled) PlayerMouseAxisInputs();
             UpdateCamera();
-            UpdateAnimations();
+           
         }
         PlayerMiscInputs();
     }
@@ -102,7 +102,7 @@ public class Player : Human
     public void LateUpdate()
     {
         if (!Active) return;
-
+        UpdateAnimations();
         UpdateFeetIK();
         UpdateCharacterControllerDimensions();
         playerCamera.SetLean(Lean);
