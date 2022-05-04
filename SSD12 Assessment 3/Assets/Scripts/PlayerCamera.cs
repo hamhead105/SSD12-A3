@@ -79,6 +79,7 @@ public class PlayerCamera : MonoBehaviour
             {
                 if (hit.distance < basePosition.magnitude)
                 {
+                    print("hit " + hit.transform.gameObject);
                     if (hit.distance > minDistancePoint)
                     {
                         targPosition = basePosition * ((hit.distance - bufferDistance) / basePosition.magnitude);
@@ -125,8 +126,10 @@ public class PlayerCamera : MonoBehaviour
 
     private void UpdateCameraControl() // pivot point
     {
-        ControlRot = new Vector3(Mathf.Clamp(ControlRot.x, minView, maxView), ControlRot.y, 0);
-        this.transform.localEulerAngles = ControlRot;
+
+        this.transform.localEulerAngles = new Vector3(0, 0, 0);
+        this.transform.eulerAngles += ControlRot;
+        //ControlRot = new Vector3(Mathf.Clamp(ControlRot.x, minView + this.transform.eulerAngles.x, maxView + this.transform.eulerAngles.x), ControlRot.y, 0);
 
         if (!freeLook)
         {
@@ -136,18 +139,6 @@ public class PlayerCamera : MonoBehaviour
                 0
             );
         }
-
-        /*
-        if (Input.GetKey(KeyCode.LeftAlt))
-        {
-            this.transform.Rotate(Input.GetAxis("Mouse X") * sensitivity, Input.GetAxis("Mouse Y") * sensitivity, 0);
-            this.transform.localEulerAngles = new Vector3(Mathf.Clamp(transform.localEulerAngles.x, minView, maxView), transform.localEulerAngles.y, 0);
-        }
-        else
-        {
-         
-        }
-        */
     }
 
     private void Update()
