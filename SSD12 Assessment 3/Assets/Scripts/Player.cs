@@ -105,7 +105,6 @@ public class Player : Human
         UpdateAnimations();
         UpdateFeetIK();
         UpdateCharacterControllerDimensions();
-        playerCamera.SetLean(Lean);
     }
 
     public void FixedUpdate()
@@ -206,6 +205,10 @@ public class Player : Human
         {
             CastInteractionRay(true);
         }
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            playerCamera.ToggleFirstPerson();
+        }
         else
         {
             CastInteractionRay(false);
@@ -239,7 +242,17 @@ public class Player : Human
 
         if (!AimingDownSights) Item.AddItemSwing(-xMovement, yMovement);
         else { Item.AddItemSwing(-xMovement / aimDownSightSwingReduction, yMovement / aimDownSightSwingReduction); }
-        UpdatePlayerRotations(xMovement, yMovement);
+
+        if (!Input.GetKey(KeyCode.LeftAlt) && !Input.GetMouseButton(2))
+        {
+            UpdatePlayerRotations(xMovement, yMovement);
+            playerCamera.FreeLook = false;
+        }
+        else
+        {
+            playerCamera.ControlRot += new Vector3(-yMovement, xMovement);
+            playerCamera.FreeLook = true;
+        }
     }
 
     private void ImplementAimRecoil()

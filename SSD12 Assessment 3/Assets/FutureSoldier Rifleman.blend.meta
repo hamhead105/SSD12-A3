@@ -69,7 +69,7 @@ ModelImporter:
       takeName: Scene
       internalID: 0
       firstFrame: 191
-      lastFrame: 211
+      lastFrame: 193
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -242,8 +242,8 @@ ModelImporter:
       name: railgun_ads_head
       takeName: Scene
       internalID: 0
-      firstFrame: 191
-      lastFrame: 211
+      firstFrame: 195
+      lastFrame: 200
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

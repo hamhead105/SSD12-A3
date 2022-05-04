@@ -4,14 +4,25 @@ using UnityEngine;
 
 public class PlayerCamera : MonoBehaviour
 {
+    private GameObject playerCameraObject;
     private static float fixedUpdateCallRate = 0.02f;
+    private bool firstPersonMode;
+
+    // Pos control
+    private Vector3 basePosition = new Vector3(0, 0.7f, -4);
+    private float minDistancePoint = 0.8f;
+    private Vector3 fpsPosition = new Vector3(0, 0.01f , 0.025f);
+    private Vector3 targPosition;
+    private float pos_kp = 0.3f;
+    private float bufferDistance = 0.2f;
+
     // FOV control
     [SerializeField] private float fov;
     private float targFov = 80;
     private float baseFov = 80;
 
     private float fov_kP = 0.3f;
-    private Camera playersCamera;
+    [SerializeField] private Camera playerCamera;
 
     // shake control
     [SerializeField]
@@ -31,24 +42,77 @@ public class PlayerCamera : MonoBehaviour
     private static float cameraSwayTransition_kP = 0.2f;
 
     private float swayTime;
-    private float lean;
+
+    // control point
+    private bool freeLook;
+    private float controlRot_kP = 0.1f;
+    private Vector3 controlRot;
+    private float minView = -60;
+    private float maxView = 60;
 
     // accessors and mutators
     public float TargFOV { get => targFov; set => targFov = value; }
     public float BaseFov { get => baseFov; set => baseFov = value; }
+    public Vector3 ControlRot { get => controlRot; set => controlRot = value; }
+    public bool FreeLook { get => freeLook; set => freeLook = value; }
 
     // Start is called before the first frame update
     void Start()
     {
-        playersCamera = GetComponent<Camera>();
+        playerCameraObject = transform.GetChild(0).gameObject;
+        playerCamera = playerCameraObject.GetComponent<Camera>();
         baseFov = PlayerPrefs.GetFloat("FOV", 90);
         fov = baseFov;
-        playersCamera.fieldOfView = fov;     
+        playerCamera.fieldOfView = fov;     
     }
 
     private void UpdateAdditionalTransforms()
     {
-        this.transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0) + cameraShake;
+        UpdateCameraControl();
+
+        playerCameraObject.transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0) + cameraShake;
+
+        if (!firstPersonMode)
+        {
+            RaycastHit hit;
+            if (Physics.Linecast(this.transform.position, transform.TransformPoint(basePosition), out hit, 7))
+            {
+                if (hit.distance < basePosition.magnitude)
+                {
+                    if (hit.distance > minDistancePoint)
+                    {
+                        targPosition = basePosition * ((hit.distance - bufferDistance) / basePosition.magnitude);
+                    }
+                    else
+                    {
+                        targPosition = fpsPosition;
+                    }
+                }
+                else
+                {
+                    targPosition = basePosition;
+                }
+            }
+            else
+            {
+                targPosition = basePosition;
+            }
+        }
+        else
+        {
+            targPosition = fpsPosition;
+        }
+
+        playerCameraObject.transform.localPosition += new Vector3(
+            (targPosition.x - playerCameraObject.transform.localPosition.x) * pos_kp * Time.deltaTime * 60,
+            (targPosition.y - playerCameraObject.transform.localPosition.y) * pos_kp * Time.deltaTime * 60,
+            (targPosition.z - playerCameraObject.transform.localPosition.z) * pos_kp * Time.deltaTime * 60
+        );
+    }
+
+    public void ToggleFirstPerson()
+    {
+        firstPersonMode = !firstPersonMode;
     }
 
     private void FixedUpdate()
@@ -59,6 +123,33 @@ public class PlayerCamera : MonoBehaviour
         UpdateAdditionalTransforms();
     }
 
+    private void UpdateCameraControl() // pivot point
+    {
+        ControlRot = new Vector3(Mathf.Clamp(ControlRot.x, minView, maxView), ControlRot.y, 0);
+        this.transform.localEulerAngles = ControlRot;
+
+        if (!freeLook)
+        {
+            ControlRot += new Vector3(
+                (0 - ControlRot.x) * controlRot_kP * (Time.deltaTime * 60),
+                (0 - ControlRot.y) * controlRot_kP * (Time.deltaTime * 60),
+                0
+            );
+        }
+
+        /*
+        if (Input.GetKey(KeyCode.LeftAlt))
+        {
+            this.transform.Rotate(Input.GetAxis("Mouse X") * sensitivity, Input.GetAxis("Mouse Y") * sensitivity, 0);
+            this.transform.localEulerAngles = new Vector3(Mathf.Clamp(transform.localEulerAngles.x, minView, maxView), transform.localEulerAngles.y, 0);
+        }
+        else
+        {
+         
+        }
+        */
+    }
+
     private void Update()
     {
         UpdateAdditionalTransforms();
@@ -67,7 +158,7 @@ public class PlayerCamera : MonoBehaviour
     private void UpdateFOV()
     {
         fov += (targFov - fov) * fov_kP;
-        playersCamera.fieldOfView = fov;
+        playerCamera.fieldOfView = fov;
     }
 
     public void SetTargFOV(float targFov, bool active)
@@ -116,10 +207,5 @@ public class PlayerCamera : MonoBehaviour
     {
         print("add camera shake");
         cameraShakeVelocity += addedCameraShakeVelocity;
-    }
-
-    public void SetLean(float lean)
-    {
-        this.lean = lean;
     }
 }
