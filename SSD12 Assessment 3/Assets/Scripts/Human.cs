@@ -40,11 +40,12 @@ public class Human : MonoBehaviour
     private float
         sprintTransition_kP = 0.1f,
         floorGravity = 0.1f,
-        feetIKCastHeight = 0.8f,
-        feetIKOffset = 0.78f,
+        feetIKCastHeight = 0.6f,
+        feetIKOffset = 0.5f,
         feetCastRange = 1.5f,
-        feetCastRadius = 0.12f,
+        feetCastRadius = 0.08f,
         feetIK_kP = 0.42f,
+        feetIK_max = 0.8f,
         characterControllerBaseHeight = 1.8f,
         characterControllerBaseCenterY = 1;
 
@@ -282,7 +283,7 @@ public class Human : MonoBehaviour
             Debug.DrawRay(rightFootTransformCastPosition, Vector3.down * 1.5f, Color.red, 0.01f);
             if (Physics.SphereCast(rightFootTransformCastPosition, feetCastRadius, Vector3.down, out rightFootHit, 1.5f, hitboxLayer))
             {
-                rightFootCastDistance = rightFootHit.distance - feetIKOffset + feetCastRadius;
+                rightFootCastDistance = Mathf.Clamp(rightFootHit.distance - feetIKOffset + feetCastRadius, -feetIK_max, feetIK_max);
             }
 
             RaycastHit leftFootHit;
@@ -290,7 +291,7 @@ public class Human : MonoBehaviour
             Debug.DrawRay(leftFootTransformCastPosition, Vector3.down * 1.5f, Color.red, 0.01f);
             if (Physics.SphereCast(leftFootTransformCastPosition, feetCastRadius, Vector3.down, out leftFootHit, 1.5f, hitboxLayer))
             {
-                leftFootCastDistance = leftFootHit.distance - feetIKOffset + feetCastRadius;
+                leftFootCastDistance = Mathf.Clamp(leftFootHit.distance - feetIKOffset + feetCastRadius, -feetIK_max, feetIK_max);
             }
         }
     }

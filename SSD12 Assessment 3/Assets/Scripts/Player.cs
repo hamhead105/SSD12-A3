@@ -289,7 +289,7 @@ public class Player : Human
     {
         foreach (Hitbox hitbox in FindObjectsOfType<Hitbox>())
         {
-            if (hitbox.Player == this)
+            if (hitbox.GameCharacter == this)
             {
                 hitbox.GetComponent<Collider>().enabled = false;
             }
@@ -300,7 +300,7 @@ public class Player : Human
     {
         foreach (Hitbox hitbox in FindObjectsOfType<Hitbox>())
         {
-            if (hitbox.Player == this)
+            if (hitbox.GameCharacter == this)
             {
                 hitbox.GetComponent<Collider>().enabled = true;
             }

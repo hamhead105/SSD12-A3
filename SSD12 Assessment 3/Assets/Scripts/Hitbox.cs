@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Hitbox : MonoBehaviour
 {
-    [SerializeField] private Human player;
+    [SerializeField] private GameCharacter gameCharacter;
+    
     [SerializeField] private float damageMultiplier;
 
-    public Human Player { get => player; set => player = value; }
+    public GameCharacter GameCharacter { get => gameCharacter; set => gameCharacter = value; }
 
     public float getDamage(float rawDamage)
     {

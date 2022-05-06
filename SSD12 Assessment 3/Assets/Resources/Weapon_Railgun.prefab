@@ -844,7 +844,7 @@ MonoBehaviour:
   spreadAmountHip: 5
   spreadAmountADS: 0
   numberOfProjectiles: 1
-  hitmarkerPosition: {x: 0, y: -0.5, z: 50}
+  hitmarkerPosition: {x: 0, y: 0.2, z: 59}
   projectile: {fileID: 4377690933116751623, guid: 5311c95dfcf131346a1dbc50ca5fd477, type: 3}
   useAudio: {fileID: 6778009828127052570, guid: 04d3987f79532174ea75110f337f0337, type: 3}
   useEffect: {fileID: 6385952880474491596, guid: 46fef92c83577ea49985d5412c750360, type: 3}
@@ -1038,7 +1038,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a827b0ccbfedf2d4b902bb41f6bdecf5, type: 2}
+  - {fileID: 2100000, guid: 3ca6fe8c62995964780a0a61202c5ba0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2498,7 +2498,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 471
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: c759891baca116749a88a453b7cf23b1, type: 2}
   m_TargetDisplay: 0

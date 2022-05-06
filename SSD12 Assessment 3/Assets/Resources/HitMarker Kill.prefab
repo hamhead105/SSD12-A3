@@ -226,9 +226,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7974006523598507113}
   - component: {fileID: 7974006523598507118}
-  - component: {fileID: 7974006523598507119}
   - component: {fileID: 7974006523598507116}
-  - component: {fileID: 872294713605396503}
+  - component: {fileID: 8044800350988165406}
   m_Layer: 5
   m_Name: HitMarker Kill
   m_TagString: Untagged
@@ -245,7 +244,7 @@ RectTransform:
   m_GameObject: {fileID: 7974006523598507117}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
+  m_LocalScale: {x: 0.008, y: 0.008, z: 0.008}
   m_Children:
   - {fileID: 7974006523881387635}
   - {fileID: 7974006521930696417}
@@ -280,29 +279,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &7974006523598507119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7974006523598507117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 2
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
 --- !u!114 &7974006523598507116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,7 +296,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &872294713605396503
+--- !u!114 &8044800350988165406
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -329,7 +305,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7974006523598507117}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9c5f902ab2c405439659292e1d4667c, type: 3}
+  m_Script: {fileID: 11500000, guid: a7d29a87b9459a84a82de1bf5feeee7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lines:

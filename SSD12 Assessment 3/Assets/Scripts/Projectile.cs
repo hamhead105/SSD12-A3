@@ -66,12 +66,12 @@ public class Projectile : MonoBehaviour
                     float damage = baseDamage * damageDropOff.Evaluate(distanceTravelled);
                     if (useLimbMultipliers) damage = hit.transform.GetComponent<Hitbox>().getDamage(baseDamage * damageDropOff.Evaluate(distanceTravelled));
 
-                    item.HitAnotherTarget(hit.transform.GetComponent<Hitbox>().Player.Health <= 0);
+                    item.HitAnotherTarget(hit.transform.GetComponent<Hitbox>().GameCharacter.Health <= 0);
                 }
                 else
                 {
                     float damage = baseDamage;
-                    item.HitAnotherTarget(hit.transform.GetComponent<Hitbox>().Player.Health <= 0);
+                    item.HitAnotherTarget(hit.transform.GetComponent<Hitbox>().GameCharacter.Health <= 0);
                 }
                 
                 queueDestroy = true;
