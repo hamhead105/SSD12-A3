@@ -40,8 +40,8 @@ public class Human : MonoBehaviour
     private float
         sprintTransition_kP = 0.1f,
         floorGravity = 0.1f,
-        feetIKCastHeight = 1f,
-        feetIKOffset = 0.98f,
+        feetIKCastHeight = 0.8f,
+        feetIKOffset = 0.78f,
         feetCastRange = 1.5f,
         feetCastRadius = 0.12f,
         feetIK_kP = 0.42f,
@@ -226,8 +226,8 @@ public class Human : MonoBehaviour
 
     protected void UpdateAnimations()
     {
-        leftFootTarg.transform.position = new Vector3(leftFootTarg.transform.position.x, leftFootTargBase.transform.position.y - pControlledLeftFootPos, leftFootTarg.transform.position.z);
-        rightFootTarg.transform.position = new Vector3(rightFootTarg.transform.position.x, rightFootTargBase.transform.position.y - pControlledRightFootPos, rightFootTarg.transform.position.z);
+        leftFootTarg.transform.position = new Vector3(leftFootTargBase.transform.position.x, leftFootTargBase.transform.position.y - pControlledLeftFootPos, leftFootTargBase.transform.position.z);
+        rightFootTarg.transform.position = new Vector3(rightFootTargBase.transform.position.x, rightFootTargBase.transform.position.y - pControlledRightFootPos, rightFootTargBase.transform.position.z);
      
         spine2.transform.Rotate(this.transform.right * (-AimY / 2) * spine2Multiplier, Space.World);
         spine3.transform.Rotate(this.transform.right * (-AimY / 2), Space.World);
