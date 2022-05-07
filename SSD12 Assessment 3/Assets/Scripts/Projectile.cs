@@ -73,7 +73,8 @@ public class Projectile : MonoBehaviour
                     float damage = baseDamage;
                     item.HitAnotherTarget(hit.transform.GetComponent<Hitbox>().GameCharacter.Health <= 0);
                 }
-                
+                GameObject impactParticle = Instantiate(stoneImpactParticles, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal)) as GameObject;
+                if (GameObject.Find("Temp")) impactParticle.transform.parent = GameObject.Find("Temp").transform;
                 queueDestroy = true;
             }
             else if (hit.transform.tag == "Stone")

@@ -41,7 +41,7 @@ public class Human : MonoBehaviour
         sprintTransition_kP = 0.1f,
         floorGravity = 0.1f,
         feetIKCastHeight = 0.6f,
-        feetIKOffset = 0.5f,
+        feetIKOffset = 0.6f,
         feetCastRange = 1.5f,
         feetCastRadius = 0.08f,
         feetIK_kP = 0.42f,
