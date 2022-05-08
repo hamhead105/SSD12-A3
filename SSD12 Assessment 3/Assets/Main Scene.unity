@@ -1123,6 +1123,10 @@ MonoBehaviour:
   - {fileID: 8234285422723896156, guid: a86283bcc741f014781d40042d4790ed, type: 3}
   - {fileID: 1434159736348804786, guid: 4204bb97c7eecc6418786a016cfc8f88, type: 3}
   speed: 0.003
+  barrelPoints: []
+  projectile: {fileID: 0}
+  muzzleEffect: {fileID: 0}
+  attackSpeed: 0
 --- !u!23 &1093638220302163834
 MeshRenderer:
   m_ObjectHideFlags: 0
