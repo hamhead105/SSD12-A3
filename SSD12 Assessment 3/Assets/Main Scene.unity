@@ -148,12 +148,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117490996}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 507530215746229032}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &117490998
 SphereCollider:
@@ -180,8 +180,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028f151a863e20a4d88ca6c4a9bf7dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameCharacter: {fileID: 882930541725518227}
-  damageMultiplier: 0
+  gameCharacter: {fileID: 882930541725518228}
+  damageMultiplier: 1
 --- !u!1 &200402527
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,7 +500,7 @@ Transform:
   - {fileID: 8706898478636373784}
   - {fileID: 8595854771784917541}
   m_Father: {fileID: 507530215746229032}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1674663826
 GameObject:
@@ -1028,8 +1028,8 @@ Transform:
   m_LocalPosition: {x: -6.44, y: 3.055, z: 6.6370096}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
-  - {fileID: 1595103255}
   - {fileID: 117490997}
+  - {fileID: 1595103255}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1078,15 +1078,34 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 507530215746229032}
+  - component: {fileID: 882930541725518228}
   - component: {fileID: 882930541725518227}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Bot1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &882930541725518227
+--- !u!143 &882930541725518227
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882930541725518226}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 2.86
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &882930541725518228
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1095,7 +1114,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 882930541725518226}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee5c273dfeb6db647bb580f3f82772c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 1125e65712eac1441b2baddf924fc514, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 150
@@ -1103,6 +1122,7 @@ MonoBehaviour:
   deathInstantiations:
   - {fileID: 8234285422723896156, guid: a86283bcc741f014781d40042d4790ed, type: 3}
   - {fileID: 1434159736348804786, guid: 4204bb97c7eecc6418786a016cfc8f88, type: 3}
+  speed: 0.003
 --- !u!23 &1093638220302163834
 MeshRenderer:
   m_ObjectHideFlags: 0

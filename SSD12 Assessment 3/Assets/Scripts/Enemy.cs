@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Enemy : GameCharacter
 {
-    [SerializeField] private GameObject[] deathInstantiations;
-    
+    [SerializeField] protected GameObject[] deathInstantiations;
+    [SerializeField] protected float speed;
+
     public override void Init()
     {
        
@@ -31,7 +32,7 @@ public class Enemy : GameCharacter
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         base.Update();
     }
