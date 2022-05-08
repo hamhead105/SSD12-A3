@@ -65,12 +65,15 @@ public class Projectile : MonoBehaviour
                 {
                     float damage = baseDamage * damageDropOff.Evaluate(distanceTravelled);
                     if (useLimbMultipliers) damage = hit.transform.GetComponent<Hitbox>().getDamage(baseDamage * damageDropOff.Evaluate(distanceTravelled));
+                    print(damage);
+                    hit.transform.GetComponent<Hitbox>().GameCharacter.DealDamage(damage);
 
                     item.HitAnotherTarget(hit.transform.GetComponent<Hitbox>().GameCharacter.Health <= 0);
                 }
                 else
                 {
                     float damage = baseDamage;
+                    hit.transform.GetComponent<Hitbox>().GameCharacter.DealDamage(damage);
                     item.HitAnotherTarget(hit.transform.GetComponent<Hitbox>().GameCharacter.Health <= 0);
                 }
                 GameObject impactParticle = Instantiate(stoneImpactParticles, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal)) as GameObject;

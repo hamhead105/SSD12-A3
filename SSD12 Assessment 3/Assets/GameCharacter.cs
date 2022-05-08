@@ -23,13 +23,13 @@ public abstract class GameCharacter : MonoBehaviour
         health = maxHealth;
     }
     
-    void DealDamage(float amount)
+    public void DealDamage(float amount)
     {
         health -= amount;
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if (health <= 0)
         {
