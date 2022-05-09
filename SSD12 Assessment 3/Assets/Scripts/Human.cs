@@ -40,9 +40,9 @@ public class Human : MonoBehaviour
     private float
         sprintTransition_kP = 0.1f,
         floorGravity = 0.1f,
-        feetIKCastHeight = 0.6f,
-        feetIKOffset = 0.55f,
-        feetCastRadius = 0.06f,
+        feetIKCastHeight = 1f,
+        feetIKOffset = 0.95f,
+        feetCastRadius = 0.09f,
         feetIK_kP = 0.42f,
         feetIK_max = 0.8f,
         characterControllerBaseHeight = 1.7f,
@@ -304,7 +304,11 @@ public class Human : MonoBehaviour
     public void UpdateCharacterControllerDimensions()
     {
         float castDistanceDiff = Mathf.Abs(pControlledRightFootPos - pControlledLeftFootPos);
-        charController.height = characterControllerBaseHeight - (castDistanceDiff);
+        if (Mathf.Abs(leftFootCastDistance) < feetIKCastHeight && Mathf.Abs(rightFootCastDistance) < feetIKCastHeight)
+        {
+            charController.height = characterControllerBaseHeight - castDistanceDiff;
+        }
+        
         charController.center = new Vector3(0, characterControllerBaseCenterY + castDistanceDiff / 4);
     } 
 
