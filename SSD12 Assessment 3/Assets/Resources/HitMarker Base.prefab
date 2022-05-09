@@ -228,7 +228,6 @@ GameObject:
   - component: {fileID: 7974006523598507118}
   - component: {fileID: 7974006523598507116}
   - component: {fileID: 5284178960487396636}
-  - component: {fileID: 5427983323881974168}
   m_Layer: 5
   m_Name: HitMarker Base
   m_TagString: Untagged
@@ -245,7 +244,7 @@ RectTransform:
   m_GameObject: {fileID: 7974006523598507117}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.008, y: 0.008, z: 0.008}
+  m_LocalScale: {x: 0.012, y: 0.012, z: 0.012}
   m_Children:
   - {fileID: 7974006523881387635}
   - {fileID: 7974006521930696417}
@@ -319,29 +318,6 @@ MonoBehaviour:
   fadeDelay: 0.02
   fadeSpeed: 0.22
   shrinkSpeed: 40
---- !u!114 &5427983323881974168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7974006523598507117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
 --- !u!1 &7974006523881387632
 GameObject:
   m_ObjectHideFlags: 0

@@ -1096,7 +1096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028f151a863e20a4d88ca6c4a9bf7dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6843462314938415464}
+  gameCharacter: {fileID: 0}
   damageMultiplier: 1
 --- !u!1 &1408305130615391172
 GameObject:
@@ -1155,7 +1155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028f151a863e20a4d88ca6c4a9bf7dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6843462314938415464}
+  gameCharacter: {fileID: 0}
   damageMultiplier: 1
 --- !u!1 &1408305130784094108
 GameObject:
@@ -1214,7 +1214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028f151a863e20a4d88ca6c4a9bf7dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6843462314938415464}
+  gameCharacter: {fileID: 0}
   damageMultiplier: 1
 --- !u!1 &1408305130786922356
 GameObject:
@@ -1303,7 +1303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028f151a863e20a4d88ca6c4a9bf7dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6843462314938415464}
+  gameCharacter: {fileID: 0}
   damageMultiplier: 1
 --- !u!1 &1408305130826096074
 GameObject:
@@ -1362,7 +1362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028f151a863e20a4d88ca6c4a9bf7dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6843462314938415464}
+  gameCharacter: {fileID: 0}
   damageMultiplier: 1
 --- !u!1 &1408305130925089324
 GameObject:
@@ -1421,7 +1421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028f151a863e20a4d88ca6c4a9bf7dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6843462314938415464}
+  gameCharacter: {fileID: 0}
   damageMultiplier: 1
 --- !u!1 &1408305131005875211
 GameObject:
@@ -1480,7 +1480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028f151a863e20a4d88ca6c4a9bf7dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6843462314938415464}
+  gameCharacter: {fileID: 0}
   damageMultiplier: 1
 --- !u!1 &1408305131074357721
 GameObject:
@@ -1539,7 +1539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028f151a863e20a4d88ca6c4a9bf7dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6843462314938415464}
+  gameCharacter: {fileID: 0}
   damageMultiplier: 1
 --- !u!1 &1408305131253984520
 GameObject:
@@ -1945,7 +1945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028f151a863e20a4d88ca6c4a9bf7dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6843462314938415464}
+  gameCharacter: {fileID: 0}
   damageMultiplier: 1
 --- !u!1 &1408305132068437610
 GameObject:
@@ -2034,7 +2034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028f151a863e20a4d88ca6c4a9bf7dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6843462314938415464}
+  gameCharacter: {fileID: 0}
   damageMultiplier: 1
 --- !u!1 &1408305132180746494
 GameObject:
@@ -2093,7 +2093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028f151a863e20a4d88ca6c4a9bf7dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6843462314938415464}
+  gameCharacter: {fileID: 0}
   damageMultiplier: 1
 --- !u!1 &1408305132211211834
 GameObject:
@@ -2243,7 +2243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028f151a863e20a4d88ca6c4a9bf7dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6843462314938415464}
+  gameCharacter: {fileID: 0}
   damageMultiplier: 1
 --- !u!1 &1408305132331994629
 GameObject:
@@ -6707,7 +6707,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 1.8
-  m_Radius: 0.35
+  m_Radius: 0.3
   m_SlopeLimit: 45
   m_StepOffset: 0.4
   m_SkinWidth: 0.08
