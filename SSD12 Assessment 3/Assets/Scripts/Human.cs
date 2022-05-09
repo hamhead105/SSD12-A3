@@ -308,6 +308,10 @@ public class Human : MonoBehaviour
         {
             charController.height = characterControllerBaseHeight - castDistanceDiff;
         }
+        else
+        {
+            charController.height = characterControllerBaseHeight;
+        }
         
         charController.center = new Vector3(0, characterControllerBaseCenterY + castDistanceDiff / 4);
     } 
