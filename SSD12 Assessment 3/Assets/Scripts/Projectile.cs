@@ -28,6 +28,8 @@ public class Projectile : MonoBehaviour
     private AnimationCurve damageDropOff;
     private bool useLimbMultipliers;
 
+    private static float projectileLife = 5;
+
     public PlayerFirearm Item { get => item; set => item = value; }
     public bool Active { get => active; set => active = value; }
 
@@ -44,9 +46,20 @@ public class Projectile : MonoBehaviour
         this.useLimbMultipliers = useLimbMultipliers;
     }
 
+    public void SetProjectileStats(float baseSpeed, float baseDamage, bool useLimbMultipliers)
+    {
+        this.baseSpeed = baseSpeed;
+        this.baseDamage = baseDamage;
+        this.useLimbMultipliers = useLimbMultipliers;
+    }
+
     private void Start()
     {
-        Destroy(gameObject, 3f);
+        Destroy(gameObject, projectileLife);
+    }
+
+    public void ApplyVelocity()
+    {
         velocity = transform.forward * baseSpeed;
     }
 

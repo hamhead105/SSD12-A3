@@ -8,12 +8,15 @@ public class FlyingEnemy : Enemy
     private float flightZero_kP = 0.2f;
     private Vector3 velocity;
 
+    [SerializeField] private Projectile projectile;
     [SerializeField] private Transform[] barrelPoints;
-    [SerializeField] private GameObject projectile;
+    [SerializeField] private float damage;
+    [SerializeField] private float projectileSpeed;
+
     [SerializeField] private GameObject muzzleEffect;
 
-    [SerializeField] private float attackSpeed;
-    private bool readyToFire;
+    [SerializeField] private float attackCooldown;
+    [SerializeField] private bool readyToFire;
     
     // Start is called before the first frame update
     void Start()
@@ -53,7 +56,19 @@ public class FlyingEnemy : Enemy
     {
         foreach(Transform barrelPoint in barrelPoints)
         {
-            Instantiate(projectile, barrelPoint.position, transform.rotation);
+            if (readyToFire)
+            {
+                Projectile newProjectile = Instantiate(projectile, barrelPoint.position, barrelPoint.transform.rotation);
+                newProjectile.SetProjectileStats(projectileSpeed, damage, false);
+                newProjectile.ApplyVelocity();
+                Invoke("Rechamber", attackCooldown);
+                readyToFire = false;
+            }
         }
+    }
+
+    public void Rechamber()
+    {
+        readyToFire = true;
     }
 }
