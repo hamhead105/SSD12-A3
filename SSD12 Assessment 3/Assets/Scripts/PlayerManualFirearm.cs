@@ -73,9 +73,10 @@ public class PlayerManualFirearm : PlayerFirearm
         for (int projectilesFired = 0; projectilesFired < NumberOfProjectiles; projectilesFired++)
         {
             Projectile spawnedProjectile = Instantiate(Projectile, BarrelPoint.position, BarrelPoint.transform.rotation);
-            spawnedProjectile.SetProjectileStats(ProjectileSpeed, ProjectileDamage, ProjectileGravity, DeformationSize, Penetration, DeformationChance, DamageDropOff, PenetrationDropOff, useLimbMultipliers);
+            spawnedProjectile.SetProjectileStats(ProjectileSpeed, ProjectileDamage, ProjectileGravity, useLimbMultipliers, projectileLifeTime);
             spawnedProjectile.Item = this;
             spawnedProjectile.transform.Rotate(new Vector3(Random.Range(-spreadAmount / 2, spreadAmount / 2), Random.Range(-spreadAmount / 2, spreadAmount / 2), 0));
+            spawnedProjectile.Init();
             if (GameObject.Find("Temp")) spawnedProjectile.transform.parent = GameObject.Find("Temp").transform;
         }
 
@@ -100,7 +101,7 @@ public class PlayerManualFirearm : PlayerFirearm
         for (int projectilesFired = 0; projectilesFired < NumberOfProjectiles; projectilesFired++)
         {
             Projectile spawnedProjectile = Instantiate(Projectile, BarrelPoint.position, BarrelPoint.transform.rotation);
-            spawnedProjectile.SetProjectileStats(ProjectileSpeed, ProjectileDamage, ProjectileGravity, DeformationSize, Penetration, DeformationChance, DamageDropOff, PenetrationDropOff, useLimbMultipliers);
+            spawnedProjectile.SetProjectileStats(ProjectileSpeed, ProjectileDamage, ProjectileGravity, useLimbMultipliers, projectileLifeTime);
             spawnedProjectile.Item = this;
             if (GameObject.Find("Temp")) spawnedProjectile.transform.parent = GameObject.Find("Temp").transform;
         }

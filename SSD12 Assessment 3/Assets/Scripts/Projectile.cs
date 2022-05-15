@@ -7,60 +7,43 @@ public class Projectile : MonoBehaviour
     private float baseSpeed;
     private float baseDamage;
     private float gravity;
-    private bool active; // active when this has been spawned by the client
 
     private Vector3 velocity;
 
-    [SerializeField] private GameObject stoneImpactParticles;
+    [SerializeField] private GameObject obstacleImpactParticles;
 
     [SerializeField] private float projectileForce;
     private PlayerFirearm item; // item that instantiated this projectile
-    [SerializeField] private GameObject deformerBrush;
     private bool queueDestroy;
 
     private bool canInteract = true;
-    private float deformationSize;
-    private float penetration;
-    private float deformationChance;
-    private float distanceTravelled;
-
-    private AnimationCurve penetrationDropOff;
-    private AnimationCurve damageDropOff;
     private bool useLimbMultipliers;
 
-    private static float projectileLife = 5;
+    private float lifeTime = 5;
 
     public PlayerFirearm Item { get => item; set => item = value; }
-    public bool Active { get => active; set => active = value; }
 
-    public void SetProjectileStats(float baseSpeed, float baseDamage, float gravity, float deformationSize, float penetration, float deformationChance, AnimationCurve damageDropOff, AnimationCurve penetrationDropOff, bool useLimbMultipliers)
+    public void SetProjectileStats(float baseSpeed, float baseDamage, float gravity, bool useLimbMultipliers, float lifeTime)
     {
         this.baseSpeed = baseSpeed;
         this.baseDamage = baseDamage;
         this.gravity = gravity;
-        this.deformationSize = deformationSize;
-        this.penetration = penetration;
-        this.deformationChance = deformationChance;
-        this.penetrationDropOff = penetrationDropOff;
-        this.damageDropOff = damageDropOff;
         this.useLimbMultipliers = useLimbMultipliers;
+        this.lifeTime = lifeTime;
     }
 
-    public void SetProjectileStats(float baseSpeed, float baseDamage, bool useLimbMultipliers)
+    public void SetProjectileStats(float baseSpeed, float baseDamage, bool useLimbMultipliers, float lifeTime)
     {
         this.baseSpeed = baseSpeed;
         this.baseDamage = baseDamage;
         this.useLimbMultipliers = useLimbMultipliers;
+        this.lifeTime = lifeTime;
     }
 
-    private void Start()
-    {
-        Destroy(gameObject, projectileLife);
-    }
-
-    public void ApplyVelocity()
+    public void Init()
     {
         velocity = transform.forward * baseSpeed;
+        Destroy(gameObject, lifeTime);
     }
 
     // Update is called once per frame
@@ -69,49 +52,20 @@ public class Projectile : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, velocity.magnitude))
         {
-            distanceTravelled += Vector3.Distance(transform.position, hit.point);
             if (hit.transform.gameObject.layer == 7) // check if hitbox layer
             {
-                // Instantiate player impact particles
-                //if (GameObject.Find("Temp")) impactParticle.transform.parent = GameObject.Find("Temp").transform;
-                if (damageDropOff != null)
-                {
-                    float damage = baseDamage * damageDropOff.Evaluate(distanceTravelled);
-                    if (useLimbMultipliers) damage = hit.transform.GetComponent<Hitbox>().getDamage(baseDamage * damageDropOff.Evaluate(distanceTravelled));
-                    print(damage);
-                    hit.transform.GetComponent<Hitbox>().GameCharacter.DealDamage(damage);
-
-                    item.HitAnotherTarget(hit.transform.GetComponent<Hitbox>().GameCharacter.Health <= 0);
-                }
-                else
-                {
-                    float damage = baseDamage;
-                    hit.transform.GetComponent<Hitbox>().GameCharacter.DealDamage(damage);
-                    item.HitAnotherTarget(hit.transform.GetComponent<Hitbox>().GameCharacter.Health <= 0);
-                }
-                GameObject impactParticle = Instantiate(stoneImpactParticles, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal)) as GameObject;
-                if (GameObject.Find("Temp")) impactParticle.transform.parent = GameObject.Find("Temp").transform;
-                queueDestroy = true;
-            }
-            else if (hit.transform.tag == "Stone")
-            {
-
-                if (stoneImpactParticles)
-                {
-                    GameObject impactParticle = Instantiate(stoneImpactParticles, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal)) as GameObject;
-                    if (GameObject.Find("Temp")) impactParticle.transform.parent = GameObject.Find("Temp").transform;
-                }
-
+                float damage = baseDamage;
+                hit.transform.GetComponent<Hitbox>().GameCharacter.DealDamage(damage);
+                item.HitAnotherTarget(hit.transform.GetComponent<Hitbox>().GameCharacter.Health <= 0);
+                
+              
+                Impact(obstacleImpactParticles, hit);
                 queueDestroy = true;
             }
             else
             {
-                if (stoneImpactParticles)
-                {
-                    GameObject impactParticle = Instantiate(stoneImpactParticles, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal)) as GameObject;
-                    if (GameObject.Find("Temp")) impactParticle.transform.parent = GameObject.Find("Temp").transform;
-                }
-                
+                Impact(obstacleImpactParticles, hit);
+
                 queueDestroy = true;
             }
             if (queueDestroy) DestroyProjectile();
@@ -119,7 +73,15 @@ public class Projectile : MonoBehaviour
         Vector3 oldPosition = this.transform.position;
         velocity += new Vector3(0, -gravity, 0);
         this.transform.position += velocity;
-        distanceTravelled += Vector3.Distance(oldPosition, transform.position);
+    }
+
+    protected virtual void Impact(GameObject effectSpawn, RaycastHit hit)
+    {
+        if (effectSpawn)
+        {
+            GameObject impactParticle = Instantiate(effectSpawn, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal)) as GameObject;
+            if (GameObject.Find("Temp")) impactParticle.transform.parent = GameObject.Find("Temp").transform;
+        }
     }
 
     public void DestroyProjectile()

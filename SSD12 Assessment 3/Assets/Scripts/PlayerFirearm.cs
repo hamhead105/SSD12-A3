@@ -6,10 +6,11 @@ public class PlayerFirearm : PlayerItem
 {
     // static constants
     [SerializeField] private float recoilRecovery_kP;
-    private static float
+    protected static float
         recoilVelocity_kP = 0.3f,
         aimShiftMultiplier = 0.08f,
-        aimSwayMultiplier = 0.4f;
+        aimSwayMultiplier = 0.4f,
+        projectileLifeTime = 12;
 
     private float 
         recoilRecovery_kI,
@@ -97,9 +98,6 @@ public class PlayerFirearm : PlayerItem
     [SerializeField] private float projectileSpeed;
     [SerializeField] private float projectileDamage;
     [SerializeField] private float projectileGravity;
-    [SerializeField] private float deformationSize;
-    [SerializeField] private float deformationChance;
-    [SerializeField] private float penetration;
     [SerializeField] protected bool useLimbMultipliers;
 
     [SerializeField] private GameObject reloadSound;
@@ -146,9 +144,6 @@ public class PlayerFirearm : PlayerItem
     public bool UseRepetitiveReload { get => useRepetitiveReload; set => useRepetitiveReload = value; }
     public bool ReloadingFlag { get => reloadingFlag; set => reloadingFlag = value; }
     public bool StopRepetitiveReload { get => stopRepetitiveReload; set => stopRepetitiveReload = value; }
-    public float DeformationSize { get => deformationSize; set => deformationSize = value; }
-    public float Penetration { get => penetration; set => penetration = value; }
-    public float DeformationChance { get => deformationChance; set => deformationChance = value; }
     public AnimationCurve DamageDropOff { get => damageDropOff; set => damageDropOff = value; }
     public AnimationCurve PenetrationDropOff { get => penetrationDropOff; set => penetrationDropOff = value; }
     public GameObject SightAttachmentParent { get => sightAttachmentParent; set => sightAttachmentParent = value; }
@@ -293,10 +288,10 @@ public class PlayerFirearm : PlayerItem
             if (Projectile)
             {
                 Projectile spawnedProjectile = Instantiate(Projectile, BarrelPoint.position, BarrelPoint.transform.rotation);
-                spawnedProjectile.SetProjectileStats(ProjectileSpeed, ProjectileDamage, ProjectileGravity, DeformationSize, Penetration, DeformationChance, DamageDropOff, PenetrationDropOff, useLimbMultipliers);
-                spawnedProjectile.ApplyVelocity();
+                spawnedProjectile.SetProjectileStats(ProjectileSpeed, ProjectileDamage, ProjectileGravity, useLimbMultipliers, projectileLifeTime);
                 spawnedProjectile.Item = this;
                 spawnedProjectile.transform.Rotate(new Vector3(Random.Range(-spreadAmount / 2, spreadAmount / 2), Random.Range(-spreadAmount / 2, spreadAmount / 2), 0));
+                spawnedProjectile.Init();
                 if (GameObject.Find("Temp")) spawnedProjectile.transform.parent = GameObject.Find("Temp").transform;
             }
         }
@@ -325,8 +320,8 @@ public class PlayerFirearm : PlayerItem
             if (Projectile)
             {
                 Projectile spawnedProjectile = Instantiate(Projectile, BarrelPoint.position, BarrelPoint.transform.rotation);
-                spawnedProjectile.SetProjectileStats(ProjectileSpeed, ProjectileDamage, ProjectileGravity, DeformationSize, Penetration, DeformationChance, DamageDropOff, PenetrationDropOff, useLimbMultipliers);
-                spawnedProjectile.ApplyVelocity();
+                spawnedProjectile.SetProjectileStats(ProjectileSpeed, ProjectileDamage, ProjectileGravity, useLimbMultipliers, projectileLifeTime);
+                spawnedProjectile.Init();
                 spawnedProjectile.Item = this;
                 if (GameObject.Find("Temp")) spawnedProjectile.transform.parent = GameObject.Find("Temp").transform;
             }

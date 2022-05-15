@@ -59,8 +59,8 @@ public class FlyingEnemy : Enemy
             if (readyToFire)
             {
                 Projectile newProjectile = Instantiate(projectile, barrelPoint.position, barrelPoint.transform.rotation);
-                newProjectile.SetProjectileStats(projectileSpeed, damage, false);
-                newProjectile.ApplyVelocity();
+                newProjectile.SetProjectileStats(projectileSpeed, damage, false, 30);
+                newProjectile.Init();
                 Invoke("Rechamber", attackCooldown);
                 readyToFire = false;
             }

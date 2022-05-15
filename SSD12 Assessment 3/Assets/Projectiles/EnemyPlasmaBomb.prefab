@@ -51,7 +51,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2caa930fddc14554b99ece30873fa1fe, type: 2}
+  - {fileID: 2100000, guid: 59f2a127ec2d6f344b61b7dbde66cdf4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -72,10 +72,10 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.04
+  m_Time: 0.1
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.05
+    widthMultiplier: 0.6
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -89,7 +89,7 @@ TrailRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.80597013
+        time: 0.8880624
         value: 0
         inSlope: 0
         outSlope: 0
@@ -149,10 +149,9 @@ GameObject:
   - component: {fileID: 8927395317470445547}
   - component: {fileID: 8927395317470445548}
   - component: {fileID: 8927395317470445549}
-  - component: {fileID: 4377690933116751623}
-  - component: {fileID: 7039076392042789530}
+  - component: {fileID: 3641442356663202271}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: EnemyPlasmaBomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -167,7 +166,7 @@ Transform:
   m_GameObject: {fileID: 8927395317470445552}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 7128972971526517983}
   m_Father: {fileID: 0}
@@ -200,7 +199,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2caa930fddc14554b99ece30873fa1fe, type: 2}
+  - {fileID: 2100000, guid: 59f2a127ec2d6f344b61b7dbde66cdf4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -222,7 +221,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4377690933116751623
+--- !u!114 &3641442356663202271
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,23 +230,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 8927395317470445552}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 941320bf08d2bc24ca88c1e205e48187, type: 3}
+  m_Script: {fileID: 11500000, guid: 38c1c77c6a90df54588354ba90cc14b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stoneImpactParticles: {fileID: 0}
-  bloodImpactParticle: {fileID: 0}
-  projectileForce: 20
-  deformerBrush: {fileID: 0}
---- !u!114 &7039076392042789530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8927395317470445552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a65764cd6b9a304392eb39891ae2684, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  time: 0.3
+  obstacleImpactParticles: {fileID: 0}
+  projectileForce: 30
+  explosion: {fileID: 6385952880474491596, guid: 7c79a6e42897a5b4c898d7d9e02ced80, type: 3}
+  damage: 4
+  damageDropOff:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useImpactRotation: 0
