@@ -845,7 +845,7 @@ MonoBehaviour:
   spreadAmountHip: 5
   spreadAmountADS: 0
   numberOfProjectiles: 1
-  hitmarkerPosition: {x: 0, y: 0, z: 150}
+  hitmarkerPosition: {x: 0, y: -0.2, z: 30}
   projectile: {fileID: 4377690933116751623, guid: 5311c95dfcf131346a1dbc50ca5fd477, type: 3}
   useAudio: {fileID: 6778009828127052570, guid: 04d3987f79532174ea75110f337f0337, type: 3}
   useEffect: {fileID: 6385952880474491596, guid: 46fef92c83577ea49985d5412c750360, type: 3}
@@ -901,24 +901,23 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  weaponDrawLength: 1
-  weaponRaiseStart: 0.9
+  weaponDrawLength: 1.1
+  weaponRaiseStart: 1
   weaponRaiseCoefficient: 500
-  distanceMin: 0.8
-  weaponDrawRaiseDownCoeff: 0.005
+  distanceMin: 0.9
+  weaponDrawRaiseDownCoeff: -0.003
   projectileSpeed: 5
   projectileDamage: 23
   projectileGravity: 0.004
-  deformationSize: 0.3
-  deformationChance: 1
-  penetration: 32
   useLimbMultipliers: 0
   reloadSound: {fileID: 6167950457709891737, guid: db5b18d4a79b78f42a8f6d28d2ee7436, type: 3}
   sightAttachmentParent: {fileID: 4314077446357949985}
   sightAttachment: 0
-  adsPosition: {x: -0.002, y: 0.004, z: 0}
-  adsRotation: {x: 0, y: 11.2, z: 0}
+  adsPosition: {x: 0, y: 0.025, z: 0}
+  adsRotation: {x: 3.5, y: 11.68, z: 0.25}
+  rotationOffsets: {x: -90, y: 15.4, z: 0}
   ads_kP: 0.2
+  lookPoint: {fileID: 0}
 --- !u!1 &4314077446357949985
 GameObject:
   m_ObjectHideFlags: 0

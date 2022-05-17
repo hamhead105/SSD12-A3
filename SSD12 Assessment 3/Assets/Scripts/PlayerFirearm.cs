@@ -12,6 +12,8 @@ public class PlayerFirearm : PlayerItem
         aimSwayMultiplier = 0.4f,
         projectileLifeTime = 12;
 
+    private static Vector3 maxItemRot = new Vector3(80, 80, 0);
+
     private float 
         recoilRecovery_kI,
         recoilRecovery_kD;
@@ -113,8 +115,11 @@ public class PlayerFirearm : PlayerItem
     [Header("Item Body for ADS")]
     [SerializeField] private Vector3 adsPosition;
     [SerializeField] private Vector3 adsRotation;
+    [SerializeField] private Vector3 rotationOffsets; // used to aim the gun at where the camera is aiming;
     private float adsWeight = 0;
     [SerializeField] private float ads_kP;
+
+    [SerializeField] protected Transform lookPoint;
 
     public bool AimedDownSights { get => aimedDownSights; set => aimedDownSights = value; }
     public Projectile Projectile { get => projectile; set => projectile = value; }
@@ -161,6 +166,8 @@ public class PlayerFirearm : PlayerItem
         recoilPID_y.Init();
         recoilPID_z.Init();
         InitHitmarkers();
+
+        if (User is Player) lookPoint = (User as Player).LookPoint;
     }
 
     private void InitHitmarkers()
@@ -198,7 +205,7 @@ public class PlayerFirearm : PlayerItem
                 (gunRecoilDisplacement.x * positionCoefficients.x) + ActiveSight.PositionalOffset.x + ItemShift.x + (adsWeight * adsPosition.x),
                 (gunRecoilDisplacement.y * positionCoefficients.y) + ActiveSight.PositionalOffset.y + ItemShift.y - (weaponDrawRaise * weaponDrawRaiseDownCoeff) + (adsWeight * adsPosition.y),
                 gunRecoilDisplacement.z + ActiveSight.PositionalOffset.z + weaponDrawBack + (adsWeight * adsPosition.z));
-        } 
+        }
         else
         {
             PositionOffset = new Vector3(
@@ -221,8 +228,21 @@ public class PlayerFirearm : PlayerItem
 
         this.transform.localPosition = new Vector3(0, 0, 0);
         this.transform.Translate(PositionOffset, ForwardTransform);
+        
+        if (User is Player) 
+        {
+            if (Sprinting || (User as Player).PlayerCamera.FreeLook || (User as Player).PlayerCamera.FirstPersonMode || WeaponADSObstruction)
+            {
+                this.transform.localEulerAngles = ConvertVectorDirections(RotationOffset);
+            }
+            else
+            {
+                this.transform.LookAt(lookPoint);
+                this.transform.Rotate(rotationOffsets);
+                this.transform.localEulerAngles += ConvertVectorDirections(RotationOffset);
+            }
+        }
 
-        this.transform.localEulerAngles = ConvertVectorDirections(RotationOffset);
         UpdateHitmarkers();
         UpdateRecoil();
     }
@@ -248,7 +268,7 @@ public class PlayerFirearm : PlayerItem
     public override bool PrimaryUseItem(bool input)
     {
         if (input) StopRepetitiveReload = true;
-        if (input && Chambered && !Sprinting && itemEnabled)
+        if (input && Chambered && !Sprinting && itemEnabled && !WeaponFireObstruction)
         {
             //print(" primary use  ");
             print("use item");

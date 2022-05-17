@@ -5,6 +5,10 @@ using UnityEngine;
 public class PlayerCamera : MonoBehaviour
 {
     private GameObject playerCameraObject;
+    [SerializeField] private Transform lookPoint;
+
+    private static float maxLookPointDistance = 200f;
+
     private static float fixedUpdateCallRate = 0.02f;
     private bool firstPersonMode;
 
@@ -15,6 +19,7 @@ public class PlayerCamera : MonoBehaviour
     private Vector3 targPosition;
     private float pos_kp = 0.3f;
     private float bufferDistance = 0.2f;
+    
 
     // FOV control
     [SerializeField] private float fov;
@@ -55,6 +60,8 @@ public class PlayerCamera : MonoBehaviour
     public float BaseFov { get => baseFov; set => baseFov = value; }
     public Vector3 ControlRot { get => controlRot; set => controlRot = value; }
     public bool FreeLook { get => freeLook; set => freeLook = value; }
+    public Transform LookPoint { get => lookPoint; set => lookPoint = value; }
+    public bool FirstPersonMode { get => firstPersonMode; set => firstPersonMode = value; }
 
     // Start is called before the first frame update
     void Start()
@@ -72,7 +79,7 @@ public class PlayerCamera : MonoBehaviour
 
         playerCameraObject.transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0) + cameraShake;
 
-        if (!firstPersonMode)
+        if (!FirstPersonMode)
         {
             RaycastHit hit;
             if (Physics.Linecast(this.transform.position, transform.TransformPoint(basePosition), out hit, 7))
@@ -113,7 +120,7 @@ public class PlayerCamera : MonoBehaviour
 
     public void ToggleFirstPerson()
     {
-        firstPersonMode = !firstPersonMode;
+        FirstPersonMode = !FirstPersonMode;
     }
 
     private void FixedUpdate()
@@ -122,6 +129,22 @@ public class PlayerCamera : MonoBehaviour
         UpdateCameraShake();
         UpdateCameraSway();
         UpdateAdditionalTransforms();
+    }
+
+
+
+    public void UpdateLookPoint()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit))
+        {
+            if (hit.distance < maxLookPointDistance) LookPoint.transform.position = hit.point;
+            else LookPoint.transform.position = this.transform.position + transform.forward * maxLookPointDistance;
+        } 
+        else
+        {
+            LookPoint.transform.position = this.transform.position + transform.forward * maxLookPointDistance;
+        }
     }
 
     private void UpdateCameraControl() // pivot point
@@ -144,6 +167,7 @@ public class PlayerCamera : MonoBehaviour
     private void Update()
     {
         UpdateAdditionalTransforms();
+        UpdateLookPoint();
     }
 
     private void UpdateFOV()
