@@ -10,7 +10,9 @@ public class PlayerFirearm : PlayerItem
         recoilVelocity_kP = 0.3f,
         aimShiftMultiplier = 0.08f,
         aimSwayMultiplier = 0.4f,
-        projectileLifeTime = 12;
+        projectileLifeTime = 12,
+        lookAtPointTransition_kP = 0.1f,
+        lookAtPointShift_kP = 0.1f;
 
     private static Vector3 maxItemRot = new Vector3(80, 80, 0);
 
@@ -120,6 +122,9 @@ public class PlayerFirearm : PlayerItem
     [SerializeField] private float ads_kP;
 
     [SerializeField] protected Transform lookPoint;
+    private float lookPointWeight; // for enabling and disabling target point aiming
+    private Vector3 lookPointRotation;
+    private float lookPointShiftRotation; // for the movement of the actual target point
 
     public bool AimedDownSights { get => aimedDownSights; set => aimedDownSights = value; }
     public Projectile Projectile { get => projectile; set => projectile = value; }
@@ -192,6 +197,20 @@ public class PlayerFirearm : PlayerItem
 
     public override void UpdateTransforms()
     {
+        this.transform.LookAt(lookPoint);
+        Vector3 lookPointTargetRotation = transform.localEulerAngles;
+        this.transform.localEulerAngles = new Vector3(0, 0, 0);
+
+        /*
+        lookPointRotation += new Vector3(
+            Mathf.LerpAngle(lookPointRotation.x, lookPointTargetRotation.x, lookAtPointShift_kP),
+            Mathf.LerpAngle(lookPointRotation.y, lookPointTargetRotation.y, lookAtPointShift_kP),
+            Mathf.LerpAngle(lookPointRotation.z, lookPointTargetRotation.z, lookAtPointShift_kP)
+        );
+        */
+        
+        lookPointRotation = lookPointTargetRotation;
+
         if (aimedDownSights)
         {
             ItemSway *= aimSwayMultiplier;
@@ -231,16 +250,28 @@ public class PlayerFirearm : PlayerItem
         
         if (User is Player) 
         {
+            
             if (Sprinting || (User as Player).PlayerCamera.FreeLook || (User as Player).PlayerCamera.FirstPersonMode || WeaponADSObstruction)
             {
-                this.transform.localEulerAngles = ConvertVectorDirections(RotationOffset);
+                lookPointWeight += (0 - lookPointWeight) * lookAtPointTransition_kP;
+                //this.transform.localEulerAngles = ConvertVectorDirections(RotationOffset);
             }
             else
             {
-                this.transform.LookAt(lookPoint);
-                this.transform.Rotate(rotationOffsets);
-                this.transform.localEulerAngles += ConvertVectorDirections(RotationOffset);
+                lookPointWeight += (1 - lookPointWeight) * lookAtPointTransition_kP;
+                //his.transform.LookAt(lookPoint);
+                //this.transform.Rotate(rotationOffsets);
+                //this.transform.localEulerAngles += ConvertVectorDirections(RotationOffset);
             }
+
+            this.transform.localEulerAngles = new Vector3 (
+                Mathf.LerpAngle(this.transform.localEulerAngles.x, lookPointRotation.x, lookPointWeight),
+                Mathf.LerpAngle(this.transform.localEulerAngles.y, lookPointRotation.y, lookPointWeight),
+                Mathf.LerpAngle(this.transform.localEulerAngles.z, lookPointRotation.z, lookPointWeight)
+            );
+            this.transform.Rotate(rotationOffsets * lookPointWeight);
+
+            this.transform.localEulerAngles += ConvertVectorDirections(RotationOffset);
         }
 
         UpdateHitmarkers();

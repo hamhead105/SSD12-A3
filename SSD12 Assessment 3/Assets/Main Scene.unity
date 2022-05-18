@@ -1255,7 +1255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!143 &1553252370
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1286,7 +1286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1125e65712eac1441b2baddf924fc514, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 900000
+  health: 150
   maxHealth: 900000
   deathInstantiations:
   - {fileID: 8234285422723896156, guid: a86283bcc741f014781d40042d4790ed, type: 3}
@@ -1298,7 +1298,7 @@ MonoBehaviour:
   damage: 24
   projectileSpeed: 0.4
   muzzleEffect: {fileID: 0}
-  attackCooldown: 1
+  attackCooldown: 5
   readyToFire: 0
 --- !u!4 &1553252372
 Transform:
