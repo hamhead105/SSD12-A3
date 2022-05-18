@@ -1,1665 +1,746 @@
 Using pre-set license
 Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 15920 MB
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 32568 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Unity Editor\2020.2.1f1\Editor\Unity.exe
+D:\Unity Pojects\2020.2.1f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/speed/Documents/GitHub/SSD12-A3/SSD12 Assessment 3
+D:/Unity Pojects/SSD12 A3/SSD12 Assessment 3
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49994
-Successfully changed project path to: C:/Users/speed/Documents/GitHub/SSD12-A3/SSD12 Assessment 3
-C:/Users/speed/Documents/GitHub/SSD12-A3/SSD12 Assessment 3
+53847
+Successfully changed project path to: D:/Unity Pojects/SSD12 A3/SSD12 Assessment 3
+D:/Unity Pojects/SSD12 A3/SSD12 Assessment 3
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 87.31 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.96 ms.
+Refreshing native plugins compatible for Editor in 76.97 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.90 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
-[Subsystems] Discovering subsystems at path C:/Unity Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/speed/Documents/GitHub/SSD12-A3/SSD12 Assessment 3/Assets
+[Subsystems] Discovering subsystems at path D:/Unity Pojects/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity Pojects/SSD12 A3/SSD12 Assessment 3/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 Ti with Max-Q Design (ID=0x1c8c)
+    Renderer: NVIDIA GeForce RTX 3080 (ID=0x2206)
     Vendor:   
-    VRAM:     4018 MB
-    Driver:   30.0.14.7291
+    VRAM:     10078 MB
+    Driver:   30.0.15.1213
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
-Mono path[0] = 'C:/Unity Editor/2020.2.1f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Unity Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Unity Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56056
+Mono path[0] = 'D:/Unity Pojects/2020.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity Pojects/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity Pojects/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56308
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Unity Editor/2020.2.1f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: C:/Unity Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002167 seconds.
+Register platform support module: D:/Unity Pojects/2020.2.1f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: D:/Unity Pojects/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: D:/Unity Pojects/2020.2.1f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.001561 seconds.
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 89.12 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
+Refreshing native plugins compatible for Editor in 72.39 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.212 seconds
+- Completed reload, in  1.284 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002637 seconds.
+Registered in 0.001743 seconds.
 Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 84.61 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
+Refreshing native plugins compatible for Editor in 74.61 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.026 seconds
+- Completed reload, in  1.448 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
 Unloading 2876 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 141.6 MB.
-System memory in use after: 136.0 MB.
+System memory in use before: 220.1 MB.
+System memory in use after: 218.9 MB.
 
-Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3253.
-Total: 5.593300 ms (FindLiveObjects: 0.289400 ms CreateObjectMapping: 0.110700 ms MarkObjects: 2.721200 ms  DeleteObjects: 2.470600 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Player.prefab
-  artifactKey: Guid(6fd622eb37ff1b94782334051cd54822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Player.prefab using Guid(6fd622eb37ff1b94782334051cd54822) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.MonoBehaviour:.ctor ()
-Inventory:.ctor ()
-Human:.ctor () (at Assets/Scripts/Human.cs:101)
-Player:.ctor () (at Assets/Scripts/Player.cs:38)
-
-[Assets/Scripts/Human.cs line 101]
-
-You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.MonoBehaviour:.ctor ()
-Inventory:.ctor ()
-Human:.ctor () (at Assets/Scripts/Human.cs:101)
-Player:.ctor () (at Assets/Scripts/Player.cs:38)
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[Assets/Scripts/Human.cs line 101]
-
- -> (artifact id: '7af9eda6583ca84a5c6d7824c99f022c') in 0.315347 seconds
-  Import took 0.321735 seconds .
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 3303.
+Total: 3.072300 ms (FindLiveObjects: 0.335800 ms CreateObjectMapping: 0.235200 ms MarkObjects: 1.859100 ms  DeleteObjects: 0.641700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.431131 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_08.wav
-  artifactKey: Guid(a5a3189a037fd5745946e7f69e1bcbad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_08.wav using Guid(a5a3189a037fd5745946e7f69e1bcbad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bab0b41427e954aa291f9f3153322b9') in 0.073825 seconds
-  Import took 0.079797 seconds .
+  path: Assets/Scripts/Player.cs
+  artifactKey: Guid(27c4b845b524c4646998f494bb8d5405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player.cs using Guid(27c4b845b524c4646998f494bb8d5405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '823a1176a88a17c4cc6820cd54c6b5c2') in 0.070761 seconds
+  Import took 0.111991 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001729 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.774 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 213.5 MB.
+System memory in use after: 212.3 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3306.
+Total: 3.009000 ms (FindLiveObjects: 0.505400 ms CreateObjectMapping: 0.172500 ms MarkObjects: 1.644800 ms  DeleteObjects: 0.685200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001632 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.783 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 213.6 MB.
+System memory in use after: 212.4 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3309.
+Total: 3.719400 ms (FindLiveObjects: 0.295900 ms CreateObjectMapping: 0.136600 ms MarkObjects: 2.529900 ms  DeleteObjects: 0.755900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001880 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.811 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 213.6 MB.
+System memory in use after: 212.4 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3312.
+Total: 3.315600 ms (FindLiveObjects: 0.462200 ms CreateObjectMapping: 0.148500 ms MarkObjects: 1.782400 ms  DeleteObjects: 0.921700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000304 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_31.wav
-  artifactKey: Guid(06570b5f98c029c4395591533b56ddb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_31.wav using Guid(06570b5f98c029c4395591533b56ddb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08133e5535d6e0071267d91293e1145d') in 0.017089 seconds
-  Import took 0.022176 seconds .
+  Time since last request: 430.738830 seconds.
+  path: Assets/EffectExamples/Goop Effects/Prefabs/GoopSpray.prefab
+  artifactKey: Guid(5656e7ea1f1a75d4c895547ec2b824b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EffectExamples/Goop Effects/Prefabs/GoopSpray.prefab using Guid(5656e7ea1f1a75d4c895547ec2b824b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce537580c3fd1c4048f14e63d41b0ef') in 0.043484 seconds
+  Import took 0.105971 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000286 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_49.wav
-  artifactKey: Guid(aef64283bfccb1b4396a2f8273847ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_49.wav using Guid(aef64283bfccb1b4396a2f8273847ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72fae586ea87f9e62785960458c2c90b') in 0.016476 seconds
-  Import took 0.026091 seconds .
+  Time since last request: 0.000167 seconds.
+  path: Assets/EffectExamples/Weapon Effects/Textures/GoopSprayAlbedo.tif
+  artifactKey: Guid(3f4abfb4beaba874db09889251c0f146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EffectExamples/Weapon Effects/Textures/GoopSprayAlbedo.tif using Guid(3f4abfb4beaba874db09889251c0f146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df00978a50a02583d3d57483f1280cdf') in 0.068229 seconds
+  Import took 0.117959 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000579 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_33.wav
-  artifactKey: Guid(8626ed4cb6d6b5b4e91bae59f3c5da1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_33.wav using Guid(8626ed4cb6d6b5b4e91bae59f3c5da1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd88bb74986a68fb33808b21cbe03f38b') in 0.016152 seconds
-  Import took 0.023424 seconds .
+  Time since last request: 0.000165 seconds.
+  path: Assets/EffectExamples/Goop Effects/Textures/GoopSprayAlbedo.tif
+  artifactKey: Guid(12595500d23505f44876c2e13f2e0352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EffectExamples/Goop Effects/Textures/GoopSprayAlbedo.tif using Guid(12595500d23505f44876c2e13f2e0352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4856bcdccd472afeee6dd03cdc3ae9f7') in 0.005373 seconds
+  Import took 0.098984 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000328 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_19.wav
-  artifactKey: Guid(f80a67d30ab14a2449f34db6cce67ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_19.wav using Guid(f80a67d30ab14a2449f34db6cce67ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a27b145ccd9a120a037e8999f4e176d') in 0.015642 seconds
-  Import took 0.023426 seconds .
+  Time since last request: 0.000190 seconds.
+  path: Assets/EffectExamples/Goop Effects/Prefabs/GoopSpray.prefab
+  artifactKey: Guid(5656e7ea1f1a75d4c895547ec2b824b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EffectExamples/Goop Effects/Prefabs/GoopSpray.prefab using Guid(5656e7ea1f1a75d4c895547ec2b824b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce537580c3fd1c4048f14e63d41b0ef') in 0.003407 seconds
+  Import took 0.007224 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000392 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_48.wav
-  artifactKey: Guid(2e54f43f21e2b464d9f7b0be8de85f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_48.wav using Guid(2e54f43f21e2b464d9f7b0be8de85f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '692c2eeed1f33f972892de07eae5321c') in 0.017168 seconds
-  Import took 0.026013 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_fast/PLAYER_steps_gravel2_fast_02.wav
-  artifactKey: Guid(9800f51b9a60216409bda2a0f52f178a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_fast/PLAYER_steps_gravel2_fast_02.wav using Guid(9800f51b9a60216409bda2a0f52f178a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8330ba0145f288cb1213f2a207e872d9') in 0.014545 seconds
-  Import took 0.021926 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000437 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_37.wav
-  artifactKey: Guid(31d3d8e9aaa28434db44923064c03b96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_37.wav using Guid(31d3d8e9aaa28434db44923064c03b96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22f60e83791dc3a094bb95cf69b75046') in 0.018564 seconds
-  Import took 0.026759 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_34.wav
-  artifactKey: Guid(69ab7217f0d9b4e48881034ed53ab0c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_34.wav using Guid(69ab7217f0d9b4e48881034ed53ab0c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b187e7ebaca885d57a6311b9fe07fe25') in 0.016162 seconds
-  Import took 0.025927 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000409 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_30.wav
-  artifactKey: Guid(202d150bb5742af48b7b56fccdf50146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_30.wav using Guid(202d150bb5742af48b7b56fccdf50146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3104056b6c66ecf8e800291dcb41abed') in 0.016411 seconds
-  Import took 0.022536 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_28.wav
-  artifactKey: Guid(db4202d91956db8409ec0b429b935e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_28.wav using Guid(db4202d91956db8409ec0b429b935e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d3ca6919a714c0454c39df2397c7eae') in 0.016379 seconds
-  Import took 0.023034 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000366 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_20.wav
-  artifactKey: Guid(0032306004f0770449375aa452690cf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_20.wav using Guid(0032306004f0770449375aa452690cf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2f2cfb5597561c267bd82cdb3817b63') in 0.017119 seconds
-  Import took 0.024329 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_32.wav
-  artifactKey: Guid(6011f73f16172b841b530fbf33daa6b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_32.wav using Guid(6011f73f16172b841b530fbf33daa6b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47e7ef86f75a4274d86e7950d5984f0e') in 0.018856 seconds
-  Import took 0.026016 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000451 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_18.wav
-  artifactKey: Guid(685f1e19addac0a4b8b17d84f5cdb152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_18.wav using Guid(685f1e19addac0a4b8b17d84f5cdb152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee042d3842fc2612501f92db904e66a5') in 0.018093 seconds
-  Import took 0.025064 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000328 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_10.wav
-  artifactKey: Guid(9f56354420336144fa8182f283b23713) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_10.wav using Guid(9f56354420336144fa8182f283b23713) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9853ccea15b3b991b9f0b5b5260237ae') in 0.016459 seconds
-  Import took 0.021974 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000286 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_11.wav
-  artifactKey: Guid(488146cf53f75e24281814a0444017d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_11.wav using Guid(488146cf53f75e24281814a0444017d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a6ed147d99ab98f841e41f45e676b93') in 0.020803 seconds
-  Import took 0.028351 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_36.wav
-  artifactKey: Guid(22f21197e5deb034a9f7bdeadfe1ebe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_36.wav using Guid(22f21197e5deb034a9f7bdeadfe1ebe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e346dff8a937094f0945dfb853396d3') in 0.016269 seconds
-  Import took 0.023043 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_fast/PLAYER_steps_gravel2_fast.asset
-  artifactKey: Guid(060a9533aed8a8b4f8f94113fcfffd6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_fast/PLAYER_steps_gravel2_fast.asset using Guid(060a9533aed8a8b4f8f94113fcfffd6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a35715968da1408356a75e1b9bc7d56') in 0.009451 seconds
-  Import took 0.014709 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_44.wav
-  artifactKey: Guid(510aad1ffa6795d4390636102e857089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_44.wav using Guid(510aad1ffa6795d4390636102e857089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5078bd27c3f6f3901a399030e2739932') in 0.021621 seconds
-  Import took 0.026827 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000270 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_46.wav
-  artifactKey: Guid(b644a454433ea164cbaf4906c7d8f533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_46.wav using Guid(b644a454433ea164cbaf4906c7d8f533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '589837fafbe400ce3ab73fbc838d7dc2') in 0.013920 seconds
-  Import took 0.020136 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_35.wav
-  artifactKey: Guid(ecfd59627d20b884fb07d5e6932d7020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_35.wav using Guid(ecfd59627d20b884fb07d5e6932d7020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a569fc79853aeedd2e6c2882a627b93d') in 0.020396 seconds
-  Import took 0.028891 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_29.wav
-  artifactKey: Guid(a162c290b7ab6274b9ce946d85a2aa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_29.wav using Guid(a162c290b7ab6274b9ce946d85a2aa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fee4cfa7a7d631050c77d82cb821ac12') in 0.016411 seconds
-  Import took 0.024960 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_25.wav
-  artifactKey: Guid(f7715a33d0d395048a33c435eace4bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_25.wav using Guid(f7715a33d0d395048a33c435eace4bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb157423fb60e275f3a2ef5a6a517177') in 0.015111 seconds
-  Import took 0.020794 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_47.wav
-  artifactKey: Guid(20c1a01da753d5540b592f4182cbf4d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_47.wav using Guid(20c1a01da753d5540b592f4182cbf4d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9de604f8601617d7480dcc2c402ba421') in 0.020372 seconds
-  Import took 0.027660 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000345 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_09.wav
-  artifactKey: Guid(6e29558363a96334893ef67d0dd87839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_09.wav using Guid(6e29558363a96334893ef67d0dd87839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bcc187b73ddadf079f226cd02f62af9') in 0.013494 seconds
-  Import took 0.021022 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_16.wav
-  artifactKey: Guid(fd6f7704f32d02344827be08e120e9c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_16.wav using Guid(fd6f7704f32d02344827be08e120e9c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12b63de2cc66e057aa23818538a608f2') in 0.015691 seconds
-  Import took 0.020845 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000297 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_14.wav
-  artifactKey: Guid(a332936e7f70d2048b4b6823dd950a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_14.wav using Guid(a332936e7f70d2048b4b6823dd950a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '410fc968eac7d8e886f82beb2f37b33e') in 0.023131 seconds
-  Import took 0.030006 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000166 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_24.wav
-  artifactKey: Guid(834c4b4447e5ed64d855ea37651a5777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_24.wav using Guid(834c4b4447e5ed64d855ea37651a5777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e35931ab8c30ccf8cbc0fd7cd1046d4d') in 0.016579 seconds
-  Import took 0.021785 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_39.wav
-  artifactKey: Guid(7d2a71e81ea306142a95ab9beef6ce9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_39.wav using Guid(7d2a71e81ea306142a95ab9beef6ce9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b9e85f3cad381e13959f8b4d2a64fda') in 0.017381 seconds
-  Import took 0.027213 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000299 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_50.wav
-  artifactKey: Guid(567485d0c4431ce41a81a3582d37f35d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_50.wav using Guid(567485d0c4431ce41a81a3582d37f35d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eda0fba9ccb43999a389aa56837f42f4') in 0.018325 seconds
-  Import took 0.023486 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_45.wav
-  artifactKey: Guid(e3d57e784f69d214cb667435d22e958f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_45.wav using Guid(e3d57e784f69d214cb667435d22e958f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '325d7394c1a9f891d88b5b5a040cf095') in 0.014038 seconds
-  Import took 0.019442 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000444 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_27.wav
-  artifactKey: Guid(a04e02850278c0541ae4fc985b61c757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_27.wav using Guid(a04e02850278c0541ae4fc985b61c757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a4b471c51ffd37312e0dead1b94b46b') in 0.021073 seconds
-  Import took 0.026330 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_41.wav
-  artifactKey: Guid(2863acd6cebb7bb4ca56167550e342d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_41.wav using Guid(2863acd6cebb7bb4ca56167550e342d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aefc32a60c8c11f54a131b57cefc945b') in 0.014385 seconds
-  Import took 0.021514 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_15.wav
-  artifactKey: Guid(4e1fb285f00ff6f488bd8051af4365d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_15.wav using Guid(4e1fb285f00ff6f488bd8051af4365d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '805ea3df8cd69a34f17605963881b944') in 0.013699 seconds
-  Import took 0.018405 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_fast/PLAYER_steps_gravel2_fast_01.wav
-  artifactKey: Guid(03f61e46ec513c043b9e26545e3052bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_fast/PLAYER_steps_gravel2_fast_01.wav using Guid(03f61e46ec513c043b9e26545e3052bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b61b75c23884bfb2f01c8513fc23d64') in 0.020637 seconds
-  Import took 0.025712 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000288 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_38.wav
-  artifactKey: Guid(31f80381e796a28488dc59107b1d09cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_38.wav using Guid(31f80381e796a28488dc59107b1d09cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e89b8d0a1b315b7a18adfc3ad27793e') in 0.014906 seconds
-  Import took 0.021211 seconds .
+  Time since last request: 0.000197 seconds.
+  path: Assets/EffectExamples/Goop Effects/Textures/GoopSprayNormals.tif
+  artifactKey: Guid(d3d3954ad53568b49b1fda6366f2b5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EffectExamples/Goop Effects/Textures/GoopSprayNormals.tif using Guid(d3d3954ad53568b49b1fda6366f2b5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa555a374aef3b4573ec7bd89650d05') in 0.054831 seconds
+  Import took 0.070513 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000198 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_13.wav
-  artifactKey: Guid(288ee3cac19ad724ba39dbae13a355c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_13.wav using Guid(288ee3cac19ad724ba39dbae13a355c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a3e57ae1c11229ceb02b05a5f51a30d') in 0.013135 seconds
-  Import took 0.017875 seconds .
+  path: Assets/EffectExamples/Goop Effects/Prefabs/GoopSprayEffect.prefab
+  artifactKey: Guid(abb9f519b142e304d9c45b56afa768bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EffectExamples/Goop Effects/Prefabs/GoopSprayEffect.prefab using Guid(abb9f519b142e304d9c45b56afa768bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db4754c6b26ca5149f5311d9746fc0e4') in 0.005999 seconds
+  Import took 0.070711 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_12.wav
-  artifactKey: Guid(fa7f3cc630b40f14999efd19f6b31dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_12.wav using Guid(fa7f3cc630b40f14999efd19f6b31dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db5fca10ff17b2dab59d346b656652d9') in 0.019596 seconds
-  Import took 0.024676 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_21.wav
-  artifactKey: Guid(c4bbc24dbe418a1439e5e6d1b6427ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_21.wav using Guid(c4bbc24dbe418a1439e5e6d1b6427ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5b33f95f5a4fced57ad3a31d80b692b') in 0.016906 seconds
-  Import took 0.024267 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_fast/PLAYER_steps_gravel2_fast_03.wav
-  artifactKey: Guid(0428ada24395ccc459551162dfdf92e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_fast/PLAYER_steps_gravel2_fast_03.wav using Guid(0428ada24395ccc459551162dfdf92e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1128ec6580e383864877622c0f03fa6') in 0.014656 seconds
-  Import took 0.019671 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_23.wav
-  artifactKey: Guid(9e8281c02b9ae2447b8938570662389e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_23.wav using Guid(9e8281c02b9ae2447b8938570662389e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d6f723f7c6930516f83e5e28263d52e') in 0.020695 seconds
-  Import took 0.026968 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000352 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_22.wav
-  artifactKey: Guid(9fd8ea83f723ae04c9eb77743dad31f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_22.wav using Guid(9fd8ea83f723ae04c9eb77743dad31f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81851a3a382110a1265411a308061401') in 0.013209 seconds
-  Import took 0.018984 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_43.wav
-  artifactKey: Guid(bc9978e346551a0468261b0de1cf2e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_43.wav using Guid(bc9978e346551a0468261b0de1cf2e1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e371c181cf7121410763b5b3863659c') in 0.020655 seconds
-  Import took 0.026704 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_42.wav
-  artifactKey: Guid(b0afa95fbf6dc264cbc6ed26f1d4614c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_42.wav using Guid(b0afa95fbf6dc264cbc6ed26f1d4614c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40221b1af51660eb214765ddcd82085f') in 0.016542 seconds
-  Import took 0.023331 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_26.wav
-  artifactKey: Guid(e4505d52f2c01934d9a89218d2d629bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_26.wav using Guid(e4505d52f2c01934d9a89218d2d629bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef8efe068388e88108dc165d48211823') in 0.015929 seconds
-  Import took 0.021031 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_40.wav
-  artifactKey: Guid(4d9132e4caac1fe4c998bef333b2587d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_40.wav using Guid(4d9132e4caac1fe4c998bef333b2587d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ea30e6128a7c2474526817e0033f2e3') in 0.021224 seconds
-  Import took 0.028482 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000422 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_17.wav
-  artifactKey: Guid(0ff97044dda923148b7fe6229cc66ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_grass/PLAYER_steps_grass_slow/PLAYER_steps_grass_slow_17.wav using Guid(0ff97044dda923148b7fe6229cc66ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc2e9d7bbcb14869fbf36362f78fa14a') in 0.014074 seconds
-  Import took 0.020767 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.550277 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_jump/PLAYER_steps_gravel2_jump_02.wav
-  artifactKey: Guid(2490284f04eb194408f27425ce20784d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_jump/PLAYER_steps_gravel2_jump_02.wav using Guid(2490284f04eb194408f27425ce20784d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d7d0b7012f7c93563f49b63de8dab6f') in 0.014793 seconds
-  Import took 0.020005 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_06.wav
-  artifactKey: Guid(9c732b567cfae2a4e974d12880a8784a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_06.wav using Guid(9c732b567cfae2a4e974d12880a8784a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c35914cd08bfb7f6df891118a648b039') in 0.014461 seconds
-  Import took 0.021779 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_17.wav
-  artifactKey: Guid(421a578ad5a63ae4abf0f967e9261f86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_17.wav using Guid(421a578ad5a63ae4abf0f967e9261f86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ba76494b0325b2bf60bc408752eb9ce') in 0.018952 seconds
-  Import took 0.024008 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_21.wav
-  artifactKey: Guid(18efaf483c0b5dd4898999284f66a15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_21.wav using Guid(18efaf483c0b5dd4898999284f66a15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9275fdec3eb8a0a9762727b0590b11a4') in 0.015928 seconds
-  Import took 0.022032 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000715 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_02.wav
-  artifactKey: Guid(6cd3a25ace7380f4c8a7e1ca5e407266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_02.wav using Guid(6cd3a25ace7380f4c8a7e1ca5e407266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2f45b73d926e779490523383be8857e') in 0.014886 seconds
-  Import took 0.021399 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_01.wav
-  artifactKey: Guid(e6e7abb33a1eb674fadff5e32d8ac2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_01.wav using Guid(e6e7abb33a1eb674fadff5e32d8ac2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbefdf4bef9e3fbf2c5ced8b0c12ea9c') in 0.014658 seconds
-  Import took 0.019312 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_20.wav
-  artifactKey: Guid(711a0c3eeadc37049ad736fcf7246afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_20.wav using Guid(711a0c3eeadc37049ad736fcf7246afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90bb846bef2540ef6626d333e058e97a') in 0.019412 seconds
-  Import took 0.026084 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000467 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_13.wav
-  artifactKey: Guid(f08a7bea5526e9243a8eec1a3452b5dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_13.wav using Guid(f08a7bea5526e9243a8eec1a3452b5dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81921958761aa10f9cdc0184fb30798b') in 0.014614 seconds
-  Import took 0.021684 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_16.wav
-  artifactKey: Guid(593ebd27eb7a3c041adf0177568e3253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_16.wav using Guid(593ebd27eb7a3c041adf0177568e3253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8254a44e553ef671527e03ea6c14dbf') in 0.019217 seconds
-  Import took 0.025065 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000649 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_04.wav
-  artifactKey: Guid(218b00e32d93fd4418dd67c3c0ce32c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_04.wav using Guid(218b00e32d93fd4418dd67c3c0ce32c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3de9b0b9acca246c4a73c250789ff50') in 0.015236 seconds
-  Import took 0.021366 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000302 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_18.wav
-  artifactKey: Guid(6c20f6f26b5dcae42a988e5b4d51323a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_18.wav using Guid(6c20f6f26b5dcae42a988e5b4d51323a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eaab2d1c14cf0b25da9f440ffea7163') in 0.018670 seconds
-  Import took 0.023139 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_05.wav
-  artifactKey: Guid(7019eac090bab6549851772144ad585a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_05.wav using Guid(7019eac090bab6549851772144ad585a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a2db9f625b39bea3f72b866d78dc83c') in 0.016502 seconds
-  Import took 0.022558 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000341 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_03.wav
-  artifactKey: Guid(335b1db0be0a14a4899c5115999f0e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_03.wav using Guid(335b1db0be0a14a4899c5115999f0e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adc5e21328ae91d060936c0895a64803') in 0.018226 seconds
-  Import took 0.025143 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_04.wav
-  artifactKey: Guid(60f161404ac40d84593a649d921c9735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_04.wav using Guid(60f161404ac40d84593a649d921c9735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86c5456c0473f0116bd9e7d85e02b81a') in 0.014497 seconds
-  Import took 0.019802 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000295 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_07.wav
-  artifactKey: Guid(b578b5a5b8978c740a39a92760f6510f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_07.wav using Guid(b578b5a5b8978c740a39a92760f6510f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70bf58026042f784e39302a3bc3e21ac') in 0.018000 seconds
-  Import took 0.025851 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_14.wav
-  artifactKey: Guid(d46d728413f9c6b42a9bf35df85a8938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_14.wav using Guid(d46d728413f9c6b42a9bf35df85a8938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99ce2fe1d3ecbb475060081b8e19a520') in 0.016595 seconds
-  Import took 0.021510 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_21.wav
-  artifactKey: Guid(3ca0e0e73a5e0d24aacac37ed0dae5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_21.wav using Guid(3ca0e0e73a5e0d24aacac37ed0dae5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a189191e7e193af3e9eddd272762f41') in 0.015895 seconds
-  Import took 0.022675 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000386 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_30.wav
-  artifactKey: Guid(27430af6b332a0c4da98222446dc2930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_30.wav using Guid(27430af6b332a0c4da98222446dc2930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67345b027fc90a2da1d1279c2c5f620b') in 0.019705 seconds
-  Import took 0.026078 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_17.wav
-  artifactKey: Guid(772a84d71f223544982cefdb67460f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_17.wav using Guid(772a84d71f223544982cefdb67460f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0d9c063ba54cb73fe45be6fc755416f') in 0.015991 seconds
-  Import took 0.020660 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_29.wav
-  artifactKey: Guid(0ca352b4072de1b4ca680b91eaa94336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_29.wav using Guid(0ca352b4072de1b4ca680b91eaa94336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7dfc20c89a50c596a662ac2144218e5') in 0.021777 seconds
-  Import took 0.027708 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_jump/PLAYER_steps_gravel2_jump_04.wav
-  artifactKey: Guid(7f06b621f48400141830f00a1c87fe55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_jump/PLAYER_steps_gravel2_jump_04.wav using Guid(7f06b621f48400141830f00a1c87fe55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c30f17ec9eaac2f7ee3d99061c6cd2cf') in 0.015515 seconds
-  Import took 0.020123 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_28.wav
-  artifactKey: Guid(979be299ebad9a046b70621f03bd83d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_28.wav using Guid(979be299ebad9a046b70621f03bd83d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9805617ed81edc0e05faf37537e87be6') in 0.015491 seconds
-  Import took 0.022979 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000426 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_01.wav
-  artifactKey: Guid(e60f527ef1a232e469b09d4d569287b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_01.wav using Guid(e60f527ef1a232e469b09d4d569287b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '045aff69fd51c810d97b0faabf9d191c') in 0.015678 seconds
-  Import took 0.020906 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_18.wav
-  artifactKey: Guid(4cded00bfbc3893499ba003ea51e268b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_18.wav using Guid(4cded00bfbc3893499ba003ea51e268b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ee28dfafb4fe36112c010153eb2cf8f') in 0.014520 seconds
-  Import took 0.018941 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_12.wav
-  artifactKey: Guid(cbdfec1d3205f274abde6c9528e98b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_12.wav using Guid(cbdfec1d3205f274abde6c9528e98b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '403acc16ed75686e27583a00da3d6bd0') in 0.018628 seconds
-  Import took 0.025676 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000328 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_jump/PLAYER_steps_gravel2_jump_05.wav
-  artifactKey: Guid(fbc1ccf97525d584b8175ff6ed75c283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_jump/PLAYER_steps_gravel2_jump_05.wav using Guid(fbc1ccf97525d584b8175ff6ed75c283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'debbfaccd63bae9ff1c2d5f61c62c49f') in 0.015879 seconds
-  Import took 0.021277 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_23.wav
-  artifactKey: Guid(ae33f5340a8d3f8489ce191331100aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_23.wav using Guid(ae33f5340a8d3f8489ce191331100aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71007a5e6dff86391173cde591689a95') in 0.015988 seconds
-  Import took 0.022489 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000283 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow.asset
-  artifactKey: Guid(cc8a835060a059548aac87f9f48fd944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow.asset using Guid(cc8a835060a059548aac87f9f48fd944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88a6d5caac7f34dd3b59db135d348f61') in 0.007978 seconds
-  Import took 0.012794 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_11.wav
-  artifactKey: Guid(6d0f71f2beaa58a44a4a4aaed864d359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_11.wav using Guid(6d0f71f2beaa58a44a4a4aaed864d359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b52b0a6987350178947b753b068e31a') in 0.020841 seconds
-  Import took 0.027926 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_09.wav
-  artifactKey: Guid(d80d8d4fffb67de4abe967b3aa6d0a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_09.wav using Guid(d80d8d4fffb67de4abe967b3aa6d0a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3deebc7758b1f333d5393ce5b0374600') in 0.014372 seconds
-  Import took 0.019069 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_13.wav
-  artifactKey: Guid(edcd12934ebc23a4a9a3ae3794d668dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_13.wav using Guid(edcd12934ebc23a4a9a3ae3794d668dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eb6afaf9bb9caeabf8499cf1d051a96') in 0.021685 seconds
-  Import took 0.027586 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_09.wav
-  artifactKey: Guid(adeff9d374a6e5e409f54068dc7cfb3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_09.wav using Guid(adeff9d374a6e5e409f54068dc7cfb3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce1e148204ede3ec48955869f141d338') in 0.015655 seconds
-  Import took 0.020759 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_10.wav
-  artifactKey: Guid(54b207839b311ca4e81ad7a273f978a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_10.wav using Guid(54b207839b311ca4e81ad7a273f978a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6ad9d9f59a95e0792af26cf60c22df0') in 0.017673 seconds
-  Import took 0.023598 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000389 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_19.wav
-  artifactKey: Guid(dba19c64b2b2b8a4386734abcb6574a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_19.wav using Guid(dba19c64b2b2b8a4386734abcb6574a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5277d3a8b8ce0566a36074451b6fb614') in 0.018581 seconds
-  Import took 0.025921 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000640 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_22.wav
-  artifactKey: Guid(813f1d140802b35479a05979bc75c3b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_22.wav using Guid(813f1d140802b35479a05979bc75c3b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd28ccf05e34185bbe68fa150f3ccd429') in 0.017182 seconds
-  Import took 0.022124 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000285 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_23.wav
-  artifactKey: Guid(96a324180c3b6eb439fbe2a1aba358b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_23.wav using Guid(96a324180c3b6eb439fbe2a1aba358b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac832d1098f6a96f055c496908a0a0df') in 0.018658 seconds
-  Import took 0.025183 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_11.wav
-  artifactKey: Guid(e5180314eec71474b92655a896ec3095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_11.wav using Guid(e5180314eec71474b92655a896ec3095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbd630411ca9e069679229fa3e2490fc') in 0.017423 seconds
-  Import took 0.022813 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000390 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_15.wav
-  artifactKey: Guid(2ce5cb6791961714fb65273e91b71bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_15.wav using Guid(2ce5cb6791961714fb65273e91b71bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1715fb761c309061c922eb1e4cdef0b2') in 0.018124 seconds
-  Import took 0.025864 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_20.wav
-  artifactKey: Guid(bf94864b077370544b45b4076c9ac2f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_20.wav using Guid(bf94864b077370544b45b4076c9ac2f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0429246d9c01d26c27e58f52b9b27c2') in 0.016069 seconds
-  Import took 0.020849 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_08.wav
-  artifactKey: Guid(88d5d8cd1f51d7d4ebbb823aefb3cc2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_08.wav using Guid(88d5d8cd1f51d7d4ebbb823aefb3cc2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b29125f7caeea11045f11fcfdbc39962') in 0.016513 seconds
-  Import took 0.023496 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000413 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_jump/PLAYER_steps_gravel2_jump_03.wav
-  artifactKey: Guid(c01674139886e2e4d8af720f20acb0c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_jump/PLAYER_steps_gravel2_jump_03.wav using Guid(c01674139886e2e4d8af720f20acb0c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54ce8cfa03a540d724e91a269679aa2c') in 0.017588 seconds
-  Import took 0.024330 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_25.wav
-  artifactKey: Guid(6277411a985a39047827917f8975252d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_25.wav using Guid(6277411a985a39047827917f8975252d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ce2908d15a5ac03f64a5db5bf6901c4') in 0.014905 seconds
-  Import took 0.020933 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000368 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_05.wav
-  artifactKey: Guid(d35bbcc438329f84c9d745a6073376c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_05.wav using Guid(d35bbcc438329f84c9d745a6073376c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6443ef1863de174336372a20192a4abe') in 0.018674 seconds
-  Import took 0.025828 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_12.wav
-  artifactKey: Guid(b8f40abeaa4622e4bb9308bcd322b7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_12.wav using Guid(b8f40abeaa4622e4bb9308bcd322b7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c288c1f7fa861ff400c4f2858e6f1210') in 0.014639 seconds
-  Import took 0.019673 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_06.wav
-  artifactKey: Guid(27e44698852077242a60727f831aa920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_06.wav using Guid(27e44698852077242a60727f831aa920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de05b44e04701f30a6f576f85b4020fe') in 0.016873 seconds
-  Import took 0.025297 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_15.wav
-  artifactKey: Guid(e755d9b683b10a24c82768edb4d9a6b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_15.wav using Guid(e755d9b683b10a24c82768edb4d9a6b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd04f2ae0e46c4ffaa966df971aae9e0b') in 0.015081 seconds
-  Import took 0.020624 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000286 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast.asset
-  artifactKey: Guid(b98f2f1142d20a54f90d80e7d973bb08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast.asset using Guid(b98f2f1142d20a54f90d80e7d973bb08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6940037ee20eedbdc039a738f2be264f') in 0.009761 seconds
-  Import took 0.015164 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000292 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_14.wav
-  artifactKey: Guid(d7faca637b379df4f948d39cb59a6526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_14.wav using Guid(d7faca637b379df4f948d39cb59a6526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '230c5f23f699a468e482019b2c125afe') in 0.014941 seconds
-  Import took 0.019562 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_07.wav
-  artifactKey: Guid(6f54b4f0970ba8d458096a8f86ce012e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_07.wav using Guid(6f54b4f0970ba8d458096a8f86ce012e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83e408952abf8fe8fb72ef2540a63c41') in 0.018757 seconds
-  Import took 0.025877 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000369 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_27.wav
-  artifactKey: Guid(be2f9f857b61aa14fbef63cf80405576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_27.wav using Guid(be2f9f857b61aa14fbef63cf80405576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '622a40b69d927292fc94142b2d1488e4') in 0.019629 seconds
-  Import took 0.025228 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_16.wav
-  artifactKey: Guid(552719c3c3a2b6c428a12b50b84a0958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_16.wav using Guid(552719c3c3a2b6c428a12b50b84a0958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72fabdb4693133750ac54478a37cb1d0') in 0.014464 seconds
-  Import took 0.021307 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000409 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_03.wav
-  artifactKey: Guid(723038fa158e8764082e77a83b6a39d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_03.wav using Guid(723038fa158e8764082e77a83b6a39d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fe71f48e3cfe483adfd8543176b37af') in 0.019737 seconds
-  Import took 0.025920 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_22.wav
-  artifactKey: Guid(41fc9561e01f0094eb29d25d68c1ce5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_22.wav using Guid(41fc9561e01f0094eb29d25d68c1ce5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fa036c97989c70ee8b4787533c5fbc8') in 0.015638 seconds
-  Import took 0.020902 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000328 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_02.wav
-  artifactKey: Guid(beb93d7e82c55924b8145cc778e8b0b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_02.wav using Guid(beb93d7e82c55924b8145cc778e8b0b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f08458a8ae100343c91df5bb6f00994') in 0.017179 seconds
-  Import took 0.023387 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000261 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_19.wav
-  artifactKey: Guid(5ff382a06c611224ea216c0c75b96931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel/PLAYER_steps_gravel_fast/PLAYER_steps_gravel_fast_19.wav using Guid(5ff382a06c611224ea216c0c75b96931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '103fcf8bf81fdff8f46cee99fec1cdcf') in 0.015018 seconds
-  Import took 0.020445 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_08.wav
-  artifactKey: Guid(34afcad7ba4243b43bd7b64e4c26f823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_08.wav using Guid(34afcad7ba4243b43bd7b64e4c26f823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4622221688b470a409fe917bf14d9df') in 0.016010 seconds
-  Import took 0.021557 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000325 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_24.wav
-  artifactKey: Guid(44521ae549bec374d96e8658253f9536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_24.wav using Guid(44521ae549bec374d96e8658253f9536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00e1ec7319f11ac7a0eacead0b6d57d7') in 0.016750 seconds
-  Import took 0.023126 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000275 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_26.wav
-  artifactKey: Guid(6cdcab56761384d49b41f492acbddd83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_26.wav using Guid(6cdcab56761384d49b41f492acbddd83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c6361b7aa7f5ee799ed576e780c1d8d') in 0.015932 seconds
-  Import took 0.021028 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000329 seconds.
-  path: Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_10.wav
-  artifactKey: Guid(f011147d7aef03049b35bff841062aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/BOTD/Audio/CHAR/PLAYER_steps_gravel2/PLAYER_steps_gravel2_slow/PLAYER_steps_gravel2_slow_10.wav using Guid(f011147d7aef03049b35bff841062aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9187c00a9360b7ab91172c262129f94b') in 0.016165 seconds
-  Import took 0.021429 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.796438 seconds.
-  path: Assets/Animations/Glock Arms.mask
-  artifactKey: Guid(5ea8bf2307dc73e44a4657e355292df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Glock Arms.mask using Guid(5ea8bf2307dc73e44a4657e355292df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0986704d45bb2d4aae61a3b39b377e7') in 0.012783 seconds
-  Import took 0.018296 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/Animations/NewLayer.terrainlayer
-  artifactKey: Guid(1f63bf01309f4fa46ad77749b35c1c81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/NewLayer.terrainlayer using Guid(1f63bf01309f4fa46ad77749b35c1c81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c21fe249c51cae5a283eb62acd9f942') in 0.053403 seconds
-  Import took 0.058302 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/Animations/M870 Arms.mask
-  artifactKey: Guid(d5ee719bebb97cb4a8beb8fbb0d54b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/M870 Arms.mask using Guid(d5ee719bebb97cb4a8beb8fbb0d54b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b91071af487556f9ccea779a61389e7') in 0.010557 seconds
-  Import took 0.016262 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000552 seconds.
-  path: Assets/Animations/M24 Arms.mask
-  artifactKey: Guid(82ae32835d482ed40b7608b6ef72a085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/M24 Arms.mask using Guid(82ae32835d482ed40b7608b6ef72a085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90f897bb2f770c58e934c09c0ed8fcc6') in 0.015097 seconds
-  Import took 0.021553 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000401 seconds.
-  path: Assets/Animations/HK416 Arms Mask.mask
-  artifactKey: Guid(bf25a52c2d5d78a43bc0edd4b83bff6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/HK416 Arms Mask.mask using Guid(bf25a52c2d5d78a43bc0edd4b83bff6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4d927925492e21e12460645ed30bb55') in 0.012219 seconds
-  Import took 0.020405 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/Animations/P90 Arms.mask
-  artifactKey: Guid(c3fb526af19d20842bdfb15447a58e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/P90 Arms.mask using Guid(c3fb526af19d20842bdfb15447a58e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf83c0123b8655226c755ab1c32dbc17') in 0.015047 seconds
-  Import took 0.022266 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000299 seconds.
-  path: Assets/Animations/Glock Slide.mask
-  artifactKey: Guid(47b401be62f1b0c4bbcf43603bb82369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Glock Slide.mask using Guid(47b401be62f1b0c4bbcf43603bb82369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93bd8c3a600896d0a5252a98fe739bfd') in 0.012544 seconds
-  Import took 0.017712 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.692842 seconds.
-  path: Assets/Materials/Black Metal.mat
-  artifactKey: Guid(da03f3273fb613349a80dcdd34a54ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Black Metal.mat using Guid(da03f3273fb613349a80dcdd34a54ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4add0eeeb4fa78169f7af476be2677bf') in 0.041950 seconds
-  Import took 0.046993 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000330 seconds.
-  path: Assets/ExampleAssets/Textures/Wood/Plywood_MetallicOcculusionSmoothness.tif
-  artifactKey: Guid(2e38f7921b7d7b1418ab63c08117ffb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Textures/Wood/Plywood_MetallicOcculusionSmoothness.tif using Guid(2e38f7921b7d7b1418ab63c08117ffb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ba5ff8bbf56372bc67a1aca6cf0cb72') in 0.030405 seconds
-  Import took 0.037112 seconds .
+  Time since last request: 0.000131 seconds.
+  path: Assets/EffectExamples/Weapon Effects/Textures/GoopSprayNormal.tif
+  artifactKey: Guid(041de061027a6f7478b69332b265342b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EffectExamples/Weapon Effects/Textures/GoopSprayNormal.tif using Guid(041de061027a6f7478b69332b265342b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded1a4fc2454562acf165fbc5228dc2a') in 0.037422 seconds
+  Import took 0.047593 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000290 seconds.
-  path: Assets/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_MetallicOcculusionSmoothness.tif
-  artifactKey: Guid(3017ed6fed9d3bb49ba99bf738e2d626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Textures/Props/Jigsaw/Jigsaw_MetallicOcculusionSmoothness.tif using Guid(3017ed6fed9d3bb49ba99bf738e2d626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7992a1f2c233f0df71530577938abf5d') in 0.018354 seconds
-  Import took 0.025324 seconds .
+  path: Assets/EffectExamples/Goop Effects/Prefabs/GoopSprayEffect.prefab
+  artifactKey: Guid(abb9f519b142e304d9c45b56afa768bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EffectExamples/Goop Effects/Prefabs/GoopSprayEffect.prefab using Guid(abb9f519b142e304d9c45b56afa768bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db4754c6b26ca5149f5311d9746fc0e4') in 0.003128 seconds
+  Import took 0.006994 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000425 seconds.
-  path: Assets/EffectExamples/Weapon Effects/Materials/MetalSparks.mat
-  artifactKey: Guid(d8002e76dc5e4904f90dc137b3f085ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EffectExamples/Weapon Effects/Materials/MetalSparks.mat using Guid(d8002e76dc5e4904f90dc137b3f085ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63fec55eb8d3ead5ba9c07528a82463a') in 0.202018 seconds
-  Import took 0.208830 seconds .
+  Time since last request: 0.000132 seconds.
+  path: Assets/EffectExamples/Weapon Effects/Textures/GoopSprayNormal.tif
+  artifactKey: Guid(041de061027a6f7478b69332b265342b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EffectExamples/Weapon Effects/Textures/GoopSprayNormal.tif using Guid(041de061027a6f7478b69332b265342b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded1a4fc2454562acf165fbc5228dc2a') in 0.004587 seconds
+  Import took 0.008732 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000304 seconds.
-  path: Assets/ExampleAssets/Materials/Metal_Simple_Mat.mat
-  artifactKey: Guid(a0427cf339e5891468d5f2b433b2d44a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Materials/Metal_Simple_Mat.mat using Guid(a0427cf339e5891468d5f2b433b2d44a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91eebd54f44884cc5a56f6cd43042295') in 0.404992 seconds
-  Import took 0.413078 seconds .
+  Time since last request: 0.166744 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c14ff653114887602fab4ed2a9ed949a') in 0.146159 seconds
+  Import took 0.193165 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000317 seconds.
-  path: Assets/ExampleAssets/Textures/Props/Hammer/Hammer_MetallicOcculusionSmoothness.tif
-  artifactKey: Guid(6c509e4ae024b5e4faeefb92dab5c812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Textures/Props/Hammer/Hammer_MetallicOcculusionSmoothness.tif using Guid(6c509e4ae024b5e4faeefb92dab5c812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acfc15dfa583085fc38399ee15d0f155') in 0.015288 seconds
-  Import took 0.020093 seconds .
+  Time since last request: 7.413522 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13ba9bdce6c902d66ad2f475f50316e8') in 0.026602 seconds
+  Import took 0.091357 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/ExampleAssets/Models/magneticlevel_low.fbx
-  artifactKey: Guid(bae110eee250e4b418b188f4ae4e3170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Models/magneticlevel_low.fbx using Guid(bae110eee250e4b418b188f4ae4e3170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bc5d59b6593f4e6d095f578d820c66f') in 0.160623 seconds
-  Import took 0.165773 seconds .
+  Time since last request: 3.535493 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ca4a0ed99b7287be4cb24a78ed0cea0') in 0.025298 seconds
+  Import took 0.077894 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_metal_1.mat
-  artifactKey: Guid(e2704b276abb44c18b2bad1e6b99047d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_metal_1.mat using Guid(e2704b276abb44c18b2bad1e6b99047d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80eccc24281f60b63f6e4d2f07c196dd') in 0.045023 seconds
-  Import took 0.049621 seconds .
+  Time since last request: 2.313705 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dac5e3572a1662884a06ab4d40df8b73') in 0.021239 seconds
+  Import took 0.035045 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/EffectExamples/Weapon Effects/Prefabs/MetalImpacts.prefab
-  artifactKey: Guid(44be68b4fc4366142a9cd1ae1f761ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EffectExamples/Weapon Effects/Prefabs/MetalImpacts.prefab using Guid(44be68b4fc4366142a9cd1ae1f761ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3f52a03322cc45d109381d187faee3c') in 0.833933 seconds
-  Import took 0.842037 seconds .
+  Time since last request: 2.432011 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91af413b9254cfbfa605f830c5de1ca5') in 0.025535 seconds
+  Import took 0.044091 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/ExampleAssets/Textures/Props/Construction_Light/ConstructionLight_MetallicOcculusionSmoothness.tif
-  artifactKey: Guid(9a81f1a59f171804e84fce76584bdcb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Textures/Props/Construction_Light/ConstructionLight_MetallicOcculusionSmoothness.tif using Guid(9a81f1a59f171804e84fce76584bdcb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b244b57cf217ba7fafbc8f5d2e50597') in 0.018570 seconds
-  Import took 0.024522 seconds .
+  Time since last request: 2.680437 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ea45b3beb40f5131b159f3ee33a4c8f') in 0.025507 seconds
+  Import took 0.048533 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000281 seconds.
-  path: Assets/ExampleAssets/Models/paintbucket_low.fbx
-  artifactKey: Guid(b451a052397f03c4f8a04d915d1c0492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Models/paintbucket_low.fbx using Guid(b451a052397f03c4f8a04d915d1c0492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc55252dbcc592ddc85facb3b3681195') in 0.068647 seconds
-  Import took 0.076271 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000499 seconds.
-  path: Assets/ExampleAssets/Textures/Plastic/Elastic_MetallicOcculusionSmoothness.tif
-  artifactKey: Guid(f5df2fb0c070b57429f8ca23b216093b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Textures/Plastic/Elastic_MetallicOcculusionSmoothness.tif using Guid(f5df2fb0c070b57429f8ca23b216093b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d0a422f6cdbfac0a38a2173753d878') in 0.016200 seconds
-  Import took 0.023299 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_metal_2.mat
-  artifactKey: Guid(f54e93c187e0e47c7bc2bfa5857d0a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_metal_2.mat using Guid(f54e93c187e0e47c7bc2bfa5857d0a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '570597471a1442a17e6e0f4dc461af8a') in 0.012701 seconds
-  Import took 0.017714 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/ExampleAssets/Textures/Metal/Metal_MetallicSmoothness.tif
-  artifactKey: Guid(40da0395b61db4448b98bab66d6b549c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Textures/Metal/Metal_MetallicSmoothness.tif using Guid(40da0395b61db4448b98bab66d6b549c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad1a7afc254a0096f9f2e6c1ed365953') in 0.008836 seconds
-  Import took 0.013593 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/ExampleAssets/Textures/Concrete/Ground_MetallicOcculusionSmoothness.tif
-  artifactKey: Guid(a8d38587573a5f34c91c4ae0fbd8bfef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Textures/Concrete/Ground_MetallicOcculusionSmoothness.tif using Guid(a8d38587573a5f34c91c4ae0fbd8bfef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eacea41ec6c7896550d1b147f72fd36b') in 0.018951 seconds
-  Import took 0.027609 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000381 seconds.
-  path: Assets/ExampleAssets/Textures/Metal/Metal_Normal.tif
-  artifactKey: Guid(3b0b7c1f4ac9f6b499e27cf84e722ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Textures/Metal/Metal_Normal.tif using Guid(3b0b7c1f4ac9f6b499e27cf84e722ff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8645ba40e8e8d23e191527e4e1e71618') in 0.013869 seconds
-  Import took 0.019866 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/ExampleAssets/Textures/Wood/OBS_MetallicOcculusionSmoothness.tif
-  artifactKey: Guid(22638a9216f1ebf4cb43273a00879f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Textures/Wood/OBS_MetallicOcculusionSmoothness.tif using Guid(22638a9216f1ebf4cb43273a00879f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76aebd97d36551d8b0e2e45bec8a47b1') in 0.018180 seconds
-  Import took 0.025106 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000305 seconds.
-  path: Assets/ExampleAssets/Textures/Props/HardHat/SafetyHat_MetallicOcculusionSmoothness.tif
-  artifactKey: Guid(6f61f8dd4499250438f1aa39448e860a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Textures/Props/HardHat/SafetyHat_MetallicOcculusionSmoothness.tif using Guid(6f61f8dd4499250438f1aa39448e860a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dad3c63415f65f465ddef7b23bf506d') in 0.015162 seconds
-  Import took 0.021689 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000299 seconds.
-  path: Assets/ExampleAssets/Textures/Props/Paint/Paintbrush_MetallicOcculusionSmoothness.tif
-  artifactKey: Guid(888916a5e87c05948b1a97b3c0d42556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Textures/Props/Paint/Paintbrush_MetallicOcculusionSmoothness.tif using Guid(888916a5e87c05948b1a97b3c0d42556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96dfccbb69c8da54b25b9fbbee3d10b9') in 0.014991 seconds
-  Import took 0.020584 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/EffectExamples/Weapon Effects/Textures/BulletHoleMetalThroughNormal.tif
-  artifactKey: Guid(b284a0bea151ce444957bb92f6b50ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EffectExamples/Weapon Effects/Textures/BulletHoleMetalThroughNormal.tif using Guid(b284a0bea151ce444957bb92f6b50ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbb63a5375a5abcc2e9c74fed282ceeb') in 0.014635 seconds
-  Import took 0.019687 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000463 seconds.
-  path: Assets/ExampleAssets/Textures/Metal/Metal_Albedo.tif
-  artifactKey: Guid(77583f99dea53b641804bb357092ec83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Textures/Metal/Metal_Albedo.tif using Guid(77583f99dea53b641804bb357092ec83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e20653abe0fbf58b3dbb17f1bc69d4d') in 0.011886 seconds
-  Import took 0.019397 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/EffectExamples/Weapon Effects/Materials/MetalSurface.mat
-  artifactKey: Guid(4f477167fc0be5e4dab9a125b37c42ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EffectExamples/Weapon Effects/Materials/MetalSurface.mat using Guid(4f477167fc0be5e4dab9a125b37c42ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03d676d7e0c2839f5da3c9f95fc6c6e3') in 0.017088 seconds
-  Import took 0.023772 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/ExampleAssets/Textures/Plastic/PlasticRidges_MetallicOcculusionSmoothness.tif
-  artifactKey: Guid(201c1f77fe872924a86132486bc97e82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Textures/Plastic/PlasticRidges_MetallicOcculusionSmoothness.tif using Guid(201c1f77fe872924a86132486bc97e82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c2292b0ff72f06c55be83187740e6b3') in 0.017533 seconds
-  Import took 0.024952 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000492 seconds.
-  path: Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_metal_3.mat
-  artifactKey: Guid(da61a4a48d8e04eb8985c9abde303ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResonanceAudio/Demos/Environment/ReverbBakingDemo/Materials/m_bath_metal_3.mat using Guid(da61a4a48d8e04eb8985c9abde303ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22dda1afb26d7dac19e560da2ca296d9') in 0.019736 seconds
-  Import took 0.026534 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/ExampleAssets/Materials/Metal_Blue_Simple_Mat.mat
-  artifactKey: Guid(cd71291c91c8cce499cb663b5db9970e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Materials/Metal_Blue_Simple_Mat.mat using Guid(cd71291c91c8cce499cb663b5db9970e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0335df6332bbb44815f03e088cf96f5a') in 0.020266 seconds
-  Import took 0.028368 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/EffectExamples/Weapon Effects/Textures/BulletHoleMetalThroughAlbedo.tif
-  artifactKey: Guid(4dcc91061fcec7d40a6d7c381bf1eabc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EffectExamples/Weapon Effects/Textures/BulletHoleMetalThroughAlbedo.tif using Guid(4dcc91061fcec7d40a6d7c381bf1eabc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14a694d2cb67ffb550e7b46fd4e6f68d') in 0.013621 seconds
-  Import took 0.020741 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/ExampleAssets/Textures/Props/Paint/Paint1G_MetallicOcculusionRoughness.tif
-  artifactKey: Guid(ca084ebab0cef7c4ba746cdb442f9c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Textures/Props/Paint/Paint1G_MetallicOcculusionRoughness.tif using Guid(ca084ebab0cef7c4ba746cdb442f9c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3cdff559a2dbc00a899e1e4fc51bcc6') in 0.030086 seconds
-  Import took 0.035712 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000484 seconds.
-  path: Assets/ExampleAssets/Textures/Plastic/PlasticRough_MetallicOcculusionSmoothness.tif
-  artifactKey: Guid(ee7680f1374ab4449b6d5f6b2c2c1936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Textures/Plastic/PlasticRough_MetallicOcculusionSmoothness.tif using Guid(ee7680f1374ab4449b6d5f6b2c2c1936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0929c1c8dbfce59c1d78fb6ca3d776a') in 0.022004 seconds
-  Import took 0.028483 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/EffectExamples/Weapon Effects/Materials/BulletDecalMetal.mat
-  artifactKey: Guid(094e76e620df5714eb3946120657e1f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EffectExamples/Weapon Effects/Materials/BulletDecalMetal.mat using Guid(094e76e620df5714eb3946120657e1f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e14056e4eb3a498293e773076e948cd6') in 0.017651 seconds
-  Import took 0.025285 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 56.531057 seconds.
-  path: Assets/Scripts/Player.cs
-  artifactKey: Guid(27c4b845b524c4646998f494bb8d5405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player.cs using Guid(27c4b845b524c4646998f494bb8d5405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef5413a9592186027d4f6d8f0ebc8bf5') in 0.013608 seconds
-  Import took 0.018960 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.016796 seconds.
-  path: Assets/Scripts/Player.cs
-  artifactKey: Guid(27c4b845b524c4646998f494bb8d5405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player.cs using Guid(27c4b845b524c4646998f494bb8d5405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef5413a9592186027d4f6d8f0ebc8bf5') in 0.002298 seconds
-  Import took 0.007407 seconds .
+  Time since last request: 1.181566 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba04e930e7ccb9da8fe26c260e691a08') in 0.034700 seconds
+  Import took 0.040819 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002494 seconds.
+Registered in 0.001716 seconds.
 Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.036 seconds
+- Completed reload, in  0.855 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 2783 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.1 MB.
-System memory in use after: 149.5 MB.
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.1 MB.
+System memory in use after: 217.9 MB.
 
-Unloading 78 unused Assets to reduce memory usage. Loaded Objects now: 3348.
-Total: 6.626200 ms (FindLiveObjects: 0.693100 ms CreateObjectMapping: 0.198700 ms MarkObjects: 3.157100 ms  DeleteObjects: 2.575800 ms)
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3367.
+Total: 3.038200 ms (FindLiveObjects: 0.304700 ms CreateObjectMapping: 0.160900 ms MarkObjects: 1.879800 ms  DeleteObjects: 0.692000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.109759 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd71a4ab5b843e0ee0ef9665dcf99403d') in 0.184171 seconds
+  Import took 0.207560 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004242 seconds.
+Registered in 0.001772 seconds.
 Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.73 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.20 ms.
+Refreshing native plugins compatible for Editor in 0.94 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.024 seconds
+- Completed reload, in  0.803 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.3 MB.
+System memory in use after: 218.2 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3406.
+Total: 2.890800 ms (FindLiveObjects: 0.254400 ms CreateObjectMapping: 0.128600 ms MarkObjects: 1.805900 ms  DeleteObjects: 0.701000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001799 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.801 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.4 MB.
+System memory in use after: 218.2 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3409.
+Total: 3.351400 ms (FindLiveObjects: 0.268900 ms CreateObjectMapping: 0.148800 ms MarkObjects: 2.142400 ms  DeleteObjects: 0.790300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001811 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.807 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.4 MB.
+System memory in use after: 218.2 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3412.
+Total: 3.095200 ms (FindLiveObjects: 0.325400 ms CreateObjectMapping: 0.157600 ms MarkObjects: 1.854000 ms  DeleteObjects: 0.757000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001812 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.797 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.4 MB.
+System memory in use after: 218.2 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3415.
+Total: 3.499100 ms (FindLiveObjects: 0.297800 ms CreateObjectMapping: 0.166600 ms MarkObjects: 2.121300 ms  DeleteObjects: 0.912400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001742 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.836 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.4 MB.
+System memory in use after: 218.2 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3418.
+Total: 2.956400 ms (FindLiveObjects: 0.256600 ms CreateObjectMapping: 0.123200 ms MarkObjects: 1.849900 ms  DeleteObjects: 0.725700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001826 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.808 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.4 MB.
+System memory in use after: 218.2 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3421.
+Total: 3.446200 ms (FindLiveObjects: 0.385500 ms CreateObjectMapping: 0.169500 ms MarkObjects: 2.042800 ms  DeleteObjects: 0.847600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001874 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.807 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.4 MB.
+System memory in use after: 218.2 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3424.
+Total: 3.695300 ms (FindLiveObjects: 0.369900 ms CreateObjectMapping: 0.151900 ms MarkObjects: 2.353700 ms  DeleteObjects: 0.818500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001844 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.798 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.4 MB.
+System memory in use after: 218.2 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3427.
+Total: 3.225400 ms (FindLiveObjects: 0.285300 ms CreateObjectMapping: 0.165000 ms MarkObjects: 1.985300 ms  DeleteObjects: 0.789100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001809 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.835 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.4 MB.
+System memory in use after: 218.2 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3430.
+Total: 3.760000 ms (FindLiveObjects: 0.352000 ms CreateObjectMapping: 0.186500 ms MarkObjects: 2.399700 ms  DeleteObjects: 0.820900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001641 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.818 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.4 MB.
+System memory in use after: 218.2 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3433.
+Total: 2.816400 ms (FindLiveObjects: 0.285700 ms CreateObjectMapping: 0.120000 ms MarkObjects: 1.647900 ms  DeleteObjects: 0.761700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001788 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.805 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.4 MB.
+System memory in use after: 218.2 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3436.
+Total: 3.942100 ms (FindLiveObjects: 0.583600 ms CreateObjectMapping: 0.382300 ms MarkObjects: 2.199200 ms  DeleteObjects: 0.776100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001734 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.805 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Unloading 2783 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.2 MB.
-System memory in use after: 149.6 MB.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.4 MB.
+System memory in use after: 218.2 MB.
 
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 3351.
-Total: 6.864000 ms (FindLiveObjects: 0.419000 ms CreateObjectMapping: 0.166800 ms MarkObjects: 3.502300 ms  DeleteObjects: 2.774100 ms)
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3439.
+Total: 3.231500 ms (FindLiveObjects: 0.251800 ms CreateObjectMapping: 0.127100 ms MarkObjects: 2.099300 ms  DeleteObjects: 0.752600 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002580 seconds.
+Registered in 0.001878 seconds.
 Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.802 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.4 MB.
+System memory in use after: 218.2 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3442.
+Total: 3.365300 ms (FindLiveObjects: 0.335200 ms CreateObjectMapping: 0.161000 ms MarkObjects: 2.028400 ms  DeleteObjects: 0.839700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001778 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.808 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.4 MB.
+System memory in use after: 218.2 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3445.
+Total: 3.303500 ms (FindLiveObjects: 0.277600 ms CreateObjectMapping: 0.123300 ms MarkObjects: 2.097700 ms  DeleteObjects: 0.803800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001963 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.822 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.4 MB.
+System memory in use after: 218.3 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3448.
+Total: 3.082400 ms (FindLiveObjects: 0.305400 ms CreateObjectMapping: 0.156300 ms MarkObjects: 1.832200 ms  DeleteObjects: 0.787800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001845 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
 Preloading 1 native plugins for Editor in 0.07 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.046 seconds
+- Completed reload, in  0.854 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 2783 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.2 MB.
-System memory in use after: 149.6 MB.
-
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 3354.
-Total: 5.705500 ms (FindLiveObjects: 0.318700 ms CreateObjectMapping: 0.163400 ms MarkObjects: 2.394400 ms  DeleteObjects: 2.828100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002961 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.011 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 2783 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.2 MB.
-System memory in use after: 149.7 MB.
-
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 3357.
-Total: 5.874300 ms (FindLiveObjects: 0.294400 ms CreateObjectMapping: 0.118600 ms MarkObjects: 2.729700 ms  DeleteObjects: 2.730600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002593 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.06 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.122 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.13 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 2783 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.2 MB.
-System memory in use after: 149.7 MB.
-
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 3360.
-Total: 8.044100 ms (FindLiveObjects: 0.525700 ms CreateObjectMapping: 0.222400 ms MarkObjects: 4.484300 ms  DeleteObjects: 2.810000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002639 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.025 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Unloading 2783 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.2 MB.
-System memory in use after: 149.6 MB.
-
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 3363.
-Total: 6.732900 ms (FindLiveObjects: 0.607400 ms CreateObjectMapping: 0.213700 ms MarkObjects: 3.006900 ms  DeleteObjects: 2.901800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002591 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.041 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
 Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 2783 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.3 MB.
-System memory in use after: 149.8 MB.
+Unloading 2745 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.4 MB.
+System memory in use after: 218.3 MB.
 
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 3366.
-Total: 5.730000 ms (FindLiveObjects: 0.279700 ms CreateObjectMapping: 0.121100 ms MarkObjects: 2.489200 ms  DeleteObjects: 2.838800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002553 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.032 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Unloading 2783 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.3 MB.
-System memory in use after: 149.7 MB.
-
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 3369.
-Total: 6.493100 ms (FindLiveObjects: 0.292500 ms CreateObjectMapping: 0.166600 ms MarkObjects: 3.051000 ms  DeleteObjects: 2.981900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002870 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.045 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 2783 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.3 MB.
-System memory in use after: 149.8 MB.
-
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 3372.
-Total: 5.878300 ms (FindLiveObjects: 0.313400 ms CreateObjectMapping: 0.223200 ms MarkObjects: 2.543700 ms  DeleteObjects: 2.796100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002508 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.083 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Unloading 2783 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.3 MB.
-System memory in use after: 149.7 MB.
-
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 3375.
-Total: 5.783500 ms (FindLiveObjects: 0.260100 ms CreateObjectMapping: 0.115300 ms MarkObjects: 2.403000 ms  DeleteObjects: 3.004000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002424 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.970 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.92 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 2783 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.3 MB.
-System memory in use after: 149.8 MB.
-
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 3378.
-Total: 5.732800 ms (FindLiveObjects: 0.282700 ms CreateObjectMapping: 0.142600 ms MarkObjects: 2.514000 ms  DeleteObjects: 2.792400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003661 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.95 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.279 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 2783 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.3 MB.
-System memory in use after: 149.7 MB.
-
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 3381.
-Total: 6.815500 ms (FindLiveObjects: 0.354300 ms CreateObjectMapping: 0.158200 ms MarkObjects: 2.919500 ms  DeleteObjects: 3.381800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002465 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.047 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 2783 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.3 MB.
-System memory in use after: 149.8 MB.
-
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 3384.
-Total: 6.473400 ms (FindLiveObjects: 0.439300 ms CreateObjectMapping: 0.293000 ms MarkObjects: 2.924100 ms  DeleteObjects: 2.815800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002468 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.015 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.02 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 2783 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.3 MB.
-System memory in use after: 149.8 MB.
-
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 3387.
-Total: 6.097100 ms (FindLiveObjects: 0.302400 ms CreateObjectMapping: 0.141700 ms MarkObjects: 2.674200 ms  DeleteObjects: 2.977800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003013 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.988 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 2783 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.4 MB.
-System memory in use after: 149.8 MB.
-
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 3390.
-Total: 5.866000 ms (FindLiveObjects: 0.301600 ms CreateObjectMapping: 0.169800 ms MarkObjects: 2.603100 ms  DeleteObjects: 2.790400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002404 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.084 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Unloading 2783 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.4 MB.
-System memory in use after: 149.8 MB.
-
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 3393.
-Total: 5.752200 ms (FindLiveObjects: 0.300600 ms CreateObjectMapping: 0.153900 ms MarkObjects: 2.510400 ms  DeleteObjects: 2.786100 ms)
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3451.
+Total: 3.134200 ms (FindLiveObjects: 0.288500 ms CreateObjectMapping: 0.149400 ms MarkObjects: 1.908700 ms  DeleteObjects: 0.785900 ms)
 

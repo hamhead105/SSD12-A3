@@ -131,12 +131,10 @@ public class PlayerCamera : MonoBehaviour
         UpdateAdditionalTransforms();
     }
 
-
-
     public void UpdateLookPoint()
     {
         RaycastHit hit;
-        if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit))
+        if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, 1500, 7))
         {
             if (hit.distance < maxLookPointDistance) LookPoint.transform.position = hit.point;
             else LookPoint.transform.position = this.transform.position + transform.forward * maxLookPointDistance;

@@ -124,6 +124,7 @@ public class PlayerFirearm : PlayerItem
     [SerializeField] protected Transform lookPoint;
     private float lookPointWeight; // for enabling and disabling target point aiming
     private Vector3 lookPointRotation;
+    private Vector3 lookPointTargetRotation;
     private float lookPointShiftRotation; // for the movement of the actual target point
 
     public bool AimedDownSights { get => aimedDownSights; set => aimedDownSights = value; }
@@ -175,6 +176,12 @@ public class PlayerFirearm : PlayerItem
         if (User is Player) lookPoint = (User as Player).LookPoint;
     }
 
+    public override void FixedUpdate()
+    {
+        base.FixedUpdate();
+        UpdateLookPointWeights();
+    }
+
     private void InitHitmarkers()
     {
         baseHitmarker = Instantiate(Resources.Load("Hitmarker Base"), BarrelPoint.transform.position, BarrelPoint.transform.rotation) as GameObject;
@@ -198,7 +205,7 @@ public class PlayerFirearm : PlayerItem
     public override void UpdateTransforms()
     {
         this.transform.LookAt(lookPoint);
-        Vector3 lookPointTargetRotation = transform.localEulerAngles;
+        lookPointTargetRotation = transform.localEulerAngles;
         this.transform.localEulerAngles = new Vector3(0, 0, 0);
 
         /*
@@ -209,7 +216,7 @@ public class PlayerFirearm : PlayerItem
         );
         */
         
-        lookPointRotation = lookPointTargetRotation;
+        //lookPointRotation = lookPointTargetRotation;
 
         if (aimedDownSights)
         {
@@ -250,32 +257,41 @@ public class PlayerFirearm : PlayerItem
         
         if (User is Player) 
         {
-            
-            if (Sprinting || (User as Player).PlayerCamera.FreeLook || (User as Player).PlayerCamera.FirstPersonMode || WeaponADSObstruction)
-            {
-                lookPointWeight += (0 - lookPointWeight) * lookAtPointTransition_kP;
-                //this.transform.localEulerAngles = ConvertVectorDirections(RotationOffset);
-            }
-            else
-            {
-                lookPointWeight += (1 - lookPointWeight) * lookAtPointTransition_kP;
-                //his.transform.LookAt(lookPoint);
-                //this.transform.Rotate(rotationOffsets);
-                //this.transform.localEulerAngles += ConvertVectorDirections(RotationOffset);
-            }
-
             this.transform.localEulerAngles = new Vector3 (
                 Mathf.LerpAngle(this.transform.localEulerAngles.x, lookPointRotation.x, lookPointWeight),
                 Mathf.LerpAngle(this.transform.localEulerAngles.y, lookPointRotation.y, lookPointWeight),
                 Mathf.LerpAngle(this.transform.localEulerAngles.z, lookPointRotation.z, lookPointWeight)
             );
             this.transform.Rotate(rotationOffsets * lookPointWeight);
+            
 
             this.transform.localEulerAngles += ConvertVectorDirections(RotationOffset);
         }
 
         UpdateHitmarkers();
         UpdateRecoil();
+    }
+
+    public void UpdateLookPointWeights()
+    {
+
+        if (User is Player)
+        {
+            if (Sprinting || (User as Player).PlayerCamera.FreeLook || (User as Player).PlayerCamera.FirstPersonMode || WeaponADSObstruction)
+            {
+                lookPointWeight += (0 - lookPointWeight) * lookAtPointTransition_kP;
+            }
+            else
+            {
+                lookPointWeight += (1 - lookPointWeight) * lookAtPointTransition_kP;
+            }
+            
+            lookPointRotation = new Vector3(
+                Mathf.LerpAngle(lookPointRotation.x, lookPointTargetRotation.x, lookAtPointShift_kP),
+                Mathf.LerpAngle(lookPointRotation.y, lookPointTargetRotation.y, lookAtPointShift_kP),
+                Mathf.LerpAngle(lookPointRotation.z, lookPointTargetRotation.z, lookAtPointShift_kP)
+            );
+        }
     }
 
     public void UpdateRecoil()

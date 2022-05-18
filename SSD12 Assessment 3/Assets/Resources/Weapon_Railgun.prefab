@@ -901,11 +901,11 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  weaponDrawLength: 1.1
-  weaponRaiseStart: 1
-  weaponRaiseCoefficient: 500
-  distanceMin: 0.9
-  weaponDrawRaiseDownCoeff: -0.003
+  weaponDrawLength: 1.05
+  weaponRaiseStart: 1.03
+  weaponRaiseCoefficient: 1500
+  distanceMin: 1
+  weaponDrawRaiseDownCoeff: -0.007
   projectileSpeed: 5
   projectileDamage: 23
   projectileGravity: 0.004
