@@ -47,9 +47,13 @@ public class Player : Human
 
     [SerializeField] private GameObject spectatorModeCamera;
 
+    private Transform lookPoint;
+
     public bool InputEnabled { get => inputEnabled; set => inputEnabled = value; }
     public bool MenuOpened { get => menuOpened; set => menuOpened = value; }
     public float PlayerSensitivity { get => playerSensitivity; set => playerSensitivity = value; }
+    public Transform LookPoint { get => lookPoint; set => lookPoint = value; }
+    public PlayerCamera PlayerCamera { get => playerCamera; set => playerCamera = value; }
 
     private void OnEnable()
     {
@@ -66,6 +70,7 @@ public class Player : Human
 
     public override void Init()
     {
+        LookPoint = PlayerCamera.LookPoint.transform;
         InputEnabled = true;
         playerSensitivity = PlayerPrefs.GetFloat("Sensitivity", 0.5f);
         base.Init();
@@ -118,6 +123,7 @@ public class Player : Human
             UpdateFixedAnimationValues();
             UpdateMoveStateAnimationsValues();
             UpdateSway();
+            CastForwardSpaceRay();
         }
     }
 
@@ -207,7 +213,7 @@ public class Player : Human
         }
         if (Input.GetKeyDown(KeyCode.V))
         {
-            playerCamera.ToggleFirstPerson();
+            PlayerCamera.ToggleFirstPerson();
         }
         else
         {
@@ -222,8 +228,8 @@ public class Player : Human
         {
             SelectFromInventory(2, false, false);
         }
-        Item.SecondaryUseItem(Input.GetMouseButton(1));
-        if (Item.PrimaryUseItem(Input.GetMouseButton(0))) playerCamera.AddCameraShakeVelocity(new Vector3(0, 0, Random.Range(-Item.UseCameraShake, Item.UseCameraShake)));
+        Item.SecondaryUseItem(Input.GetMouseButton(1) || Input.GetKey(KeyCode.RightShift));
+        if (Item.PrimaryUseItem(Input.GetMouseButton(0))) PlayerCamera.AddCameraShakeVelocity(new Vector3(0, 0, Random.Range(-Item.UseCameraShake, Item.UseCameraShake)));
     }
 
     public void PlayerMiscInputs()
@@ -246,12 +252,12 @@ public class Player : Human
         if (!Input.GetKey(KeyCode.LeftAlt) && !Input.GetMouseButton(2))
         {
             UpdatePlayerRotations(xMovement, yMovement);
-            playerCamera.FreeLook = false;
+            PlayerCamera.FreeLook = false;
         }
         else
         {
-            playerCamera.ControlRot += new Vector3(-yMovement, xMovement);
-            playerCamera.FreeLook = true;
+            PlayerCamera.ControlRot += new Vector3(-yMovement, xMovement);
+            PlayerCamera.FreeLook = true;
         }
     }
 
@@ -313,7 +319,7 @@ public class Player : Human
         {
             if ((Item as PlayerFirearm).ActiveSight)
             {
-                playerCamera.SetTargFOV((Item as PlayerFirearm).ActiveSight.UseFOV, AimingDownSights);
+                PlayerCamera.SetTargFOV((Item as PlayerFirearm).ActiveSight.UseFOV, AimingDownSights);
                 if (AimingDownSights)
                 {
                     sensitivity = baseSensitivity * (Item as PlayerFirearm).ActiveSight.SensitivityMultiplier * playerSensitivity;
@@ -326,7 +332,7 @@ public class Player : Human
         }
         else
         {
-            playerCamera.SetTargFOV(playerCamera.BaseFov, AimingDownSights);
+            PlayerCamera.SetTargFOV(PlayerCamera.BaseFov, AimingDownSights);
             sensitivity = baseSensitivity * playerSensitivity;
         }
     }
@@ -337,12 +343,12 @@ public class Player : Human
         {
             if (Sprinting)
             {
-                playerCamera.SetCameraSwayValues(swaySpeed_sprinting, swayMagnitude_sprinting);
+                PlayerCamera.SetCameraSwayValues(swaySpeed_sprinting, swayMagnitude_sprinting);
                 Item.SetItemSwayValues(swaySpeed_sprinting, itemSwayMagnitude_sprinting);
             }
             else
             {
-                playerCamera.SetCameraSwayValues(swaySpeed_walking, swayMagnitude_walking);
+                PlayerCamera.SetCameraSwayValues(swaySpeed_walking, swayMagnitude_walking);
                 Item.SetItemSwayValues(swaySpeed_walking, itemSwayMagnitude_walking);
             }
         }
@@ -350,12 +356,12 @@ public class Player : Human
         {
             if (focused)
             {
-                playerCamera.SetCameraSwayValues(swaySpeed_walking, swayMagnitude_focused);
+                PlayerCamera.SetCameraSwayValues(swaySpeed_walking, swayMagnitude_focused);
                 Item.SetItemSwayValues(swaySpeed_focused, itemSwayMagnitude_focused);
             }
             else
             {
-                playerCamera.SetCameraSwayValues(swaySpeed_idle, swayMagnitude_idle);
+                PlayerCamera.SetCameraSwayValues(swaySpeed_idle, swayMagnitude_idle);
                 Item.SetItemSwayValues(swaySpeed_idle, itemSwayMagnitude_idle);
             }
         }
@@ -364,7 +370,7 @@ public class Player : Human
     private void CastInteractionRay(bool isInteract)
     {
         RaycastHit hit;
-        if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit))
+        if (Physics.Raycast(PlayerCamera.transform.position, PlayerCamera.transform.forward, out hit))
         {
             if (hit.distance <= interactionDistance)
             {
@@ -440,4 +446,16 @@ public class Player : Human
         this.toggleLean = toggleLean;
     }
 
+    private void CastForwardSpaceRay()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(ItemAlignment.transform.position, playerCamera.transform.forward, out hit, 20, 7))
+        {
+            if (Item is PlayerFirearm) (Item as PlayerFirearm).SetWeaponDraw(hit.distance);
+        }
+        else
+        {
+            if (Item is PlayerFirearm) (Item as PlayerFirearm).SetWeaponDraw(20);
+        }
+    }
 }

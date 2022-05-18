@@ -391,7 +391,6 @@ public class Human : MonoBehaviour
         oldItem = item.GetComponent<Item>().ItemName;
     }
 
-
     protected void LoadItemFromPickup(GameObject item, bool localPlayer)
     {
         if (item.GetComponent<Item>().ItemName != oldItem)

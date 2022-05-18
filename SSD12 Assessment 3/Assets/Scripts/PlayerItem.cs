@@ -96,7 +96,7 @@ public abstract class PlayerItem : Item
         itemEnabled = true;
     }
 
-    void FixedUpdate()
+    public virtual void FixedUpdate()
     {
         UpdateItemSway();
         UpdateTransforms();

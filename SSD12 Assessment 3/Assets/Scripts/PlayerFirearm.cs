@@ -10,7 +10,11 @@ public class PlayerFirearm : PlayerItem
         recoilVelocity_kP = 0.3f,
         aimShiftMultiplier = 0.08f,
         aimSwayMultiplier = 0.4f,
-        projectileLifeTime = 12;
+        projectileLifeTime = 12,
+        lookAtPointTransition_kP = 0.1f,
+        lookAtPointShift_kP = 0.1f;
+
+    private static Vector3 maxItemRot = new Vector3(80, 80, 0);
 
     private float 
         recoilRecovery_kI,
@@ -113,8 +117,14 @@ public class PlayerFirearm : PlayerItem
     [Header("Item Body for ADS")]
     [SerializeField] private Vector3 adsPosition;
     [SerializeField] private Vector3 adsRotation;
+    [SerializeField] private Vector3 rotationOffsets; // used to aim the gun at where the camera is aiming;
     private float adsWeight = 0;
     [SerializeField] private float ads_kP;
+
+    [SerializeField] protected Transform lookPoint;
+    private float lookPointWeight; // for enabling and disabling target point aiming
+    private Vector3 lookPointRotation;
+    private Vector3 lookPointTargetRotation;
 
     public bool AimedDownSights { get => aimedDownSights; set => aimedDownSights = value; }
     public Projectile Projectile { get => projectile; set => projectile = value; }
@@ -156,11 +166,18 @@ public class PlayerFirearm : PlayerItem
         recoilPID_y = new PIDController(recoilRecovery_kP, recoilRecovery_kI, recoilRecovery_kD);
         recoilPID_z = new PIDController(recoilPosRecovery_kP, recoilPosRecovery_kI, recoilPosRecovery_kD);
 
-        //Chambered = true;
         recoilPID_x.Init();
         recoilPID_y.Init();
         recoilPID_z.Init();
         InitHitmarkers();
+
+        if (User is Player) lookPoint = (User as Player).LookPoint;
+    }
+
+    public override void FixedUpdate()
+    {
+        base.FixedUpdate();
+        UpdateLookPointWeights();
     }
 
     private void InitHitmarkers()
@@ -185,6 +202,10 @@ public class PlayerFirearm : PlayerItem
 
     public override void UpdateTransforms()
     {
+        this.transform.LookAt(lookPoint);
+        lookPointTargetRotation = transform.localEulerAngles;
+        this.transform.localEulerAngles = new Vector3(0, 0, 0);
+
         if (aimedDownSights)
         {
             ItemSway *= aimSwayMultiplier;
@@ -197,14 +218,16 @@ public class PlayerFirearm : PlayerItem
             PositionOffset = new Vector3(
                 (gunRecoilDisplacement.x * positionCoefficients.x) + ActiveSight.PositionalOffset.x + ItemShift.x + (adsWeight * adsPosition.x),
                 (gunRecoilDisplacement.y * positionCoefficients.y) + ActiveSight.PositionalOffset.y + ItemShift.y - (weaponDrawRaise * weaponDrawRaiseDownCoeff) + (adsWeight * adsPosition.y),
-                gunRecoilDisplacement.z + ActiveSight.PositionalOffset.z + weaponDrawBack + (adsWeight * adsPosition.z));
-        } 
+                gunRecoilDisplacement.z + ActiveSight.PositionalOffset.z + weaponDrawBack + (adsWeight * adsPosition.z)
+            );
+        }
         else
         {
             PositionOffset = new Vector3(
                 (gunRecoilDisplacement.x * positionCoefficients.x) + ItemShift.x + (adsWeight * adsPosition.x),
                 (gunRecoilDisplacement.y * positionCoefficients.y) + ItemShift.y - (weaponDrawRaise * weaponDrawRaiseDownCoeff) + (adsWeight * adsPosition.y),
-                gunRecoilDisplacement.z + weaponDrawBack + (adsWeight * adsPosition.z));
+                gunRecoilDisplacement.z + weaponDrawBack + (adsWeight * adsPosition.z)
+            );
         }
         RotationOffset = new Vector3(ItemSwing_y + gunRecoilDisplacement.y + ItemSway.x + weaponDrawRaise + (adsWeight * adsRotation.x), (adsWeight * adsRotation.y), ItemSwing_x + gunRecoilDisplacement.x + ItemSway.y + (adsWeight * adsRotation.z));
 
@@ -221,10 +244,42 @@ public class PlayerFirearm : PlayerItem
 
         this.transform.localPosition = new Vector3(0, 0, 0);
         this.transform.Translate(PositionOffset, ForwardTransform);
+        
+        if (User is Player) 
+        {
+            this.transform.localEulerAngles = new Vector3 (
+                Mathf.LerpAngle(this.transform.localEulerAngles.x, lookPointRotation.x, lookPointWeight),
+                Mathf.LerpAngle(this.transform.localEulerAngles.y, lookPointRotation.y, lookPointWeight),
+                Mathf.LerpAngle(this.transform.localEulerAngles.z, lookPointRotation.z, lookPointWeight)
+            );
+            this.transform.Rotate(rotationOffsets * lookPointWeight);
+            this.transform.localEulerAngles += ConvertVectorDirections(RotationOffset);
+        }
 
-        this.transform.localEulerAngles = ConvertVectorDirections(RotationOffset);
         UpdateHitmarkers();
         UpdateRecoil();
+    }
+
+    public void UpdateLookPointWeights()
+    {
+
+        if (User is Player)
+        {
+            if (Sprinting || (User as Player).PlayerCamera.FreeLook || (User as Player).PlayerCamera.FirstPersonMode || WeaponADSObstruction)
+            {
+                lookPointWeight += (0 - lookPointWeight) * lookAtPointTransition_kP;
+            }
+            else
+            {
+                lookPointWeight += (1 - lookPointWeight) * lookAtPointTransition_kP;
+            }
+            
+            lookPointRotation = new Vector3(
+                Mathf.LerpAngle(lookPointRotation.x, lookPointTargetRotation.x, lookAtPointShift_kP),
+                Mathf.LerpAngle(lookPointRotation.y, lookPointTargetRotation.y, lookAtPointShift_kP),
+                Mathf.LerpAngle(lookPointRotation.z, lookPointTargetRotation.z, lookAtPointShift_kP)
+            );
+        }
     }
 
     public void UpdateRecoil()
@@ -248,7 +303,7 @@ public class PlayerFirearm : PlayerItem
     public override bool PrimaryUseItem(bool input)
     {
         if (input) StopRepetitiveReload = true;
-        if (input && Chambered && !Sprinting && itemEnabled)
+        if (input && Chambered && !Sprinting && itemEnabled && !WeaponFireObstruction)
         {
             //print(" primary use  ");
             print("use item");
