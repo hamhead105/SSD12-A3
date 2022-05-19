@@ -29,7 +29,7 @@ public abstract class GameCharacter : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void Update()
+    public virtual void Update()
     {
         if (health <= 0)
         {
