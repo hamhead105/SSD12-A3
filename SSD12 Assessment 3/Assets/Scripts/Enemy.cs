@@ -2,16 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Base class for all enemies in the game. Different enemies may behave differently and employ different tactics to defeat the player.
+ */
 public class Enemy : GameCharacter
 {
     [SerializeField] protected GameObject[] deathInstantiations;
     [SerializeField] protected float speed;
 
+    /* 
+     * Initialize the enemy
+     */
     public override void Init()
     {
        
     }
 
+    /*
+     * Called when the enemy's health falls below zero. Destroy the enemy
+     */
     public override void Death()
     {
         foreach (GameObject deathSpawn in deathInstantiations)
@@ -25,14 +34,8 @@ public class Enemy : GameCharacter
         Destroy(gameObject);
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
-    public void Update()
+    public override void Update()
     {
         base.Update();
     }
