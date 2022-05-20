@@ -37,8 +37,6 @@ public class Player : Human
     [SerializeField] private PlayerCamera playerCamera;
     private float aimDownSightSwingReduction = 3.5f;
 
-    private UserInterface UI;
-
     private bool focused;
     private bool toggleADS;
     private bool toggleLean;
@@ -90,7 +88,6 @@ public class Player : Human
     {
         base.Update();
         if (!Active) return;
-        UpdateUI();
         if (Health > 0)
         {
             UpdateAnimatorValues();
@@ -389,21 +386,6 @@ public class Player : Human
                 }
             }
 
-        }
-    }
-
-    private void UpdateUI()
-    {
-        if (!UI) return;
-
-        UI.UpdateHealthDisplay(Health);
-        if (Item is PlayerFirearm)
-        {
-            UI.SetAmmoTexts((Item as PlayerFirearm).Ammo, (Item as PlayerFirearm).MaxAmmo);
-        }
-        else
-        {
-            UI.SetAmmoTexts(0, 0);
         }
     }
 
