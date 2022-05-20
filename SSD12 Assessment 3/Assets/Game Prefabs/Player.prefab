@@ -1027,51 +1027,6 @@ Transform:
   m_Father: {fileID: 8414454764541670814}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1281324526820929481
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6629109312039902035}
-  - component: {fileID: 7315418793512316905}
-  m_Layer: 7
-  m_Name: scarf collider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6629109312039902035
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1281324526820929481}
-  m_LocalRotation: {x: -0.20791169, y: 0, z: 0, w: 0.9781476}
-  m_LocalPosition: {x: 0, y: -0.304, z: 0.125}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4000628523751492432}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -24, y: 0, z: 0}
---- !u!136 &7315418793512316905
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1281324526820929481}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.36
-  m_Height: 0.49
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1408305130586663206
 GameObject:
   m_ObjectHideFlags: 0
@@ -3156,7 +3111,6 @@ Transform:
   - {fileID: 6630024985529618854}
   - {fileID: 1408305130925089327}
   - {fileID: 613430512478248469}
-  - {fileID: 6629109312039902035}
   m_Father: {fileID: 2680626424711424291}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 45.949337, y: -42.68642, z: -40.374905}
@@ -6666,7 +6620,7 @@ GameObject:
   - component: {fileID: 6843462314938415466}
   - component: {fileID: 8600720493790267800}
   - component: {fileID: 3353637354764026842}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6749,13 +6703,50 @@ MonoBehaviour:
   rightFootTargBase: {fileID: 4456219415828381609}
   leftFootTarg: {fileID: 1408305132277630549}
   rightFootTarg: {fileID: 1408305131722890748}
-  ragdollParts: []
-  meshes: []
-  ragdoll: {fileID: 0}
+  ragdollParts:
+  - {fileID: 1151966394780084059}
+  - {fileID: 7608093485888099065}
+  - {fileID: 110208148107267637}
+  - {fileID: 3253940495751286126}
+  - {fileID: 7458901765508349939}
+  - {fileID: 939456404087366978}
+  - {fileID: 2806385152999056589}
+  - {fileID: 9022019496470252363}
+  - {fileID: 8772114638421218517}
+  - {fileID: 2555533168841078117}
+  - {fileID: 2129540534009821914}
+  - {fileID: 1187943255277228021}
+  - {fileID: 6153301391496484450}
+  - {fileID: 1480273243857501203}
+  - {fileID: 7821567825459817284}
+  - {fileID: 3095127758942056051}
+  - {fileID: 2246215118528974308}
+  - {fileID: 5233311971063322690}
+  - {fileID: 4036403646795342834}
+  - {fileID: 8443079919238603707}
+  - {fileID: 7217194874478872394}
+  - {fileID: 7296233345975191380}
+  - {fileID: 7859432649787347316}
+  - {fileID: 631196668938068688}
+  - {fileID: 862089761324475291}
+  - {fileID: 4551197215127063910}
+  meshes:
+  - {fileID: 1741197435944183602}
+  - {fileID: 3239684330522802533}
+  - {fileID: 2308311592394187481}
+  - {fileID: 8859973959077573123}
+  - {fileID: 6759925916571969943}
+  - {fileID: 4581077262316580664}
+  - {fileID: 4910629413202772274}
+  - {fileID: 922542360241986692}
+  - {fileID: 3748484433136473033}
+  - {fileID: 4415395075264264215}
+  - {fileID: 6464309142719968859}
+  - {fileID: 5341714116226547914}
+  - {fileID: 928334869138355876}
+  ragdoll: {fileID: 7466401012729652084, guid: 13ce09783c3e48d4c8fc4495b555a16c, type: 3}
   active: 0
   aimY: 0
-  baseHealth: 100
-  health: 100
   sprinting: 0
   syncedPivot: 0
   weaponParent: {fileID: 742464850295737671}

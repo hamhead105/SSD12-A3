@@ -30,7 +30,7 @@ public class Human : GameCharacter
         rightFootTarg;
 
     [SerializeField]
-    private GameObject[]
+    protected GameObject[]
         ragdollParts,
         meshes;
 
@@ -62,9 +62,6 @@ public class Human : GameCharacter
         neckMultiplier;
 
     [SerializeField] private float aimY;
-
-    [SerializeField] protected float baseHealth;
-    [SerializeField] private float health;
     [SerializeField] private bool sprinting;
 
     private float pivot;
@@ -119,7 +116,6 @@ public class Human : GameCharacter
     public GameObject ItemAlignment { get => itemAlignment; set => itemAlignment = value; }
     public bool AimingDownSights { get => aimingDownSights; set => aimingDownSights = value; }
     public PlayerItem Item { get => item; set => item = value; }
-    public float Health { get => health; set => health = value; }
     public GameObject[] Meshes { get => meshes; set => meshes = value; }
     public GameObject Ragdoll { get => ragdoll; set => ragdoll = value; }
     public bool Sprinting { get => sprinting; set => sprinting = value; }
@@ -236,7 +232,6 @@ public class Human : GameCharacter
         if (Item is PlayerFirearm) UpdateAimDownSightsState((Item as PlayerFirearm).AimedDownSights);
         UpdatePivot();
         UpdateAnimatorValues();
-        //UpdateLeaning(leanState);
     }
 
     protected void RunReloadAnimation()
@@ -297,7 +292,13 @@ public class Human : GameCharacter
 
     public override void Death()
     {
-
+        GameObject ragdoll = Instantiate(Ragdoll, this.transform.position, transform.rotation);
+        int i = 0;
+        foreach (GameObject ragdollPart in ragdollParts)
+        {
+            ragdoll.GetComponent<Ragdoll>().RagdollParts[i] = ragdollPart;
+        }
+        Destroy(gameObject);
     }
 
     public void UpdatePControlIK()

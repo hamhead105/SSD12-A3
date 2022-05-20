@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerCamera : MonoBehaviour
 {
+    private static int layerMask = 7 | 9;
     private GameObject playerCameraObject;
     [SerializeField] private Transform lookPoint;
 
@@ -20,7 +21,6 @@ public class PlayerCamera : MonoBehaviour
     private float pos_kp = 0.3f;
     private float bufferDistance = 0.2f;
     
-
     // FOV control
     [SerializeField] private float fov;
     private float targFov = 80;
@@ -134,7 +134,8 @@ public class PlayerCamera : MonoBehaviour
     public void UpdateLookPoint()
     {
         RaycastHit hit;
-        if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, 1500, 7))
+       
+        if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, 1500, layerMask))
         {
             if (hit.distance < maxLookPointDistance) LookPoint.transform.position = hit.point;
             else LookPoint.transform.position = this.transform.position + transform.forward * maxLookPointDistance;
@@ -150,7 +151,6 @@ public class PlayerCamera : MonoBehaviour
 
         this.transform.localEulerAngles = new Vector3(0, 0, 0);
         this.transform.eulerAngles += ControlRot;
-        //ControlRot = new Vector3(Mathf.Clamp(ControlRot.x, minView + this.transform.eulerAngles.x, maxView + this.transform.eulerAngles.x), ControlRot.y, 0);
 
         if (!freeLook)
         {

@@ -95,9 +95,9 @@ public class Player : Human
             CheckReloadAnimations();
             if (InputEnabled) RegisterInputs();
             if (InputEnabled) PlayerMouseAxisInputs();
-            UpdateCamera();
            
         }
+        UpdateCamera();
         PlayerMiscInputs();
     }
 
@@ -240,7 +240,20 @@ public class Player : Human
 
     public override void Death()
     {
-        base.Death();
+        charController.detectCollisions = false;
+        DisableHitboxes();
+        GameObject ragdoll = Instantiate(Ragdoll, this.transform.position, transform.rotation);
+        for (int i = 0; i < ragdollParts.Length; i++)
+        { 
+            ragdoll.GetComponent<Ragdoll>().RagdollParts[i].transform.position = ragdollParts[i].transform.position;
+            ragdoll.GetComponent<Ragdoll>().RagdollParts[i].transform.eulerAngles = ragdollParts[i].transform.eulerAngles;
+        }
+        foreach (GameObject mesh in meshes)
+        {
+            if (mesh.GetComponent<MeshRenderer>()) mesh.GetComponent<MeshRenderer>().enabled = false;
+            else if (mesh.GetComponent<SkinnedMeshRenderer>()) mesh.GetComponent<SkinnedMeshRenderer>().enabled = false;
+        }
+        LoadItem("Unarmed", true);
     }
 
     public void PlayerMouseAxisInputs()

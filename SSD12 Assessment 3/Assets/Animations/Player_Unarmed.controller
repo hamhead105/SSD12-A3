@@ -463,7 +463,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Arms
     m_StateMachine: {fileID: 7698267950714795309}
-    m_Mask: {fileID: 31900000, guid: a919b81225b93b0448a3a9c4cd83e5be, type: 2}
+    m_Mask: {fileID: 31900000, guid: e3c82aa4a62d64b4691fbcb10aa53505, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0

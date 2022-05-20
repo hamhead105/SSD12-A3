@@ -56,8 +56,7 @@ public class Projectile : MonoBehaviour
             {
                 float damage = baseDamage;
                 hit.transform.GetComponent<Hitbox>().Hit(damage);
-                item.HitAnotherTarget(hit.transform.GetComponent<Hitbox>().GameCharacter.Health <= 0);
-                
+                if (item) item.HitAnotherTarget(hit.transform.GetComponent<Hitbox>().GameCharacter.Health <= 0);
               
                 Impact(obstacleImpactParticles, hit);
                 queueDestroy = true;

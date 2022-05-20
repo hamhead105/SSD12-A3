@@ -26,6 +26,10 @@ public abstract class GameCharacter : MonoBehaviour
     public void DealDamage(float amount)
     {
         health -= amount;
+        if (health <= 0)
+        {
+            Death();
+        }
     }
 
     // Update is called once per frame

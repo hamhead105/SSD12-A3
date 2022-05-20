@@ -9685,7 +9685,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6385952880474491599}
-  - component: {fileID: 5538261783070557707}
+  - component: {fileID: 5062010689089297414}
+  - component: {fileID: 1291449977455872907}
   m_Layer: 0
   m_Name: EnemyPlasmaExplosion
   m_TagString: Untagged
@@ -9710,7 +9711,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5538261783070557707
+--- !u!114 &5062010689089297414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6385952880474491596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4348f5f3b351c94986bde679d482983, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 40
+  damageMultiplierDropOff:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.15282553
+      outSlope: -0.15282553
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 2.513448
+      value: 0.61588097
+      inSlope: -0.6546
+      outSlope: -0.6546
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.13372242
+      outWeight: 0.056056537
+    - serializedVersion: 3
+      time: 4.959558
+      value: 0.086585045
+      inSlope: -0.21638271
+      outSlope: -0.21638271
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  maxRange: 5
+--- !u!114 &1291449977455872907
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9722,7 +9770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a65764cd6b9a304392eb39891ae2684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 2
+  time: 3
 --- !u!1 &8708567134439588578
 GameObject:
   m_ObjectHideFlags: 0

@@ -45,13 +45,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Unarmed
   itemIcon: {fileID: 0}
-  useCooldown: 0
-  drawTime: 0
+  useCooldown: 1
+  drawTime: 1
   baseTransform: {fileID: 6288611866031145569}
   forwardTransform: {fileID: 6288611866031145569}
   animatorController: {fileID: 9100000, guid: a7b949b4b01cb1147aa95360fcb7b102, type: 2}
   avatar: {fileID: 9000000, guid: 920611ac5d2327f42b223c5fcb157de2, type: 3}
-  itemSwingAmount: 0
+  itemSwingAmount: 1
   itemRecovery_kP: 1
   useCameraShake: 0
   itemSwayMultiplier: 0
