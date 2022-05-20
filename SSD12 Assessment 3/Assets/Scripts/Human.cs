@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Human : MonoBehaviour
+public class Human : GameCharacter
 {
     // serialized constants
     [SerializeField]
@@ -146,7 +146,7 @@ public class Human : MonoBehaviour
 
     }
 
-    public virtual void Init()
+    public override void Init()
     {
         Active = true;
         Animator = GetComponent<Animator>();
@@ -293,6 +293,11 @@ public class Human : MonoBehaviour
                 leftFootCastDistance = Mathf.Clamp(leftFootHit.distance - feetIKOffset + feetCastRadius, -feetIK_max, feetIK_max);
             }
         }
+    }
+
+    public override void Death()
+    {
+
     }
 
     public void UpdatePControlIK()

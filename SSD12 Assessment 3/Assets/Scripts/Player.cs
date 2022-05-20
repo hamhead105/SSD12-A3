@@ -241,6 +241,11 @@ public class Player : Human
         }
     }
 
+    public override void Death()
+    {
+        base.Death();
+    }
+
     public void PlayerMouseAxisInputs()
     {
         float xMovement = Input.GetAxis("Mouse X") * sensitivity;

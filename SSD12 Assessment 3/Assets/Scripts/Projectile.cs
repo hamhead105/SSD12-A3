@@ -55,7 +55,7 @@ public class Projectile : MonoBehaviour
             if (hit.transform.gameObject.layer == 7) // check if hitbox layer
             {
                 float damage = baseDamage;
-                hit.transform.GetComponent<Hitbox>().GameCharacter.DealDamage(damage);
+                hit.transform.GetComponent<Hitbox>().Hit(damage);
                 item.HitAnotherTarget(hit.transform.GetComponent<Hitbox>().GameCharacter.Health <= 0);
                 
               

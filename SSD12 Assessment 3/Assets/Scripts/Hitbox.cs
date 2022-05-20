@@ -14,5 +14,10 @@ public class Hitbox : MonoBehaviour
     {
         return rawDamage * damageMultiplier;
     }
+
+    public void Hit(float damage)
+    {
+        gameCharacter.DealDamage(damage);
+    }
 }
     
