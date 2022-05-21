@@ -331,7 +331,6 @@ public class PlayerFirearm : PlayerItem
         if (input) StopRepetitiveReload = true;
         if (input && Chambered && !Sprinting && itemEnabled && !WeaponFireObstruction)
         {
-            //print(" primary use  ");
             print("use item");
             if (aimedDownSights) Shoot(SpreadAmountADS);
             else Shoot(SpreadAmountHip);
