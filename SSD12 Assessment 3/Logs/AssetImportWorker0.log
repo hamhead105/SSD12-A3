@@ -1,0 +1,958 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 32568 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Unity Pojects\2020.2.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Unity Pojects/SSD12 A3/SSD12 Assessment 3
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59646
+Successfully changed project path to: D:/Unity Pojects/SSD12 A3/SSD12 Assessment 3
+D:/Unity Pojects/SSD12 A3/SSD12 Assessment 3
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 66.30 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.82 ms.
+Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
+[Subsystems] Discovering subsystems at path D:/Unity Pojects/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity Pojects/SSD12 A3/SSD12 Assessment 3/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 (ID=0x2206)
+    Vendor:   
+    VRAM:     10078 MB
+    Driver:   30.0.15.1213
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'D:/Unity Pojects/2020.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity Pojects/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity Pojects/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity Pojects/2020.2.1f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: D:/Unity Pojects/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: D:/Unity Pojects/2020.2.1f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.001638 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 64.59 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.200 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001734 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 72.87 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.397 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2874 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.9 MB.
+System memory in use after: 218.8 MB.
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 3301.
+Total: 2.620100 ms (FindLiveObjects: 0.298500 ms CreateObjectMapping: 0.159000 ms MarkObjects: 1.522100 ms  DeleteObjects: 0.639600 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/UI/Firefight UI.prefab
+  artifactKey: Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Firefight UI.prefab using Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86bea03cf23634cc4374486f5510b5f1') in 0.089122 seconds
+  Import took 0.093714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/UI
+  artifactKey: Guid(60aaf746eedcd324ca46b8e8a3efdfda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI using Guid(60aaf746eedcd324ca46b8e8a3efdfda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3462cb740fac17be1bc208863069b0d8') in 0.004929 seconds
+  Import took 0.008354 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.144602 seconds.
+  path: Assets/UI/Firefight UI.prefab
+  artifactKey: Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Firefight UI.prefab using Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bf1fdffca64b5bb8cc8227ba963edd7') in 0.006532 seconds
+  Import took 0.011300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.769970 seconds.
+  path: Assets/UI/Icons/attachment_icons/Aimpoint.png
+  artifactKey: Guid(ac69dc86060800143909006b46f29bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Icons/attachment_icons/Aimpoint.png using Guid(ac69dc86060800143909006b46f29bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cbfa349ad003a7f4e0bf4086d30b4ef') in 0.050328 seconds
+  Import took 0.067581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/UI/Icons/bullet-pngrepo-com.png
+  artifactKey: Guid(11df758f182ae9940aeef85d8197e991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Icons/bullet-pngrepo-com.png using Guid(11df758f182ae9940aeef85d8197e991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ad5d70d488b2001e5cb14723acf3663') in 0.009772 seconds
+  Import took 0.013585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/UI/Icons/attachment_icons/Aimpoint.png
+  artifactKey: Guid(ac69dc86060800143909006b46f29bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Icons/attachment_icons/Aimpoint.png using Guid(ac69dc86060800143909006b46f29bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cbfa349ad003a7f4e0bf4086d30b4ef') in 0.007259 seconds
+  Import took 0.010922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/UI/Icons/guns_icons/AWM_icon.png
+  artifactKey: Guid(2846af11491cbfc48894c2bc588e809d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Icons/guns_icons/AWM_icon.png using Guid(2846af11491cbfc48894c2bc588e809d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1f0c21812b0e3fc4abc25bd11ddadb') in 0.009899 seconds
+  Import took 0.013843 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.504507 seconds.
+  path: Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Textures/Clouds.tif
+  artifactKey: Guid(c701d8bbcea7c2c4abbf9c22ee81138a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Textures/Clouds.tif using Guid(c701d8bbcea7c2c4abbf9c22ee81138a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1df41ca0823985dc86969df73ee8572') in 0.071765 seconds
+  Import took 0.088387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Textures/DustMote.png
+  artifactKey: Guid(394e93ce356b57344903a08ff72fcab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Textures/DustMote.png using Guid(394e93ce356b57344903a08ff72fcab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8c501a20b6f2666ffa36b4d65126bf6') in 0.054983 seconds
+  Import took 0.058890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Textures/Clouds.tif
+  artifactKey: Guid(c701d8bbcea7c2c4abbf9c22ee81138a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Textures/Clouds.tif using Guid(c701d8bbcea7c2c4abbf9c22ee81138a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1df41ca0823985dc86969df73ee8572') in 0.009799 seconds
+  Import took 0.013794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/Imported Assets/ResonanceAudio/Demos/Environment/ResonanceAudioDemo/CubeRoomDiffuse.png
+  artifactKey: Guid(dec0746f54ff843e4ac929967d1d8c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/ResonanceAudio/Demos/Environment/ResonanceAudioDemo/CubeRoomDiffuse.png using Guid(dec0746f54ff843e4ac929967d1d8c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbf94559e57488fc3020df6f9a8f7dee') in 0.152098 seconds
+  Import took 0.185676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Textures/DissolveChunks.tif
+  artifactKey: Guid(fde6fc28f8943fd4aa8bf43327cd0fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Textures/DissolveChunks.tif using Guid(fde6fc28f8943fd4aa8bf43327cd0fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59d62d1c23354b20f371744686c51b09') in 0.063385 seconds
+  Import took 0.067107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Imported Assets/EffectExamples/Magic Effects/Textures/DustPuffSmall.png
+  artifactKey: Guid(a547fca3b7d596c4d9bcb07a747ec5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Magic Effects/Textures/DustPuffSmall.png using Guid(a547fca3b7d596c4d9bcb07a747ec5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e2d12d8dfcc9f4ff2820a8ed6131b8d') in 0.032020 seconds
+  Import took 0.035884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Textures/DustPuffSmall.png
+  artifactKey: Guid(271edbc011d9e03489f73cef81b2d56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Textures/DustPuffSmall.png using Guid(271edbc011d9e03489f73cef81b2d56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '210567f5b32d77bbfb10ac28e27a89fb') in 0.076167 seconds
+  Import took 0.079763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/DustPuffSmallParticleSheet.png
+  artifactKey: Guid(32dde075fa5f86d458327a2ac0c4593b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/DustPuffSmallParticleSheet.png using Guid(32dde075fa5f86d458327a2ac0c4593b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8b1f56f53b4939aa20a8b0da7de7544') in 0.149028 seconds
+  Import took 0.153212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Textures/DustPuffSmall.png
+  artifactKey: Guid(271edbc011d9e03489f73cef81b2d56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Textures/DustPuffSmall.png using Guid(271edbc011d9e03489f73cef81b2d56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '210567f5b32d77bbfb10ac28e27a89fb') in 0.022997 seconds
+  Import took 0.026869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Imported Assets/EffectExamples/Fire & Explosion Effects/Textures/Debris.png
+  artifactKey: Guid(af1f1b45fa6b5e64894c04ceb8a592f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Fire & Explosion Effects/Textures/Debris.png using Guid(af1f1b45fa6b5e64894c04ceb8a592f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95d71b13da636718aac2d66b534521bb') in 0.072537 seconds
+  Import took 0.076085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/UI/Icons/guns_icons/detonator_icon.png
+  artifactKey: Guid(5b6e290fc4fb8374f926f1acdda7a6d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Icons/guns_icons/detonator_icon.png using Guid(5b6e290fc4fb8374f926f1acdda7a6d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b798f74c240b9e2da18795a35149250') in 0.008779 seconds
+  Import took 0.012528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.557495 seconds.
+  path: Assets/UI/acephimere/Acephimere Bold Italic.otf
+  artifactKey: Guid(c6bc2023f5e4e0e4785f483baaedb540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/acephimere/Acephimere Bold Italic.otf using Guid(c6bc2023f5e4e0e4785f483baaedb540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f58703f30ae516e28a0f18ee0c64a54c') in 0.169400 seconds
+  Import took 0.174007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/UI/Icons/guns_icons/glock_icon.png
+  artifactKey: Guid(a3bb725bc7131f845bd69f282d7c5dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Icons/guns_icons/glock_icon.png using Guid(a3bb725bc7131f845bd69f282d7c5dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6df5a498f9497392df23b6653046cfa2') in 0.009926 seconds
+  Import took 0.013854 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/UI/acephimere/Acephimere Thin Italic.otf
+  artifactKey: Guid(0eb486d86a31a5e47b1c8d03a021b40d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/acephimere/Acephimere Thin Italic.otf using Guid(0eb486d86a31a5e47b1c8d03a021b40d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0678e333d6afb0650f83df98507d4f9') in 0.052924 seconds
+  Import took 0.057897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/UI/acephimere/Acephimere.otf
+  artifactKey: Guid(c58b82f24b05ce648b27c70fb2d2ad24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/acephimere/Acephimere.otf using Guid(c58b82f24b05ce648b27c70fb2d2ad24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4845fcd7241c3ecc8c9d7c2d13ea740') in 0.034486 seconds
+  Import took 0.038826 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/UI/acephimere/Acephimere Bold.otf
+  artifactKey: Guid(be2544d7e95e971409a6d00d9604990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/acephimere/Acephimere Bold.otf using Guid(be2544d7e95e971409a6d00d9604990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f550c5df361aa4c1b90072aeda2a772') in 0.031588 seconds
+  Import took 0.036027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/UI/acephimere/Acephimere Italic.otf
+  artifactKey: Guid(0976340f0a18d9e459d80a9a87fbffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/acephimere/Acephimere Italic.otf using Guid(0976340f0a18d9e459d80a9a87fbffd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d18ab2b46a18317e08fea1d3e6537ad') in 0.038751 seconds
+  Import took 0.043046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/UI/acephimere/Acephimere Thin.otf
+  artifactKey: Guid(de5beb20f7912ad4ebb657c588720d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/acephimere/Acephimere Thin.otf using Guid(de5beb20f7912ad4ebb657c588720d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26396b284b17be02ac800f50a1ed927d') in 0.034670 seconds
+  Import took 0.038932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.449276 seconds.
+  path: Assets/UI/Firefight UI.prefab
+  artifactKey: Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Firefight UI.prefab using Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6f0f1475e20487d980179d15ed2a9af') in 0.006393 seconds
+  Import took 0.010822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 84.852996 seconds.
+  path: Assets/UI/Firefight UI.prefab
+  artifactKey: Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Firefight UI.prefab using Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23280fd9dcd5e33634397375aa1edef4') in 0.007298 seconds
+  Import took 0.011706 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001974 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.804 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2744 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.1 MB.
+System memory in use after: 217.9 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3391.
+Total: 3.741700 ms (FindLiveObjects: 0.304700 ms CreateObjectMapping: 0.182600 ms MarkObjects: 2.555700 ms  DeleteObjects: 0.695000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001733 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.813 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2744 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.2 MB.
+System memory in use after: 218.0 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3394.
+Total: 3.079600 ms (FindLiveObjects: 0.322100 ms CreateObjectMapping: 0.169900 ms MarkObjects: 1.862000 ms  DeleteObjects: 0.724600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 356.539468 seconds.
+  path: Assets/UI/Firefight UI.prefab
+  artifactKey: Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Firefight UI.prefab using Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '360f38d2f7c925568bc40247906a90ed') in 0.072532 seconds
+  Import took 0.077491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.623873 seconds.
+  path: Assets/UI/Firefight UI.prefab
+  artifactKey: Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Firefight UI.prefab using Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ecae09b5d8e352341372d4126168a06') in 0.009758 seconds
+  Import took 0.022750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.972325 seconds.
+  path: Assets/UI/Firefight UI.prefab
+  artifactKey: Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Firefight UI.prefab using Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5445ae49fa2b95cdea5487f570b5451f') in 0.006927 seconds
+  Import took 0.028045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.800457 seconds.
+  path: Assets/UI/Firefight UI.prefab
+  artifactKey: Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Firefight UI.prefab using Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e22d23d7be5658ba71b9de80b55dd2cf') in 0.007056 seconds
+  Import took 0.030070 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.253583 seconds.
+  path: Assets/UI/Firefight UI.prefab
+  artifactKey: Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Firefight UI.prefab using Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce620614f57d8d21c695befb13dfd272') in 0.006440 seconds
+  Import took 0.011725 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001768 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.842 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 2744 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.2 MB.
+System memory in use after: 218.1 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3397.
+Total: 2.863900 ms (FindLiveObjects: 0.307200 ms CreateObjectMapping: 0.168400 ms MarkObjects: 1.666100 ms  DeleteObjects: 0.721300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 127.520892 seconds.
+  path: Assets/UI/Firefight UI.prefab
+  artifactKey: Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Firefight UI.prefab using Guid(1a145b4c0f3a7214fa010987086af3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28e4249cb55146cbe87122e81a43ebf4') in 0.069573 seconds
+  Import took 0.088921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.826972 seconds.
+  path: Assets/Imported Assets/EffectExamples/Magic Effects/Materials/EarthCrack.mat
+  artifactKey: Guid(1f6abb4fa65207247b856825feae3e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Magic Effects/Materials/EarthCrack.mat using Guid(1f6abb4fa65207247b856825feae3e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5910187735209c1188e1ee59e89441df') in 0.286453 seconds
+  Import took 0.296895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Materials/FireFlyTrail.mat
+  artifactKey: Guid(1d11412570f90ba4caf1b0b6dea27152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Materials/FireFlyTrail.mat using Guid(1d11412570f90ba4caf1b0b6dea27152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38b744edd5a6216fd151093ff7b26fbe') in 0.044029 seconds
+  Import took 0.048335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Imported Assets/EffectExamples/Magic Effects/Materials/EarthCrack.mat
+  artifactKey: Guid(1f6abb4fa65207247b856825feae3e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Magic Effects/Materials/EarthCrack.mat using Guid(1f6abb4fa65207247b856825feae3e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5910187735209c1188e1ee59e89441df') in 0.010389 seconds
+  Import took 0.014110 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001781 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.815 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
+Unloading 2744 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 219.4 MB.
+System memory in use after: 218.2 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 3436.
+Total: 3.255000 ms (FindLiveObjects: 0.343000 ms CreateObjectMapping: 0.121400 ms MarkObjects: 1.955500 ms  DeleteObjects: 0.834100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.824487 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9577849f394851180801ddeec203203e') in 0.175928 seconds
+  Import took 0.182413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Imported Assets/EffectExamples/Magic Effects/Textures/IceCurvature.tif
+  artifactKey: Guid(8bd3845bbbeebd04b8a19ee995137147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Magic Effects/Textures/IceCurvature.tif using Guid(8bd3845bbbeebd04b8a19ee995137147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac69b7a90e00e5761c4e6ca6ae10d01d') in 0.057297 seconds
+  Import took 0.091277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Scenes/Main Menu/Lightmap-3_comp_light.exr
+  artifactKey: Guid(8b6e3c5e2e3fa2d46b98a0454c50c8e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main Menu/Lightmap-3_comp_light.exr using Guid(8b6e3c5e2e3fa2d46b98a0454c50c8e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '712beb809c52e21761db1db2ef81617f') in 0.165205 seconds
+  Import took 0.213615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Imported Assets/EffectExamples/Water Effects/Textures/SplatNormal.tif
+  artifactKey: Guid(0660389cc5a6f4947997407fb6945fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Water Effects/Textures/SplatNormal.tif using Guid(0660389cc5a6f4947997407fb6945fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bd040ea6dfefea4af8e64a84ac3de23') in 0.108021 seconds
+  Import took 0.138788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/WoodNormals.tif
+  artifactKey: Guid(43cfa3b308732c941a0fbb4334ecefcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/WoodNormals.tif using Guid(43cfa3b308732c941a0fbb4334ecefcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6588883a46ee2143eaefb5ad5e63717c') in 0.125132 seconds
+  Import took 0.141373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/woodSplintersNormal.tif
+  artifactKey: Guid(937ed87ab83404042bb43da3180148b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/woodSplintersNormal.tif using Guid(937ed87ab83404042bb43da3180148b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '320b7631b6ca9950326eb4392ce97d1c') in 0.099551 seconds
+  Import took 0.129986 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Scenes/Main Menu/Lightmap-1_comp_dir.png
+  artifactKey: Guid(76a3f6fe4f613ed4d9930094da212adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main Menu/Lightmap-1_comp_dir.png using Guid(76a3f6fe4f613ed4d9930094da212adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e6abf24e79fd83289bfa21260bae8b4') in 0.151641 seconds
+  Import took 0.176787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Scenes/Main Menu/Lightmap-2_comp_light.exr
+  artifactKey: Guid(ddccc53150cf07e4ab3e96956c80f09d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main Menu/Lightmap-2_comp_light.exr using Guid(ddccc53150cf07e4ab3e96956c80f09d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19dd93a27d71f6c8ba694c686ae5057d') in 0.125193 seconds
+  Import took 0.173616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Imported Assets/EffectExamples/Goop Effects/Textures/SplatAlbedo.tif
+  artifactKey: Guid(ae135187004ec2c48b1f854b75e11a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Goop Effects/Textures/SplatAlbedo.tif using Guid(ae135187004ec2c48b1f854b75e11a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07a1a0551082af873e6776635c3a87f8') in 0.117608 seconds
+  Import took 0.157680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/GoopStreakAlbedo.tif
+  artifactKey: Guid(07a10375da67ac9429e4694a4e70a774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/GoopStreakAlbedo.tif using Guid(07a10375da67ac9429e4694a4e70a774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0660eb948c14ea5c16a9bc2e93f0db3c') in 0.073538 seconds
+  Import took 0.116534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Scenes/Main Menu/Lightmap-1_comp_light.exr
+  artifactKey: Guid(6a0fa83ac88ecf34e9f633c5c527cf18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main Menu/Lightmap-1_comp_light.exr using Guid(6a0fa83ac88ecf34e9f633c5c527cf18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '884b2d954b87a252b3c65958148ae56b') in 0.157370 seconds
+  Import took 0.182733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Imported Assets/EffectExamples/Fire & Explosion Effects/Textures/Lightning.tif
+  artifactKey: Guid(92781d74b982d084ca9223b02d2cae11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Fire & Explosion Effects/Textures/Lightning.tif using Guid(92781d74b982d084ca9223b02d2cae11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '813eeec2d1876e9d28216e45f1e7d683') in 0.088559 seconds
+  Import took 0.129000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Imported Assets/EffectExamples/Fire & Explosion Effects/Textures/Ramp03.png
+  artifactKey: Guid(595a5c1164fec844f8e6b477620221f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Fire & Explosion Effects/Textures/Ramp03.png using Guid(595a5c1164fec844f8e6b477620221f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfbfc63f8fad851ccd050d294318d837') in 0.036723 seconds
+  Import took 0.061988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Imported Assets/EffectExamples/Magic Effects/Textures/Ramp02.png
+  artifactKey: Guid(26534f2d5894add499249fc1b8373a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Magic Effects/Textures/Ramp02.png using Guid(26534f2d5894add499249fc1b8373a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2456d0b17a0e1f300bdc38829af5085') in 0.255907 seconds
+  Import took 0.285317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Imported Assets/EffectExamples/Fire & Explosion Effects/Textures/SphereNormal.tif
+  artifactKey: Guid(b7de68a779f91264e8da00162a6b7168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Fire & Explosion Effects/Textures/SphereNormal.tif using Guid(b7de68a779f91264e8da00162a6b7168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cc3105736a962eec1e37e6c6ad4ae1d') in 0.010509 seconds
+  Import took 0.022265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Scenes/Level/Lightmap-1_comp_light.exr
+  artifactKey: Guid(1d572118f0cfedc47b048445e3d8cc42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level/Lightmap-1_comp_light.exr using Guid(1d572118f0cfedc47b048445e3d8cc42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c33bab503be7f5850d729e22fe109c67') in 0.008298 seconds
+  Import took 0.025891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/Imported Assets/EffectExamples/Fire & Explosion Effects/Textures/TinyStones.png
+  artifactKey: Guid(ce97ed62c0a56e84ab25e22c8dfd5bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Fire & Explosion Effects/Textures/TinyStones.png using Guid(ce97ed62c0a56e84ab25e22c8dfd5bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a369b306d57dfee7ea2b6bf03fa108e') in 0.067830 seconds
+  Import took 0.071563 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/UI/Icons/White_Circle.svg.png
+  artifactKey: Guid(a630e5264ccf0644a89096c5f7e22985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Icons/White_Circle.svg.png using Guid(a630e5264ccf0644a89096c5f7e22985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28143e7fa827a082591bb2c724250b35') in 0.012030 seconds
+  Import took 0.045130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Scenes/Level/ReflectionProbe-0.exr
+  artifactKey: Guid(5c4e2da051e4c004cafe07bde22efbc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level/ReflectionProbe-0.exr using Guid(5c4e2da051e4c004cafe07bde22efbc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4538ef3cdc9eb7eb8d9b6b110a75dd32') in 0.029318 seconds
+  Import took 0.039783 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Imported Assets/EffectExamples/Fire & Explosion Effects/Textures/TinyFlame.tif
+  artifactKey: Guid(4aa9e9c9f98c7a449ac023f74184d0b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Fire & Explosion Effects/Textures/TinyFlame.tif using Guid(4aa9e9c9f98c7a449ac023f74184d0b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e96a835951e0bbd29184695babaef608') in 0.060805 seconds
+  Import took 0.080425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Imported Assets/EffectExamples/Goop Effects/Textures/GoopDropAlbedo.tif
+  artifactKey: Guid(fd9fde9ce6505d546952963a514b1909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Goop Effects/Textures/GoopDropAlbedo.tif using Guid(fd9fde9ce6505d546952963a514b1909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd19db2793c4fd9e30a695207b1db1d79') in 0.087479 seconds
+  Import took 0.114936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Imported Assets/EffectExamples/Magic Effects/Textures/Ramp03.png
+  artifactKey: Guid(02893ea4ea3a2be419d65586df89bcf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Magic Effects/Textures/Ramp03.png using Guid(02893ea4ea3a2be419d65586df89bcf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db5ef7b4f39bcf48e266da202e1bcdec') in 0.031268 seconds
+  Import took 0.052975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/Imported Assets/EffectExamples/Water Effects/Textures/SphereAlbedo.tif
+  artifactKey: Guid(feebd9fe3a61f384286140f9201d038d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Water Effects/Textures/SphereAlbedo.tif using Guid(feebd9fe3a61f384286140f9201d038d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78446944731694ea6fe62ca229ad7763') in 0.027504 seconds
+  Import took 0.044488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/UI/Icons/guns_icons/knife_icon.png
+  artifactKey: Guid(d692704ca04fd9443aca4014b3dead6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Icons/guns_icons/knife_icon.png using Guid(d692704ca04fd9443aca4014b3dead6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdb9e48262c691daed9443cda8a2198c') in 0.008441 seconds
+  Import took 0.032928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Imported Assets/EffectExamples/Magic Effects/Textures/RocksSpecGloss.tga
+  artifactKey: Guid(02deeccf62fee5e4e9a92d72eb2fd421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Magic Effects/Textures/RocksSpecGloss.tga using Guid(02deeccf62fee5e4e9a92d72eb2fd421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b6b3c52b7642da1c6be231995db0afc') in 0.016292 seconds
+  Import took 0.020084 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Imported Assets/EffectExamples/Fire & Explosion Effects/Textures/LightningTrail.tif
+  artifactKey: Guid(06e4a78c75e10c145a9156e32089ec9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Fire & Explosion Effects/Textures/LightningTrail.tif using Guid(06e4a78c75e10c145a9156e32089ec9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '691f5d6f5241e70fee3c2e4922635d63') in 0.036176 seconds
+  Import took 0.058099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Textures/SparkParticle.tif
+  artifactKey: Guid(2c9ba3deede9b844c84fabc9d8b70c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Textures/SparkParticle.tif using Guid(2c9ba3deede9b844c84fabc9d8b70c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c4dc06436e7d2b7347496980ff66a41') in 0.030324 seconds
+  Import took 0.034180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/StreamNormal.tif
+  artifactKey: Guid(dbf5fd5c04eedf2418e86c377cf5b95b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/StreamNormal.tif using Guid(dbf5fd5c04eedf2418e86c377cf5b95b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6c6eccd44daeb0d62c22f3c1f7fdfae') in 0.070483 seconds
+  Import took 0.098066 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Scenes/Main Menu/Lightmap-2_comp_dir.png
+  artifactKey: Guid(2c46c1bc9ba1c4d478d08ca9ccba667d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main Menu/Lightmap-2_comp_dir.png using Guid(2c46c1bc9ba1c4d478d08ca9ccba667d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '799d77c8d1eea503f54ee0fb60b9c359') in 0.056388 seconds
+  Import took 0.082675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Imported Assets/EffectExamples/Water Effects/Textures/RippleAlbedo.png
+  artifactKey: Guid(8ed4f18f263651d4b865df353c6c8fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Water Effects/Textures/RippleAlbedo.png using Guid(8ed4f18f263651d4b865df353c6c8fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e740827a400f4ec3ebd069dcb30c6fd1') in 0.029542 seconds
+  Import took 0.033548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/Imported Assets/EffectExamples/Water Effects/Textures/SplatAlbedo.tif
+  artifactKey: Guid(c996b36d1e7f97a41836e819231fc9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Water Effects/Textures/SplatAlbedo.tif using Guid(c996b36d1e7f97a41836e819231fc9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee46906d72de09a9cff76251700635aa') in 0.008814 seconds
+  Import took 0.031629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Scenes/Level/Lightmap-0_comp_dir.png
+  artifactKey: Guid(2d74823c920108b4897def7e83280bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level/Lightmap-0_comp_dir.png using Guid(2d74823c920108b4897def7e83280bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '989696967733756e9abc1404a028e5cd') in 0.009191 seconds
+  Import took 0.013125 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Imported Assets/EffectExamples/Goop Effects/Textures/GoopPoolNormals.tif
+  artifactKey: Guid(969a5ea5264ae2e4cb261f0dfbdb7877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Goop Effects/Textures/GoopPoolNormals.tif using Guid(969a5ea5264ae2e4cb261f0dfbdb7877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bc04f9157ccde4cb0b75835123d0ba7') in 0.036851 seconds
+  Import took 0.040685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/WoodAlbedo.tif
+  artifactKey: Guid(b81b746ea3b5a4f4ab92a152e3b0b01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/WoodAlbedo.tif using Guid(b81b746ea3b5a4f4ab92a152e3b0b01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8e120fd9a03e352ae9b4c13f276b512') in 0.027307 seconds
+  Import took 0.057231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/StoneNormal.tif
+  artifactKey: Guid(e6b70229308faa64880eac4945d59f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/StoneNormal.tif using Guid(e6b70229308faa64880eac4945d59f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4102d4d381ffe2e25807fc95a246564') in 0.036709 seconds
+  Import took 0.053156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/UI/Icons/guns_icons/M870.png
+  artifactKey: Guid(e3fac97eb6c51b04eb5e1caebd71cafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Icons/guns_icons/M870.png using Guid(e3fac97eb6c51b04eb5e1caebd71cafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec2686d6feec17a960f3309f01d270b7') in 0.008290 seconds
+  Import took 0.018514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Textures/wispySmoke.tif
+  artifactKey: Guid(b96c69e599825d84e985962673d1679c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Textures/wispySmoke.tif using Guid(b96c69e599825d84e985962673d1679c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '651d15e928216feccb5a9c48523438e6') in 0.083090 seconds
+  Import took 0.110985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Imported Assets/EffectExamples/Goop Effects/Textures/GoopDropNormals.tif
+  artifactKey: Guid(e2e48048625d63c41a7219b81562326d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Goop Effects/Textures/GoopDropNormals.tif using Guid(e2e48048625d63c41a7219b81562326d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62afc3b2d8ecea42b0e3549676dc1c53') in 0.031925 seconds
+  Import took 0.054071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/UI/Icons/guns_icons/M24.png
+  artifactKey: Guid(04a5914576d25074b8f7891a45c1250f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Icons/guns_icons/M24.png using Guid(04a5914576d25074b8f7891a45c1250f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89cf94574624a0eee1f19ddff24c02f3') in 0.008846 seconds
+  Import took 0.037683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Textures/noise.tif
+  artifactKey: Guid(c15eacd99a1861b4a8084a53a657bbb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Textures/noise.tif using Guid(c15eacd99a1861b4a8084a53a657bbb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e7c266078dca7d7477263e4057ed810') in 0.051542 seconds
+  Import took 0.076322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Scenes/Level/Lightmap-0_comp_light.exr
+  artifactKey: Guid(95b41d96a73323549a3d6df07860d0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level/Lightmap-0_comp_light.exr using Guid(95b41d96a73323549a3d6df07860d0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccfaeff0a2b402e4ee4f54dd282a6934') in 0.007813 seconds
+  Import took 0.030158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/UI/Icons/guns_icons/SA58_icon.png
+  artifactKey: Guid(c173b1ef9d40dd54294bd1c6ffe58fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Icons/guns_icons/SA58_icon.png using Guid(c173b1ef9d40dd54294bd1c6ffe58fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02133ab910076414371cfbf03e08bbef') in 0.007623 seconds
+  Import took 0.025976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/TinyStones.png
+  artifactKey: Guid(f5f94e20533a400479359f21c26305a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/TinyStones.png using Guid(f5f94e20533a400479359f21c26305a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22ead78f5a9fd1952f4d9d98d9da0b38') in 0.004301 seconds
+  Import took 0.022807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/TinyStonesNormals.tif
+  artifactKey: Guid(a00b2df6dc199854ba60af0c001a51b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/TinyStonesNormals.tif using Guid(a00b2df6dc199854ba60af0c001a51b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bff3b5e75a229ef618725089343cb3f') in 0.038783 seconds
+  Import took 0.042421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/UI/Icons/guns_icons/HK416.png
+  artifactKey: Guid(d1353023544879f4c8cf39889ad99e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Icons/guns_icons/HK416.png using Guid(d1353023544879f4c8cf39889ad99e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ace90c006ed6036b1d98bba9ed7fad96') in 0.008250 seconds
+  Import took 0.012064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Textures/WispySmokeNormal.tif
+  artifactKey: Guid(b7e9b138ba248a44f957941f56c3b0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Textures/WispySmokeNormal.tif using Guid(b7e9b138ba248a44f957941f56c3b0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb5dfd4e86d65d3cf11da23e66ff05a1') in 0.057655 seconds
+  Import took 0.090062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/UI/Icons/guns_icons/P90_icon.png
+  artifactKey: Guid(d171a3b2dc5bd974e8e72f32afa15573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Icons/guns_icons/P90_icon.png using Guid(d171a3b2dc5bd974e8e72f32afa15573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3afbf709304b4baa9d7ce5258cdbdaa7') in 0.009188 seconds
+  Import took 0.013123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/WoodOcclusion.tif
+  artifactKey: Guid(3f61242b237377e4590f4e6d1c869079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/WoodOcclusion.tif using Guid(3f61242b237377e4590f4e6d1c869079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bae7b79bb19ec62e107df2ac011a5063') in 0.043446 seconds
+  Import took 0.074537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Terrains/New Terrain.asset
+  artifactKey: Guid(98f30ae0a47a85c40bdca6248e88fc6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrains/New Terrain.asset using Guid(98f30ae0a47a85c40bdca6248e88fc6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f1094c0bb07870b962e3de06e8d035e') in 0.216930 seconds
+  Import took 0.237903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Imported Assets/EffectExamples/Fire & Explosion Effects/Textures/shockwave.tif
+  artifactKey: Guid(492f3349f92767645a752364a5d18422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Fire & Explosion Effects/Textures/shockwave.tif using Guid(492f3349f92767645a752364a5d18422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b547f05f9417394cca22392362980ea') in 0.008901 seconds
+  Import took 0.020186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Textures/SmokePuff.png
+  artifactKey: Guid(c3d99af7c1318074daeb72b174531db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Smoke & Steam Effects/Misc Effects/Textures/SmokePuff.png using Guid(c3d99af7c1318074daeb72b174531db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a664d119fe6509fc09d3600d675832d') in 0.079344 seconds
+  Import took 0.100177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Imported Assets/EffectExamples/Fire & Explosion Effects/Textures/ramp01.png
+  artifactKey: Guid(99e09a9bd0f10384fa2a3bcbd5c65c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Fire & Explosion Effects/Textures/ramp01.png using Guid(99e09a9bd0f10384fa2a3bcbd5c65c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1872c186876bdcd151ee568ac8d752b') in 0.025159 seconds
+  Import took 0.029350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/SandDecalAlbedo.tif
+  artifactKey: Guid(03752e2fadc88f145aa5c8fc4f3cd0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/EffectExamples/Weapon Effects/Textures/SandDecalAlbedo.tif using Guid(03752e2fadc88f145aa5c8fc4f3cd0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '368e362396a381b7df685613b7eff0f8') in 0.027702 seconds
+  Import took 0.053214 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Imported Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Textures/Polyverse Skies - Night Sky.exr
+  artifactKey: Guid(fa41734a337674542975482c8fe96ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported Assets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Textures/Polyverse Skies - Night Sky.exr using Guid(fa41734a337674542975482c8fe96ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96fb7df586af82d8fe18e0bfe4c3ee33') in 2.095695 seconds
+  Import took 2.115488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/Resources/Weapon_Railgun.prefab
+  artifactKey: Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Weapon_Railgun.prefab using Guid(7a4ca6f152d075d42859a45a4d06fbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d770541e174dac7cb43d54812fc7e1') in 0.023333 seconds
+  Import took 0.031693 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001978 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.827 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 2750 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 221.4 MB.
+Received signal SIGSEGV
+CheckDisalowAllocation. Allocating memory when it is not allowed to allocate memory. Label used for allocation: MemoryProfiler.
+
+Stack trace:
+0x00007fffc20ed791 (mono-2.0-bdwgc) [unity-liveness.c:549] mono_unity_liveness_calculation_from_root 
+0x00007ff69e85a666 (Unity) MarkDependencies
+0x00007ff69e855bc0 (Unity) GarbageCollectSharedAssets
+0x00007ff69e89ad86 (Unity) UnloadUnusedAssetsOperation::IntegrateMainThread
+0x00007ff69e89e716 (Unity) PreloadManager::UpdatePreloadingSingleStep
+0x00007ff69e89edcf (Unity) PreloadManager::WaitForAllAsyncOperationsToComplete
+0x00007ff69e89df4b (Unity) UnloadUnusedAssetsImmediate
+0x00007ff6a06f8018 (Unity) <lambda_7a4e346ad56c093be607e8c3dc54f69c>::operator()
+0x00007ff6a07c20d2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007ff6a07c4230 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007ff6a07c79be (Unity) asio::io_service::run
+0x00007ff6a073dd50 (Unity) RunAssetImportWorkerClientV2
+0x00007ff6a073dda0 (Unity) RunAssetImporterV2
+0x00007ff69fc5d73b (Unity) Application::InitializeProject
+0x00007ff6a05d2be2 (Unity) WinMain
+0x00007ff6a2418fc6 (Unity) __scrt_common_main_seh
+0x00007ff8751f7034 (KERNEL32) BaseThreadInitThunk
+0x00007ff876f42651 (ntdll) RtlUserThreadStart
+

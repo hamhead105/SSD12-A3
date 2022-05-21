@@ -228,6 +228,7 @@ GameObject:
   - component: {fileID: 7974006523598507118}
   - component: {fileID: 7974006523598507116}
   - component: {fileID: 5284178960487396636}
+  - component: {fileID: -5998853310460719730}
   m_Layer: 5
   m_Name: HitMarker Base
   m_TagString: Untagged
@@ -244,7 +245,7 @@ RectTransform:
   m_GameObject: {fileID: 7974006523598507117}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0045, y: 0.0045, z: 0.0045}
+  m_LocalScale: {x: 0.00012, y: 0.00012, z: 0.00012}
   m_Children:
   - {fileID: 7974006523881387635}
   - {fileID: 7974006521930696417}
@@ -318,6 +319,20 @@ MonoBehaviour:
   fadeDelay: 0.02
   fadeSpeed: 0.22
   shrinkSpeed: 40
+--- !u!114 &-5998853310460719730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7974006523598507117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 311606b5c7160af44a4ed087e191ce05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maintainSize: 1
+  objectScale: 1
 --- !u!1 &7974006523881387632
 GameObject:
   m_ObjectHideFlags: 0

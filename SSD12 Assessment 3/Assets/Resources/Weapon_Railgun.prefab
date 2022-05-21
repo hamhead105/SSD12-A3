@@ -828,7 +828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Railgun
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 2800000, guid: 2846af11491cbfc48894c2bc588e809d, type: 3}
   useCooldown: 1
   drawTime: 0.6
   baseTransform: {fileID: 3327213409682195278}
