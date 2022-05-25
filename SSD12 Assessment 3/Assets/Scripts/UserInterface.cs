@@ -15,6 +15,7 @@ public class UserInterface : MonoBehaviour
     [SerializeField] private Text maxAmmoText;
     [SerializeField] private Slider healthSlider;
     [SerializeField] private Slider healthTraceSlider;
+    [SerializeField] private GameObject settings;
 
     // Start is called before the first frame update
     void Start()
@@ -61,5 +62,15 @@ public class UserInterface : MonoBehaviour
             healthSlider.value = player.Health;
             healthTraceSlider.value += (healthSlider.value - healthTraceSlider.value) * healthTrace_kP;
         }
+    }
+
+    public void OpenSettings()
+    {
+        settings.SetActive(true);
+    }
+
+    public void CloseSettings()
+    {
+        settings.SetActive(false);
     }
 }
