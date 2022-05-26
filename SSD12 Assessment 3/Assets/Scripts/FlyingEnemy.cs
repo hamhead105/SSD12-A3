@@ -5,7 +5,8 @@ using UnityEngine;
 public class FlyingEnemy : Enemy
 {
     private CharacterController charController;
-    private float flightZero_kP = 0.2f;
+    private static float flightZero_kP = 0.2f;
+    private static float playerAim_kP = 0.1f;
     private Vector3 velocity;
 
     [SerializeField] private Projectile projectile;
@@ -26,18 +27,20 @@ public class FlyingEnemy : Enemy
     }
 
     // Update is called once per frame
-    public new void Update()
+    public override void Update()
     {
         base.Update();
-        //Idle();
-        Attack();
         UpdateMovement();
+    }
+
+    public void FixedUpdate()
+    {
+        Attack();
     }
 
     public void Idle()
     {
         velocity += transform.forward * speed;
-       
     }
 
     public void UpdateMovement()
@@ -48,8 +51,25 @@ public class FlyingEnemy : Enemy
 
     public void Attack()
     {
-        transform.LookAt(FindObjectOfType<Player>().transform.position);
+        Player player = FindObjectOfType<Player>();
         if (readyToFire) Shoot();
+        SmoothLookAt(player.transform.position);
+    }
+
+    void SmoothLookAt(Vector3 newDirection)
+    {
+        Player player = FindObjectOfType<Player>();
+        Vector3 currentRot = this.transform.eulerAngles;
+        transform.LookAt(player.transform.position);
+        Vector3 targRot = this.transform.eulerAngles;
+        transform.eulerAngles = currentRot;
+
+        this.transform.eulerAngles = new Vector3(
+            Mathf.LerpAngle(currentRot.x, targRot.x, playerAim_kP),
+            Mathf.LerpAngle(currentRot.y, targRot.y, playerAim_kP),
+            Mathf.LerpAngle(currentRot.z, targRot.z, playerAim_kP)
+        );
+        
     }
 
     public void Shoot()

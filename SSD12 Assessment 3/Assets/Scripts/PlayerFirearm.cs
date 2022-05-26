@@ -108,7 +108,8 @@ public class PlayerFirearm : PlayerItem
 
     private GameObject
         baseHitmarker,
-        killHitmarker;
+        killHitmarker,
+        reticle;
 
     [SerializeField] private GameObject sightAttachmentParent;
     [SerializeField] private int sightAttachment;
@@ -180,6 +181,27 @@ public class PlayerFirearm : PlayerItem
         UpdateLookPointWeights();
     }
 
+    public void Update()
+    {
+        UpdateCastBasedUI();
+    }
+
+    private void UpdateCastBasedUI()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(barrelPoint.transform.position, barrelPoint.transform.forward, out hit))
+        {
+            baseHitmarker.transform.position = hit.point;
+            killHitmarker.transform.position = hit.point;
+            reticle.transform.position = hit.point;
+        }
+        else
+        {
+            killHitmarker.transform.localPosition = new Vector3(hitmarkerPosition.x, hitmarkerPosition.y, hitmarkerPosition.z - 0.1f);
+            baseHitmarker.transform.localPosition = new Vector3(hitmarkerPosition.x, hitmarkerPosition.y, hitmarkerPosition.z - 0.1f);
+            reticle.transform.localPosition = new Vector3(hitmarkerPosition.x, hitmarkerPosition.y, hitmarkerPosition.z - 0.1f);
+        }
+    }
     private void InitHitmarkers()
     {
         baseHitmarker = Instantiate(Resources.Load("Hitmarker Base"), BarrelPoint.transform.position, BarrelPoint.transform.rotation) as GameObject;
@@ -189,6 +211,10 @@ public class PlayerFirearm : PlayerItem
         killHitmarker = Instantiate(Resources.Load("Hitmarker Kill"), BarrelPoint.transform.position, BarrelPoint.transform.rotation) as GameObject;
         killHitmarker.transform.SetParent(BarrelPoint.transform);
         killHitmarker.GetComponent<RectTransform>().localPosition = new Vector3(hitmarkerPosition.x, hitmarkerPosition.y, hitmarkerPosition.z - 0.1f);
+
+        reticle = Instantiate(Resources.Load("Reticle"), BarrelPoint.transform.position, BarrelPoint.transform.rotation) as GameObject;
+        reticle.transform.SetParent(BarrelPoint.transform);
+        reticle.GetComponent<RectTransform>().localPosition = new Vector3(hitmarkerPosition.x, hitmarkerPosition.y, hitmarkerPosition.z - 0.1f);
     }
 
     private void UpdateHitmarkers()
@@ -305,7 +331,6 @@ public class PlayerFirearm : PlayerItem
         if (input) StopRepetitiveReload = true;
         if (input && Chambered && !Sprinting && itemEnabled && !WeaponFireObstruction)
         {
-            //print(" primary use  ");
             print("use item");
             if (aimedDownSights) Shoot(SpreadAmountADS);
             else Shoot(SpreadAmountHip);
@@ -492,7 +517,7 @@ public class PlayerFirearm : PlayerItem
     {
         if (killShot)
         {
-            killHitmarker.GetComponent<Hitmarker>().HitAnimation();
+            killHitmarker.GetComponent<Hitmarker>().HitAnimation();    
             print("hit another target kill");
         } 
         else 

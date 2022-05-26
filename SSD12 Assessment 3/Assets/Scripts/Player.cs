@@ -293,6 +293,8 @@ public class Player : Human
     {
         if (MenuOpened)
         {
+            InputEnabled = false;
+            FindObjectOfType<UserInterface>().OpenSettings();
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             ResetInputs();
@@ -300,6 +302,8 @@ public class Player : Human
         }
         else
         {
+            InputEnabled = true;
+            FindObjectOfType<UserInterface>().CloseSettings();
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
