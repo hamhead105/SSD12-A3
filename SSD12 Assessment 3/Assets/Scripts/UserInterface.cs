@@ -16,6 +16,8 @@ public class UserInterface : MonoBehaviour
     [SerializeField] private Slider healthSlider;
     [SerializeField] private Slider healthTraceSlider;
     [SerializeField] private GameObject settings;
+    [SerializeField] private Text scoreText;
+    [SerializeField] private Text timeText;
 
     // Start is called before the first frame update
     void Start()
@@ -62,6 +64,16 @@ public class UserInterface : MonoBehaviour
             healthSlider.value = player.Health;
             healthTraceSlider.value += (healthSlider.value - healthTraceSlider.value) * healthTrace_kP;
         }
+    }
+
+    public void UpdateTimeText(int time)
+    {
+        timeText.text = time.ToString();
+    }
+
+    public void UpdateScoreText(int score)
+    {
+        scoreText.text = score.ToString();
     }
 
     public void OpenSettings()
