@@ -845,7 +845,7 @@ MonoBehaviour:
   spreadAmountHip: 5
   spreadAmountADS: 0
   numberOfProjectiles: 1
-  hitmarkerPosition: {x: 0, y: -0.2, z: 30}
+  hitmarkerPosition: {x: 0, y: 0, z: 150}
   projectile: {fileID: 4377690933116751623, guid: 5311c95dfcf131346a1dbc50ca5fd477, type: 3}
   useAudio: {fileID: 6778009828127052570, guid: 04d3987f79532174ea75110f337f0337, type: 3}
   useEffect: {fileID: 6385952880474491596, guid: 46fef92c83577ea49985d5412c750360, type: 3}
