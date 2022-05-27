@@ -34,6 +34,11 @@ public class SettingsManager : MonoBehaviour
         InitializeResolutionSettings();
         UpdateSettings();
     }
+    private void Update()
+    {
+        UpdatePlayerSettings();
+    }
+
 
     public void InitializeDirectoryPaths()
     {
@@ -44,20 +49,25 @@ public class SettingsManager : MonoBehaviour
         }
         else
         {
-            filePath = Application.dataPath + "/GameFiles/settings";
-            directoryPath = Application.dataPath + "/GameFiles";
+            filePath = Application.dataPath + "/_GameFiles/Settings.txt";
+            directoryPath = Application.dataPath + "/_GameFiles";
         }
+
+        print("file path " + filePath);
+    }
+
+    public void UpdatePlayerSettings()
+    {
+        Player player = FindObjectOfType<Player>();
+        player.UpdateSensitivity(sensitivity);
+        player.UpdateVolume(volume);
     }
 
     private void UpdateSettings()
     {
         volumeSlider.value = volume;
         sensitivitySlider.value = sensitivity;
-
-        Player player = FindObjectOfType<Player>();
-        player.UpdateSensitivity(sensitivity);
-        player.UpdateVolume(volume); 
-
+     
         if (resolutionDropdown) resolutionDropdown.value = resolutionIndex;
         if (fullscreenToggle) fullscreenToggle.isOn = fullScreen == 0 ? false : true; // if fullscreen is 0, the toggle is set to false, else true
     }
@@ -66,6 +76,7 @@ public class SettingsManager : MonoBehaviour
     {
         sensitivity = defaultSensitivity;
         volume = defaultVolume;
+        DeleteSettings();
         SaveSettings();
     }
 
@@ -148,9 +159,18 @@ public class SettingsManager : MonoBehaviour
         {
             File.Create(filePath);
         }
+        
         StreamWriter writer = new StreamWriter(filePath);
         writer.Write(settings);
         writer.Close();
+    }
+
+    public void DeleteSettings()
+    {
+        if (File.Exists(filePath))
+        {
+            File.Delete(filePath);
+        }
     }
 
     /*
