@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * An extension of the projectile class for projectiles that instantiate another object on impact;
+ */
 public class ExplodingProjectile : Projectile
 {
     [SerializeField] private GameObject explosion;
@@ -9,6 +12,12 @@ public class ExplodingProjectile : Projectile
     [SerializeField] private AnimationCurve damageDropOff;
     [SerializeField] private bool useImpactRotation;
 
+    /*
+     * Called when the project hits a surface
+     * 
+     * @param effectSpawn - the object to spawn on impact
+     * @param hit - the object hit
+     */
     protected override void Impact(GameObject effectSpawn, RaycastHit hit)
     {
         if (explosion)
