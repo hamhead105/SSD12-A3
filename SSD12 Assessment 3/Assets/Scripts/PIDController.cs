@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Proportional, Integral, Derivative Controller
+ * Uses calculus to interpolate a value to a target
+ */
 public class PIDController
 {
     private float kP;
@@ -14,18 +18,34 @@ public class PIDController
     private float lastError = 0;
     private float lastTime;
 
+    /*
+     * Initialize the PID controller
+     */
     public void Init()
     {
         lastTime = Time.time;
     }
 
+    /*
+     * Base constructor
+     * 
+     * @param kP - proportional constant
+     * @param kI - integral constant
+     * @param KD - derivative constant
+     */
     public PIDController(float kP, float kI, float kD)
     {
         this.kP = kP;
         this.kI = kI;
-        this.kD = kD;      
+        this.kD = kD;
     }
 
+    /*
+     * return the output of the PID controller
+     * 
+     * @param error - distance to target
+     * @return - the output value
+     */
     public float GetOutput(float error)
     {
         float deltaTime = Time.time - lastTime;
@@ -43,18 +63,5 @@ public class PIDController
         }
         output = (error * kP) + (errorAccumulation * kI) + (errorDerivative * kD);
         return output;
-    }
-
-    public float GetkP()
-    {
-        return kP;
-    }
-    public float GetkI()
-    {
-        return kI;
-    }
-    public float GetkD()
-    {
-        return kD;
     }
 }

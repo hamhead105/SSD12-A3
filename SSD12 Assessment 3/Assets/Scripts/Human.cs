@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Base class for human characters such as players, player like NPCs etc.
+ */
 public class Human : GameCharacter
 {
     // serialized constants
@@ -142,6 +145,9 @@ public class Human : GameCharacter
 
     }
 
+    /*
+     * Initialize the character
+     */
     public override void Init()
     {
         Active = true;
@@ -149,19 +155,22 @@ public class Human : GameCharacter
         charController = GetComponent<CharacterController>();
     }
 
-    public virtual void Update()
-    {
-       // UpdatePivotValues();
-    }
-
+    /*
+     * Updates the rotation states of the character, i.e where they are aiming
+     * 
+     * @param x - the horizontal input
+     * @param y - the vertical input
+     */
     public void UpdatePlayerRotations(float x, float y)
     {
         pivot += x;
-        //spine1.transform.localEulerAngles = new Vector3(spine1.transform.localEulerAngles.x, pivot, spine1.transform.localEulerAngles.z);
         AimY += y;
         AimY = Mathf.Clamp(AimY, -60, 70);
     }
 
+    /*
+     * Update character physics and added accelerations
+     */
     public virtual void UpdateMovement()
     {
         if (Sprinting) movementSpeed = baseMovementSpeed * sprintSpeedMultiplier;
@@ -190,6 +199,9 @@ public class Human : GameCharacter
         charController.Move(Velocity);
     }
 
+    /*
+     * Reset all the inputs to no input.
+     */
     public void ResetInputs()
     {
         ForwardInput = 0;
@@ -198,6 +210,11 @@ public class Human : GameCharacter
         AimingDownSights = false;
     }
 
+    /*
+     * Apply a force upwards
+     * 
+     * @param strength - how much force to apply upwards
+     */
     protected void Jump(float strength)
     {
         if (charController.isGrounded)
@@ -206,6 +223,10 @@ public class Human : GameCharacter
         }
     }
 
+    /*
+     * Update spine and neck multipliers which are used to adjust how the character is posed. The character does not completely rotate their 
+     * spine when sprinting, instead they rotate where their neck is aimed.
+     */
     public void UpdateFixedAnimationValues()
     {
         if (!Sprinting)
@@ -220,6 +241,9 @@ public class Human : GameCharacter
         }
     }
 
+    /*
+     * Update the pose positions for feet targ and spine pos.
+     */
     protected void UpdateAnimations()
     {
         leftFootTarg.transform.position = new Vector3(leftFootTargBase.transform.position.x, leftFootTargBase.transform.position.y - pControlledLeftFootPos, leftFootTargBase.transform.position.z);
@@ -234,6 +258,9 @@ public class Human : GameCharacter
         UpdateAnimatorValues();
     }
 
+    /*
+     * Call the animator to play the reload animation
+     */
     protected void RunReloadAnimation()
     {
         print("reload animation");
@@ -248,12 +275,20 @@ public class Human : GameCharacter
         spine1.transform.localEulerAngles += new Vector3(spine1.transform.localEulerAngles.x, pivot, spine1.transform.localEulerAngles.z);
     }
 
+    /*
+     * Set the values of the animator
+     */
     public void UpdateAnimatorValues()
     {
         Animator.SetInteger("MoveState", moveAnimationState);
         Animator.SetInteger("ArmState", armAnimationState);
     }
 
+    /*
+     * Update the animation state and state of whether character is aiming
+     * 
+     * @param aimedDownSights - whether the character is in aimed mode
+     */
     protected void UpdateAimDownSightsState(bool aimedDownSights)
     {
         if (aimedDownSights)
@@ -268,6 +303,10 @@ public class Human : GameCharacter
         }
     }
 
+    /*
+     * Update IK cast distance values, using sphere casting techniques. This is where each foot pos determines the distance to the ground by casting
+     * a sphere down and determining how far it can go.
+     */
     public void UpdateFeetIK()
     {
         if (charController.isGrounded)
@@ -289,7 +328,10 @@ public class Human : GameCharacter
             }
         }
     }
-
+    
+    /*
+     * Called when character is killed
+     */
     public override void Death()
     {
         GameObject ragdoll = Instantiate(Ragdoll, this.transform.position, transform.rotation);
@@ -301,12 +343,18 @@ public class Human : GameCharacter
         Destroy(gameObject);
     }
 
+    /*
+     * Update feetPos using a proportional controller for smoother movement
+     */
     public void UpdatePControlIK()
     {
         pControlledLeftFootPos += (leftFootCastDistance - pControlledLeftFootPos) * feetIK_kP;
         pControlledRightFootPos += (rightFootCastDistance - pControlledRightFootPos) * feetIK_kP;
     }
 
+    /*
+     * Update the size of the character controller, dynamically based on the player's surroundings.
+     */
     public void UpdateCharacterControllerDimensions()
     {
         float castDistanceDiff = Mathf.Abs(pControlledRightFootPos - pControlledLeftFootPos);
@@ -322,16 +370,9 @@ public class Human : GameCharacter
         charController.center = new Vector3(0, characterControllerBaseCenterY + castDistanceDiff / 4);
     } 
 
-    private void UpdateLeaning(float leanState)
-    {
-        float targetLean = 0;
-        if (leanState == 1) targetLean = 18;
-        else if (leanState == 2) targetLean = -18;
-
-        Lean += (targetLean - Lean) * lean_kP * (Time.deltaTime * 60f);
-        leanLimb.transform.localEulerAngles = new Vector3(leanLimb.transform.localEulerAngles.x, leanLimb.transform.localEulerAngles.y, Lean + leanLimb.transform.localEulerAngles.z);
-    }
-
+    /*
+     * Update the character's states of movement
+     */
     protected void UpdateMoveStateAnimationsValues()
     {
         if (ForwardInput != 0)
@@ -367,6 +408,12 @@ public class Human : GameCharacter
         }
     }
 
+    /*
+     * Load an item for the player
+     * 
+     * @param item - The object of the item
+     * @param localPlayer - whether the character is the one controlled by the player
+     */
     protected void LoadItem(GameObject item, bool localPlayer)
     {
         if (item.GetComponent<Item>().ItemName != oldItem)
@@ -397,6 +444,12 @@ public class Human : GameCharacter
         oldItem = item.GetComponent<Item>().ItemName;
     }
 
+    /*
+     * Pickup used for picking up an item from the game world
+     * 
+     * @param item - The object of the item
+     * @param localPlayer - whether the character is the one controlled by the player
+     */
     protected void LoadItemFromPickup(GameObject item, bool localPlayer)
     {
         if (item.GetComponent<Item>().ItemName != oldItem)
@@ -435,6 +488,12 @@ public class Human : GameCharacter
         oldItem = item.GetComponent<Item>().ItemName;
     }
 
+    /*
+     * Load an item based on item name
+     * 
+     * @param item - the name of the item
+     * @param localPlayer - whether the character is the one controlled by the player 
+     */
     protected void LoadItem(string item, bool localPlayer)
     {
         print("player: " + this.transform.name + "item: " + item);
@@ -475,6 +534,13 @@ public class Human : GameCharacter
         oldItem = item;
     }
 
+    /*
+     * Load an Item based on PlayerItem type
+     * 
+     * @param item - the PlayerItem to load
+     * @param localPlayer - whether the character is the one controlled by the player 
+     * @param init - whether to initialize the item
+     */
     public void LoadItem(PlayerItem item, bool localPlayer, bool init)
     {
         if (item.ItemName != oldItem && Animator != null)
@@ -511,7 +577,11 @@ public class Human : GameCharacter
     }
 
     /*
-     * @param equipForNewItem avoids setting the current slot as unarmed
+     * Select an item from the inventory of the player
+     * 
+     * @param selection - the inventory slot number
+     * @param equipForNewItem - avoids setting the current slot as unarmed
+     * @param init - wether the item is to be initiated
      */
     public void SelectFromInventory(int selection, bool equipForNewItem, bool init)
     {
@@ -522,27 +592,27 @@ public class Human : GameCharacter
         HumanInventory.CurrentlySelected = selection;
     }
 
+    /*
+     * Check footsteps whether to play audio
+     */
     public void CheckFootsteps()
     {
         if (!active || !animator) return;
-        //Debug.DrawRay(transform.position + new Vector3(0, 1f, 0), transform.TransformDirection(Vector3.down) * 2.5f, Color.red, 0.1f);
         if (animator.GetInteger("MoveState") == 4 && stepSound)
         {
             RaycastHit hit;
             if (Physics.Raycast(transform.position + new Vector3(0, 1f, 0), transform.TransformDirection(Vector3.down), out hit, 1.5f))
             {
                 this.stepSound = false;
-                //if (hit.transform.tag == "Terrain")
-                //{
-                    int stepSound = Random.Range(0, FootstepGrassSprintSounds.Length - 1);
-                    if (stepSound == lastStepSound)
-                    {
-                        stepSound += 1;
-                        if (stepSound > FootstepGrassSprintSounds.Length) stepSound = 0;
-                    }
-                    lastStepSound = stepSound;
-                    Instantiate(FootstepGrassSprintSounds[stepSound], this.transform.position, transform.rotation);
-               // }
+                int stepSound = Random.Range(0, FootstepGrassSprintSounds.Length - 1);
+                if (stepSound == lastStepSound)
+                {
+                    stepSound += 1;
+                    if (stepSound > FootstepGrassSprintSounds.Length) stepSound = 0;
+                }
+                lastStepSound = stepSound;
+                Instantiate(FootstepGrassSprintSounds[stepSound], this.transform.position, transform.rotation);
+             
                 Invoke("StepSoundCoolDown", stepCoolTime / 1.3f);
             }
         }
@@ -554,22 +624,22 @@ public class Human : GameCharacter
             {
                 print("raycast hit " + hit.transform.name);
                 this.stepSound = false;
-                //if (hit.transform.tag == "Terrain")
-                //{
-                    int stepSound = Random.Range(0, FootstepGrassSounds.Length - 1);
-                    if (stepSound == lastStepSound)
-                    {
-                        stepSound += 1;
-                        if (stepSound > FootstepGrassSounds.Length) stepSound = 0;
-                    }
-                    lastStepSound = stepSound;
-                    Instantiate(FootstepGrassSounds[stepSound], this.transform.position, transform.rotation);
-                //}
+                int stepSound = Random.Range(0, FootstepGrassSounds.Length - 1);
+                if (stepSound == lastStepSound)
+                {
+                    stepSound += 1;
+                    if (stepSound > FootstepGrassSounds.Length) stepSound = 0;
+                }
+                lastStepSound = stepSound;
+                Instantiate(FootstepGrassSounds[stepSound], this.transform.position, transform.rotation);
                 Invoke("StepSoundCoolDown", stepCoolTime);
             }
         }
     }
 
+    /*
+     * Use a boolean to determine whether we can spawn another footstep sound
+     */
     public void StepSoundCoolDown()
     {
         stepSound = true;

@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/*
+ * Class for player, the character that the player controls.
+ */
 public class Player : Human
 {
     // non serialized constants
@@ -53,12 +56,6 @@ public class Player : Human
     public Transform LookPoint { get => lookPoint; set => lookPoint = value; }
     public PlayerCamera PlayerCamera { get => playerCamera; set => playerCamera = value; }
 
-    private void OnEnable()
-    {
-        //SceneManager.sceneLoaded += OnSceneLoaded;
-        Active = false;
-    }
-
     // Start is called before the first frame update
     public override void Start()
     {
@@ -66,6 +63,9 @@ public class Player : Human
         DontDestroyOnLoad(gameObject);
     }
 
+    /*
+     * Initialize the player
+     */
     public override void Init()
     {
         LookPoint = PlayerCamera.LookPoint.transform;
@@ -76,6 +76,9 @@ public class Player : Human
         if (Item is PlayerFirearm) (Item as PlayerFirearm).CompleteReload();
     }
 
+    /*
+     * Reset the player, i.e respawn them
+     */
     public void Reset()
     {
         foreach (GameObject mesh in Meshes) mesh.SetActive(true);
@@ -101,6 +104,9 @@ public class Player : Human
         PlayerMiscInputs();
     }
 
+    /*
+     * Update called after all other processes, which is useful for overriding animations
+     */
     public void LateUpdate()
     {
         if (!Active) return;
@@ -109,6 +115,9 @@ public class Player : Human
         UpdateCharacterControllerDimensions();
     }
 
+    /*
+     * Called at a fixed rate
+     */
     public void FixedUpdate()
     {
         if (!Active) return;
@@ -124,12 +133,19 @@ public class Player : Human
         }
     }
 
+    /*
+     * Update the physics and movement of the player,
+     * feed this movement to the item that this character is holding
+     */
     public override void UpdateMovement()
     {
         base.UpdateMovement();
         Item.UpdateItemShift(RightInput, Velocity.y + FloorGravity);
     }
 
+    /*
+     * Register key inputs for the player, such as to move and jump
+     */
     public void RegisterInputs()
     {
         if (Input.GetKey(KeyCode.W))
@@ -229,6 +245,9 @@ public class Player : Human
         if (Item.PrimaryUseItem(Input.GetMouseButton(0))) PlayerCamera.AddCameraShakeVelocity(new Vector3(0, 0, Random.Range(-Item.UseCameraShake, Item.UseCameraShake)));
     }
 
+    /*
+     * Register inputs from the player which should be able to be called even if the player is dead, paused, inactive etc
+     */
     public void PlayerMiscInputs()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -238,6 +257,9 @@ public class Player : Human
         }
     }
 
+    /*
+     * Called when player is killed, spawn ragdoll and hide player
+     */
     public override void Death()
     {
         charController.detectCollisions = false;
@@ -256,6 +278,9 @@ public class Player : Human
         LoadItem("Unarmed", true);
     }
 
+    /*
+     * Input mouse movement for the player to look around
+     */
     public void PlayerMouseAxisInputs()
     {
         float xMovement = Input.GetAxis("Mouse X") * sensitivity;
@@ -276,6 +301,9 @@ public class Player : Human
         }
     }
 
+    /*
+     * Add screen recoil values to the amount the player's point of aim should move
+     */
     private void ImplementAimRecoil()
     {
         float xMovement = 0;
@@ -289,6 +317,9 @@ public class Player : Human
         UpdatePlayerRotations(xMovement, yMovement);
     }
 
+    /*
+     * Update whether the settings and menu should be opened or not
+     */
     private void UpdateMenu()
     {
         if (MenuOpened)
@@ -309,7 +340,9 @@ public class Player : Human
         }
     }
 
-    // TODO find a more efficient means instead of searching through all cases
+    /*
+     * Disable all the hitboxes of this character
+     */
     public void DisableHitboxes()
     {
         foreach (Hitbox hitbox in FindObjectsOfType<Hitbox>())
@@ -321,6 +354,9 @@ public class Player : Human
         }
     }
 
+    /*
+     * Enable all the hitboxes of this character
+     */
     public void EnableHitboxes()
     {
         foreach (Hitbox hitbox in FindObjectsOfType<Hitbox>())
@@ -332,6 +368,9 @@ public class Player : Human
         }
     }
 
+    /*
+     * Update camera states, sensitivity etc
+     */
     private void UpdateCamera()
     {
         if (Item is PlayerFirearm)
@@ -356,6 +395,9 @@ public class Player : Human
         }
     }
 
+    /*
+     * Update weapon sway. This is how the item the player is holding, is not held perfectly still
+     */
     private void UpdateSway()
     {
         if (Walking)
@@ -386,6 +428,11 @@ public class Player : Human
         }
     }
 
+    /*
+     * Used when the player wants to interact with a world element
+     * 
+     * @param isInteract - whether the player has pressed the key to interact
+     */
     private void CastInteractionRay(bool isInteract)
     {
         RaycastHit hit;
@@ -406,6 +453,9 @@ public class Player : Human
         }
     }
 
+    /*
+     * Check whether the player's item has queued a reload. This is used to run animations
+     */
     public void CheckReloadAnimations()
     {
         if (Item is PlayerFirearm)
@@ -435,21 +485,29 @@ public class Player : Human
         }
     }
 
+    /*
+     * Update the active mouse input sensitivity the player has set
+     * 
+     * @param sensitivity - the value of sensitivity, higher sensitivity means more angular movement with less mouse movement.
+     */
     public void UpdateSensitivity(float sensitivity)
     {
         PlayerSensitivity = sensitivity;
     }
 
+    /*
+     * Update the game volume
+     * 
+     * @param volume - how loud the game should be
+     */
     public void UpdateVolume(float volume)
     {
         AudioListener.volume = volume;
     }
 
-    public void UpdateToggleLean(bool toggleLean)
-    {
-        this.toggleLean = toggleLean;
-    }
-
+    /*
+     * Cast a ray forward from the item perspective, to see if the player's item is obstructed
+     */
     private void CastForwardSpaceRay()
     {
         RaycastHit hit;
