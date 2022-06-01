@@ -2717,7 +2717,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1408305132644198243}
-  - component: {fileID: 8047241567848240475}
+  - component: {fileID: 5795131101594091376}
   m_Layer: 0
   m_Name: hand_R_target_offset
   m_TagString: Untagged
@@ -2740,7 +2740,7 @@ Transform:
   m_Father: {fileID: 1121445122870123576}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8047241567848240475
+--- !u!114 &5795131101594091376
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

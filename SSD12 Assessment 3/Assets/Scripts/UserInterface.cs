@@ -66,6 +66,13 @@ public class UserInterface : MonoBehaviour
         }
     }
 
+    public void CloseMenu()
+    {
+        FindObjectOfType<Player>().MenuOpened = false;
+        FindObjectOfType<Player>().UpdateMenu();
+        print("close menu");
+    }
+
     public void UpdateTimeText(int time)
     {
         timeText.text = time.ToString();

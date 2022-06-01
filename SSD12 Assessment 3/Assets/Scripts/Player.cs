@@ -74,6 +74,7 @@ public class Player : Human
         base.Init();
         LoadItem("Railgun", true);
         if (Item is PlayerFirearm) (Item as PlayerFirearm).CompleteReload();
+        UpdateMenu();
     }
 
     /*
@@ -320,7 +321,7 @@ public class Player : Human
     /*
      * Update whether the settings and menu should be opened or not
      */
-    private void UpdateMenu()
+    public void UpdateMenu()
     {
         if (MenuOpened)
         {
@@ -329,7 +330,6 @@ public class Player : Human
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             ResetInputs();
-
         }
         else
         {
