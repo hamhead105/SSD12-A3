@@ -5,6 +5,9 @@ using UnityEngine.UI;
 using System.IO;
 using System;
 
+/*
+ * Handles the settings of the game, as well as writing the settings to a file
+ */
 public class SettingsManager : MonoBehaviour
 {
     private string filePath;
@@ -27,6 +30,7 @@ public class SettingsManager : MonoBehaviour
     private static float defaultSensitivity = 0.5f;
     private static float defaultVolume = 1;
 
+    // Called once when the object is instantiated
     private void Start()
     {
         InitializeDirectoryPaths();
@@ -35,6 +39,18 @@ public class SettingsManager : MonoBehaviour
         UpdateSettings();
     }
 
+    /*
+     * Called once per frame
+     */
+    private void Update()
+    {
+        UpdatePlayerSettings();
+    }
+
+    /*
+     * Get the directory paths to write file to. Based on whether the game is being run from the editor or the built version
+     * this path will differ.
+     */
     public void InitializeDirectoryPaths()
     {
         if (Application.isEditor)
@@ -44,31 +60,49 @@ public class SettingsManager : MonoBehaviour
         }
         else
         {
-            filePath = Application.dataPath + "/GameFiles/settings";
-            directoryPath = Application.dataPath + "/GameFiles";
+            filePath = Application.dataPath + "/_GameFiles/Settings.txt";
+            directoryPath = Application.dataPath + "/_GameFiles";
         }
+
+        print("file path " + filePath);
     }
 
+    /*
+     * Update the player's variables to the settings selected
+     */
+    public void UpdatePlayerSettings()
+    {
+        Player player = FindObjectOfType<Player>();
+        player.UpdateSensitivity(sensitivity);
+        player.UpdateVolume(volume);
+    }
+
+    /*
+     * Update the settings and sync UI elements to reflect them
+     */
     private void UpdateSettings()
     {
         volumeSlider.value = volume;
         sensitivitySlider.value = sensitivity;
-
-        Player player = FindObjectOfType<Player>();
-        player.UpdateSensitivity(sensitivity);
-        player.UpdateVolume(volume); 
-
+     
         if (resolutionDropdown) resolutionDropdown.value = resolutionIndex;
         if (fullscreenToggle) fullscreenToggle.isOn = fullScreen == 0 ? false : true; // if fullscreen is 0, the toggle is set to false, else true
     }
 
+    /*
+     * Load default settings which are loaded initially
+     */
     private void LoadDefaultSettings()
     {
         sensitivity = defaultSensitivity;
         volume = defaultVolume;
+        DeleteSettings();
         SaveSettings();
     }
 
+    /*
+     * Create possible resolutions or screen sizes.
+     */
     public void InitializeResolutionSettings()
     {
         if (!resolutionDropdown) return;
@@ -94,6 +128,9 @@ public class SettingsManager : MonoBehaviour
         }
     }
 
+    /*
+     * Called when the mouse sensitivity setting is changed
+     */
     public void UpdateSensitivity()
     {
         sensitivityText.text = sensitivitySlider.value.ToString();
@@ -101,19 +138,33 @@ public class SettingsManager : MonoBehaviour
         SaveSettings();        
     }
 
-    public void UpdateSensitivity(float newSenseitivity)
+    /*
+     * Called when the mouse sensitivity setting is changed
+     * 
+     * @param newSensitivity - the new mouse sensitivity selected by the player
+     */
+    public void UpdateSensitivity(float newSensitivity)
     {
-        sensitivityText.text = newSenseitivity.ToString();
-        sensitivitySlider.value = newSenseitivity;
+        sensitivityText.text = newSensitivity.ToString();
+        sensitivitySlider.value = newSensitivity;
         foreach (Player player in FindObjectsOfType<Player>()) { player.UpdateSensitivity(sensitivitySlider.value); }
         SaveSettings();
     }
+
+    /*
+     * Called when the game audio setting is changed
+     */
     public void UpdateVolume()
     {
         volumeText.text = volumeSlider.value.ToString();
         foreach (Player player in FindObjectsOfType<Player>()) { player.UpdateVolume(volumeSlider.value); }
     }
 
+    /*
+     * Called when the game audio setting is changed
+     * 
+     * @param newVolume - the volume selected by the player
+     */
     public void UpdateVolume(float newVolume)
     {
         volumeText.text = newVolume.ToString();
@@ -121,6 +172,9 @@ public class SettingsManager : MonoBehaviour
         foreach (Player player in FindObjectsOfType<Player>()) { player.UpdateVolume(volumeSlider.value); }
     }
 
+    /*
+     * Apply the current selected settings to the game
+     */
     public void ApplySettings()
     {
         volume = volumeSlider.value;
@@ -136,6 +190,9 @@ public class SettingsManager : MonoBehaviour
         SaveSettings();
     }
 
+   /*
+    * Save the selected settings to the settings file
+    */
     public void SaveSettings()
     {
         print("save settings");
@@ -148,9 +205,21 @@ public class SettingsManager : MonoBehaviour
         {
             File.Create(filePath);
         }
+        
         StreamWriter writer = new StreamWriter(filePath);
         writer.Write(settings);
         writer.Close();
+    }
+
+    /*
+    * Delete the settings file
+    */
+    public void DeleteSettings()
+    {
+        if (File.Exists(filePath))
+        {
+            File.Delete(filePath);
+        }
     }
 
     /*
@@ -190,6 +259,9 @@ public class SettingsManager : MonoBehaviour
         }
     }
 
+    /*
+     * @return - the string to set to the settings
+     */
     public string GenerateSettings()
     {
         return sensitivity + " " + volume + " " + resolutionIndex + " " + fullScreen;

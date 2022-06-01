@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Base class for projectiles such as bullets, lasers etc
+ */
 public class Projectile : MonoBehaviour
 {
     private float baseSpeed;
@@ -23,6 +26,15 @@ public class Projectile : MonoBehaviour
 
     public PlayerFirearm Item { get => item; set => item = value; }
 
+    /*
+     * Set the stats of this projectile
+     * 
+     * @param baseSpeed - the speed of the projectile
+     * @param baseDamage - the damage of the projectile
+     * @param gravity - how fast the projectile will accelerate down
+     * @param useLimbMultipliers - if the projectile does more damage from hitting weak spots and damage is affected by the limb damage multipliers
+     * @param lifeTime - how long this projectile lasts before being deleted
+     */
     public void SetProjectileStats(float baseSpeed, float baseDamage, float gravity, bool useLimbMultipliers, float lifeTime)
     {
         this.baseSpeed = baseSpeed;
@@ -32,6 +44,14 @@ public class Projectile : MonoBehaviour
         this.lifeTime = lifeTime;
     }
 
+    /*
+     * Set the stats of this projectile
+     * 
+     * @param baseSpeed - the speed of the projectile
+     * @param baseDamage - the damage of the projectile
+     * @param useLimbMultipliers - if the projectile does more damage from hitting weak spots and damage is affected by the limb damage multipliers
+     * @param lifeTime - how long this projectile lasts before being deleted
+     */
     public void SetProjectileStats(float baseSpeed, float baseDamage, bool useLimbMultipliers, float lifeTime)
     {
         this.baseSpeed = baseSpeed;
@@ -40,14 +60,27 @@ public class Projectile : MonoBehaviour
         this.lifeTime = lifeTime;
     }
 
+    /*
+     * Called when the projectile is initialized or started
+     */
     public void Init()
     {
         velocity = transform.forward * baseSpeed;
         Destroy(gameObject, lifeTime);
     }
 
-    // Update is called once per frame
+    /*
+     * Called at a fixed rate
+     */
     void FixedUpdate()
+    {
+        UpdateProjectile();
+    }
+
+    /*
+     * Update projectile movement and if it has hit something
+     */
+    private void UpdateProjectile()
     {
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, velocity.magnitude))
@@ -57,7 +90,7 @@ public class Projectile : MonoBehaviour
                 float damage = baseDamage;
                 hit.transform.GetComponent<Hitbox>().Hit(damage);
                 if (item) item.HitAnotherTarget(hit.transform.GetComponent<Hitbox>().GameCharacter.Health <= 0);
-              
+
                 Impact(obstacleImpactParticles, hit);
                 queueDestroy = true;
             }
@@ -74,6 +107,12 @@ public class Projectile : MonoBehaviour
         this.transform.position += velocity;
     }
 
+    /*
+     * Called when a projectile hits a surface
+     * 
+     * @param effectSpawn - the effect spawned when the projectile hits a surface
+     * @param hit - the hit type containing hit position, type etc
+     */
     protected virtual void Impact(GameObject effectSpawn, RaycastHit hit)
     {
         if (effectSpawn)
@@ -83,6 +122,9 @@ public class Projectile : MonoBehaviour
         }
     }
 
+    /*
+     * Destroy this object
+     */
     public void DestroyProjectile()
     {
         Destroy(gameObject);

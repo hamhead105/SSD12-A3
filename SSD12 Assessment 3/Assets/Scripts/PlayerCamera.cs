@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Base class which handles the player's camera. This involves first person and third person functionality.
+ */
 public class PlayerCamera : MonoBehaviour
 {
     private static int layerMask = 7 | 9;
@@ -73,6 +76,9 @@ public class PlayerCamera : MonoBehaviour
         playerCamera.fieldOfView = fov;     
     }
 
+    /*
+     * Update camera positioning based on target positioning
+     */
     private void UpdateAdditionalTransforms()
     {
         UpdateCameraControl();
@@ -118,11 +124,17 @@ public class PlayerCamera : MonoBehaviour
         );
     }
 
+    /*
+     * Toggle whether the camera is in first person mode or third person mode
+     */
     public void ToggleFirstPerson()
     {
         FirstPersonMode = !FirstPersonMode;
     }
 
+    /*
+     * Called at a fixed rate
+     */
     private void FixedUpdate()
     {
         UpdateFOV();
@@ -131,6 +143,9 @@ public class PlayerCamera : MonoBehaviour
         UpdateAdditionalTransforms();
     }
 
+    /*
+     * Update the position of the look point object, which is set to the position of the point which the camera is looked at.
+     */
     public void UpdateLookPoint()
     {
         RaycastHit hit;
@@ -146,7 +161,10 @@ public class PlayerCamera : MonoBehaviour
         }
     }
 
-    private void UpdateCameraControl() // pivot point
+    /*
+     * Update the position of the camera based on pivoting
+     */
+    private void UpdateCameraControl()
     {
 
         this.transform.localEulerAngles = new Vector3(0, 0, 0);
@@ -162,24 +180,39 @@ public class PlayerCamera : MonoBehaviour
         }
     }
 
+    // Called every frame
     private void Update()
     {
         UpdateAdditionalTransforms();
         UpdateLookPoint();
     }
 
+    /*
+     * Update the camera's field of view. Player actions such as aiming, will decrease the FOV to create a zoomed in effect.
+     * Use a proportional controller to smoothly interpolate to the target FOV
+     */
     private void UpdateFOV()
     {
         fov += (targFov - fov) * fov_kP;
         playerCamera.fieldOfView = fov;
     }
 
+    /*
+     * Set a target FOV
+     * 
+     * @param targFOV - the new target field of view to use
+     * @param active - whether to use the baseFOV.
+     */
     public void SetTargFOV(float targFov, bool active)
     {
         if (active) this.targFov = targFov;
         else this.targFov = baseFov;
     } 
 
+    /*
+     * Update camera shake effects and add to the camera shake vector which is applied to the camera transforms.
+     * Camera shake is used to shake the screen when the player is near an explosion, shoots the weapon etc.
+     */
     public void UpdateCameraShake()
     {
         targCameraShakeVelocity = new Vector3(
@@ -197,6 +230,10 @@ public class PlayerCamera : MonoBehaviour
         cameraShake += cameraShakeVelocity;
     }
 
+    /*
+     * Update additional camera instability, which makes the camera slowly sway around for ambience.
+     * Added to the camera sway vector which is added to the transform.
+     */
     public void UpdateCameraSway()
     {
         swayTime += fixedUpdateCallRate * cameraSwaySpeed;
@@ -210,12 +247,19 @@ public class PlayerCamera : MonoBehaviour
         );
     }
 
+    /*
+     * Set camera sway values and magnitude. For example, player sprinting will increase the amount of
+     * sway and the speed of the sway.
+     */
     public void SetCameraSwayValues(float speed, float magnitude)
     {
         cameraSwaySpeed = speed;
         cameraSwayMagnitudeTarget = magnitude;
     }
 
+    /*
+     * Add camera shake velocity. For example, used when the player shoots a weapon.
+     */
     public void AddCameraShakeVelocity(Vector3 addedCameraShakeVelocity)
     {
         print("add camera shake");

@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * A bone that tracks another bone and rotates correctly around it in a pivot manner
+ */
 public class TrackedLimb : MonoBehaviour
 {
     [SerializeField] private Transform targetLimb;
@@ -15,17 +18,17 @@ public class TrackedLimb : MonoBehaviour
         this.targetInitialRotation = this.targetLimb.transform.localRotation;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
-
+    /*
+     * Called at a fixed rate
+     */
     private void FixedUpdate()
     {
         this.configurableJoint.targetRotation = CopyRotation();
     }
 
+    /*
+     * Copy the rotation of a target bone
+     */
     private Quaternion CopyRotation()
     {
         return Quaternion.Inverse(this.targetLimb.localRotation) * this.targetInitialRotation;

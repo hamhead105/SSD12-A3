@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/*
+ * An extension of the Enemy class, for enemies that fly.
+ */
 public class FlyingEnemy : Enemy
 {
     private CharacterController charController;
@@ -33,22 +37,32 @@ public class FlyingEnemy : Enemy
         UpdateMovement();
     }
 
+    // Called at a fixed rate
     public void FixedUpdate()
     {
         Attack();
     }
 
+    /*
+     * Behaviour for when the enemy is in its idle state
+     */
     public void Idle()
     {
         velocity += transform.forward * speed;
     }
 
+    /*
+     * Update the movement of the enemy, i.e apply its velocity to its position
+     */
     public void UpdateMovement()
     {
         velocity += (Vector3.zero - velocity) * flightZero_kP;
         charController.Move(velocity);
     }
 
+    /*
+     * Behaviour for when the enemy is attacking the player
+     */
     public void Attack()
     {
         Player player = FindObjectOfType<Player>();
@@ -56,6 +70,9 @@ public class FlyingEnemy : Enemy
         SmoothLookAt(player.transform.position);
     }
 
+    /*
+     * Smoothly interpolate the angle of the enemy to a new rotation
+     */
     void SmoothLookAt(Vector3 newDirection)
     {
         Player player = FindObjectOfType<Player>();
@@ -72,6 +89,10 @@ public class FlyingEnemy : Enemy
         
     }
 
+
+    /*
+     *  Fire the designated projectile
+     */
     public void Shoot()
     {
         foreach(Transform barrelPoint in barrelPoints)
@@ -87,6 +108,10 @@ public class FlyingEnemy : Enemy
         }
     }
 
+
+    /*
+     * Reset this enemy's ability to attack
+     */
     public void Rechamber()
     {
         readyToFire = true;

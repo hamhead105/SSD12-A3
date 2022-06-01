@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Controls the player's hand IK position vectors. These are what the IK algorithms will try "reach"
+ * This class is important for tracking the item that the player is holding.
+ */
 public class HandIKTarget : MonoBehaviour
 {
     //constants
@@ -12,11 +16,15 @@ public class HandIKTarget : MonoBehaviour
     [SerializeField] private Transform startRelateVector;
     [SerializeField] private Transform playerPivotPoint;
 
+    // Called once per frame
     void Update()
     {
         UpdateTransforms();
     }
 
+    /*
+     * Update the transforms of this object. Ensure correct pivoting around the player as the item rotates and moves
+     */
     public void UpdateTransforms()
     {
         this.transform.localPosition = startPosition;
@@ -32,6 +40,9 @@ public class HandIKTarget : MonoBehaviour
         }
     }
 
+    /*
+     * Calculate the new desired position of this target
+     */
     private Vector3 CalculateIKTargetPositionFromItem()
     {
         PlayerItem item = player.Item;

@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * An optic that is on a player weapon
+ */
 public class WeaponSight : MonoBehaviour
 {
     [SerializeField] private string attachmentName;
@@ -17,6 +20,10 @@ public class WeaponSight : MonoBehaviour
     public float SensitivityMultiplier { get => sensitivityMultiplier; set => sensitivityMultiplier = value; }
     public Texture ItemIcon { get => itemIcon; set => itemIcon = value; }
 
+    /*
+     * Update whether the local components are enabled. For example, the camera attached to scopes is disabled for sights on 
+     * non local items. This is to improve performace.
+     */
     public void EnableCamera()
     {
         if (localObjects) localObjects.SetActive(true);

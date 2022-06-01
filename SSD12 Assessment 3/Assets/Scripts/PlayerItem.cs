@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/*
+ * Base class for items used by the player 
+ */
 public abstract class PlayerItem : Item
 {
     // constants
@@ -83,25 +87,33 @@ public abstract class PlayerItem : Item
     public bool Sprinting { get => sprinting; set => sprinting = value; }
     public Human User { get => user; set => user = value; }
 
-    // Update is called once per frame
-
+    // Called when the item is created
     public virtual void Start()
     {
         itemEnabled = false;
         Invoke("EnableItem", drawTime);
     }
 
+    /*
+     * Enable the item
+     */
     public void EnableItem()
     {
         itemEnabled = true;
     }
 
+    /*
+     * Called at a fixed rate
+     */
     public virtual void FixedUpdate()
     {
         UpdateItemSway();
         UpdateTransforms();
     }
 
+    /*
+     * Update the transforms - displacement, rotation of the item
+     */
     public virtual void UpdateTransforms()
     {
         rotationOffset = new Vector3(ItemSwing_y + ItemSway.x, 0, ItemSwing_x + ItemSway.y);
@@ -143,12 +155,22 @@ public abstract class PlayerItem : Item
         }
     }
 
+    /*
+     * Add to the swing movement of the item. The item swings around when the player looks around to add a sense of inertia.
+     * 
+     * @param x - additional xMovement
+     * @param y - additional yMovement
+     */
     public void AddItemSwing(float x, float y)
     {
         ItemSwing_x += x * ItemSwingAmount;
         ItemSwing_y += y * ItemSwingAmount;
     }
 
+    /*
+     * Update the amount of the item swaying. This is to simulate the user being unable to hold the item completely still
+     * due to breathing etc.
+     */
     public void UpdateItemSway()
     {
         swayTime += fixedUpdateCallRate * itemSwaySpeed;
@@ -162,6 +184,12 @@ public abstract class PlayerItem : Item
         );
     }
 
+    /*
+     * Update the item shifting around due to user inertia and movement
+     * 
+     * @param x - x movement component
+     * @param y - y movement component
+     */
     public virtual void UpdateItemShift(float x, float y)
     {
         TargItemShift = new Vector3(
@@ -177,6 +205,12 @@ public abstract class PlayerItem : Item
         );
     }
 
+    /*
+     * Set the amount of sway the item experiences
+     * 
+     * @param speed - the speed of the swaying
+     * @param magnitude - how far the item will sway around
+     */
     public void SetItemSwayValues(float speed, float magnitude)
     {
         itemSwaySpeed = speed;
@@ -185,10 +219,16 @@ public abstract class PlayerItem : Item
 
     /*
      * The primary use of the item
+     * 
      * @param input - the input of the player
      * @return whether the item usage was successful
      */
     public abstract bool PrimaryUseItem(bool input);
 
+    /*
+     * Called on the secondary use of the item
+     * 
+     * @param input - whether this input is being used
+     */
     public abstract void SecondaryUseItem(bool input);
 }

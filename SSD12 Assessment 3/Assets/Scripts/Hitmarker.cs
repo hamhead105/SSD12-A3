@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+ * Class for hitmarkers, which are world UI elements that indicate if the player has hit something.
+ */
 public class Hitmarker : MonoBehaviour
 {
     public RawImage[] lines;
@@ -25,6 +28,14 @@ public class Hitmarker : MonoBehaviour
 
     // Update is called once per frame
     void FixedUpdate()
+    {
+        UpdateHitmarkerAppearance();
+    }
+
+    /*
+     * Called every frame, update the appearance of the hitmarker
+     */
+    private void UpdateHitmarkerAppearance()
     {
         if (transparency > fadeSpeed)
         {
@@ -62,6 +73,9 @@ public class Hitmarker : MonoBehaviour
         }
     }
 
+    /*
+     * Start the hitmarker animation, through adjusting scale and transparency 
+     */
     public void HitAnimation()
     {
         transparency = 1;
@@ -70,6 +84,9 @@ public class Hitmarker : MonoBehaviour
         Invoke("StartFade", fadeDelay);
     }
 
+    /*
+     * Will make the hitmarker fade away
+     */
     private void StartFade()
     {
         startFade = true;

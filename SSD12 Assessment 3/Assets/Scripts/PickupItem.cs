@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Items that can be picked up or interacted with
+ */
 public class PickupItem : Item
 {
     [SerializeField] private int sightNumber;

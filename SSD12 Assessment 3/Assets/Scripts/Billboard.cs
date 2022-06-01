@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+/*
+ * @author - Peter Jung
+ * 
+ * Base class for billboard type objects, for example world UI elements
+ */
 public class Billboard : MonoBehaviour
 {
     private static float baseFOV = 60f; 

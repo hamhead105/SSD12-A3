@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Base class for all character entities in the game.
+ */
 public abstract class GameCharacter : MonoBehaviour
 {
     [SerializeField] private float health;
@@ -11,8 +14,14 @@ public abstract class GameCharacter : MonoBehaviour
     public float Health { get => health; set => health = value; }
     public float MaxHealth { get => maxHealth; set => maxHealth = value; }
 
+    /*
+     * Called when the character starts or is reset etc
+     */
     public abstract void Init();
 
+    /*
+     * Called when the character is killed
+     */
     public abstract void Death();
 
 
@@ -23,6 +32,9 @@ public abstract class GameCharacter : MonoBehaviour
         health = maxHealth;
     }
     
+    /*
+     * Deal damage to this character
+     */
     public void DealDamage(float amount)
     {
         health -= amount;
