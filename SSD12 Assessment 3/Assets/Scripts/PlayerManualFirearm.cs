@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Firearms which are rechambered after every use. For example, a bolt action rifle or a pump action shotgun would use this class, since they must be
+ * recycled manually, with either the bolt or the pump.
+ */
 public class PlayerManualFirearm : PlayerFirearm
 {
     private bool lastInput = false;
@@ -13,6 +17,12 @@ public class PlayerManualFirearm : PlayerFirearm
 
     public bool CurrentlyRecycling { get => currentlyRecycling; set => currentlyRecycling = value; }
 
+    /*
+     * The primary use of the item, call shooting subroutines
+     * 
+     * @param input - whether the input for this is enabled
+     * @return - whether the input worked and the character used their items.
+     */
     public override bool PrimaryUseItem(bool input)
     {
         if (input) StopRepetitiveReload = true;
@@ -31,6 +41,11 @@ public class PlayerManualFirearm : PlayerFirearm
         return false;
     }
 
+    /*
+     * Aim the weapon or scope in
+     * 
+     * @param input - whether the input is enabled
+     */
     public override void SecondaryUseItem(bool input)
     {
         if (!Sprinting && !WeaponADSObstruction)
@@ -43,6 +58,9 @@ public class PlayerManualFirearm : PlayerFirearm
         }
     }
 
+    /*
+     * Call the user to rechamber their weapon, through an animation or cooldown.
+     */
     private void RecycleFirearm()
     {
         if (Ammo > 0)
@@ -59,6 +77,9 @@ public class PlayerManualFirearm : PlayerFirearm
         }
     }
 
+    /*
+     * Reload the weapon
+     */
     public override void CallReload()
     {
         if (!CurrentlyRecycling && !Reloading)
@@ -67,6 +88,11 @@ public class PlayerManualFirearm : PlayerFirearm
         }
     }
 
+    /*
+     * Process of shooting the weapon, spawn a projectile, muzzleflash, audio and effects
+     * 
+     * @param spreadAmount - the angle at which the projectile should deviate from its original angle
+     */
     public override void Shoot(float spreadAmount)
     {
         print("shoot C");
@@ -95,6 +121,9 @@ public class PlayerManualFirearm : PlayerFirearm
         DepleteAmmo(1);
     }
 
+    /*
+     * Process of shooting the weapon, spawn a projectile, muzzleflash, audio and effects
+     */
     public override void Shoot()
     {
         print("shoot C");
@@ -121,6 +150,10 @@ public class PlayerManualFirearm : PlayerFirearm
         DepleteAmmo(1);
     }
 
+    /*
+     * Set the weapon chambered state to true.
+     * Set whether the weapon is recycling to false.
+     */
     public override void ChamberWeapon()
     {
         base.ChamberWeapon();

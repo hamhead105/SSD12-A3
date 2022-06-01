@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Base class for player items which are firearms, I.e items which shoot projectiles on use, have ammunition etc.
+ */
 public class PlayerFirearm : PlayerItem
 {
     // static constants
@@ -160,6 +163,7 @@ public class PlayerFirearm : PlayerItem
     public GameObject SightAttachmentParent { get => sightAttachmentParent; set => sightAttachmentParent = value; }
     public int SightAttachment { get => sightAttachment; set => sightAttachment = value; }
 
+    // called when the item is first instantiated
     public override void Start()
     {
         base.Start();
@@ -175,17 +179,28 @@ public class PlayerFirearm : PlayerItem
         if (User is Player) lookPoint = (User as Player).LookPoint;
     }
 
+    /*
+     * Called at a fixed rate
+     */
     public override void FixedUpdate()
     {
         base.FixedUpdate();
         UpdateLookPointWeights();
     }
 
+    /*
+     * Called once per frame
+     */
     public void Update()
     {
         UpdateCastBasedUI();
     }
 
+    /*
+     * Update world UI elements which are printed on the point at which the weapon is aimed. For example,
+     * the player's reticle and hitmarkers. These are scaled based on the distance to the player to ensure the player sees the 
+     * UI as a consistent size.
+     */
     private void UpdateCastBasedUI()
     {
         RaycastHit hit;
@@ -202,6 +217,10 @@ public class PlayerFirearm : PlayerItem
             reticle.transform.localPosition = new Vector3(hitmarkerPosition.x, hitmarkerPosition.y, hitmarkerPosition.z - 0.1f);
         }
     }
+
+    /*
+     * Initialize hitmarkers
+     */
     private void InitHitmarkers()
     {
         baseHitmarker = Instantiate(Resources.Load("Hitmarker Base"), BarrelPoint.transform.position, BarrelPoint.transform.rotation) as GameObject;
@@ -217,6 +236,9 @@ public class PlayerFirearm : PlayerItem
         reticle.GetComponent<RectTransform>().localPosition = new Vector3(hitmarkerPosition.x, hitmarkerPosition.y, hitmarkerPosition.z - 0.1f);
     }
 
+    /*
+     * Update hitmarker transforms and get their components.
+     */
     private void UpdateHitmarkers()
     {
         RectTransform rTransformBase = baseHitmarker.GetComponent<RectTransform>(); // base hitmarker
@@ -226,6 +248,10 @@ public class PlayerFirearm : PlayerItem
         rTransformKill.eulerAngles = new Vector3(rTransformKill.eulerAngles.x, rTransformKill.eulerAngles.y, 0);
     }
 
+    /*
+     * Update the transform of this item. Move the item around based on additional movement and rotational vectors. For example, based on weapon recoil
+     * the weapon needs to be shifted and rotated. 
+     */
     public override void UpdateTransforms()
     {
         this.transform.LookAt(lookPoint);
@@ -271,6 +297,7 @@ public class PlayerFirearm : PlayerItem
         this.transform.localPosition = new Vector3(0, 0, 0);
         this.transform.Translate(PositionOffset, ForwardTransform);
         
+        // interpolate the weapon to the point the camera is pointed
         if (User is Player) 
         {
             this.transform.localEulerAngles = new Vector3 (
@@ -286,6 +313,10 @@ public class PlayerFirearm : PlayerItem
         UpdateRecoil();
     }
 
+    /*
+     * Interpolate the weight of the look point. This controls how much effect the look point has. 
+     * The look point is a transform which is placed at the point in which the camera is pointed at.
+     */
     public void UpdateLookPointWeights()
     {
 
@@ -308,15 +339,20 @@ public class PlayerFirearm : PlayerItem
         }
     }
 
+    /*
+     * Shift the displacement of the item based on the velocity of the weapon. 
+     */
     public void UpdateRecoil()
     {
         targetGunRecoilVelocity = new Vector3(recoilPID_x.GetOutput(-gunRecoilDisplacement.x), recoilPID_y.GetOutput(-gunRecoilDisplacement.y), recoilPID_z.GetOutput(-gunRecoilDisplacement.z));
+        // the transform of the firearm.
         GunRecoilVelocity += new Vector3(
             (targetGunRecoilVelocity.x - GunRecoilVelocity.x) * recoilVelocity_kP,
             (targetGunRecoilVelocity.y - GunRecoilVelocity.y) * recoilVelocity_kP,
             (targetGunRecoilVelocity.z - GunRecoilVelocity.z) * recoilVelocity_kP
         );
 
+        // the transform of the player. This is where the player's screen is rotated upwards
         AimRecoilVelocity += new Vector3(
             (0 - AimRecoilVelocity.x) * recoilVelocity_kP,
             (0 - AimRecoilVelocity.y) * recoilVelocity_kP,
@@ -326,6 +362,11 @@ public class PlayerFirearm : PlayerItem
         gunRecoilDisplacement += GunRecoilVelocity;
     }
 
+    /*
+     * The main use of the item - Run subroutines for shooting and unchamber the weapon
+     * 
+     * @param input - whether the use input is enabled (left click)
+     */
     public override bool PrimaryUseItem(bool input)
     {
         if (input) StopRepetitiveReload = true;
@@ -349,6 +390,11 @@ public class PlayerFirearm : PlayerItem
         return false;
     }
 
+    /*
+     * Aim the weapon or scope in
+     * 
+     * @param input - whether the use input is enabled (right click) 
+     */
     public override void SecondaryUseItem(bool input)
     {
         if (!WeaponADSObstruction && !Sprinting)
@@ -361,6 +407,11 @@ public class PlayerFirearm : PlayerItem
         }
     }
 
+    /*
+     * Process of shooting the weapon, spawn a projectile, muzzleflash, audio and effects
+     * 
+     * @param spreadAmount - the angle at which the projectile should deviate from its original angle
+     */
     public virtual void Shoot(float spreadAmount)
     {
         for (int projectilesFired = 0; projectilesFired < NumberOfProjectiles; projectilesFired++)
@@ -392,6 +443,9 @@ public class PlayerFirearm : PlayerItem
         ProduceCasing();
     }
 
+    /*
+     * Process of shooting the weapon, spawn a projectile, muzzleflash, audio and effects
+     */
     public virtual void Shoot()
     {
         print("shoot C");
@@ -423,6 +477,9 @@ public class PlayerFirearm : PlayerItem
         ProduceCasing();
     }
 
+    /*
+     * Produce a casing particle effect
+     */
     protected void ProduceCasing()
     {
         if (casing)
@@ -432,6 +489,9 @@ public class PlayerFirearm : PlayerItem
         }
     }
 
+    /*
+     * Set the weapon's chambered state to true
+     */
     public virtual void ChamberWeapon()
     {
         if (Ammo > 0 && !Reloading)
@@ -440,11 +500,19 @@ public class PlayerFirearm : PlayerItem
         }
     }
 
+    /*
+     * Deplete the ammo amount 
+     * 
+     * @param amount - the number of rounds to deplete
+     */
     public void DepleteAmmo(int amount)
     {
         Ammo -= amount;
     }
 
+    /*
+     * Initialize weapon reload
+     */
     public virtual void CallReload()
     {
         if (!UseRepetitiveReload)
@@ -478,11 +546,17 @@ public class PlayerFirearm : PlayerItem
         }
     }
 
+    /*
+     * @return weapon the weapon is on full ammo. Player cannot reload weapon when they are on max ammo
+     */
     public bool CanReload()
     {
         return ammo < maxAmmo;
     }
 
+    /*
+     * Called when reload is complete
+     */
     public void CompleteReload()
     {
 
@@ -491,6 +565,9 @@ public class PlayerFirearm : PlayerItem
         Chambered = true;
     }
 
+    /*
+     * Called for reloads for weapons that are reloaded one round at a time. For example, a shotgun which is rounded through a tube
+     */
     public void RepetitiveReload()
     {
         ammo++;
@@ -513,6 +590,11 @@ public class PlayerFirearm : PlayerItem
         }
     }
 
+    /*
+     * Called by the projectile when they hit something. Calls hitmarkers to run animations
+     * 
+     * @param killShot - whether this shot has killed an opponent
+     */
     public void HitAnotherTarget(bool killShot)
     {
         if (killShot)
@@ -527,6 +609,9 @@ public class PlayerFirearm : PlayerItem
         }
     }
 
+    /*
+     * Get the sight which is currently active
+     */
     public void SetActiveSight()
     {
         if (SightAttachmentParent)
@@ -541,12 +626,19 @@ public class PlayerFirearm : PlayerItem
         }
     }
 
+    /*
+     * Set this item as local, meaning that it is being used by the player. For example, this would be false
+     * if an AI player was using a firearm.
+     */
     public void SetAsLocalPlayer()
     {
         SetActiveSight();
         if (activeSight) ActiveSight.EnableCamera();
     }
 
+    /*
+     * Update the shift component of the item which is created by player movement and inertia.
+     */
     public override void UpdateItemShift(float x, float y)
     {
         if (!aimedDownSights)
@@ -573,6 +665,11 @@ public class PlayerFirearm : PlayerItem
         );
     }
 
+    /*
+     * Set the sight to be active
+     * 
+     * @param sight - the number sight to use
+     */
     public void SetSightAttachment(int sight)
     {
         print("set sight attachmment " + sight);
@@ -588,6 +685,9 @@ public class PlayerFirearm : PlayerItem
         }
     }
 
+    /*
+     * @return - the sight attachment to return
+     */
     public WeaponSight GetSightAttachment()
     {
         print("sight targ " + sightAttachment);
@@ -606,6 +706,11 @@ public class PlayerFirearm : PlayerItem
         return null;
     }
 
+    /*
+     * How much to draw the weapon back. If the player is too close to a wall, the player will pull the firearm towards the,
+     * 
+     * @param distance - the distance to the obstacle in front
+     */
     public void SetWeaponDraw(float distance)
     {
         float clampedDistance = distance;

@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+/*
+ * Used in the Unity Editor, to bind clothing meshes to skinned mesh renderers 
+ */
 [ExecuteInEditMode]
 public class ReassignBoneWeigthsToNewMesh : MonoBehaviour
 {
