@@ -201,12 +201,8 @@ public class SettingsManager : MonoBehaviour
         {
             Directory.CreateDirectory(directoryPath);
         }
-        if (!File.Exists(filePath))
-        {
-            File.Create(filePath);
-        }
         
-        StreamWriter writer = new StreamWriter(filePath);
+        StreamWriter writer = new StreamWriter(filePath); // Open file for output
         writer.Write(settings);
         writer.Close();
     }
