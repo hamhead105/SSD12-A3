@@ -13,6 +13,12 @@ public class ScoreEntry : MonoBehaviour
     public string PlayerName { get => playerName; set => playerName = value; }
     public int Score { get => score; set => score = value; }
 
+    /*
+     * Base constructor for a score entry
+     * 
+     * @param playerName - the name of the player that achieved this score
+     * @param score - the score the player scored
+     */
     public ScoreEntry(string playerName, int score)
     {
         this.playerName = playerName;

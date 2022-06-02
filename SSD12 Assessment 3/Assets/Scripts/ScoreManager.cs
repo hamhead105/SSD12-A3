@@ -17,15 +17,11 @@ public class ScoreManager : MonoBehaviour
     void Start()
     {
         InitializeDirectoryPaths();
-        RunDriver();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    /*
+     * A driver alghorithm to teset sorting and players
+     */
     public void RunDriver()
     {
         ClearScores();
@@ -87,18 +83,8 @@ public class ScoreManager : MonoBehaviour
     }
 
     /*
-    * Delete the scores file
-    */
-    public void DeleteScoresFile()
-    {
-        if (File.Exists(filePath))
-        {
-            File.Delete(filePath);
-        }
-    }
-
-    /*
      * Open the scores file and return a list of scores 
+     * entry list will look like [playerName]:[score],[playerName]:[score],
      * 
      * @return - a list of string where each entry contains the name of the player and the score they achieved
      */
@@ -147,11 +133,14 @@ public class ScoreManager : MonoBehaviour
     {
         int y;
         List<ScoreEntry> sortedScores = scores;
+
+        // keeps repeating until the list is sorted
         for (int x = 1; x < sortedScores.Count; x++) 
         {
             ScoreEntry key = sortedScores[x];
             y = x - 1;
 
+            // move elements that are greater than the key, along the array
             while (y >= 0 && sortedScores[y].Score > key.Score)
             {
                 sortedScores[y + 1] = sortedScores[y];
@@ -163,4 +152,14 @@ public class ScoreManager : MonoBehaviour
         return sortedScores;
     }
 
+    /*
+     * Delete the scores file
+     */
+    public void DeleteScoresFile()
+    {
+        if (File.Exists(filePath))
+        {
+            File.Delete(filePath);
+        }
+    }
 }
