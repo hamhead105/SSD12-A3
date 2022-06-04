@@ -10,13 +10,14 @@ using System;
  */
 public class ScoreManager : MonoBehaviour
 {
-    private string filePath;
-    private string directoryPath;
+    private static string filePath;
+    private static string directoryPath;
 
     // Start is called before the first frame update
     void Start()
     {
         InitializeDirectoryPaths();
+        //RunDriver();
     }
 
     /*
@@ -31,12 +32,19 @@ public class ScoreManager : MonoBehaviour
         AppendScore("p4", 45);
         AppendScore("p5", 21);
         AppendScore("p6", 19);
-
         List<ScoreEntry> sortedScores = InsertionSortScores(ReadScores());
         foreach (ScoreEntry sortedScore in sortedScores)
         {
             print(sortedScore.PlayerName + " " + sortedScore.Score);
         }
+    }
+
+    /*
+     * @return - a list of sorted scoreEntry from the score file
+     */
+    public static List<ScoreEntry> GetHighScores()
+    {
+        return InsertionSortScores(ReadScores());
     }
 
     /*
@@ -60,12 +68,16 @@ public class ScoreManager : MonoBehaviour
         {
             Directory.CreateDirectory(directoryPath);
         }
+        if (!File.Exists(filePath))
+        {
+            ClearScores(); // clearing scores also creates a new file
+        }
     }
 
     /*
      * Add a score to the scoreFile based on a string and integer
      */
-    public void AppendScore(string playerName, int score)
+    public static void AppendScore(string playerName, int score)
     {
         StreamWriter writer = new StreamWriter(filePath, true); // Open file for append
         writer.Write(playerName + ":" + score + ",");
@@ -75,7 +87,7 @@ public class ScoreManager : MonoBehaviour
     /*
      * Add a score to the scoreFile based on a string and integer
     */
-    public void ClearScores()
+    public static void ClearScores()
     {
         StreamWriter writer = new StreamWriter(filePath, false); // Open file for append
         writer.Write("");
@@ -88,7 +100,7 @@ public class ScoreManager : MonoBehaviour
      * 
      * @return - a list of string where each entry contains the name of the player and the score they achieved
      */
-    public List<ScoreEntry> ReadScores()
+    public static List<ScoreEntry> ReadScores()
     {
         if (!Directory.Exists(directoryPath))
         {
@@ -129,7 +141,7 @@ public class ScoreManager : MonoBehaviour
      * 
      * @param scores - a list of scores to be sorted
      */
-    public List<ScoreEntry> InsertionSortScores(List<ScoreEntry> scores)
+    public static List<ScoreEntry> InsertionSortScores(List<ScoreEntry> scores)
     {
         int y;
         List<ScoreEntry> sortedScores = scores;
@@ -141,7 +153,7 @@ public class ScoreManager : MonoBehaviour
             y = x - 1;
 
             // move elements that are greater than the key, along the array
-            while (y >= 0 && sortedScores[y].Score > key.Score)
+            while (y >= 0 && sortedScores[y].Score < key.Score)
             {
                 sortedScores[y + 1] = sortedScores[y];
                 y--;

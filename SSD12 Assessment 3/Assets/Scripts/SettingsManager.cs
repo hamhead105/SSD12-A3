@@ -63,7 +63,6 @@ public class SettingsManager : MonoBehaviour
             filePath = Application.dataPath + "/_GameFiles/Settings.txt";
             directoryPath = Application.dataPath + "/_GameFiles";
         }
-
         print("file path " + filePath);
     }
 
