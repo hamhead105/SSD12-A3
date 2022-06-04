@@ -63,7 +63,6 @@ public class SettingsManager : MonoBehaviour
             filePath = Application.dataPath + "/_GameFiles/Settings.txt";
             directoryPath = Application.dataPath + "/_GameFiles";
         }
-
         print("file path " + filePath);
     }
 
@@ -201,14 +200,8 @@ public class SettingsManager : MonoBehaviour
         {
             Directory.CreateDirectory(directoryPath);
         }
-        if (!File.Exists(filePath))
-        {
-            File.Create(filePath);
-        }
-        
-        StreamWriter writer = new StreamWriter(filePath);
-        writer.Write(settings);
-        writer.Close();
+
+        OutputToFile(settings);
     }
 
     /*
@@ -240,10 +233,8 @@ public class SettingsManager : MonoBehaviour
             return false;
         }
 
-        StreamReader reader = new StreamReader(filePath);
-        string settings = reader.ReadToEnd(); ;
+        string settings = ReadFile();
         string[] settingsArray = settings.Split(' ');
-        reader.Close();
 
         if (settingsArray.Length == 4)
         {
@@ -265,5 +256,49 @@ public class SettingsManager : MonoBehaviour
     public string GenerateSettings()
     {
         return sensitivity + " " + volume + " " + resolutionIndex + " " + fullScreen;
+    }
+
+   /*
+    * Write to a file, overwriting its current contents
+    * 
+    * @param text - the text to write into the file
+    */
+    public void OutputToFile(string text)
+    {
+        using (StreamWriter outputFile = new StreamWriter(filePath, false))
+        {
+            outputFile.Write(text);
+            outputFile.Close();
+        }
+    }
+
+    /*
+     * Append to a file, adding text to what is already written
+     * 
+     * @param text - the text to write
+     */
+    public void AppendToFile(string text)
+    {
+        using (StreamWriter outputFile = new StreamWriter(filePath, true))
+        {
+            outputFile.Write(text);
+            outputFile.Close();
+        }
+    }
+
+    /*
+     * Read the contents of a file to the end
+     * 
+     * @return - the contents of the file
+     */
+    public string ReadFile()
+    {
+        string read;
+        using (StreamReader inputFile = new StreamReader(filePath))
+        {
+            read = inputFile.ReadToEnd();
+            inputFile.Close();
+        }
+        return read;
     }
 }
