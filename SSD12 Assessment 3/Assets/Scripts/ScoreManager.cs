@@ -57,7 +57,7 @@ public class ScoreManager : MonoBehaviour
      * Get the directory paths to write file to. Based on whether the game is being run from the editor or the built version
      * this path will differ.
      */
-    public void InitializeDirectoryPaths()
+    public static void InitializeDirectoryPaths()
     {
         if (Application.isEditor)
         {
@@ -88,6 +88,8 @@ public class ScoreManager : MonoBehaviour
      */
     public static void AppendScore(string playerName, int score)
     {
+        if (filePath == null) InitializeDirectoryPaths();
+        print(filePath);
         AppendToFile(playerName + ":" + score + ",");
         if (GetScoreEntryCount() > maxScoreEntries)
         {

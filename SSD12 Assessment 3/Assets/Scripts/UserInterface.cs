@@ -99,6 +99,7 @@ public class UserInterface : MonoBehaviour
      */
     public void UpdateTimeText(int time)
     {
+        if (!timeText) return;
         timeText.text = time.ToString();
     }
 
@@ -109,6 +110,7 @@ public class UserInterface : MonoBehaviour
      */
     public void UpdateScoreText(int score)
     {
+        if (!scoreText) return;
         scoreText.text = score.ToString();
     }
 

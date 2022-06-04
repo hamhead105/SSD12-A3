@@ -49,6 +49,7 @@ public class Player : Human
     [SerializeField] private GameObject spectatorModeCamera;
 
     private Transform lookPoint;
+    private bool deathFlag;
 
     public bool InputEnabled { get => inputEnabled; set => inputEnabled = value; }
     public bool MenuOpened { get => menuOpened; set => menuOpened = value; }
@@ -60,7 +61,6 @@ public class Player : Human
     public override void Start()
     {
         Init();
-        DontDestroyOnLoad(gameObject);
     }
 
     /*
@@ -68,6 +68,7 @@ public class Player : Human
      */
     public override void Init()
     {
+        deathFlag = false;
         LookPoint = PlayerCamera.LookPoint.transform;
         InputEnabled = true;
         playerSensitivity = PlayerPrefs.GetFloat("Sensitivity", 0.5f);
@@ -263,6 +264,7 @@ public class Player : Human
      */
     public override void Death()
     {
+        if (deathFlag) return;
         charController.detectCollisions = false;
         DisableHitboxes();
         GameObject ragdoll = Instantiate(Ragdoll, this.transform.position, transform.rotation);
@@ -277,6 +279,8 @@ public class Player : Human
             else if (mesh.GetComponent<SkinnedMeshRenderer>()) mesh.GetComponent<SkinnedMeshRenderer>().enabled = false;
         }
         LoadItem("Unarmed", true);
+        Invoke("InitGameLoss", 5f);
+        deathFlag = true;
     }
 
     /*
@@ -519,5 +523,39 @@ public class Player : Human
         {
             if (Item is PlayerFirearm) (Item as PlayerFirearm).SetWeaponDraw(20);
         }
+    }
+
+    /*
+     * Called when the character controller collides with other colliders
+     * 
+     * @param other - the collider of that is intersecting
+     */
+    public void OnControllerColliderHit(ControllerColliderHit other)
+    {
+        if (other.transform.tag == "Teleporter") {
+            InitGameWin();
+        }
+    }
+
+    /*
+     * Called when the game is to be ended since the player has completed the level
+     */
+    public void InitGameWin()
+    {
+        InputEnabled = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        FindObjectOfType<GameManagement>().EndGame(true);
+    }
+
+    /*
+     * Called when the game is to be ended since the player has completed the level
+     */
+    public void InitGameLoss()
+    {
+        InputEnabled = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        FindObjectOfType<GameManagement>().EndGame(false);
     }
 }

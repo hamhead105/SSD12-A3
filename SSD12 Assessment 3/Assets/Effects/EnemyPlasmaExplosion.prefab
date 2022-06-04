@@ -9723,7 +9723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4348f5f3b351c94986bde679d482983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseDamage: 5
+  baseDamage: 60
   damageMultiplierDropOff:
     serializedVersion: 2
     m_Curve:
@@ -9757,7 +9757,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  maxRange: 5
+  maxRange: 3
 --- !u!114 &1291449977455872907
 MonoBehaviour:
   m_ObjectHideFlags: 0

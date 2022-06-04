@@ -9,6 +9,7 @@ public class Enemy : GameCharacter
 {
     [SerializeField] protected GameObject[] deathInstantiations;
     [SerializeField] protected float speed;
+    [SerializeField] protected int pointsAwarded;
 
     /* 
      * Initialize the enemy
@@ -31,6 +32,7 @@ public class Enemy : GameCharacter
                 newObject.transform.parent = GameObject.Find("Temp").transform;
             }
         }
+        FindObjectOfType<GameManagement>().AddScore(pointsAwarded);
         Destroy(gameObject);
     }
 
