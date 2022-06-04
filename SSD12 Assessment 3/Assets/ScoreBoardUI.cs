@@ -30,10 +30,6 @@ public class ScoreBoardUI : MonoBehaviour
     private void UpdateScoreboard()
     {
         ScoreEntry[] scoreEntries = ScoreManager.GetHighScores().ToArray();
-        foreach (ScoreEntry sortedScore in scoreEntries)
-        {
-            print(sortedScore.PlayerName + " " + sortedScore.Score);
-        }
 
         int i = 0; // iterator
         while (i < numberofScores)
