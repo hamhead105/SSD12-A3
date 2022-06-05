@@ -9,7 +9,7 @@ public abstract class GameCharacter : MonoBehaviour
 {
     [SerializeField] private float health;
     [SerializeField] private float maxHealth;
-    private bool deathFlag;
+    protected bool deathFlag;
 
     public float Health { get => health; set => health = value; }
     public float MaxHealth { get => maxHealth; set => maxHealth = value; }

@@ -34,7 +34,6 @@ public class GameManagement : MonoBehaviour
     public void IncrementTime()
     {
         timePast++;
-        UpdateUI();
     }
 
     /*
@@ -76,7 +75,7 @@ public class GameManagement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        UpdateUI();
     }
 
     /*

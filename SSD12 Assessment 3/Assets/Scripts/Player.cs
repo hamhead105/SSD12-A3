@@ -49,7 +49,6 @@ public class Player : Human
     [SerializeField] private GameObject spectatorModeCamera;
 
     private Transform lookPoint;
-    private bool deathFlag;
 
     public bool InputEnabled { get => inputEnabled; set => inputEnabled = value; }
     public bool MenuOpened { get => menuOpened; set => menuOpened = value; }
@@ -532,8 +531,13 @@ public class Player : Human
      */
     public void OnControllerColliderHit(ControllerColliderHit other)
     {
-        if (other.transform.tag == "Teleporter") {
+        if (other.transform.tag == "Teleporter") 
+        {
             InitGameWin();
+        }
+        else if (other.transform.tag == "PointCube")
+        {
+            other.transform.GetComponent<Collectable>().Collect();
         }
     }
 

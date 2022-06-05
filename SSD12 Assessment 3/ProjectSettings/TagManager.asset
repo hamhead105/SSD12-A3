@@ -6,6 +6,7 @@ TagManager:
   tags:
   - RagdollParts
   - Teleporter
+  - PointCube
   layers:
   - Default
   - TransparentFX
