@@ -7,7 +7,9 @@ using UnityEngine;
  */
 public class PlayerCamera : MonoBehaviour
 {
-    private static int layerMask = 7 | 9;
+    private static int playerLayerMask = 1 << 9;
+    private static int hitboxLayerMask = 1 << 7;
+
     private GameObject playerCameraObject;
     [SerializeField] private Transform lookPoint;
 
@@ -88,7 +90,7 @@ public class PlayerCamera : MonoBehaviour
         if (!FirstPersonMode)
         {
             RaycastHit hit;
-            if (Physics.Linecast(this.transform.position, transform.TransformPoint(basePosition), out hit, 7))
+            if (Physics.Linecast(this.transform.position, transform.TransformPoint(basePosition), out hit, ~(playerLayerMask | hitboxLayerMask)))
             {
                 if (hit.distance < basePosition.magnitude)
                 {
@@ -150,7 +152,7 @@ public class PlayerCamera : MonoBehaviour
     {
         RaycastHit hit;
        
-        if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, 1500, layerMask))
+        if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, 1500, ~(playerLayerMask | hitboxLayerMask)))
         {
             if (hit.distance < maxLookPointDistance) LookPoint.transform.position = hit.point;
             else LookPoint.transform.position = this.transform.position + transform.forward * maxLookPointDistance;

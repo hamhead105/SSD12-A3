@@ -15,6 +15,7 @@ public class LODManager : MonoBehaviour
     [SerializeField] private GameObject[] disappearingObjects;
     [SerializeField] private float baseMaxDistance;
     private float maxDistance;
+
     // Start is called before the first frame update
     void Start()
     {

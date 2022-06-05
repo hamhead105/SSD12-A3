@@ -17,6 +17,9 @@ public class FlyingEnemy : Enemy
     [SerializeField] private Transform[] barrelPoints;
     [SerializeField] private float damage;
     [SerializeField] private float projectileSpeed;
+    [SerializeField] private float projectileSpread;
+    [SerializeField] private float attackRange;
+    [SerializeField] private float aimYOffset;
 
     [SerializeField] private GameObject muzzleEffect;
 
@@ -40,7 +43,14 @@ public class FlyingEnemy : Enemy
     // Called at a fixed rate
     public void FixedUpdate()
     {
-        Attack();
+        if (Vector3.Distance(this.transform.position, FindObjectOfType<Player>().transform.position) <= attackRange)
+        {
+            Attack();
+        } 
+        else
+        {
+            Idle();
+        }
     }
 
     /*
@@ -48,7 +58,7 @@ public class FlyingEnemy : Enemy
      */
     public void Idle()
     {
-        velocity += transform.forward * speed;
+        //velocity += transform.forward * speed;
     }
 
     /*
@@ -67,7 +77,7 @@ public class FlyingEnemy : Enemy
     {
         Player player = FindObjectOfType<Player>();
         if (readyToFire) Shoot();
-        SmoothLookAt(player.transform.position);
+        SmoothLookAt(player.transform.position + new Vector3(0, aimYOffset, 0));
     }
 
     /*
@@ -77,7 +87,7 @@ public class FlyingEnemy : Enemy
     {
         Player player = FindObjectOfType<Player>();
         Vector3 currentRot = this.transform.eulerAngles;
-        transform.LookAt(player.transform.position);
+        transform.LookAt(newDirection);
         Vector3 targRot = this.transform.eulerAngles;
         transform.eulerAngles = currentRot;
 
@@ -100,6 +110,7 @@ public class FlyingEnemy : Enemy
             if (readyToFire)
             {
                 Projectile newProjectile = Instantiate(projectile, barrelPoint.position, barrelPoint.transform.rotation);
+                newProjectile.transform.Rotate(Random.Range(-projectileSpread / 2, projectileSpread / 2), Random.Range(-projectileSpread / 2, projectileSpread / 2), 0);
                 newProjectile.SetProjectileStats(projectileSpeed, damage, false, 30);
                 newProjectile.Init();
                 Invoke("Rechamber", attackCooldown);
