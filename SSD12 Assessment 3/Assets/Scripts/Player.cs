@@ -439,7 +439,7 @@ public class Player : Human
     private void CastInteractionRay(bool isInteract)
     {
         RaycastHit hit;
-        if (Physics.Raycast(PlayerCamera.transform.position, PlayerCamera.transform.forward, out hit))
+        if (Physics.Raycast(neck.transform.position, neck.transform.forward, out hit))
         {
             if (hit.distance <= interactionDistance)
             {
@@ -514,7 +514,7 @@ public class Player : Human
     private void CastForwardSpaceRay()
     {
         RaycastHit hit;
-        if (Physics.Raycast(ItemAlignment.transform.position, playerCamera.transform.forward, out hit, 20, 7))
+        if (Physics.Raycast(spine1.transform.position, spine1.transform.forward, out hit, 20, 7))
         {
             if (Item is PlayerFirearm) (Item as PlayerFirearm).SetWeaponDraw(hit.distance);
         }

@@ -18,7 +18,6 @@ public class ScoreManager : MonoBehaviour
     void Start()
     {
         InitializeDirectoryPaths();
-        ClearScores();
     }
 
     /*

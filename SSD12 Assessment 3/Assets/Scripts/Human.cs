@@ -21,7 +21,7 @@ public class Human : GameCharacter
 
     // internal parts
     [SerializeField]
-    private GameObject
+    protected GameObject
         spine1,
         spine2,
         spine3,
@@ -138,6 +138,7 @@ public class Human : GameCharacter
     public bool Active { get => active; set => active = value; }
     public string HumanName { get => humanName; set => humanName = value; }
     public float Pivot { get => pivot; set => pivot = value; }
+    public GameObject Neck { get => neck; set => neck = value; }
 
     // Start is called before the first frame update
     public virtual void Start()
@@ -251,7 +252,7 @@ public class Human : GameCharacter
      
         spine2.transform.Rotate(this.transform.right * (-AimY / 2) * spine2Multiplier, Space.World);
         spine3.transform.Rotate(this.transform.right * (-AimY / 2), Space.World);
-        neck.transform.Rotate(this.transform.right * (-AimY / 2) * neckMultiplier, Space.World);
+        Neck.transform.Rotate(this.transform.right * (-AimY / 2) * neckMultiplier, Space.World);
 
         if (Item is PlayerFirearm) UpdateAimDownSightsState((Item as PlayerFirearm).AimedDownSights);
         UpdatePivot();
