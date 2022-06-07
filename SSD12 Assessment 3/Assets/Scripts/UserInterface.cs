@@ -21,6 +21,9 @@ public class UserInterface : MonoBehaviour
     [SerializeField] private GameObject settings;
     [SerializeField] private Text scoreText;
     [SerializeField] private Text timeText;
+    [SerializeField] private GameObject[] helpUIElements;
+
+    private bool proMode; // disables unessecary UI elements
 
     // Start is called before the first frame update
     void Start()
@@ -129,5 +132,24 @@ public class UserInterface : MonoBehaviour
     public void CloseSettings()
     {
         settings.SetActive(false);
+    }
+
+    /*
+     * Determine whether extra UI such as world icons and controls panel should be enabled or disabled
+     */
+    public void UpdateProModeUI(bool proMode)
+    {
+        this.proMode = proMode;
+        foreach (GameObject element in helpUIElements)
+        {
+            element.SetActive(!proMode);
+        }
+        foreach (Billboard worldUIElement in FindObjectsOfType<Billboard>())
+        {
+            if (worldUIElement.DisableForPromode)
+            {
+                worldUIElement.gameObject.SetActive(!proMode);
+            }
+        }
     }
 }

@@ -21,11 +21,13 @@ public class SettingsManager : MonoBehaviour
     Resolution[] resolutions;
     [SerializeField] private Dropdown resolutionDropdown;
     [SerializeField] private Toggle fullscreenToggle;
+    [SerializeField] private Toggle proModeToggle;
 
     private static float sensitivity;
     private static float volume;
     private static int resolutionIndex;
     private static int fullScreen;
+    private static int proMode;
 
     private static float defaultSensitivity = 0.5f;
     private static float defaultVolume = 1;
@@ -37,6 +39,7 @@ public class SettingsManager : MonoBehaviour
         if (!ReadSettings()) LoadDefaultSettings();
         InitializeResolutionSettings();
         UpdateSettings();
+        UpdateProMode();
     }
 
     /*
@@ -86,6 +89,7 @@ public class SettingsManager : MonoBehaviour
      
         if (resolutionDropdown) resolutionDropdown.value = resolutionIndex;
         if (fullscreenToggle) fullscreenToggle.isOn = fullScreen == 0 ? false : true; // if fullscreen is 0, the toggle is set to false, else true
+        if (proModeToggle) proModeToggle.isOn = proMode == 0 ? false : true;
     }
 
     /*
@@ -95,6 +99,7 @@ public class SettingsManager : MonoBehaviour
     {
         sensitivity = defaultSensitivity;
         volume = defaultVolume;
+        proMode = 0;
         DeleteSettings();
         SaveSettings();
     }
@@ -172,16 +177,31 @@ public class SettingsManager : MonoBehaviour
     }
 
     /*
+     * Called when promode is toggled, this is where extra UI elements such as controls guides are disabled
+     */
+    public void UpdateProMode()
+    {
+        bool proModeBool = false;
+        if (proMode == 1) proModeBool = true;
+        FindObjectOfType<UserInterface>().UpdateProModeUI(proModeBool);
+    }
+
+    /*
      * Apply the current selected settings to the game
      */
     public void ApplySettings()
     {
         volume = volumeSlider.value;
         sensitivity = sensitivitySlider.value;
+        UpdateProMode();
 
         bool fullScreenBool = fullscreenToggle.isOn;
+
         if (fullScreenBool) fullScreen = 1;
         else fullScreen = 0;
+
+        if (proModeToggle.isOn) proMode = 1;
+        else proMode = 0;
 
         print("applied settings");
         resolutionIndex = resolutionDropdown.value;
@@ -236,16 +256,18 @@ public class SettingsManager : MonoBehaviour
         string settings = ReadFile();
         string[] settingsArray = settings.Split(' ');
 
-        if (settingsArray.Length == 4)
+        if (settingsArray.Length == 5)
         {
             sensitivity = (float) Convert.ToDouble(settingsArray[0]);
             volume = (float) Convert.ToDouble(settingsArray[1]);
             resolutionIndex = Convert.ToInt32(settingsArray[2]);
             fullScreen = Convert.ToInt32(settingsArray[3]);
+            proMode = Convert.ToInt32(settingsArray[4]);
             return true;
         } 
         else
         {
+            Debug.LogError("Settings file wrong size");
             return false;
         }
     }
@@ -255,7 +277,7 @@ public class SettingsManager : MonoBehaviour
      */
     public string GenerateSettings()
     {
-        return sensitivity + " " + volume + " " + resolutionIndex + " " + fullScreen;
+        return sensitivity + " " + volume + " " + resolutionIndex + " " + fullScreen + " " + proMode;
     }
 
    /*

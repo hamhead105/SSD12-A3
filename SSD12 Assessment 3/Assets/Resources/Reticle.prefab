@@ -300,7 +300,6 @@ GameObject:
   - component: {fileID: 7974006523598507118}
   - component: {fileID: 7974006523598507116}
   - component: {fileID: -5998853310460719730}
-  - component: {fileID: 2557832940956879583}
   m_Layer: 5
   m_Name: Reticle
   m_TagString: Untagged
@@ -384,18 +383,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maintainSize: 1
   objectScale: 1
---- !u!114 &2557832940956879583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7974006523598507117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa68af523d7b52a459dcd2faa6b2d5bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7974006523881387632
 GameObject:
   m_ObjectHideFlags: 0
