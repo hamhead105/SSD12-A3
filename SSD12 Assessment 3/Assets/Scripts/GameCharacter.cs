@@ -44,6 +44,15 @@ public abstract class GameCharacter : MonoBehaviour
         }
     }
 
+    /*
+     * Replenish some of the character's health
+     */
+    public void Heal(float amount)
+    {
+        health += amount;
+        if (health > maxHealth) health = maxHealth;
+    }
+
     // Update is called once per frame
     public virtual void Update()
     {

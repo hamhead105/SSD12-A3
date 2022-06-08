@@ -188,7 +188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maintainSize: 1
   disableForPromode: 1
-  objectScale: 0.05
+  objectScale: 0.03
 --- !u!1 &1714089877
 GameObject:
   m_ObjectHideFlags: 0

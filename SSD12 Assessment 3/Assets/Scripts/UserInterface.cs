@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class UserInterface : MonoBehaviour
 {
     private static float healthTrace_kP = 0.2f;
+    private static float eventTextDuration = 5f;
 
     private Player player;
 
@@ -21,6 +22,8 @@ public class UserInterface : MonoBehaviour
     [SerializeField] private GameObject settings;
     [SerializeField] private Text scoreText;
     [SerializeField] private Text timeText;
+    [SerializeField] private Text eventText;
+    [SerializeField] private RawImage eventDisplay;
     [SerializeField] private GameObject[] helpUIElements;
 
     private bool proMode; // disables unessecary UI elements
@@ -132,6 +135,33 @@ public class UserInterface : MonoBehaviour
     public void CloseSettings()
     {
         settings.SetActive(false);
+    }
+
+    /*
+     * Show an event in big text on the screen
+     * 
+     * @param text - the text to display
+     * @param eventualHide - whether the text will be hidden after a short period of time
+     */
+    public void ShowEventText(string text, bool eventualHide)
+    {
+        eventDisplay.gameObject.SetActive(true);
+        eventText.gameObject.SetActive(true);
+        eventText.text = text;
+        if (eventualHide)
+        {
+            Invoke("HideEventText", eventTextDuration);
+        }
+    }
+
+    /*
+     * Hides the event text
+     */
+    public void HideEventText()
+    {
+        eventDisplay.gameObject.SetActive(false);
+        eventText.text = "";
+        eventText.gameObject.SetActive(false);
     }
 
     /*

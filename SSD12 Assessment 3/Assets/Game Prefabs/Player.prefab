@@ -331,6 +331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maintainSize: 1
+  disableForPromode: 0
   objectScale: 1
 --- !u!1 &505363991882739816
 GameObject:
@@ -6770,7 +6771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  maxHealth: 0
+  maxHealth: 100
   baseMovementSpeed: 0.007
   sprintSpeedMultiplier: 1.4
   groundFriction: 1.2

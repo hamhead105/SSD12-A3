@@ -24,7 +24,9 @@ public class Player : Human
         itemSwayMagnitude_idle = 2f,
         itemSwayMagnitude_walking = 2f,
         itemSwayMagnitude_sprinting = 5f,
-        itemSwayMagnitude_focused = 0.04f;
+        itemSwayMagnitude_focused = 0.04f,
+
+        healCubeHealAmount = 50;
 
     private float interactionDistance = 2f;
 
@@ -70,6 +72,7 @@ public class Player : Human
         deathFlag = false;
         LookPoint = PlayerCamera.LookPoint.transform;
         InputEnabled = true;
+        GetComponent<CharacterController>().detectCollisions = true;
         playerSensitivity = PlayerPrefs.GetFloat("Sensitivity", 0.5f);
         base.Init();
         LoadItem("Railgun", true);
@@ -83,7 +86,6 @@ public class Player : Human
     public void Reset()
     {
         foreach (GameObject mesh in Meshes) mesh.SetActive(true);
-        GetComponent<CharacterController>().detectCollisions = true;
         Init();
     }
 
@@ -537,6 +539,15 @@ public class Player : Human
         }
         else if (other.transform.tag == "PointCube")
         {
+            other.transform.GetComponent<Collectable>().Collect();
+        }
+        else if (other.transform.GetComponent<GameTrigger>())
+        {
+            other.transform.GetComponent<GameTrigger>().Trigger();
+        }
+        else if (other.transform.tag == "HealCube")
+        {
+            Heal(healCubeHealAmount);
             other.transform.GetComponent<Collectable>().Collect();
         }
     }
