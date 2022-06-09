@@ -74,9 +74,12 @@ public class SettingsManager : MonoBehaviour
      */
     public void UpdatePlayerSettings()
     {
-        Player player = FindObjectOfType<Player>();
-        player.UpdateSensitivity(sensitivity);
-        player.UpdateVolume(volume);
+        if (FindObjectOfType<Player>())
+        {
+            Player player = FindObjectOfType<Player>();
+            player.UpdateSensitivity(sensitivity);
+            player.UpdateVolume(volume);
+        }
     }
 
     /*
@@ -183,7 +186,7 @@ public class SettingsManager : MonoBehaviour
     {
         bool proModeBool = false;
         if (proMode == 1) proModeBool = true;
-        FindObjectOfType<UserInterface>().UpdateProModeUI(proModeBool);
+        if (FindObjectOfType<UserInterface>()) FindObjectOfType<UserInterface>().UpdateProModeUI(proModeBool);
     }
 
     /*

@@ -182,4 +182,12 @@ public class UserInterface : MonoBehaviour
             }
         }
     }
+
+    /*
+     *  Find the menu manager and call it to swap back to the main menu
+     */
+    public void CallLeaveToMenu()
+    {
+        FindObjectOfType<MenuManager>().LoadScene("Main Menu");
+    }
 }

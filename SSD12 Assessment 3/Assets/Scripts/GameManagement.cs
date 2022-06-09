@@ -12,10 +12,10 @@ public class GameManagement : MonoBehaviour
     private int timePast;
     private bool gameWin;
     private UserInterface UI;
-    [SerializeField] private string playerName = "";
+    private static string playerName = "";
     private bool gameFinishedFlag;
 
-    public string PlayerName { get => playerName; set => playerName = value; }
+    public static string PlayerName { get => playerName; set => playerName = value; }
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,7 @@ public class GameManagement : MonoBehaviour
         InvokeRepeating("IncrementTime", 1f, 1f);
         DontDestroyOnLoad(gameObject);
 
-        if (playerName == "") playerName = "Player" + Random.Range(0, 9999);
+        if (PlayerName == "") playerName = "Player" + Random.Range(0, 9999);
         gameFinishedFlag = false;
     }
 
