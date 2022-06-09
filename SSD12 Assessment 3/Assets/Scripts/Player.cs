@@ -133,6 +133,7 @@ public class Player : Human
             UpdateMoveStateAnimationsValues();
             UpdateSway();
             CastForwardSpaceRay();
+            UpdatePivot();
         }
     }
 

@@ -49,7 +49,11 @@ public class Human : GameCharacter
         feetIK_kP = 0.42f,
         feetIK_max = 0.8f,
         characterControllerBaseHeight = 1.7f,
-        characterControllerBaseCenterY = 1;
+        characterControllerBaseCenterY = 1,
+        pivot_kP = 0.15f,
+        pivotTransition_kP = 0.05f,
+        maxPivotAngle = 50,
+        pivotMinimumForReset = 3;
 
     private int
         hitboxLayer = 7;
@@ -68,7 +72,9 @@ public class Human : GameCharacter
     [SerializeField] private bool sprinting;
 
     private float pivot;
-    [SerializeField]  private float syncedPivot;
+    private float targPivot;
+    private float pivotWeight;
+    private bool resetPivotAngle;
 
     private bool
         walking,
@@ -176,10 +182,12 @@ public class Human : GameCharacter
     {
         if (Sprinting) movementSpeed = baseMovementSpeed * sprintSpeedMultiplier;
         else movementSpeed = baseMovementSpeed;
-
+        float relativeforwardVelocity = ForwardInput * movementSpeed;
+        float relativeRightVelocity =RightInput * movementSpeed;
         if (charController.isGrounded)
         {
-            Velocity += (transform.forward * ForwardInput * movementSpeed) + (transform.right * RightInput * movementSpeed);
+
+            Velocity += (spine1.transform.forward * ForwardInput * movementSpeed) + (spine1.transform.right * RightInput * movementSpeed); // use trig to offset pivot angle
 
             if (Walking || Sprinting) Velocity = new Vector3(Velocity.x / groundMovingFriction, -FloorGravity, Velocity.z / groundMovingFriction);
             else Velocity = new Vector3(Velocity.x / groundFriction, -FloorGravity, Velocity.z / groundFriction);
@@ -194,6 +202,7 @@ public class Human : GameCharacter
         }
         else
         {
+            Velocity += (spine1.transform.forward * ForwardInput * movementSpeed) + (spine1.transform.right * RightInput * movementSpeed); // use trig to offset pivot angle
             Velocity = new Vector3(Velocity.x / airFriction, Velocity.y - Gravity, Velocity.z / airFriction);
         }
         JumpQueued = false;
@@ -255,7 +264,7 @@ public class Human : GameCharacter
         Neck.transform.Rotate(this.transform.right * (-AimY / 2) * neckMultiplier, Space.World);
 
         if (Item is PlayerFirearm) UpdateAimDownSightsState((Item as PlayerFirearm).AimedDownSights);
-        UpdatePivot();
+        UpdatePivotRot();
         UpdateAnimatorValues();
     }
 
@@ -268,12 +277,55 @@ public class Human : GameCharacter
         Animator.SetTrigger("Reload");
     }
 
+    /*
+     * Update player pivoting, looking around will only rotate the player waist up unless necessary
+     */
     public void UpdatePivot()
     {
-        float pivotTranslate = (0 - pivot) * 0.1f;
-        this.transform.Rotate(0, -pivotTranslate, 0);
-        pivot += pivotTranslate;
-        spine1.transform.localEulerAngles += new Vector3(spine1.transform.localEulerAngles.x, pivot, spine1.transform.localEulerAngles.z);
+        if (walking || sprinting || resetPivotAngle)
+        {
+            targPivot = 0;
+            if (!sprinting) {
+                if (forwardInput > 0 && rightInput > 0) targPivot = -30;
+                if (forwardInput > 0 && rightInput < 0) targPivot = 30;
+                if (forwardInput < 0 && rightInput > 0) targPivot = 30;
+                if (forwardInput < 0 && rightInput < 0) targPivot = -30;
+            }
+            else
+            {
+                if (forwardInput > 0 && rightInput > 0) targPivot = -15;
+                if (forwardInput > 0 && rightInput < 0) targPivot = 15;
+                if (forwardInput < 0 && rightInput > 0) targPivot = 15;
+                if (forwardInput < 0 && rightInput < 0) targPivot = -15;
+            }
+
+            print("fI " + forwardInput + " rI" + rightInput + " " + targPivot);
+            float pivotTranslate = (targPivot - pivot) * pivot_kP;
+            this.transform.Rotate(0, -pivotTranslate, 0);
+            pivot += pivotTranslate;
+            if (Mathf.Abs(pivot) < pivotMinimumForReset) resetPivotAngle = false;
+        }
+        if (Mathf.Abs(pivot) > maxPivotAngle && !walking)
+        {
+            resetPivotAngle = true;
+        }
+    }
+
+    /*
+     * Update the playerRotations due to pivoting
+     */
+    public void UpdatePivotRot()
+    {
+        spine1.transform.localEulerAngles += new Vector3(0, pivot, 0);
+        spine1.transform.eulerAngles = new Vector3(Mathf.LerpAngle(0, spine1.transform.eulerAngles.x, pivotWeight), spine1.transform.eulerAngles.y, Mathf.LerpAngle(0, spine1.transform.eulerAngles.z, pivotWeight));
+        if (!sprinting)
+        {
+            pivotWeight += (0 - pivotWeight) * pivotTransition_kP;
+        } 
+        else
+        {
+            pivotWeight += (1 - pivotWeight) * pivotTransition_kP;
+        }
     }
 
     /*
