@@ -101,7 +101,7 @@ public class Player : Human
             CheckReloadAnimations();
             if (InputEnabled) RegisterInputs();
             if (InputEnabled) PlayerMouseAxisInputs();
-           
+            ImplementAimRecoil();
         }
         UpdateCamera();
         PlayerMiscInputs();
@@ -127,7 +127,6 @@ public class Player : Human
         if (Health > 0)
         {
             UpdateMovement();
-            ImplementAimRecoil();
             UpdatePControlIK();
             UpdateFixedAnimationValues();
             UpdateMoveStateAnimationsValues();

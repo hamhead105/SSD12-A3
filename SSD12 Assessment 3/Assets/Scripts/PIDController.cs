@@ -61,7 +61,7 @@ public class PIDController
             errorAccumulation = 0;
             errorDerivative = 0;
         }
-        output = (error * kP) + (errorAccumulation * kI) + (errorDerivative * kD);
+        output = error * Mathf.Min(kP * Time.deltaTime * 50, 1) + (errorAccumulation * kI) + (errorDerivative * kD);
         return output;
     }
 }
