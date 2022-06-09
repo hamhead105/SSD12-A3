@@ -348,19 +348,20 @@ public class PlayerFirearm : PlayerItem
      */
     public void UpdateRecoil()
     {
+        //Application.targetFrameRate = 30;
         targetGunRecoilVelocity = new Vector3(recoilPID_x.GetOutput(-gunRecoilDisplacement.x), recoilPID_y.GetOutput(-gunRecoilDisplacement.y), recoilPID_z.GetOutput(-gunRecoilDisplacement.z));
         // the transform of the firearm.
         GunRecoilVelocity += new Vector3(
-            (targetGunRecoilVelocity.x - GunRecoilVelocity.x) * Mathf.Min(recoilVelocity_kP * Time.deltaTime * 50, 1),
-            (targetGunRecoilVelocity.y - GunRecoilVelocity.y) * Mathf.Min(recoilVelocity_kP * Time.deltaTime * 50, 1),
-            (targetGunRecoilVelocity.z - GunRecoilVelocity.z) * Mathf.Min(recoilVelocity_kP * Time.deltaTime * 50, 1)
+            (targetGunRecoilVelocity.x - GunRecoilVelocity.x) * Mathf.Min(recoilVelocity_kP, 1),
+            (targetGunRecoilVelocity.y - GunRecoilVelocity.y) * Mathf.Min(recoilVelocity_kP, 1),
+            (targetGunRecoilVelocity.z - GunRecoilVelocity.z) * Mathf.Min(recoilVelocity_kP, 1)
         );
 
         // the transform of the player. This is where the player's screen is rotated upwards
         AimRecoilVelocity += new Vector3(
-            (0 - AimRecoilVelocity.x) * Mathf.Min(recoilVelocity_kP * Time.deltaTime * 50, 1),
-            (0 - AimRecoilVelocity.y) * Mathf.Min(recoilVelocity_kP * Time.deltaTime * 50, 1),
-            (0 - AimRecoilVelocity.z) * Mathf.Min(recoilVelocity_kP * Time.deltaTime * 50, 1)
+            (0 - AimRecoilVelocity.x) * Mathf.Min(recoilVelocity_kP, 1),
+            (0 - AimRecoilVelocity.y) * Mathf.Min(recoilVelocity_kP, 1),
+            (0 - AimRecoilVelocity.z) * Mathf.Min(recoilVelocity_kP, 1)
         );
 
         gunRecoilDisplacement += GunRecoilVelocity;
