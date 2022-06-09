@@ -562,7 +562,6 @@ public class PlayerFirearm : PlayerItem
 
         Reloading = false;
         Ammo = MaxAmmo;
-        Chambered = true;
     }
 
     /*
