@@ -79,6 +79,25 @@ public class GameManagement : MonoBehaviour
     void Update()
     {
         UpdateUI();
+        UpdateFrameCap();
+    }
+
+    /*
+     * For testing purposes let the user toggle a low framerate mode
+     */
+    void UpdateFrameCap()
+    {
+        if (Input.GetKeyDown(KeyCode.F6))
+        {
+            if (Application.targetFrameRate == 120)
+            {
+                Application.targetFrameRate = 25;
+            }
+            else
+            {
+                Application.targetFrameRate = 120;
+            }
+        }
     }
 
     /*
