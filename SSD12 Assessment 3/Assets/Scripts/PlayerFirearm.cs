@@ -181,15 +181,6 @@ public class PlayerFirearm : PlayerItem
     }
 
     /*
-     * Called at a fixed rate
-     */
-    public override void FixedUpdate()
-    {
-       // base.FixedUpdate();
-       // UpdateLookPointWeights();
-    }
-
-    /*
      * Called once per frame
      */
     public override void Update()
@@ -264,9 +255,9 @@ public class PlayerFirearm : PlayerItem
         if (aimedDownSights)
         {
             ItemSway *= aimSwayMultiplier;
-            adsWeight += (1 - adsWeight) * Mathf.Min(ads_kP * Time.deltaTime * 50, 1);
+            adsWeight += (1 - adsWeight) * Mathf.Min(ads_kP * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant, 1);
         }
-        else { adsWeight += (0 - adsWeight) * Mathf.Min(ads_kP * Time.deltaTime * 50, 1); }
+        else { adsWeight += (0 - adsWeight) * Mathf.Min(ads_kP * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant, 1); }
 
         if (ActiveSight)
         {
@@ -288,13 +279,13 @@ public class PlayerFirearm : PlayerItem
 
         if (!aimedDownSights)
         {
-            ItemSwing_x += (0 - ItemSwing_x) * Mathf.Min(ItemRecovery_kP * Time.deltaTime * 50, 1);
-            ItemSwing_y += (0 - ItemSwing_y) * Mathf.Min(ItemRecovery_kP * Time.deltaTime * 50, 1);
+            ItemSwing_x += (0 - ItemSwing_x) * Mathf.Min(ItemRecovery_kP * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant, 1);
+            ItemSwing_y += (0 - ItemSwing_y) * Mathf.Min(ItemRecovery_kP * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant, 1);
         }
         else
         {
-            ItemSwing_x += (0 - ItemSwing_x) * Mathf.Min(itemRecovery_kP_ads * Time.deltaTime * 50, 1);
-            ItemSwing_y += (0 - ItemSwing_y) * Mathf.Min(itemRecovery_kP_ads * Time.deltaTime * 50, 1);
+            ItemSwing_x += (0 - ItemSwing_x) * Mathf.Min(itemRecovery_kP_ads * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant, 1);
+            ItemSwing_y += (0 - ItemSwing_y) * Mathf.Min(itemRecovery_kP_ads * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant, 1);
         }
 
         this.transform.localPosition = new Vector3(0, 0, 0);
@@ -327,11 +318,11 @@ public class PlayerFirearm : PlayerItem
         {
             if (Sprinting || (User as Player).PlayerCamera.FreeLook || (User as Player).PlayerCamera.FirstPersonMode || WeaponADSObstruction)
             {
-                lookPointWeight += (0 - lookPointWeight) * Mathf.Min(lookAtPointTransition_kP * Time.deltaTime * 50, 1);
+                lookPointWeight += (0 - lookPointWeight) * Mathf.Min(lookAtPointTransition_kP * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant, 1);
             }
             else
             {
-                lookPointWeight += (1 - lookPointWeight) * Mathf.Min(lookAtPointTransition_kP * Time.deltaTime * 50, 1);
+                lookPointWeight += (1 - lookPointWeight) * Mathf.Min(lookAtPointTransition_kP * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant, 1);
             }
             
             lookPointRotation = new Vector3(
