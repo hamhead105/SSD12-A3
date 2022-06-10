@@ -8,7 +8,6 @@ using UnityEngine;
 public class PlayerFirearm : PlayerItem
 {
     // static constants
-    [SerializeField] private float recoilRecovery_kP;
     protected static float
         recoilVelocity_kP = 0.3f,
         aimShiftMultiplier = 0.08f,
@@ -19,6 +18,7 @@ public class PlayerFirearm : PlayerItem
 
     private static Vector3 maxItemRot = new Vector3(80, 80, 0);
 
+    [SerializeField] private float recoilRecovery_kP;
     [SerializeField]
     private float 
         recoilRecovery_kI = 0.04f,
@@ -27,7 +27,6 @@ public class PlayerFirearm : PlayerItem
     // recoil Z axis
     [SerializeField]
     private float recoilPosRecovery_kP;
-
     [SerializeField]
     private float
         recoilPosRecovery_kI = 0.1f,
@@ -348,7 +347,6 @@ public class PlayerFirearm : PlayerItem
      */
     public void UpdateRecoil()
     {
-        //Application.targetFrameRate = 30;
         targetGunRecoilVelocity = new Vector3(recoilPID_x.GetOutput(-gunRecoilDisplacement.x), recoilPID_y.GetOutput(-gunRecoilDisplacement.y), recoilPID_z.GetOutput(-gunRecoilDisplacement.z));
         // the transform of the firearm.
         GunRecoilVelocity += new Vector3(
@@ -362,7 +360,7 @@ public class PlayerFirearm : PlayerItem
             (0 - AimRecoilVelocity.x) * Mathf.Min(recoilVelocity_kP, 1),
             (0 - AimRecoilVelocity.y) * Mathf.Min(recoilVelocity_kP, 1),
             (0 - AimRecoilVelocity.z) * Mathf.Min(recoilVelocity_kP, 1)
-        );
+        ) * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant;
 
         gunRecoilDisplacement += GunRecoilVelocity;
     }

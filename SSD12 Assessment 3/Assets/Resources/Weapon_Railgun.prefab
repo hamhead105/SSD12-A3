@@ -836,14 +836,14 @@ MonoBehaviour:
   animatorController: {fileID: 9100000, guid: 6025b101153dc2d4190912fdf57e0dfd, type: 2}
   avatar: {fileID: 9000000, guid: e7463bdf4ce1168458f8e8ed4e1fe9b7, type: 3}
   itemSwingAmount: 0.1
-  itemRecovery_kP: 0.14
+  itemRecovery_kP: 0.25
   useCameraShake: 0.4
   itemSwayMultiplier: 0.15
   user: {fileID: 0}
-  recoilRecovery_kP: 0.3
+  recoilRecovery_kP: 0.2
   recoilRecovery_kI: 0
   recoilRecovery_kD: 0
-  recoilPosRecovery_kP: 0.3
+  recoilPosRecovery_kP: 0.2
   recoilPosRecovery_kI: 0
   recoilPosRecovery_kD: 0
   spreadAmountHip: 5
@@ -858,7 +858,7 @@ MonoBehaviour:
   casingPoint: {fileID: 8930966932752619365}
   chambered: 0
   useAnimationTrigger: 0
-  gunRecoil: {x: 0.07, y: -0.15, z: -0.003}
+  gunRecoil: {x: 0.3, y: -0.4, z: -0.008}
   aimRecoil: {x: 0.015, y: 0.015, z: 0}
   positionCoefficients: {x: -0.002, y: 0.003, z: 0}
   itemRecovery_kP_ads: 0.3
