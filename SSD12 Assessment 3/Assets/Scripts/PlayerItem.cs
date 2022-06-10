@@ -103,9 +103,9 @@ public abstract class PlayerItem : Item
     }
 
     /*
-     * Called at a fixed rate
+     * Called once per frame
      */
-    public virtual void FixedUpdate()
+    public virtual void Update()
     {
         UpdateItemSway();
         UpdateTransforms();
@@ -117,8 +117,8 @@ public abstract class PlayerItem : Item
     public virtual void UpdateTransforms()
     {
         rotationOffset = new Vector3(ItemSwing_y + ItemSway.x, 0, ItemSwing_x + ItemSway.y);
-        ItemSwing_x += (0 - ItemSwing_x) * ItemRecovery_kP;
-        ItemSwing_y += (0 - ItemSwing_y) * ItemRecovery_kP;
+        ItemSwing_x += (0 - ItemSwing_x) * Mathf.Min(ItemRecovery_kP * (Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant), 1);
+        ItemSwing_y += (0 - ItemSwing_y) * Mathf.Min(ItemRecovery_kP * (Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant), 1);
 
         positionOffset = new Vector3(ItemShift.x, ItemShift.y, 0);
 
@@ -173,9 +173,9 @@ public abstract class PlayerItem : Item
      */
     public void UpdateItemSway()
     {
-        swayTime += fixedUpdateCallRate * itemSwaySpeed;
+        swayTime += fixedUpdateCallRate * itemSwaySpeed * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant;
         if (swayTime > Mathf.Deg2Rad * 360) swayTime = Mathf.Deg2Rad * (swayTime - 360);
-        itemSwayMagnitude += (itemSwayMagnitudeTarget - itemSwayMagnitude) * ItemSwayTransition_kP;
+        itemSwayMagnitude += (itemSwayMagnitudeTarget - itemSwayMagnitude) * Mathf.Min(ItemSwayTransition_kP * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant, 1);
 
         ItemSway = new Vector3(
             itemSwayMagnitude * itemSwayMultiplier * Mathf.Sin(swayTime * 2),

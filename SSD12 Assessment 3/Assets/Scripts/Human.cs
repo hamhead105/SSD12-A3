@@ -299,7 +299,6 @@ public class Human : GameCharacter
                 if (forwardInput < 0 && rightInput < 0) targPivot = -15;
             }
 
-            print("fI " + forwardInput + " rI" + rightInput + " " + targPivot);
             float pivotTranslate = (targPivot - pivot) * pivot_kP;
             this.transform.Rotate(0, -pivotTranslate, 0);
             pivot += pivotTranslate;

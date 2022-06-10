@@ -73,7 +73,7 @@ public class Projectile : MonoBehaviour
     /*
      * Called at a fixed rate
      */
-    void FixedUpdate()
+    void Update()
     {
         UpdateProjectile();
     }
@@ -105,8 +105,8 @@ public class Projectile : MonoBehaviour
             if (queueDestroy) DestroyProjectile();
         }
         Vector3 oldPosition = this.transform.position;
-        velocity += new Vector3(0, -gravity, 0);
-        this.transform.position += velocity;
+        velocity += new Vector3(0, -gravity, 0) * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant;
+        this.transform.position += velocity * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant;
     }
 
     /*

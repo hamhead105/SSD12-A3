@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
  */
 public class GameManagement : MonoBehaviour
 {
+    private static float deltaTimeFrameSpeedConstant = 50; // multiplied through any multiplications of time.deltaTime
+
     private int score;
     private int timePast;
     private bool gameWin;
@@ -16,6 +18,7 @@ public class GameManagement : MonoBehaviour
     private bool gameFinishedFlag;
 
     public static string PlayerName { get => playerName; set => playerName = value; }
+    public static float DeltaTimeFrameSpeedConstant { get => deltaTimeFrameSpeedConstant; set => deltaTimeFrameSpeedConstant = value; }
 
     // Start is called before the first frame update
     void Start()
@@ -76,6 +79,25 @@ public class GameManagement : MonoBehaviour
     void Update()
     {
         UpdateUI();
+        UpdateFrameCap();
+    }
+
+    /*
+     * For testing purposes let the user toggle a low framerate mode
+     */
+    void UpdateFrameCap()
+    {
+        if (Input.GetKeyDown(KeyCode.F6))
+        {
+            if (Application.targetFrameRate == 120)
+            {
+                Application.targetFrameRate = 25;
+            }
+            else
+            {
+                Application.targetFrameRate = 120;
+            }
+        }
     }
 
     /*
