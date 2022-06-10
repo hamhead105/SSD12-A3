@@ -6789,8 +6789,8 @@ MonoBehaviour:
   rightFootTargBase: {fileID: 4456219415828381609}
   leftFootTarg: {fileID: 1408305132277630549}
   rightFootTarg: {fileID: 1408305131722890748}
-  leftToe: {fileID: 7217194874478872394}
-  rightToe: {fileID: 631196668938068688}
+  leftFootAngle: {fileID: 7217194874478872394}
+  rightFootAngle: {fileID: 631196668938068688}
   ragdollParts:
   - {fileID: 1151966394780084059}
   - {fileID: 7608093485888099065}

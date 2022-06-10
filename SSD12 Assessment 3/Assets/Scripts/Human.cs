@@ -31,8 +31,8 @@ public class Human : GameCharacter
         rightFootTargBase,
         leftFootTarg,
         rightFootTarg,
-        leftToe,
-        rightToe;
+        leftFootAngle,
+        rightFootAngle;
 
     [SerializeField]
     protected GameObject[]
@@ -46,12 +46,14 @@ public class Human : GameCharacter
         sprintTransition_kP = 0.1f,
         floorGravity = 0.1f,
         feetIKCastHeight = 1f,
-        feetIKOffset = 0.95f,
+        feetIKOffset = 0.98f,
         feetCastRadius = 0.09f,
         feetIK_kP = 0.42f,
         feetIK_max = 0.8f,
         toeIK_dist = 0.2f,
-        footBaseAngle = 65,
+        leftFootBaseAngle = 155,
+        rightFootBaseAngle = 155,
+        slopeAngleMultiplier = 2.7f,
         characterControllerBaseHeight = 1.7f,
         characterControllerBaseCenterY = 1,
         pivot_kP = 0.15f,
@@ -268,8 +270,11 @@ public class Human : GameCharacter
         leftFootTarg.transform.position = new Vector3(leftFootTargBase.transform.position.x, leftFootTargBase.transform.position.y - pControlledLeftFootPos, leftFootTargBase.transform.position.z);
         rightFootTarg.transform.position = new Vector3(rightFootTargBase.transform.position.x, rightFootTargBase.transform.position.y - pControlledRightFootPos, rightFootTargBase.transform.position.z);
 
-        leftToe.transform.localEulerAngles = new Vector3(footBaseAngle - pControlledLeftFootAngle, 0, 0);
-        rightToe.transform.localEulerAngles = new Vector3(footBaseAngle + pControlledRightFootAngle, 0, 0);
+        if (!sprinting)
+        {
+            leftFootAngle.transform.eulerAngles = new Vector3(pControlledLeftFootAngle - leftFootBaseAngle, this.transform.eulerAngles.y + 180, 0);
+            rightFootAngle.transform.eulerAngles = new Vector3(pControlledRightFootAngle - rightFootBaseAngle, this.transform.eulerAngles.y + 180, 0);
+        }
 
         spine2.transform.Rotate(this.transform.right * (-AimY / 2) * spine2Multiplier, Space.World);
         spine3.transform.Rotate(this.transform.right * (-AimY / 2), Space.World);
@@ -378,30 +383,44 @@ public class Human : GameCharacter
             RaycastHit rightFootHit;
             RaycastHit rightToeHit;
             Vector3 rightFootTransformCastPosition = new Vector3(rightFootTarg.transform.position.x, this.transform.position.y + feetIKCastHeight, rightFootTarg.transform.position.z);
-            Vector3 rightToeTransformCastPosition = rightFootTransformCastPosition + (rightFootTargBase.transform.forward * toeIK_dist);
+            Vector3 rightToeTransformCastPosition = rightFootTransformCastPosition + (rightFootAngle.transform.up * toeIK_dist);
+
             Debug.DrawRay(rightFootTransformCastPosition, Vector3.down * 1.5f, Color.red, 0.01f);
             if (Physics.SphereCast(rightFootTransformCastPosition, feetCastRadius, Vector3.down, out rightFootHit, 1.5f, hitboxLayer))
             {
                 rightFootCastDistance = Mathf.Clamp(rightFootHit.distance - feetIKOffset + feetCastRadius, -feetIK_max, feetIK_max);
             }
             if (Physics.SphereCast(rightToeTransformCastPosition, feetCastRadius, Vector3.down, out rightToeHit, 1.5f, hitboxLayer))
+            {         
+                rightToeCastDistance = rightToeHit.distance - feetIKOffset + feetCastRadius;
+            } 
+            else
             {
-                rightToeCastDistance = Mathf.Clamp(rightToeHit.distance - feetIKOffset + feetCastRadius, -feetIK_max, feetIK_max);
+                rightToeCastDistance = rightFootCastDistance;
             }
+            Debug.DrawRay(rightToeTransformCastPosition, Vector3.down * 1.5f, Color.blue, 0.01f);
 
             RaycastHit leftFootHit;
             RaycastHit leftToeHit;
             Vector3 leftFootTransformCastPosition = new Vector3(leftFootTarg.transform.position.x, this.transform.position.y + feetIKCastHeight, leftFootTarg.transform.position.z);
-            Vector3 leftToeTransformCastPosition = leftFootTransformCastPosition + (leftFootTargBase.transform.forward * toeIK_dist);
+            Vector3 leftToeTransformCastPosition = leftFootTransformCastPosition + (leftFootAngle.transform.up * toeIK_dist);
+
             Debug.DrawRay(leftFootTransformCastPosition, Vector3.down * 1.5f, Color.red, 0.01f);
             if (Physics.SphereCast(leftFootTransformCastPosition, feetCastRadius, Vector3.down, out leftFootHit, 1.5f, hitboxLayer))
             {
                 leftFootCastDistance = Mathf.Clamp(leftFootHit.distance - feetIKOffset + feetCastRadius, -feetIK_max, feetIK_max);
             }
+            
             if (Physics.SphereCast(leftToeTransformCastPosition, feetCastRadius, Vector3.down, out leftToeHit, 1.5f, hitboxLayer))
             {
-                leftToeCastDistance = Mathf.Clamp(rightToeHit.distance - feetIKOffset + feetCastRadius, -feetIK_max, feetIK_max);
+                leftToeCastDistance = leftToeHit.distance - feetIKOffset + feetCastRadius;
+            } 
+            else
+            {
+                leftToeCastDistance = leftFootCastDistance;
             }
+            Debug.DrawRay(leftToeTransformCastPosition, Vector3.down * 1.5f, Color.blue, 0.01f);
+
         }
     }
     
@@ -424,13 +443,16 @@ public class Human : GameCharacter
      */
     public void UpdatePControlIK()
     {
-        float targLeftFootAngle = Mathf.Atan2(leftFootCastDistance - leftToeCastDistance, toeIK_dist);
-        float targRightFootAngle = Mathf.Atan2(rightFootCastDistance - rightToeCastDistance, toeIK_dist);
+        float leftFootCastDiff = leftFootCastDistance - leftToeCastDistance;
+        float rightFootCastDiff = rightFootCastDistance - rightToeCastDistance;
+
+        float targLeftFootAngle = Mathf.Atan2(leftFootCastDiff * slopeAngleMultiplier, toeIK_dist) * Mathf.Rad2Deg;
+        float targRightFootAngle = Mathf.Atan2(rightFootCastDiff * slopeAngleMultiplier, toeIK_dist) * Mathf.Rad2Deg;
         pControlledLeftFootPos += (leftFootCastDistance - pControlledLeftFootPos) * feetIK_kP;
         pControlledRightFootPos += (rightFootCastDistance - pControlledRightFootPos) * feetIK_kP;
 
-        pControlledLeftFootAngle = Mathf.LerpAngle(targLeftFootAngle, pControlledLeftFootAngle, feetIK_kP);
-        pControlledRightFootAngle = Mathf.LerpAngle(targRightFootAngle, pControlledRightFootAngle, feetIK_kP);
+        pControlledLeftFootAngle = Mathf.LerpAngle(pControlledLeftFootAngle, targLeftFootAngle, feetIK_kP);
+        pControlledRightFootAngle = Mathf.LerpAngle(pControlledRightFootAngle, targRightFootAngle, feetIK_kP);
     }
 
     /*
