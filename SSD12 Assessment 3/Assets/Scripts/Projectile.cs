@@ -84,7 +84,7 @@ public class Projectile : MonoBehaviour
     private void UpdateProjectile()
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, velocity.magnitude, layerMask))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, velocity.magnitude * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant, layerMask))
         {
             print("hit hitbox " + hit.transform.name + " " + hit.transform.gameObject.layer);
             if (hit.transform.gameObject.layer == 7) // check if hitbox layer
