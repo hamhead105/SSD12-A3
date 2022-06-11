@@ -76,8 +76,17 @@ public class FlyingEnemy : Enemy
     public void Attack()
     {
         Player player = FindObjectOfType<Player>();
-        if (readyToFire) Shoot();
-        SmoothLookAt(player.transform.position + new Vector3(0, aimYOffset, 0));
+        Vector3 aimPoint = player.transform.position + new Vector3(0, aimYOffset, 0);
+        SmoothLookAt(aimPoint);
+        RaycastHit hit;
+        if (Physics.Raycast(barrelPoints[0].transform.position, transform.forward, out hit))
+        {
+            print("hit " + hit.transform.name);
+            if (hit.transform.GetComponent<Player>() || hit.transform.GetComponent<Hitbox>())
+            {
+                if (readyToFire) Shoot();
+            }
+        }
     }
 
     /*

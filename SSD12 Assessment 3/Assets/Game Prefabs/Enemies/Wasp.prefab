@@ -14701,8 +14701,8 @@ MonoBehaviour:
   - {fileID: 6411020081171988023}
   damage: 12
   projectileSpeed: 0.6
-  projectileSpread: 2
-  attackRange: 30
+  projectileSpread: 4
+  attackRange: 100
   aimYOffset: 1
   muzzleEffect: {fileID: 0}
   attackCooldown: 0.5

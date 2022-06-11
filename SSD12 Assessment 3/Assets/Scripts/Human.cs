@@ -25,7 +25,6 @@ public class Human : GameCharacter
         spine1,
         spine2,
         spine3,
-        neck,
         itemAlignment,
         leftFootTargBase,
         rightFootTargBase,
@@ -33,6 +32,9 @@ public class Human : GameCharacter
         rightFootTarg,
         leftFootAngle,
         rightFootAngle;
+
+    [SerializeField]
+    private GameObject neck;
 
     [SerializeField]
     protected GameObject[]

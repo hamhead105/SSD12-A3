@@ -441,7 +441,7 @@ public class Player : Human
     private void CastInteractionRay(bool isInteract)
     {
         RaycastHit hit;
-        if (Physics.Raycast(neck.transform.position, neck.transform.forward, out hit))
+        if (Physics.Raycast(Neck.transform.position, Neck.transform.forward, out hit))
         {
             if (hit.distance <= interactionDistance)
             {
