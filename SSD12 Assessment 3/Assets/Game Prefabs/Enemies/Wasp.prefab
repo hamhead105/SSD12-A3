@@ -14694,6 +14694,7 @@ MonoBehaviour:
   maxHealth: 100
   deathInstantiations:
   - {fileID: 1434159736348804786, guid: 515a245ab52dbfd4cbec5bba440f8acd, type: 3}
+  - {fileID: 8234285422723896156, guid: a86283bcc741f014781d40042d4790ed, type: 3}
   speed: 0.003
   pointsAwarded: 50
   projectile: {fileID: 1838302218813320307, guid: 9b885916de3f0fb489585e642cfe184f, type: 3}

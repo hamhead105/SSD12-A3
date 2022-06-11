@@ -337,10 +337,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 6411020079576597006, guid: c618ca58e9d3cca44aa7629f524b29e5, type: 3}
-  minSpawnAmount: 0
+  minSpawnAmount: 1
   maxSpawnAmount: 1
   spawnRange: 10
-  maxDistanceToPlayer: 130
+  maxDistanceToPlayer: 50
 --- !u!23 &161282395
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2529,10 +2529,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 6411020079576597006, guid: 34fd7c3e4b1612f4681ba270861b8f8a, type: 3}
-  minSpawnAmount: 0
-  maxSpawnAmount: 1
+  minSpawnAmount: 1
+  maxSpawnAmount: 2
   spawnRange: 10
-  maxDistanceToPlayer: 70
+  maxDistanceToPlayer: 50
 --- !u!23 &754818313
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3233,10 +3233,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 6411020079576597006, guid: c618ca58e9d3cca44aa7629f524b29e5, type: 3}
-  minSpawnAmount: 0
+  minSpawnAmount: 1
   maxSpawnAmount: 1
   spawnRange: 10
-  maxDistanceToPlayer: 130
+  maxDistanceToPlayer: 50
 --- !u!23 &986259076
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3489,10 +3489,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 6411020079576597006, guid: 34fd7c3e4b1612f4681ba270861b8f8a, type: 3}
-  minSpawnAmount: 0
-  maxSpawnAmount: 1
+  minSpawnAmount: 1
+  maxSpawnAmount: 2
   spawnRange: 10
-  maxDistanceToPlayer: 70
+  maxDistanceToPlayer: 50
 --- !u!23 &1025703535
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6940,10 +6940,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 6411020079576597006, guid: c618ca58e9d3cca44aa7629f524b29e5, type: 3}
-  minSpawnAmount: 0
+  minSpawnAmount: 1
   maxSpawnAmount: 1
   spawnRange: 10
-  maxDistanceToPlayer: 60
+  maxDistanceToPlayer: 50
 --- !u!23 &1907361074
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7196,10 +7196,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 6411020079576597006, guid: 34fd7c3e4b1612f4681ba270861b8f8a, type: 3}
-  minSpawnAmount: 0
-  maxSpawnAmount: 1
+  minSpawnAmount: 1
+  maxSpawnAmount: 2
   spawnRange: 10
-  maxDistanceToPlayer: 70
+  maxDistanceToPlayer: 50
 --- !u!23 &1932154741
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7295,10 +7295,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 6411020079576597006, guid: 34fd7c3e4b1612f4681ba270861b8f8a, type: 3}
-  minSpawnAmount: 0
-  maxSpawnAmount: 1
+  minSpawnAmount: 1
+  maxSpawnAmount: 2
   spawnRange: 10
-  maxDistanceToPlayer: 40
+  maxDistanceToPlayer: 50
 --- !u!23 &1950556455
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7438,10 +7438,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 6411020079576597006, guid: 34fd7c3e4b1612f4681ba270861b8f8a, type: 3}
-  minSpawnAmount: 0
-  maxSpawnAmount: 1
+  minSpawnAmount: 1
+  maxSpawnAmount: 2
   spawnRange: 10
-  maxDistanceToPlayer: 70
+  maxDistanceToPlayer: 50
 --- !u!23 &1951069077
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7537,10 +7537,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 6411020079576597006, guid: 34fd7c3e4b1612f4681ba270861b8f8a, type: 3}
-  minSpawnAmount: 0
-  maxSpawnAmount: 1
+  minSpawnAmount: 1
+  maxSpawnAmount: 2
   spawnRange: 10
-  maxDistanceToPlayer: 70
+  maxDistanceToPlayer: 50
 --- !u!23 &1993191578
 MeshRenderer:
   m_ObjectHideFlags: 0
