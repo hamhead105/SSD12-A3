@@ -6776,7 +6776,7 @@ MonoBehaviour:
   sprintSpeedMultiplier: 1.4
   groundFriction: 1.2
   groundMovingFriction: 1.1
-  airFriction: 1.1
+  airFriction: 1.025
   gravity: 0.011
   jumpStrength: 0.26
   pivotLimit: 30

@@ -59,7 +59,8 @@ public class Human : GameCharacter
         pivot_kP = 0.15f,
         pivotTransition_kP = 0.05f,
         maxPivotAngle = 50,
-        pivotMinimumForReset = 3;
+        pivotMinimumForReset = 3,
+        playerAirSpeedMultiplier = 0.4f;
 
     private int
         hitboxLayer = 7;
@@ -132,6 +133,8 @@ public class Human : GameCharacter
     [SerializeField] private float pControlledRightFootAngle = 0;
     [SerializeField] private float pControlledLeftFootAngle = 0;
 
+    protected Vector3 queueApplyVelocity; // directly altering player velocity can have unexpected results
+
     public float AimY { get => aimY; set => aimY = value; }
     public GameObject ItemAlignment { get => itemAlignment; set => itemAlignment = value; }
     public bool AimingDownSights { get => aimingDownSights; set => aimingDownSights = value; }
@@ -194,10 +197,16 @@ public class Human : GameCharacter
         if (Sprinting) movementSpeed = baseMovementSpeed * sprintSpeedMultiplier;
         else movementSpeed = baseMovementSpeed;
         float relativeforwardVelocity = ForwardInput * movementSpeed;
-        float relativeRightVelocity =RightInput * movementSpeed;
-        if (charController.isGrounded)
+        float relativeRightVelocity = RightInput * movementSpeed;
+        if (queueApplyVelocity != Vector3.zero)
         {
+            jumpQueued = false;
+            Velocity = queueApplyVelocity;
+            queueApplyVelocity = Vector3.zero;
 
+        }
+        else if (charController.isGrounded)
+        {
             Velocity += (spine1.transform.forward * ForwardInput * movementSpeed) + (spine1.transform.right * RightInput * movementSpeed); // use trig to offset pivot angle
 
             if (Walking || Sprinting) Velocity = new Vector3(Velocity.x / groundMovingFriction, -FloorGravity, Velocity.z / groundMovingFriction);
@@ -213,7 +222,7 @@ public class Human : GameCharacter
         }
         else
         {
-            Velocity += (spine1.transform.forward * ForwardInput * movementSpeed) + (spine1.transform.right * RightInput * movementSpeed); // use trig to offset pivot angle
+            Velocity += ((spine1.transform.forward * ForwardInput * movementSpeed) + (spine1.transform.right * RightInput * movementSpeed)) * playerAirSpeedMultiplier; // use trig to offset pivot angle
             Velocity = new Vector3(Velocity.x / airFriction, Velocity.y - Gravity, Velocity.z / airFriction);
         }
         JumpQueued = false;

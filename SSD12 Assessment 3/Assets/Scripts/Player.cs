@@ -527,7 +527,7 @@ public class Player : Human
     }
 
     /*
-     * Called when the character controller collides with other colliders
+     * Called when the character controller collides with other colliders. Check for special intersections 
      * 
      * @param other - the collider of that is intersecting
      */
@@ -549,6 +549,10 @@ public class Player : Human
         {
             Heal(healCubeHealAmount);
             other.transform.GetComponent<Collectable>().Collect();
+        }
+        else if (other.transform.GetComponent<BouncePad>())
+        {
+            queueApplyVelocity = other.transform.GetComponent<BouncePad>().GetBounceVector();
         }
     }
 
