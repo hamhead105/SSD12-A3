@@ -14705,7 +14705,8 @@ MonoBehaviour:
   projectileSpread: 4
   attackRange: 100
   aimYOffset: 1
-  muzzleEffect: {fileID: 0}
+  fireEffects:
+  - {fileID: 5749583648063246594, guid: bd03f40acd540f141be198da7e777201, type: 3}
   attackCooldown: 0.5
   readyToFire: 0
 --- !u!143 &6411020079576597005

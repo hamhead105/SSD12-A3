@@ -21,7 +21,7 @@ public class FlyingEnemy : Enemy
     [SerializeField] private float attackRange;
     [SerializeField] private float aimYOffset;
 
-    [SerializeField] private GameObject muzzleEffect;
+    [SerializeField] private GameObject[] fireEffects; // muzzleflashes, sounds etc
 
     [SerializeField] private float attackCooldown;
     [SerializeField] private bool readyToFire;
@@ -122,6 +122,11 @@ public class FlyingEnemy : Enemy
                 newProjectile.transform.Rotate(Random.Range(-projectileSpread / 2, projectileSpread / 2), Random.Range(-projectileSpread / 2, projectileSpread / 2), 0);
                 newProjectile.SetProjectileStats(projectileSpeed, damage, false, 30);
                 newProjectile.Init();
+
+                foreach (GameObject fireEffect in fireEffects)
+                {
+                     Instantiate(fireEffect, barrelPoint.position, barrelPoint.transform.rotation);
+                }
                 Invoke("Rechamber", attackCooldown);
                 readyToFire = false;
             }
