@@ -20,24 +20,29 @@ public class SettingsManager : MonoBehaviour
 
     Resolution[] resolutions;
     [SerializeField] private Dropdown resolutionDropdown;
+    [SerializeField] private Dropdown graphicsDropdown;
     [SerializeField] private Toggle fullscreenToggle;
     [SerializeField] private Toggle proModeToggle;
 
     private static float sensitivity;
     private static float volume;
     private static int resolutionIndex;
+    private static int graphicsSetting;
     private static int fullScreen;
     private static int proMode;
 
     private static float defaultSensitivity = 0.5f;
     private static float defaultVolume = 1;
+    private static int defaultGraphicsSetting = 2;
+
+    public static int GraphicsSetting { get => graphicsSetting; set => graphicsSetting = value; }
 
     // Called once when the object is instantiated
     private void Start()
     {
         InitializeDirectoryPaths();
         if (!ReadSettings()) LoadDefaultSettings();
-        InitializeResolutionSettings();
+        InitializeDisplaySettings();
         UpdateSettings();
         UpdateProMode();
     }
@@ -103,6 +108,7 @@ public class SettingsManager : MonoBehaviour
         sensitivity = defaultSensitivity;
         volume = defaultVolume;
         proMode = 0;
+        graphicsSetting = defaultGraphicsSetting;
         DeleteSettings();
         SaveSettings();
     }
@@ -110,9 +116,9 @@ public class SettingsManager : MonoBehaviour
     /*
      * Create possible resolutions or screen sizes.
      */
-    public void InitializeResolutionSettings()
+    public void InitializeDisplaySettings()
     {
-        if (!resolutionDropdown) return;
+        if (!resolutionDropdown || !graphicsDropdown) return;
         resolutionDropdown.ClearOptions();
         resolutions = Screen.resolutions;
         List<string> options = new List<string>();
@@ -133,6 +139,7 @@ public class SettingsManager : MonoBehaviour
         {
             fullscreenToggle.isOn = false;
         }
+        graphicsDropdown.value = graphicsSetting;
     }
 
     /*
@@ -165,6 +172,15 @@ public class SettingsManager : MonoBehaviour
     {
         volumeText.text = volumeSlider.value.ToString();
         foreach (Player player in FindObjectsOfType<Player>()) { player.UpdateVolume(volumeSlider.value); }
+    }
+
+    /*
+     * Called to change the graphics setting value
+     */
+    public void UpdateGraphicsSetting()
+    {
+        GraphicsSetting = graphicsDropdown.value;
+        QualitySettings.SetQualityLevel(graphicsSetting);
     }
 
     /*
@@ -209,6 +225,7 @@ public class SettingsManager : MonoBehaviour
         print("applied settings");
         resolutionIndex = resolutionDropdown.value;
         Screen.SetResolution(resolutions[resolutionIndex].width, resolutions[resolutionIndex].height, fullScreenBool);   // return false when fullscreen = 0 and true for fullscreen = 1
+        UpdateGraphicsSetting();
         SaveSettings();
     }
 
@@ -259,13 +276,14 @@ public class SettingsManager : MonoBehaviour
         string settings = ReadFile();
         string[] settingsArray = settings.Split(' ');
 
-        if (settingsArray.Length == 5)
+        if (settingsArray.Length == 6)
         {
             sensitivity = (float) Convert.ToDouble(settingsArray[0]);
             volume = (float) Convert.ToDouble(settingsArray[1]);
             resolutionIndex = Convert.ToInt32(settingsArray[2]);
-            fullScreen = Convert.ToInt32(settingsArray[3]);
-            proMode = Convert.ToInt32(settingsArray[4]);
+            GraphicsSetting = Convert.ToInt32(settingsArray[3]);
+            fullScreen = Convert.ToInt32(settingsArray[4]);
+            proMode = Convert.ToInt32(settingsArray[5]);
             return true;
         } 
         else
@@ -280,7 +298,7 @@ public class SettingsManager : MonoBehaviour
      */
     public string GenerateSettings()
     {
-        return sensitivity + " " + volume + " " + resolutionIndex + " " + fullScreen + " " + proMode;
+        return sensitivity + " " + volume + " " + resolutionIndex + " " + GraphicsSetting + " " + fullScreen + " " + proMode;
     }
 
    /*
