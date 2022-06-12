@@ -109,6 +109,8 @@ public class SettingsManager : MonoBehaviour
         volume = defaultVolume;
         proMode = 0;
         graphicsSetting = defaultGraphicsSetting;
+        resolutionIndex = Screen.resolutions.Length;
+        fullScreen = 1;
         DeleteSettings();
         SaveSettings();
     }
