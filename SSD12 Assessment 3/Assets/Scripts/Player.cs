@@ -103,6 +103,7 @@ public class Player : Human
             if (InputEnabled) PlayerMouseAxisInputs();
             ImplementAimRecoil();
         }
+        if (FindObjectOfType<PostProcessingManager>()) FindObjectOfType<PostProcessingManager>().IsDead = Health <= 0;
         UpdateCamera();
         PlayerMiscInputs();
     }
@@ -305,6 +306,19 @@ public class Player : Human
             PlayerCamera.ControlRot += new Vector3(-yMovement, xMovement);
             PlayerCamera.FreeLook = true;
         }
+    }
+
+    /*
+     * Deal damage to the player apply any screen effects such as shake from the player being hit
+     */
+    public override void DealDamage(float amount)
+    {
+        base.DealDamage(amount);
+        if (FindObjectOfType<PostProcessingManager>())
+        {
+            FindObjectOfType<PostProcessingManager>().Hit(amount);
+        }
+        playerCamera.AddCameraShakeVelocity(new Vector3(Random.Range(-amount, amount) * damageCameraShakeMultiplier, Random.Range(0, amount) * -damageCameraShakeMultiplier, 0));
     }
 
     /*

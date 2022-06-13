@@ -140,8 +140,8 @@ public class PlayerCamera : MonoBehaviour
     private void FixedUpdate()
     {
         UpdateFOV();
-        UpdateCameraShake();
         UpdateCameraSway();
+        UpdateCameraShake();
         UpdateAdditionalTransforms();
     }
 

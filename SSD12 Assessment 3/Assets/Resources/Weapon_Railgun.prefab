@@ -837,7 +837,7 @@ MonoBehaviour:
   avatar: {fileID: 9000000, guid: e7463bdf4ce1168458f8e8ed4e1fe9b7, type: 3}
   itemSwingAmount: 0.1
   itemRecovery_kP: 0.25
-  useCameraShake: 0.4
+  useCameraShake: 0.7
   itemSwayMultiplier: 0.15
   user: {fileID: 0}
   recoilRecovery_kP: 0.2

@@ -87,7 +87,6 @@ public class GameManagement : MonoBehaviour
      */
     void UpdateFrameCap()
     {
-        /*
         if (Input.GetKeyDown(KeyCode.P))
         {
             if (Application.targetFrameRate == 120)
@@ -99,7 +98,6 @@ public class GameManagement : MonoBehaviour
                 Application.targetFrameRate = 120;
             }
         }
-        */
     }
 
     /*

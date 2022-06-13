@@ -35,7 +35,7 @@ public abstract class GameCharacter : MonoBehaviour
     /*
      * Deal damage to this character
      */
-    public void DealDamage(float amount)
+    public virtual void DealDamage(float amount)
     {
         health -= amount;
         if (health <= 0)

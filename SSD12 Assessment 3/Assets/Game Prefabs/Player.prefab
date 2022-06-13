@@ -6783,7 +6783,6 @@ MonoBehaviour:
   spine1: {fileID: 1151966394780084059}
   spine2: {fileID: 7608093485888099065}
   spine3: {fileID: 110208148107267637}
-  neck: {fileID: 2246215118528974308}
   itemAlignment: {fileID: 1408305130786922356}
   leftFootTargBase: {fileID: 4583359845861753668}
   rightFootTargBase: {fileID: 4456219415828381609}
@@ -6791,6 +6790,7 @@ MonoBehaviour:
   rightFootTarg: {fileID: 1408305131722890748}
   leftFootAngle: {fileID: 7217194874478872394}
   rightFootAngle: {fileID: 631196668938068688}
+  neck: {fileID: 2246215118528974308}
   ragdollParts:
   - {fileID: 1151966394780084059}
   - {fileID: 7608093485888099065}
@@ -6857,7 +6857,7 @@ MonoBehaviour:
   pControlledLeftFootPos: 0
   pControlledRightFootAngle: 0
   pControlledLeftFootAngle: 0
-  damageCameraShakeMultiplier: 0.1
+  damageCameraShakeMultiplier: 0.4
   baseSensitivity: 1.6
   playerCamera: {fileID: 4031869354936019792}
   playerAuthority: 0
