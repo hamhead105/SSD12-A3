@@ -917,7 +917,7 @@ MonoBehaviour:
   reloadSound: {fileID: 6167950457709891737, guid: db5b18d4a79b78f42a8f6d28d2ee7436, type: 3}
   sightAttachmentParent: {fileID: 4314077446357949985}
   sightAttachment: 0
-  adsPosition: {x: 0, y: 0.025, z: 0}
+  adsPosition: {x: 0.00078, y: 0.0212, z: 0}
   adsRotation: {x: 3.5, y: 11.68, z: 0.25}
   rotationOffsets: {x: -90, y: 15.4, z: 0}
   ads_kP: 0.2

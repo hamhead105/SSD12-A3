@@ -300,6 +300,7 @@ GameObject:
   - component: {fileID: 7974006523598507118}
   - component: {fileID: 7974006523598507116}
   - component: {fileID: -5998853310460719730}
+  - component: {fileID: 8736524249123936488}
   m_Layer: 5
   m_Name: Reticle
   m_TagString: Untagged
@@ -316,7 +317,7 @@ RectTransform:
   m_GameObject: {fileID: 7974006523598507117}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.00008, y: 0.00008, z: 0.00008}
+  m_LocalScale: {x: 0.0001, y: 0.0001, z: 0.0001}
   m_Children:
   - {fileID: 7974006523881387635}
   - {fileID: 7974006521930696417}
@@ -382,7 +383,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maintainSize: 1
+  disableForPromode: 0
   objectScale: 1
+--- !u!114 &8736524249123936488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7974006523598507117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46b58077813cf0741abffa54dd840b6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reticleParts:
+  - {fileID: 7974006523881387632}
+  - {fileID: 7974006521930696422}
+  - {fileID: 7974006523255483105}
+  - {fileID: 7974006521929326095}
+  - {fileID: 7754145482259204958}
 --- !u!1 &7974006523881387632
 GameObject:
   m_ObjectHideFlags: 0

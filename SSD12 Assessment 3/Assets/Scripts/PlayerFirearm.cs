@@ -233,13 +233,18 @@ public class PlayerFirearm : PlayerItem
     /*
      * Update hitmarker transforms and get their components.
      */
-    private void UpdateHitmarkers()
+    private void UpdateHitmarkersAndReticle()
     {
-        RectTransform rTransformBase = baseHitmarker.GetComponent<RectTransform>(); // base hitmarker
-        rTransformBase.eulerAngles = new Vector3(rTransformBase.eulerAngles.x, rTransformBase.eulerAngles.y, 0);
+        if (User is Player) {
+            RectTransform rTransformBase = baseHitmarker.GetComponent<RectTransform>(); // base hitmarker
+            rTransformBase.eulerAngles = new Vector3(rTransformBase.eulerAngles.x, rTransformBase.eulerAngles.y, 0);
 
-        RectTransform rTransformKill = killHitmarker.GetComponent<RectTransform>(); // kill hitmarker
-        rTransformKill.eulerAngles = new Vector3(rTransformKill.eulerAngles.x, rTransformKill.eulerAngles.y, 0);
+            RectTransform rTransformKill = killHitmarker.GetComponent<RectTransform>(); // kill hitmarker
+            rTransformKill.eulerAngles = new Vector3(rTransformKill.eulerAngles.x, rTransformKill.eulerAngles.y, 0);
+
+            if (aimedDownSights && (User as Player).PlayerCamera.FirstPersonMode) reticle.GetComponent<Reticle>().HideVisiblity();
+            else reticle.GetComponent<Reticle>().EnableVisiblity();
+        }
     }
 
     /*
@@ -303,7 +308,7 @@ public class PlayerFirearm : PlayerItem
             this.transform.localEulerAngles += ConvertVectorDirections(RotationOffset);
         }
 
-        UpdateHitmarkers();
+        UpdateHitmarkersAndReticle();
         UpdateRecoil();
     }
 
