@@ -20,17 +20,22 @@ public class FlyingEnemy : Enemy
     [SerializeField] private float projectileSpread;
     [SerializeField] private float attackRange;
     [SerializeField] private float aimYOffset;
+    [SerializeField] private float minDistance;
 
     [SerializeField] private GameObject[] fireEffects; // muzzleflashes, sounds etc
 
     [SerializeField] private float attackCooldown;
     [SerializeField] private bool readyToFire;
+
+    [SerializeField] private float maxStrafeSpeed;
+    private float strafeSpeed;
     
     // Start is called before the first frame update
     void Start()
     {
         charController = GetComponent<CharacterController>();
         readyToFire = true;
+        strafeSpeed = Random.Range(-maxStrafeSpeed, maxStrafeSpeed);
     }
 
     // Update is called once per frame
@@ -43,6 +48,7 @@ public class FlyingEnemy : Enemy
     // Called at a fixed rate
     public void FixedUpdate()
     {
+        ApproachPlayer();
         if (Vector3.Distance(this.transform.position, FindObjectOfType<Player>().transform.position) <= attackRange)
         {
             Attack();
@@ -68,6 +74,23 @@ public class FlyingEnemy : Enemy
     {
         velocity += (Vector3.zero - velocity) * flightZero_kP;
         charController.Move(velocity);
+    }
+    
+    /*
+     * Move relative to the player's position. Will move towards the player and strafe to make it difficult to hit the enemy
+     */
+    public void ApproachPlayer()
+    {
+        if (Vector3.Distance(this.transform.position, FindObjectOfType<Player>().transform.position) > minDistance)
+        {
+            velocity += transform.forward * speed;
+        } 
+        else
+        {
+            velocity += (Vector3.zero - velocity) * speed;
+        }
+        velocity += transform.right * strafeSpeed;
+        velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
     }
 
     /*

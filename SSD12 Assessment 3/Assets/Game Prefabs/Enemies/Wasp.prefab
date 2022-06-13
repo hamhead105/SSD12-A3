@@ -14695,7 +14695,8 @@ MonoBehaviour:
   deathInstantiations:
   - {fileID: 1434159736348804786, guid: 515a245ab52dbfd4cbec5bba440f8acd, type: 3}
   - {fileID: 8234285422723896156, guid: a86283bcc741f014781d40042d4790ed, type: 3}
-  speed: 0.003
+  speed: 0.04
+  maxSpeed: 0.12
   pointsAwarded: 50
   projectile: {fileID: 1838302218813320307, guid: 9b885916de3f0fb489585e642cfe184f, type: 3}
   barrelPoints:
@@ -14705,10 +14706,12 @@ MonoBehaviour:
   projectileSpread: 4
   attackRange: 100
   aimYOffset: 1
+  minDistance: 25
   fireEffects:
   - {fileID: 5749583648063246594, guid: bd03f40acd540f141be198da7e777201, type: 3}
   attackCooldown: 0.5
   readyToFire: 0
+  maxStrafeSpeed: 0.015
 --- !u!143 &6411020079576597005
 CharacterController:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class Enemy : GameCharacter
 {
     [SerializeField] protected GameObject[] deathInstantiations;
     [SerializeField] protected float speed;
+    [SerializeField] protected float maxSpeed;
     [SerializeField] protected int pointsAwarded;
 
     /* 
