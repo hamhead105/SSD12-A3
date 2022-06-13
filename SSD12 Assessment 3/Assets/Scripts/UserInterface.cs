@@ -25,6 +25,7 @@ public class UserInterface : MonoBehaviour
     [SerializeField] private Text eventText;
     [SerializeField] private RawImage eventDisplay;
     [SerializeField] private GameObject[] helpUIElements;
+    [SerializeField] private GameObject reloadIndicator;
 
     private bool proMode; // disables unessecary UI elements
 
@@ -39,6 +40,7 @@ public class UserInterface : MonoBehaviour
     {
         UpdateItemShow();
         UpdateAmmoShow();
+        UpdateReloadIndicator();
     }
 
     /*
@@ -189,5 +191,22 @@ public class UserInterface : MonoBehaviour
     public void CallLeaveToMenu()
     {
         FindObjectOfType<MenuManager>().LoadScene("Main Menu");
+    }
+
+    /*
+     * If the player is out of ammunition and pro mode is not enabled, a piece of text will appear telling them to
+     * reload their weapon.
+     */
+    public void UpdateReloadIndicator()
+    {
+        bool showReloadIndicator = false;
+        if (FindObjectOfType<Player>())
+        {
+            if (player.Item is PlayerFirearm)
+            {
+                if ((player.Item as PlayerFirearm).Ammo == 0 && !proMode) showReloadIndicator = true;
+            }
+        }
+        reloadIndicator.SetActive(showReloadIndicator);
     }
 }
