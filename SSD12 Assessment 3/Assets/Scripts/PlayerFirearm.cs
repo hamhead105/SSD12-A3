@@ -14,9 +14,13 @@ public class PlayerFirearm : PlayerItem
         aimSwayMultiplier = 0.4f,
         projectileLifeTime = 12,
         lookAtPointTransition_kP = 0.1f,
-        lookAtPointShift_kP = 0.1f;
+        lookAtPointShift_kP = 0.1f,
+        maxLookPointRotation = 60;
 
-    private static Vector3 maxItemRot = new Vector3(80, 80, 0);
+    private static Vector3
+        maxItemRot = new Vector3(80, 80, 0),
+        baseLookRot = new Vector3(72f, 270f, 269f);
+
 
     [SerializeField] private float recoilRecovery_kP;
     [SerializeField]
@@ -254,7 +258,7 @@ public class PlayerFirearm : PlayerItem
     public override void UpdateTransforms()
     {
         this.transform.LookAt(lookPoint);
-        lookPointTargetRotation = transform.localEulerAngles;
+        lookPointTargetRotation = Vector3.ClampMagnitude(transform.localEulerAngles - baseLookRot, maxLookPointRotation) + baseLookRot; // to stop the gun from looking completely up which breaks some animations
         this.transform.localEulerAngles = new Vector3(0, 0, 0);
 
         if (aimedDownSights)
