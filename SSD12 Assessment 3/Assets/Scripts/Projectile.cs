@@ -7,6 +7,7 @@ using UnityEngine;
  */
 public class Projectile : MonoBehaviour
 {
+    protected int layerMask = ~(1 << 9);
     private float baseSpeed;
     private float baseDamage;
     private float gravity;
@@ -72,7 +73,7 @@ public class Projectile : MonoBehaviour
     /*
      * Called at a fixed rate
      */
-    void FixedUpdate()
+    void Update()
     {
         UpdateProjectile();
     }
@@ -83,8 +84,9 @@ public class Projectile : MonoBehaviour
     private void UpdateProjectile()
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, velocity.magnitude))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, velocity.magnitude * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant, layerMask))
         {
+            print("hit hitbox " + hit.transform.name + " " + hit.transform.gameObject.layer);
             if (hit.transform.gameObject.layer == 7) // check if hitbox layer
             {
                 float damage = baseDamage;
@@ -103,8 +105,8 @@ public class Projectile : MonoBehaviour
             if (queueDestroy) DestroyProjectile();
         }
         Vector3 oldPosition = this.transform.position;
-        velocity += new Vector3(0, -gravity, 0);
-        this.transform.position += velocity;
+        velocity += new Vector3(0, -gravity, 0) * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant;
+        this.transform.position += velocity * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant;
     }
 
     /*

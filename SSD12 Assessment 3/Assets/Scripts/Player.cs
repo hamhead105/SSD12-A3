@@ -24,7 +24,9 @@ public class Player : Human
         itemSwayMagnitude_idle = 2f,
         itemSwayMagnitude_walking = 2f,
         itemSwayMagnitude_sprinting = 5f,
-        itemSwayMagnitude_focused = 0.04f;
+        itemSwayMagnitude_focused = 0.04f,
+
+        healCubeHealAmount = 50;
 
     private float interactionDistance = 2f;
 
@@ -60,7 +62,6 @@ public class Player : Human
     public override void Start()
     {
         Init();
-        DontDestroyOnLoad(gameObject);
     }
 
     /*
@@ -68,8 +69,10 @@ public class Player : Human
      */
     public override void Init()
     {
+        deathFlag = false;
         LookPoint = PlayerCamera.LookPoint.transform;
         InputEnabled = true;
+        GetComponent<CharacterController>().detectCollisions = true;
         playerSensitivity = PlayerPrefs.GetFloat("Sensitivity", 0.5f);
         base.Init();
         LoadItem("Railgun", true);
@@ -83,7 +86,6 @@ public class Player : Human
     public void Reset()
     {
         foreach (GameObject mesh in Meshes) mesh.SetActive(true);
-        GetComponent<CharacterController>().detectCollisions = true;
         Init();
     }
 
@@ -99,8 +101,9 @@ public class Player : Human
             CheckReloadAnimations();
             if (InputEnabled) RegisterInputs();
             if (InputEnabled) PlayerMouseAxisInputs();
-           
+            ImplementAimRecoil();
         }
+        if (FindObjectOfType<PostProcessingManager>()) FindObjectOfType<PostProcessingManager>().IsDead = Health <= 0;
         UpdateCamera();
         PlayerMiscInputs();
     }
@@ -125,12 +128,12 @@ public class Player : Human
         if (Health > 0)
         {
             UpdateMovement();
-            ImplementAimRecoil();
             UpdatePControlIK();
             UpdateFixedAnimationValues();
             UpdateMoveStateAnimationsValues();
             UpdateSway();
             CastForwardSpaceRay();
+            UpdatePivot();
         }
     }
 
@@ -263,6 +266,7 @@ public class Player : Human
      */
     public override void Death()
     {
+        if (deathFlag) return;
         charController.detectCollisions = false;
         DisableHitboxes();
         GameObject ragdoll = Instantiate(Ragdoll, this.transform.position, transform.rotation);
@@ -277,6 +281,8 @@ public class Player : Human
             else if (mesh.GetComponent<SkinnedMeshRenderer>()) mesh.GetComponent<SkinnedMeshRenderer>().enabled = false;
         }
         LoadItem("Unarmed", true);
+        Invoke("InitGameLoss", 5f);
+        deathFlag = true;
     }
 
     /*
@@ -300,6 +306,19 @@ public class Player : Human
             PlayerCamera.ControlRot += new Vector3(-yMovement, xMovement);
             PlayerCamera.FreeLook = true;
         }
+    }
+
+    /*
+     * Deal damage to the player apply any screen effects such as shake from the player being hit
+     */
+    public override void DealDamage(float amount)
+    {
+        base.DealDamage(amount);
+        if (FindObjectOfType<PostProcessingManager>())
+        {
+            FindObjectOfType<PostProcessingManager>().Hit(amount);
+        }
+        playerCamera.AddCameraShakeVelocity(new Vector3(Random.Range(-amount, amount) * damageCameraShakeMultiplier, Random.Range(0, amount) * -damageCameraShakeMultiplier, 0));
     }
 
     /*
@@ -436,7 +455,7 @@ public class Player : Human
     private void CastInteractionRay(bool isInteract)
     {
         RaycastHit hit;
-        if (Physics.Raycast(PlayerCamera.transform.position, PlayerCamera.transform.forward, out hit))
+        if (Physics.Raycast(Neck.transform.position, Neck.transform.forward, out hit))
         {
             if (hit.distance <= interactionDistance)
             {
@@ -511,7 +530,7 @@ public class Player : Human
     private void CastForwardSpaceRay()
     {
         RaycastHit hit;
-        if (Physics.Raycast(ItemAlignment.transform.position, playerCamera.transform.forward, out hit, 20, 7))
+        if (Physics.Raycast(spine1.transform.position, spine1.transform.forward, out hit, 20, 7))
         {
             if (Item is PlayerFirearm) (Item as PlayerFirearm).SetWeaponDraw(hit.distance);
         }
@@ -519,5 +538,57 @@ public class Player : Human
         {
             if (Item is PlayerFirearm) (Item as PlayerFirearm).SetWeaponDraw(20);
         }
+    }
+
+    /*
+     * Called when the character controller collides with other colliders. Check for special intersections 
+     * 
+     * @param other - the collider of that is intersecting
+     */
+    public void OnControllerColliderHit(ControllerColliderHit other)
+    {
+        if (other.transform.tag == "Teleporter") 
+        {
+            InitGameWin();
+        }
+        else if (other.transform.tag == "PointCube")
+        {
+            other.transform.GetComponent<Collectable>().Collect();
+        }
+        else if (other.transform.GetComponent<GameTrigger>())
+        {
+            other.transform.GetComponent<GameTrigger>().Trigger();
+        }
+        else if (other.transform.tag == "HealCube")
+        {
+            Heal(healCubeHealAmount);
+            other.transform.GetComponent<Collectable>().Collect();
+        }
+        else if (other.transform.GetComponent<BouncePad>())
+        {
+            queueApplyVelocity = other.transform.GetComponent<BouncePad>().GetBounceVector();
+        }
+    }
+
+    /*
+     * Called when the game is to be ended since the player has completed the level
+     */
+    public void InitGameWin()
+    {
+        InputEnabled = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        FindObjectOfType<GameManagement>().EndGame(true);
+    }
+
+    /*
+     * Called when the game is to be ended since the player has completed the level
+     */
+    public void InitGameLoss()
+    {
+        InputEnabled = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        FindObjectOfType<GameManagement>().EndGame(false);
     }
 }

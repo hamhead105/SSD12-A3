@@ -14,10 +14,13 @@ public class Billboard : MonoBehaviour
     private static float baseFOV = 60f; 
 
     [SerializeField] private bool maintainSize;
+    [SerializeField] private bool disableForPromode;
     private Transform cameraTransform;
 
     [SerializeField] private float objectScale = 1.0f;
     private Vector3 initialScale;
+
+    public bool DisableForPromode { get => disableForPromode; set => disableForPromode = value; }
 
     // Start is called before the first frame update
     void Start()

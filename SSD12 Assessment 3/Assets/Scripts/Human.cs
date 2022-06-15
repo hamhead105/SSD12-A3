@@ -21,16 +21,20 @@ public class Human : GameCharacter
 
     // internal parts
     [SerializeField]
-    private GameObject
+    protected GameObject
         spine1,
         spine2,
         spine3,
-        neck,
         itemAlignment,
         leftFootTargBase,
         rightFootTargBase,
         leftFootTarg,
-        rightFootTarg;
+        rightFootTarg,
+        leftFootAngle,
+        rightFootAngle;
+
+    [SerializeField]
+    private GameObject neck;
 
     [SerializeField]
     protected GameObject[]
@@ -44,12 +48,21 @@ public class Human : GameCharacter
         sprintTransition_kP = 0.1f,
         floorGravity = 0.1f,
         feetIKCastHeight = 1f,
-        feetIKOffset = 0.95f,
+        feetIKOffset = 0.98f,
         feetCastRadius = 0.09f,
         feetIK_kP = 0.42f,
         feetIK_max = 0.8f,
+        toeIK_dist = 0.2f,
+        leftFootBaseAngle = 155,
+        rightFootBaseAngle = 155,
+        slopeAngleMultiplier = 2.7f,
         characterControllerBaseHeight = 1.7f,
-        characterControllerBaseCenterY = 1;
+        characterControllerBaseCenterY = 1,
+        pivot_kP = 0.15f,
+        pivotTransition_kP = 0.05f,
+        maxPivotAngle = 50,
+        pivotMinimumForReset = 3,
+        playerAirSpeedMultiplier = 0.3f;
 
     private int
         hitboxLayer = 7;
@@ -68,7 +81,9 @@ public class Human : GameCharacter
     [SerializeField] private bool sprinting;
 
     private float pivot;
-    [SerializeField]  private float syncedPivot;
+    private float targPivot;
+    private float pivotWeight;
+    private bool resetPivotAngle;
 
     private bool
         walking,
@@ -112,8 +127,15 @@ public class Human : GameCharacter
     private float stepCoolTime = 0.5f;
     [SerializeField] private float rightFootCastDistance;
     [SerializeField] private float leftFootCastDistance;
+    [SerializeField] private float rightToeCastDistance;
+    [SerializeField] private float leftToeCastDistance;
+
     [SerializeField] private float pControlledRightFootPos = 0;
     [SerializeField] private float pControlledLeftFootPos = 0;
+    [SerializeField] private float pControlledRightFootAngle = 0;
+    [SerializeField] private float pControlledLeftFootAngle = 0;
+
+    protected Vector3 queueApplyVelocity; // directly altering player velocity can have unexpected results
 
     public float AimY { get => aimY; set => aimY = value; }
     public GameObject ItemAlignment { get => itemAlignment; set => itemAlignment = value; }
@@ -138,6 +160,7 @@ public class Human : GameCharacter
     public bool Active { get => active; set => active = value; }
     public string HumanName { get => humanName; set => humanName = value; }
     public float Pivot { get => pivot; set => pivot = value; }
+    public GameObject Neck { get => neck; set => neck = value; }
 
     // Start is called before the first frame update
     public virtual void Start()
@@ -175,10 +198,18 @@ public class Human : GameCharacter
     {
         if (Sprinting) movementSpeed = baseMovementSpeed * sprintSpeedMultiplier;
         else movementSpeed = baseMovementSpeed;
-
-        if (charController.isGrounded)
+        float relativeforwardVelocity = ForwardInput * movementSpeed;
+        float relativeRightVelocity = RightInput * movementSpeed;
+        if (queueApplyVelocity != Vector3.zero)
         {
-            Velocity += (transform.forward * ForwardInput * movementSpeed) + (transform.right * RightInput * movementSpeed);
+            jumpQueued = false;
+            Velocity = queueApplyVelocity;
+            queueApplyVelocity = Vector3.zero;
+
+        }
+        else if (charController.isGrounded)
+        {
+            Velocity += (spine1.transform.forward * ForwardInput * movementSpeed) + (spine1.transform.right * RightInput * movementSpeed); // use trig to offset pivot angle
 
             if (Walking || Sprinting) Velocity = new Vector3(Velocity.x / groundMovingFriction, -FloorGravity, Velocity.z / groundMovingFriction);
             else Velocity = new Vector3(Velocity.x / groundFriction, -FloorGravity, Velocity.z / groundFriction);
@@ -193,6 +224,7 @@ public class Human : GameCharacter
         }
         else
         {
+            Velocity += ((spine1.transform.forward * ForwardInput * movementSpeed) + (spine1.transform.right * RightInput * movementSpeed)) * playerAirSpeedMultiplier; // use trig to offset pivot angle
             Velocity = new Vector3(Velocity.x / airFriction, Velocity.y - Gravity, Velocity.z / airFriction);
         }
         JumpQueued = false;
@@ -248,13 +280,19 @@ public class Human : GameCharacter
     {
         leftFootTarg.transform.position = new Vector3(leftFootTargBase.transform.position.x, leftFootTargBase.transform.position.y - pControlledLeftFootPos, leftFootTargBase.transform.position.z);
         rightFootTarg.transform.position = new Vector3(rightFootTargBase.transform.position.x, rightFootTargBase.transform.position.y - pControlledRightFootPos, rightFootTargBase.transform.position.z);
-     
+
+        if (!sprinting)
+        {
+            leftFootAngle.transform.eulerAngles = new Vector3(pControlledLeftFootAngle - leftFootBaseAngle, this.transform.eulerAngles.y + 180, 0);
+            rightFootAngle.transform.eulerAngles = new Vector3(pControlledRightFootAngle - rightFootBaseAngle, this.transform.eulerAngles.y + 180, 0);
+        }
+
         spine2.transform.Rotate(this.transform.right * (-AimY / 2) * spine2Multiplier, Space.World);
         spine3.transform.Rotate(this.transform.right * (-AimY / 2), Space.World);
-        neck.transform.Rotate(this.transform.right * (-AimY / 2) * neckMultiplier, Space.World);
+        Neck.transform.Rotate(this.transform.right * (-AimY / 2) * neckMultiplier, Space.World);
 
         if (Item is PlayerFirearm) UpdateAimDownSightsState((Item as PlayerFirearm).AimedDownSights);
-        UpdatePivot();
+        UpdatePivotRot();
         UpdateAnimatorValues();
     }
 
@@ -267,12 +305,54 @@ public class Human : GameCharacter
         Animator.SetTrigger("Reload");
     }
 
+    /*
+     * Update player pivoting, looking around will only rotate the player waist up unless necessary
+     */
     public void UpdatePivot()
     {
-        float pivotTranslate = (0 - pivot) * 0.1f;
-        this.transform.Rotate(0, -pivotTranslate, 0);
-        pivot += pivotTranslate;
-        spine1.transform.localEulerAngles += new Vector3(spine1.transform.localEulerAngles.x, pivot, spine1.transform.localEulerAngles.z);
+        if (walking || sprinting || resetPivotAngle)
+        {
+            targPivot = 0;
+            if (!sprinting) {
+                if (forwardInput > 0 && rightInput > 0) targPivot = -30;
+                if (forwardInput > 0 && rightInput < 0) targPivot = 30;
+                if (forwardInput < 0 && rightInput > 0) targPivot = 30;
+                if (forwardInput < 0 && rightInput < 0) targPivot = -30;
+            }
+            else
+            {
+                if (forwardInput > 0 && rightInput > 0) targPivot = -15;
+                if (forwardInput > 0 && rightInput < 0) targPivot = 15;
+                if (forwardInput < 0 && rightInput > 0) targPivot = 15;
+                if (forwardInput < 0 && rightInput < 0) targPivot = -15;
+            }
+
+            float pivotTranslate = (targPivot - pivot) * pivot_kP;
+            this.transform.Rotate(0, -pivotTranslate, 0);
+            pivot += pivotTranslate;
+            if (Mathf.Abs(pivot) < pivotMinimumForReset) resetPivotAngle = false;
+        }
+        if (Mathf.Abs(pivot) > maxPivotAngle && !walking)
+        {
+            resetPivotAngle = true;
+        }
+    }
+
+    /*
+     * Update the playerRotations due to pivoting
+     */
+    public void UpdatePivotRot()
+    {
+        spine1.transform.localEulerAngles += new Vector3(0, pivot, 0);
+        spine1.transform.eulerAngles = new Vector3(Mathf.LerpAngle(0, spine1.transform.eulerAngles.x, pivotWeight), spine1.transform.eulerAngles.y, Mathf.LerpAngle(0, spine1.transform.eulerAngles.z, pivotWeight));
+        if (!sprinting)
+        {
+            pivotWeight += (0 - pivotWeight) * pivotTransition_kP;
+        } 
+        else
+        {
+            pivotWeight += (1 - pivotWeight) * pivotTransition_kP;
+        }
     }
 
     /*
@@ -312,20 +392,46 @@ public class Human : GameCharacter
         if (charController.isGrounded)
         {
             RaycastHit rightFootHit;
+            RaycastHit rightToeHit;
             Vector3 rightFootTransformCastPosition = new Vector3(rightFootTarg.transform.position.x, this.transform.position.y + feetIKCastHeight, rightFootTarg.transform.position.z);
+            Vector3 rightToeTransformCastPosition = rightFootTransformCastPosition + (rightFootAngle.transform.up * toeIK_dist);
+
             Debug.DrawRay(rightFootTransformCastPosition, Vector3.down * 1.5f, Color.red, 0.01f);
             if (Physics.SphereCast(rightFootTransformCastPosition, feetCastRadius, Vector3.down, out rightFootHit, 1.5f, hitboxLayer))
             {
                 rightFootCastDistance = Mathf.Clamp(rightFootHit.distance - feetIKOffset + feetCastRadius, -feetIK_max, feetIK_max);
             }
+            if (Physics.SphereCast(rightToeTransformCastPosition, feetCastRadius, Vector3.down, out rightToeHit, 1.5f, hitboxLayer))
+            {         
+                rightToeCastDistance = rightToeHit.distance - feetIKOffset + feetCastRadius;
+            } 
+            else
+            {
+                rightToeCastDistance = rightFootCastDistance;
+            }
+            Debug.DrawRay(rightToeTransformCastPosition, Vector3.down * 1.5f, Color.blue, 0.01f);
 
             RaycastHit leftFootHit;
+            RaycastHit leftToeHit;
             Vector3 leftFootTransformCastPosition = new Vector3(leftFootTarg.transform.position.x, this.transform.position.y + feetIKCastHeight, leftFootTarg.transform.position.z);
+            Vector3 leftToeTransformCastPosition = leftFootTransformCastPosition + (leftFootAngle.transform.up * toeIK_dist);
+
             Debug.DrawRay(leftFootTransformCastPosition, Vector3.down * 1.5f, Color.red, 0.01f);
             if (Physics.SphereCast(leftFootTransformCastPosition, feetCastRadius, Vector3.down, out leftFootHit, 1.5f, hitboxLayer))
             {
                 leftFootCastDistance = Mathf.Clamp(leftFootHit.distance - feetIKOffset + feetCastRadius, -feetIK_max, feetIK_max);
             }
+            
+            if (Physics.SphereCast(leftToeTransformCastPosition, feetCastRadius, Vector3.down, out leftToeHit, 1.5f, hitboxLayer))
+            {
+                leftToeCastDistance = leftToeHit.distance - feetIKOffset + feetCastRadius;
+            } 
+            else
+            {
+                leftToeCastDistance = leftFootCastDistance;
+            }
+            Debug.DrawRay(leftToeTransformCastPosition, Vector3.down * 1.5f, Color.blue, 0.01f);
+
         }
     }
     
@@ -348,8 +454,16 @@ public class Human : GameCharacter
      */
     public void UpdatePControlIK()
     {
+        float leftFootCastDiff = leftFootCastDistance - leftToeCastDistance;
+        float rightFootCastDiff = rightFootCastDistance - rightToeCastDistance;
+
+        float targLeftFootAngle = Mathf.Atan2(leftFootCastDiff * slopeAngleMultiplier, toeIK_dist) * Mathf.Rad2Deg;
+        float targRightFootAngle = Mathf.Atan2(rightFootCastDiff * slopeAngleMultiplier, toeIK_dist) * Mathf.Rad2Deg;
         pControlledLeftFootPos += (leftFootCastDistance - pControlledLeftFootPos) * feetIK_kP;
         pControlledRightFootPos += (rightFootCastDistance - pControlledRightFootPos) * feetIK_kP;
+
+        pControlledLeftFootAngle = Mathf.LerpAngle(pControlledLeftFootAngle, targLeftFootAngle, feetIK_kP);
+        pControlledRightFootAngle = Mathf.LerpAngle(pControlledRightFootAngle, targRightFootAngle, feetIK_kP);
     }
 
     /*

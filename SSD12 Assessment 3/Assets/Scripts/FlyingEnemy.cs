@@ -17,17 +17,25 @@ public class FlyingEnemy : Enemy
     [SerializeField] private Transform[] barrelPoints;
     [SerializeField] private float damage;
     [SerializeField] private float projectileSpeed;
+    [SerializeField] private float projectileSpread;
+    [SerializeField] private float attackRange;
+    [SerializeField] private float aimYOffset;
+    [SerializeField] private float minDistance;
 
-    [SerializeField] private GameObject muzzleEffect;
+    [SerializeField] private GameObject[] fireEffects; // muzzleflashes, sounds etc
 
     [SerializeField] private float attackCooldown;
     [SerializeField] private bool readyToFire;
+
+    [SerializeField] private float maxStrafeSpeed;
+    private float strafeSpeed;
     
     // Start is called before the first frame update
     void Start()
     {
         charController = GetComponent<CharacterController>();
         readyToFire = true;
+        strafeSpeed = Random.Range(-maxStrafeSpeed, maxStrafeSpeed);
     }
 
     // Update is called once per frame
@@ -40,7 +48,15 @@ public class FlyingEnemy : Enemy
     // Called at a fixed rate
     public void FixedUpdate()
     {
-        Attack();
+        ApproachPlayer();
+        if (Vector3.Distance(this.transform.position, FindObjectOfType<Player>().transform.position) <= attackRange)
+        {
+            Attack();
+        } 
+        else
+        {
+            Idle();
+        }
     }
 
     /*
@@ -48,7 +64,7 @@ public class FlyingEnemy : Enemy
      */
     public void Idle()
     {
-        velocity += transform.forward * speed;
+        //velocity += transform.forward * speed;
     }
 
     /*
@@ -59,6 +75,23 @@ public class FlyingEnemy : Enemy
         velocity += (Vector3.zero - velocity) * flightZero_kP;
         charController.Move(velocity);
     }
+    
+    /*
+     * Move relative to the player's position. Will move towards the player and strafe to make it difficult to hit the enemy
+     */
+    public void ApproachPlayer()
+    {
+        if (Vector3.Distance(this.transform.position, FindObjectOfType<Player>().transform.position) > minDistance)
+        {
+            velocity += transform.forward * speed;
+        } 
+        else
+        {
+            velocity += (Vector3.zero - velocity) * speed;
+        }
+        velocity += transform.right * strafeSpeed;
+        velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
+    }
 
     /*
      * Behaviour for when the enemy is attacking the player
@@ -66,8 +99,17 @@ public class FlyingEnemy : Enemy
     public void Attack()
     {
         Player player = FindObjectOfType<Player>();
-        if (readyToFire) Shoot();
-        SmoothLookAt(player.transform.position);
+        Vector3 aimPoint = player.transform.position + new Vector3(0, aimYOffset, 0);
+        SmoothLookAt(aimPoint);
+        RaycastHit hit;
+        if (Physics.Raycast(barrelPoints[0].transform.position, transform.forward, out hit))
+        {
+            print("hit " + hit.transform.name);
+            if (hit.transform.GetComponent<Player>() || hit.transform.GetComponent<Hitbox>())
+            {
+                if (readyToFire) Shoot();
+            }
+        }
     }
 
     /*
@@ -77,7 +119,7 @@ public class FlyingEnemy : Enemy
     {
         Player player = FindObjectOfType<Player>();
         Vector3 currentRot = this.transform.eulerAngles;
-        transform.LookAt(player.transform.position);
+        transform.LookAt(newDirection);
         Vector3 targRot = this.transform.eulerAngles;
         transform.eulerAngles = currentRot;
 
@@ -100,8 +142,14 @@ public class FlyingEnemy : Enemy
             if (readyToFire)
             {
                 Projectile newProjectile = Instantiate(projectile, barrelPoint.position, barrelPoint.transform.rotation);
+                newProjectile.transform.Rotate(Random.Range(-projectileSpread / 2, projectileSpread / 2), Random.Range(-projectileSpread / 2, projectileSpread / 2), 0);
                 newProjectile.SetProjectileStats(projectileSpeed, damage, false, 30);
                 newProjectile.Init();
+
+                foreach (GameObject fireEffect in fireEffects)
+                {
+                     Instantiate(fireEffect, barrelPoint.position, barrelPoint.transform.rotation);
+                }
                 Invoke("Rechamber", attackCooldown);
                 readyToFire = false;
             }

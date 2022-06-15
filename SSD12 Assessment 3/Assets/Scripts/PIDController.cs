@@ -6,7 +6,7 @@ using UnityEngine;
  * Proportional, Integral, Derivative Controller
  * Uses calculus to interpolate a value to a target
  */
-public class PIDController
+public class PIDController : MonoBehaviour
 {
     private float kP;
     private float kI;
@@ -53,15 +53,15 @@ public class PIDController
         float output;
         if (deltaTime > 0)
         {
-            errorAccumulation += error * deltaTime;
-            errorDerivative = (error - lastError) * deltaTime;
+            errorAccumulation += error * deltaTime * GameManagement.DeltaTimeFrameSpeedConstant;
+            errorDerivative = (error - lastError) * deltaTime * GameManagement.DeltaTimeFrameSpeedConstant;
         }
         else
         {
             errorAccumulation = 0;
             errorDerivative = 0;
         }
-        output = (error * kP) + (errorAccumulation * kI) + (errorDerivative * kD);
+        output = error * kP * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant + (errorAccumulation * kI) + (errorDerivative * kD);
         return output;
     }
 }

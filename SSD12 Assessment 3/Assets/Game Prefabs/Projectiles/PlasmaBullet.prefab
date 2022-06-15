@@ -236,7 +236,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleImpactParticles: {fileID: 6385952880474491596, guid: 9aca35fe170eca34fb95a72c3c3da8a5, type: 3}
   projectileForce: 20
-  deformerBrush: {fileID: 0}
 --- !u!114 &7039076392042789530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,4 +248,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a65764cd6b9a304392eb39891ae2684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0.3
+  time: 1

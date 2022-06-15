@@ -331,6 +331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maintainSize: 1
+  disableForPromode: 0
   objectScale: 1
 --- !u!1 &505363991882739816
 GameObject:
@@ -478,14 +479,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631196668938068688}
-  m_LocalRotation: {x: 0.5298239, y: -0.052098423, z: -0.02443282, w: 0.8461534}
+  m_LocalRotation: {x: 0.53729963, y: 0, z: 0, w: 0.8433915}
   m_LocalPosition: {x: -0.0000000034924597, y: 0.4309672, z: 0.0000000013969839}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 289459021213157932}
   m_Father: {fileID: 3218490988557154260}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 79.66407, y: -109.44095, z: -93.15836}
+  m_LocalEulerAnglesHint: {x: 65, y: 0, z: 0}
 --- !u!1 &717015136093559223
 GameObject:
   m_ObjectHideFlags: 0
@@ -6770,24 +6771,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  maxHealth: 0
-  baseMovementSpeed: 0.007
+  maxHealth: 100
+  baseMovementSpeed: 0.009
   sprintSpeedMultiplier: 1.4
   groundFriction: 1.2
   groundMovingFriction: 1.1
-  airFriction: 1
+  airFriction: 1.025
   gravity: 0.011
-  jumpStrength: 0.26
+  jumpStrength: 0.32
   pivotLimit: 30
   spine1: {fileID: 1151966394780084059}
   spine2: {fileID: 7608093485888099065}
   spine3: {fileID: 110208148107267637}
-  neck: {fileID: 2246215118528974308}
   itemAlignment: {fileID: 1408305130786922356}
   leftFootTargBase: {fileID: 4583359845861753668}
   rightFootTargBase: {fileID: 4456219415828381609}
   leftFootTarg: {fileID: 1408305132277630549}
   rightFootTarg: {fileID: 1408305131722890748}
+  leftFootAngle: {fileID: 7217194874478872394}
+  rightFootAngle: {fileID: 631196668938068688}
+  neck: {fileID: 2246215118528974308}
   ragdollParts:
   - {fileID: 1151966394780084059}
   - {fileID: 7608093485888099065}
@@ -6833,7 +6836,6 @@ MonoBehaviour:
   active: 0
   aimY: 0
   sprinting: 0
-  syncedPivot: 0
   weaponParent: {fileID: 742464850295737671}
   item: {fileID: 3089998600025667330}
   itemString: Unarmed
@@ -6849,9 +6851,13 @@ MonoBehaviour:
   FootstepGrassSounds: []
   rightFootCastDistance: 0
   leftFootCastDistance: 0
+  rightToeCastDistance: 0
+  leftToeCastDistance: 0
   pControlledRightFootPos: 0
   pControlledLeftFootPos: 0
-  damageCameraShakeMultiplier: 0.1
+  pControlledRightFootAngle: 0
+  pControlledLeftFootAngle: 0
+  damageCameraShakeMultiplier: 0.4
   baseSensitivity: 1.6
   playerCamera: {fileID: 4031869354936019792}
   playerAuthority: 0
@@ -7019,14 +7025,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7217194874478872394}
-  m_LocalRotation: {x: 0.52979785, y: 0.052560348, z: 0.024187138, w: 0.8461482}
+  m_LocalRotation: {x: 0.53729963, y: 0, z: 0, w: 0.8433915}
   m_LocalPosition: {x: -0.000000013737008, y: 0.43096727, z: -0.0000000018626451}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_Children:
   - {fileID: 5682732325656421094}
   m_Father: {fileID: 10408330494112564}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 61.59829, y: -24.9978, z: -6.094339}
+  m_LocalEulerAnglesHint: {x: 65, y: 0, z: 0}
 --- !u!1 &7296233345975191380
 GameObject:
   m_ObjectHideFlags: 0

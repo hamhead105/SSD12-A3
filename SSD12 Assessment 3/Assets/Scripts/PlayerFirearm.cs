@@ -8,28 +8,33 @@ using UnityEngine;
 public class PlayerFirearm : PlayerItem
 {
     // static constants
-    [SerializeField] private float recoilRecovery_kP;
     protected static float
         recoilVelocity_kP = 0.3f,
         aimShiftMultiplier = 0.08f,
         aimSwayMultiplier = 0.4f,
         projectileLifeTime = 12,
         lookAtPointTransition_kP = 0.1f,
-        lookAtPointShift_kP = 0.1f;
+        lookAtPointShift_kP = 0.1f,
+        maxLookPointRotation = 60;
 
-    private static Vector3 maxItemRot = new Vector3(80, 80, 0);
+    private static Vector3
+        maxItemRot = new Vector3(80, 80, 0),
+        baseLookRot = new Vector3(72f, 270f, 269f);
 
+
+    [SerializeField] private float recoilRecovery_kP;
+    [SerializeField]
     private float 
-        recoilRecovery_kI,
-        recoilRecovery_kD;
+        recoilRecovery_kI = 0.04f,
+        recoilRecovery_kD = 0.05f;
 
     // recoil Z axis
     [SerializeField]
     private float recoilPosRecovery_kP;
-
+    [SerializeField]
     private float
-        recoilPosRecovery_kI,
-        recoilPosRecovery_kD;
+        recoilPosRecovery_kI = 0.1f,
+        recoilPosRecovery_kD = 0.1f;
 
     [SerializeField] private float spreadAmountHip;
     [SerializeField] private float spreadAmountADS;
@@ -180,19 +185,12 @@ public class PlayerFirearm : PlayerItem
     }
 
     /*
-     * Called at a fixed rate
-     */
-    public override void FixedUpdate()
-    {
-        base.FixedUpdate();
-        UpdateLookPointWeights();
-    }
-
-    /*
      * Called once per frame
      */
-    public void Update()
+    public override void Update()
     {
+        base.Update();
+        UpdateLookPointWeights();
         UpdateCastBasedUI();
     }
 
@@ -239,13 +237,18 @@ public class PlayerFirearm : PlayerItem
     /*
      * Update hitmarker transforms and get their components.
      */
-    private void UpdateHitmarkers()
+    private void UpdateHitmarkersAndReticle()
     {
-        RectTransform rTransformBase = baseHitmarker.GetComponent<RectTransform>(); // base hitmarker
-        rTransformBase.eulerAngles = new Vector3(rTransformBase.eulerAngles.x, rTransformBase.eulerAngles.y, 0);
+        if (User is Player) {
+            RectTransform rTransformBase = baseHitmarker.GetComponent<RectTransform>(); // base hitmarker
+            rTransformBase.eulerAngles = new Vector3(rTransformBase.eulerAngles.x, rTransformBase.eulerAngles.y, 0);
 
-        RectTransform rTransformKill = killHitmarker.GetComponent<RectTransform>(); // kill hitmarker
-        rTransformKill.eulerAngles = new Vector3(rTransformKill.eulerAngles.x, rTransformKill.eulerAngles.y, 0);
+            RectTransform rTransformKill = killHitmarker.GetComponent<RectTransform>(); // kill hitmarker
+            rTransformKill.eulerAngles = new Vector3(rTransformKill.eulerAngles.x, rTransformKill.eulerAngles.y, 0);
+
+            if (aimedDownSights && (User as Player).PlayerCamera.FirstPersonMode) reticle.GetComponent<Reticle>().HideVisiblity();
+            else reticle.GetComponent<Reticle>().EnableVisiblity();
+        }
     }
 
     /*
@@ -255,15 +258,15 @@ public class PlayerFirearm : PlayerItem
     public override void UpdateTransforms()
     {
         this.transform.LookAt(lookPoint);
-        lookPointTargetRotation = transform.localEulerAngles;
+        lookPointTargetRotation = Vector3.ClampMagnitude(transform.localEulerAngles - baseLookRot, maxLookPointRotation) + baseLookRot; // to stop the gun from looking completely up which breaks some animations
         this.transform.localEulerAngles = new Vector3(0, 0, 0);
 
         if (aimedDownSights)
         {
             ItemSway *= aimSwayMultiplier;
-            adsWeight += (1 - adsWeight) * ads_kP;
+            adsWeight += (1 - adsWeight) * Mathf.Min(ads_kP * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant, 1);
         }
-        else { adsWeight += (0 - adsWeight) * ads_kP; }
+        else { adsWeight += (0 - adsWeight) * Mathf.Min(ads_kP * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant, 1); }
 
         if (ActiveSight)
         {
@@ -285,13 +288,13 @@ public class PlayerFirearm : PlayerItem
 
         if (!aimedDownSights)
         {
-            ItemSwing_x += (0 - ItemSwing_x) * ItemRecovery_kP;
-            ItemSwing_y += (0 - ItemSwing_y) * ItemRecovery_kP;
+            ItemSwing_x += (0 - ItemSwing_x) * Mathf.Min(ItemRecovery_kP * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant, 1);
+            ItemSwing_y += (0 - ItemSwing_y) * Mathf.Min(ItemRecovery_kP * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant, 1);
         }
         else
         {
-            ItemSwing_x += (0 - ItemSwing_x) * itemRecovery_kP_ads;
-            ItemSwing_y += (0 - ItemSwing_y) * itemRecovery_kP_ads;
+            ItemSwing_x += (0 - ItemSwing_x) * Mathf.Min(itemRecovery_kP_ads * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant, 1);
+            ItemSwing_y += (0 - ItemSwing_y) * Mathf.Min(itemRecovery_kP_ads * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant, 1);
         }
 
         this.transform.localPosition = new Vector3(0, 0, 0);
@@ -309,7 +312,7 @@ public class PlayerFirearm : PlayerItem
             this.transform.localEulerAngles += ConvertVectorDirections(RotationOffset);
         }
 
-        UpdateHitmarkers();
+        UpdateHitmarkersAndReticle();
         UpdateRecoil();
     }
 
@@ -324,11 +327,11 @@ public class PlayerFirearm : PlayerItem
         {
             if (Sprinting || (User as Player).PlayerCamera.FreeLook || (User as Player).PlayerCamera.FirstPersonMode || WeaponADSObstruction)
             {
-                lookPointWeight += (0 - lookPointWeight) * lookAtPointTransition_kP;
+                lookPointWeight += (0 - lookPointWeight) * Mathf.Min(lookAtPointTransition_kP * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant, 1);
             }
             else
             {
-                lookPointWeight += (1 - lookPointWeight) * lookAtPointTransition_kP;
+                lookPointWeight += (1 - lookPointWeight) * Mathf.Min(lookAtPointTransition_kP * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant, 1);
             }
             
             lookPointRotation = new Vector3(
@@ -347,17 +350,17 @@ public class PlayerFirearm : PlayerItem
         targetGunRecoilVelocity = new Vector3(recoilPID_x.GetOutput(-gunRecoilDisplacement.x), recoilPID_y.GetOutput(-gunRecoilDisplacement.y), recoilPID_z.GetOutput(-gunRecoilDisplacement.z));
         // the transform of the firearm.
         GunRecoilVelocity += new Vector3(
-            (targetGunRecoilVelocity.x - GunRecoilVelocity.x) * recoilVelocity_kP,
-            (targetGunRecoilVelocity.y - GunRecoilVelocity.y) * recoilVelocity_kP,
-            (targetGunRecoilVelocity.z - GunRecoilVelocity.z) * recoilVelocity_kP
+            (targetGunRecoilVelocity.x - GunRecoilVelocity.x) * Mathf.Min(recoilVelocity_kP, 1),
+            (targetGunRecoilVelocity.y - GunRecoilVelocity.y) * Mathf.Min(recoilVelocity_kP, 1),
+            (targetGunRecoilVelocity.z - GunRecoilVelocity.z) * Mathf.Min(recoilVelocity_kP, 1)
         );
 
         // the transform of the player. This is where the player's screen is rotated upwards
         AimRecoilVelocity += new Vector3(
-            (0 - AimRecoilVelocity.x) * recoilVelocity_kP,
-            (0 - AimRecoilVelocity.y) * recoilVelocity_kP,
-            (0 - AimRecoilVelocity.z) * recoilVelocity_kP
-        );
+            (0 - AimRecoilVelocity.x) * Mathf.Min(recoilVelocity_kP, 1),
+            (0 - AimRecoilVelocity.y) * Mathf.Min(recoilVelocity_kP, 1),
+            (0 - AimRecoilVelocity.z) * Mathf.Min(recoilVelocity_kP, 1)
+        ) * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant;
 
         gunRecoilDisplacement += GunRecoilVelocity;
     }
@@ -562,7 +565,6 @@ public class PlayerFirearm : PlayerItem
 
         Reloading = false;
         Ammo = MaxAmmo;
-        Chambered = true;
     }
 
     /*

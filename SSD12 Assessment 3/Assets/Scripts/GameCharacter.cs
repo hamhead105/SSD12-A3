@@ -9,7 +9,7 @@ public abstract class GameCharacter : MonoBehaviour
 {
     [SerializeField] private float health;
     [SerializeField] private float maxHealth;
-    private bool deathFlag;
+    protected bool deathFlag;
 
     public float Health { get => health; set => health = value; }
     public float MaxHealth { get => maxHealth; set => maxHealth = value; }
@@ -35,13 +35,22 @@ public abstract class GameCharacter : MonoBehaviour
     /*
      * Deal damage to this character
      */
-    public void DealDamage(float amount)
+    public virtual void DealDamage(float amount)
     {
         health -= amount;
         if (health <= 0)
         {
             Death();
         }
+    }
+
+    /*
+     * Replenish some of the character's health
+     */
+    public void Heal(float amount)
+    {
+        health += amount;
+        if (health > maxHealth) health = maxHealth;
     }
 
     // Update is called once per frame
