@@ -62,7 +62,7 @@ public class Human : GameCharacter
         pivotTransition_kP = 0.05f,
         maxPivotAngle = 50,
         pivotMinimumForReset = 3,
-        playerAirSpeedMultiplier = 0.4f;
+        playerAirSpeedMultiplier = 0.3f;
 
     private int
         hitboxLayer = 7;
