@@ -331,8 +331,8 @@ public class Player : Human
 
         if (Item is PlayerFirearm)
         {
-            xMovement += (Item as PlayerFirearm).AimRecoilVelocity.x;
-            yMovement += (Item as PlayerFirearm).AimRecoilVelocity.y;
+            xMovement += (Item as PlayerFirearm).AimRecoilVelocity.x * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant;
+            yMovement += (Item as PlayerFirearm).AimRecoilVelocity.y * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant;
         }
         UpdatePlayerRotations(xMovement, yMovement);
     }

@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
  */
 public class GameManagement : MonoBehaviour
 {
-    private static float deltaTimeFrameSpeedConstant = 50; // multiplied through any multiplications of time.deltaTime
+    private static float deltaTimeFrameSpeedConstant = 60; // multiplied through any multiplications of time.deltaTime
 
     private int score;
     private int timePast;

@@ -83,6 +83,8 @@ public class PlayerCamera : MonoBehaviour
      */
     private void UpdateAdditionalTransforms()
     {
+        cameraShake += cameraShakeVelocity * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant;
+
         UpdateCameraControl();
 
         playerCameraObject.transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0) + cameraShake;
@@ -228,8 +230,6 @@ public class PlayerCamera : MonoBehaviour
             (targCameraShakeVelocity.y - cameraShakeVelocity.y) * cameraShakeVelocity_kP,
             (targCameraShakeVelocity.z - cameraShakeVelocity.z) * cameraShakeVelocity_kP
         );
-
-        cameraShake += cameraShakeVelocity;
     }
 
     /*

@@ -195,6 +195,14 @@ public class PlayerFirearm : PlayerItem
     }
 
     /*
+     * Called at a fixed rate
+     */
+    public void FixedUpdate()
+    {
+        UpdateRecoil();
+    }
+
+    /*
      * Update world UI elements which are printed on the point at which the weapon is aimed. For example,
      * the player's reticle and hitmarkers. These are scaled based on the distance to the player to ensure the player sees the 
      * UI as a consistent size.
@@ -313,7 +321,7 @@ public class PlayerFirearm : PlayerItem
         }
 
         UpdateHitmarkersAndReticle();
-        UpdateRecoil();
+        UpdateRecoilDisplacement();
     }
 
     /*
@@ -360,9 +368,15 @@ public class PlayerFirearm : PlayerItem
             (0 - AimRecoilVelocity.x) * Mathf.Min(recoilVelocity_kP, 1),
             (0 - AimRecoilVelocity.y) * Mathf.Min(recoilVelocity_kP, 1),
             (0 - AimRecoilVelocity.z) * Mathf.Min(recoilVelocity_kP, 1)
-        ) * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant;
+        );
+    }
 
-        gunRecoilDisplacement += GunRecoilVelocity;
+    /*
+     * Apply recoil velocities to recoil displacement
+     */
+    private void UpdateRecoilDisplacement()
+    {
+        gunRecoilDisplacement += GunRecoilVelocity * Time.deltaTime * GameManagement.DeltaTimeFrameSpeedConstant;
     }
 
     /*
