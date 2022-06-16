@@ -9,6 +9,7 @@ using UnityEngine.Rendering.Universal;
  */
 public class PostProcessingManager : MonoBehaviour
 {
+    private static float postProcessWeight_kP = 0.4f;
     [SerializeField] private Volume normal;
     [SerializeField] private Volume hit;
     [SerializeField] private Volume dead;
@@ -40,9 +41,9 @@ public class PostProcessingManager : MonoBehaviour
      */
     public void UpdatePostProcess()
     {
-        normal.weight += (NormalStrength - normal.weight) / 3;
-        hit.weight += (HitStrength - hit.weight) / 3;
-        dead.weight += (DeadStrength - dead.weight) / 3;
+        normal.weight += (NormalStrength - normal.weight) * postProcessWeight_kP;
+        hit.weight += (HitStrength - hit.weight) * postProcessWeight_kP;
+        dead.weight += (DeadStrength - dead.weight) * postProcessWeight_kP;
 
         if (IsDead)
         {

@@ -8076,7 +8076,7 @@ MonoBehaviour:
   dead: {fileID: 1096004574}
   isDead: 0
   hitRecovery_kP: 0.03
-  hitEffectMultiplier: 0.04
+  hitEffectMultiplier: 0.07
 --- !u!1 &2140177850
 GameObject:
   m_ObjectHideFlags: 0
