@@ -221,11 +221,13 @@ public class Human : GameCharacter
             {
                 Jump(jumpStrength);
             }
+            animator.SetBool("MidAir", false);
         }
         else
         {
             Velocity += ((spine1.transform.forward * ForwardInput * movementSpeed) + (spine1.transform.right * RightInput * movementSpeed)) * playerAirSpeedMultiplier; // use trig to offset pivot angle
             Velocity = new Vector3(Velocity.x / airFriction, Velocity.y - Gravity, Velocity.z / airFriction);
+            animator.SetBool("MidAir", true);
         }
         JumpQueued = false;
         charController.Move(Velocity);
