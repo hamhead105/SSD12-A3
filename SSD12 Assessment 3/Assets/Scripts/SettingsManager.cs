@@ -229,7 +229,7 @@ public class SettingsManager : MonoBehaviour
 
         bool proModeBool = false;
         if (proMode == 1) proModeBool = true;
-        FindObjectOfType<UserInterface>().UpdateProModeUI(proModeBool);
+        if (FindObjectOfType<UserInterface>()) FindObjectOfType<UserInterface>().UpdateProModeUI(proModeBool);
 
         Screen.SetResolution(resolutions[resolutionIndex].width, resolutions[resolutionIndex].height, fullScreenBool);   // return false when fullscreen = 0 and true for fullscreen = 1
         UpdateGraphicsSetting();

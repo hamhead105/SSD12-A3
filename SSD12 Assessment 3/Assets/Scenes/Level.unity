@@ -4402,7 +4402,7 @@ MonoBehaviour:
   baseSpawnRate: 20
   spawnRateDecrement: 1
   spawnRate: 0
-  maxEnemies: 15
+  maxEnemies: 5
 --- !u!1 &1163677572
 GameObject:
   m_ObjectHideFlags: 0
@@ -6271,11 +6271,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6175292824177435604, guid: 6fd622eb37ff1b94782334051cd54822, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 28.82
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 6175292824177435604, guid: 6fd622eb37ff1b94782334051cd54822, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -97
+      value: 12.33
       objectReference: {fileID: 0}
     - target: {fileID: 6175292824177435604, guid: 6fd622eb37ff1b94782334051cd54822, type: 3}
       propertyPath: m_LocalRotation.w

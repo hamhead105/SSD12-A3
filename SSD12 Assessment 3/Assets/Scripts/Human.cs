@@ -283,7 +283,7 @@ public class Human : GameCharacter
         leftFootTarg.transform.position = new Vector3(leftFootTargBase.transform.position.x, leftFootTargBase.transform.position.y - pControlledLeftFootPos, leftFootTargBase.transform.position.z);
         rightFootTarg.transform.position = new Vector3(rightFootTargBase.transform.position.x, rightFootTargBase.transform.position.y - pControlledRightFootPos, rightFootTargBase.transform.position.z);
 
-        if (!sprinting)
+        if (!sprinting && charController.isGrounded)
         {
             leftFootAngle.transform.eulerAngles = new Vector3(pControlledLeftFootAngle - leftFootBaseAngle, this.transform.eulerAngles.y + 180, 0);
             rightFootAngle.transform.eulerAngles = new Vector3(pControlledRightFootAngle - rightFootBaseAngle, this.transform.eulerAngles.y + 180, 0);
